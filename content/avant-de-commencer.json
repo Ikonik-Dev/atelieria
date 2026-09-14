@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "id": "avant-de-commencer",
+  "titre": "QCM de positionnement",
+  "objectifs": [
+    "découvrir comment utiliser ce livret ;",
+    "répondre à 10 questions courtes sur l'IA, sans note."
+  ],
+  "etapes": [
+    {
+      "id": "s0-etape-1",
+      "titre": "Comment utiliser ce livret",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Facile à lire et à comprendre",
+          "elements": [
+            "Ce livret est pour vous.",
+            "Il sert à suivre l'atelier sur l'intelligence artificielle.",
+            "Il y a 4 séances dans la journée.",
+            "Vous pouvez lire ce livret à votre rythme.",
+            "Vous pouvez écrire dans les cases.",
+            "Vous pouvez choisir votre parcours : A, B ou C.",
+            "Vous pouvez changer de parcours d'un exercice à l'autre.",
+            "Il n'y a pas de note.",
+            "La correction s'affiche seulement après votre réponse.",
+            "Si vous ne comprenez pas un mot, le glossaire est en Séance 1.",
+            "Vous avez le droit de demander de l'aide au formateur."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Mention importante",
+          "texte": "Les informations sur les outils d'IA (accès, gratuité, fonctionnement) sont issues de janvier 2025. Elles sont à confirmer par le formateur le jour de l'atelier."
+        }
+      ]
+    },
+    {
+      "id": "s0-etape-2",
+      "titre": "QCM de positionnement",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Ce QCM n'est pas noté",
+          "texte": "Il sert à repérer vos besoins pour adapter l'animation. Répondez spontanément, sans chercher la bonne réponse."
+        },
+        { "type": "paragraphe", "texte": "Une réponse « Je ne sais pas » est proposée à chaque question. Vous avez le droit de la choisir." }
+      ],
+      "exercices": [
+        {
+          "id": "s0-e01",
+          "type": "qcm_unique",
+          "question": "Qu'est-ce qu'une IA générative ?",
+          "options": [
+            { "id": "a", "texte": "Un moteur de recherche qui classe des pages web." },
+            { "id": "b", "texte": "Un programme qui produit du texte (ou des images) à partir de ce que vous lui écrivez." },
+            { "id": "c", "texte": "Un robot qui pense comme un humain." },
+            { "id": "d", "texte": "Je ne sais pas." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est la définition de l'atelier. L'IA ne « pense » pas : elle produit du texte plausible.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s0-e02",
+          "type": "qcm_unique",
+          "question": "Quand une IA donne une information fausse, comment le sait-on ?",
+          "options": [
+            { "id": "a", "texte": "Elle le dit dans sa réponse (« je ne suis pas sûr »)." },
+            { "id": "b", "texte": "Elle change de couleur à l'écran." },
+            { "id": "c", "texte": "On ne le sait pas toujours. Elle se trompe avec le même ton que quand elle a raison." },
+            { "id": "d", "texte": "Je ne sais pas." }
+          ],
+          "reponseCorrecte": "c",
+          "explicationCorrection": "C'est le danger principal des hallucinations. Le ton ne change pas. Il n'y a aucun signal automatique.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s0-e03",
+          "type": "qcm_unique",
+          "question": "À quoi sert une « demande » (ou « prompt ») envoyée à une IA ?",
+          "options": [
+            { "id": "a", "texte": "C'est ce que l'IA lit pour produire sa réponse." },
+            { "id": "b", "texte": "C'est le prix que l'on paye pour utiliser l'outil." },
+            { "id": "c", "texte": "C'est le nom du modèle utilisé." },
+            { "id": "d", "texte": "Je ne sais pas." }
+          ],
+          "reponseCorrecte": "a",
+          "explicationCorrection": "La qualité de la demande détermine la qualité de la réponse. Vous verrez cela en Séance 2.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s0-e04",
+          "type": "qcm_unique",
+          "question": "Que veut dire « hallucination » pour une IA ?",
+          "options": [
+            { "id": "a", "texte": "Quand l'IA imagine une image de rêve." },
+            { "id": "b", "texte": "Quand l'IA invente une information fausse en ayant l'air sûre d'elle." },
+            { "id": "c", "texte": "Quand l'IA plante et s'éteint." },
+            { "id": "d", "texte": "Je ne sais pas." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est le mot utilisé dans ce domaine. L'IA ne dit pas « je ne sais pas » : elle produit quand même une réponse.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s0-e05",
+          "type": "qcm_unique",
+          "question": "Qu'est-ce qu'une donnée personnelle ?",
+          "options": [
+            { "id": "a", "texte": "Une information qui permet d'identifier quelqu'un (nom, adresse, numéro, photo)." },
+            { "id": "b", "texte": "Tout texte tapé au clavier." },
+            { "id": "c", "texte": "Une note que l'on met dans un agenda." },
+            { "id": "d", "texte": "Je ne sais pas." }
+          ],
+          "reponseCorrecte": "a",
+          "explicationCorrection": "C'est la définition utilisée par la loi (le RGPD). Vous la retrouverez en Séance 4, avec ce qu'on ne saisit pas dans une IA.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s0-e06",
+          "type": "qcm_unique",
+          "question": "Si une IA vous donne une réponse, vous faites quoi ?",
+          "options": [
+            { "id": "a", "texte": "Vous la recopiez telle quelle, c'est forcément vrai." },
+            { "id": "b", "texte": "Vous la lisez, vous comparez avec d'autres sources si besoin, et vous gardez votre jugement." },
+            { "id": "c", "texte": "Vous la montrez à la machine pour vérifier qu'elle est correcte." },
+            { "id": "d", "texte": "Je ne sais pas." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est le cœur de l'esprit critique. On ne copie pas sans lire. On ne valide pas sans vérifier.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s0-e07",
+          "type": "qcm_unique",
+          "question": "Lequel de ces contenus ne doit jamais être saisi dans une IA en ligne ?",
+          "options": [
+            { "id": "a", "texte": "Une question sur un mot que je ne comprends pas." },
+            { "id": "b", "texte": "Mon mot de passe d'un compte." },
+            { "id": "c", "texte": "Une idée de cadeau pour un proche." },
+            { "id": "d", "texte": "Je ne sais pas." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Les mots de passe font partie des « 3 jamais » de la Séance 4. C'est un risque de sécurité direct.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s0-e08",
+          "type": "qcm_unique",
+          "question": "Quand vous n'êtes pas content d'une réponse d'IA, que faites-vous ?",
+          "options": [
+            { "id": "a", "texte": "Vous abandonnez et vous recommencez avec une autre IA." },
+            { "id": "b", "texte": "Vous reformulez votre demande en précisant ce qui ne va pas (« c'est trop long », « explique plus simplement »)." },
+            { "id": "c", "texte": "Vous éteignez l'ordinateur." },
+            { "id": "d", "texte": "Je ne sais pas." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est l'itération (Séance 2). On ne recommence pas de zéro : on précise.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s0-e09",
+          "type": "qcm_unique",
+          "question": "Une IA et un moteur de recherche, c'est :",
+          "options": [
+            { "id": "a", "texte": "Exactement la même chose." },
+            { "id": "b", "texte": "Deux outils différents : le moteur trouve des pages qui existent, l'IA fabrique un nouveau texte." },
+            { "id": "c", "texte": "L'IA remplace le moteur dans tous les cas." },
+            { "id": "d", "texte": "Je ne sais pas." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est la troisième phrase à retenir de la Séance 1 : l'IA n'est pas un moteur de recherche.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s0-e10",
+          "type": "qcm_unique",
+          "question": "Que signifie « une conversation » avec une IA ?",
+          "options": [
+            { "id": "a", "texte": "Un appel téléphonique passé à l'IA." },
+            { "id": "b", "texte": "Un échange écrit où l'IA se souvient de ce qui a été dit plus haut dans la même conversation." },
+            { "id": "c", "texte": "Un dessin que l'on fait à l'IA." },
+            { "id": "d", "texte": "Je ne sais pas." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est le sens du mot « conversation » dans le glossaire (Séance 1). Important : cela marche seulement dans la même fenêtre.",
+          "difficulte": "facile"
+        }
+      ]
+    },
+    {
+      "id": "s0-etape-3",
+      "titre": "Après le QCM",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Encore une fois : ce QCM n'est pas noté",
+          "texte": "Il sert au formateur à mieux vous accompagner pendant la journée. Vos réponses n'ont aucune incidence sur votre parcours."
+        },
+        { "type": "paragraphe", "texte": "Vous pouvez maintenant commencer la **Séance 1**." }
+      ]
+    }
+  ]
+}

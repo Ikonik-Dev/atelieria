@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "id": "seance-4",
+  "titre": "Usages responsables",
+  "objectifs": [
+    "repérer ce qu'on ne saisit pas dans une IA ;",
+    "aborder les enjeux professionnels avec lucidité."
+  ],
+  "etapes": [
+    {
+      "id": "s4-etape-1",
+      "titre": "Je saisis, je ne saisis pas, ou prudence ? Exercice de tri",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Durée de la séance :** 1 h 45." },
+        { "type": "paragraphe", "texte": "Vous allez lire 8 cas, un par écran." },
+        { "type": "paragraphe", "texte": "Pour chaque cas, choisissez : **« Je saisis »**, **« Je ne saisis pas »** ou **« Prudence »**." },
+        { "type": "paragraphe", "texte": "Dites aussi pourquoi, en une phrase." }
+      ],
+      "exercices": [
+        {
+          "id": "s4-e01",
+          "type": "qcm_unique",
+          "question": "Cas 1 : un texte que j'ai écrit et que je veux améliorer. Est-ce que je le saisis dans une IA en ligne ?",
+          "options": [
+            { "id": "a", "texte": "Je saisis" },
+            { "id": "b", "texte": "Je ne saisis pas" },
+            { "id": "c", "texte": "Prudence" }
+          ],
+          "reponseCorrecte": "a",
+          "justification": { "libelle": "Pourquoi ? (en une phrase)", "obligatoire": false },
+          "explicationCorrection": "Rien de sensible. L'IA peut aider à reformuler ou à corriger.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s4-e02",
+          "type": "qcm_unique",
+          "question": "Cas 2 : le numéro de sécurité sociale d'un collègue. Est-ce que je le saisis dans une IA en ligne ?",
+          "options": [
+            { "id": "a", "texte": "Je saisis" },
+            { "id": "b", "texte": "Je ne saisis pas" },
+            { "id": "c", "texte": "Prudence" }
+          ],
+          "reponseCorrecte": "b",
+          "justification": { "libelle": "Pourquoi ? (en une phrase)", "obligatoire": false },
+          "explicationCorrection": "C'est une donnée personnelle d'une autre personne : c'est l'un des « 3 jamais ».",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s4-e03",
+          "type": "qcm_unique",
+          "question": "Cas 3 : une question sur un terme technique que je ne connais pas. Est-ce que je la saisis dans une IA en ligne ?",
+          "options": [
+            { "id": "a", "texte": "Je saisis" },
+            { "id": "b", "texte": "Je ne saisis pas" },
+            { "id": "c", "texte": "Prudence" }
+          ],
+          "reponseCorrecte": "a",
+          "justification": { "libelle": "Pourquoi ? (en une phrase)", "obligatoire": false },
+          "explicationCorrection": "Aucun risque. L'IA peut expliquer de façon adaptée.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s4-e04",
+          "type": "qcm_unique",
+          "question": "Cas 4 : la liste des clients de mon entreprise avec leurs coordonnées. Est-ce que je la saisis dans une IA en ligne ?",
+          "options": [
+            { "id": "a", "texte": "Je saisis" },
+            { "id": "b", "texte": "Je ne saisis pas" },
+            { "id": "c", "texte": "Prudence" }
+          ],
+          "reponseCorrecte": "b",
+          "justification": { "libelle": "Pourquoi ? (en une phrase)", "obligatoire": false },
+          "explicationCorrection": "Ce sont des données personnelles, et des informations confidentielles de l'entreprise : double interdiction.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s4-e05",
+          "type": "qcm_unique",
+          "question": "Cas 5 : mon CV pour le faire relire. Est-ce que je le saisis dans une IA en ligne ?",
+          "options": [
+            { "id": "a", "texte": "Je saisis" },
+            { "id": "b", "texte": "Je ne saisis pas" },
+            { "id": "c", "texte": "Prudence" }
+          ],
+          "reponseCorrecte": "c",
+          "justification": { "libelle": "Pourquoi ? (en une phrase)", "obligatoire": false },
+          "explicationCorrection": "Le CV contient des données personnelles (nom, adresse, parfois numéro). Anonymisez-le si possible avant de le saisir.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s4-e06",
+          "type": "qcm_unique",
+          "question": "Cas 6 : un extrait de code d'un projet professionnel. Est-ce que je le saisis dans une IA en ligne ?",
+          "options": [
+            { "id": "a", "texte": "Je saisis" },
+            { "id": "b", "texte": "Je ne saisis pas" },
+            { "id": "c", "texte": "Prudence" }
+          ],
+          "reponseCorrecte": "c",
+          "justification": { "libelle": "Pourquoi ? (en une phrase)", "obligatoire": false },
+          "explicationCorrection": "Cela dépend de la politique de l'employeur. Vérifiez la charte informatique interne avant de saisir.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s4-e07",
+          "type": "qcm_unique",
+          "question": "Cas 7 : un problème de santé personnel que je veux comprendre. Est-ce que je le saisis dans une IA en ligne ?",
+          "options": [
+            { "id": "a", "texte": "Je saisis" },
+            { "id": "b", "texte": "Je ne saisis pas" },
+            { "id": "c", "texte": "Prudence" }
+          ],
+          "reponseCorrecte": "c",
+          "justification": { "libelle": "Pourquoi ? (en une phrase)", "obligatoire": false },
+          "explicationCorrection": "C'est une donnée sensible. Par ailleurs, l'IA n'est pas un médecin.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s4-e08",
+          "type": "qcm_unique",
+          "question": "Cas 8 : le mot de passe d'un compte (messagerie, banque, etc.). Est-ce que je le saisis dans une IA en ligne ?",
+          "options": [
+            { "id": "a", "texte": "Je saisis" },
+            { "id": "b", "texte": "Je ne saisis pas" },
+            { "id": "c", "texte": "Prudence" }
+          ],
+          "reponseCorrecte": "b",
+          "justification": { "libelle": "Pourquoi ? (en une phrase)", "obligatoire": false },
+          "explicationCorrection": "C'est l'un des « 3 jamais ». C'est un risque de sécurité direct.",
+          "difficulte": "moyen"
+        }
+      ]
+    },
+    {
+      "id": "s4-etape-2",
+      "titre": "La règle simple à retenir",
+      "ouvertureApres": ["s4-e01", "s4-e02", "s4-e03", "s4-e04", "s4-e05", "s4-e06", "s4-e07", "s4-e08"],
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "La question à se poser avant chaque saisie",
+          "elements": [
+            "« Est-ce que je serais gêné que ce texte soit lu par quelqu'un d'autre ? »",
+            "Si oui : je ne le saisis pas, ou je l'anonymise avant."
+          ]
+        },
+        { "type": "sous_titre", "texte": "Pour comparer : la carte de fidélité du boulanger" },
+        { "type": "paragraphe", "texte": "Vous ne prêtez pas votre carte de fidélité à un inconnu dans la rue. Vous ne donnez pas votre code de carte bancaire à quelqu'un qui le demande au téléphone. Vous ne laissez pas votre CV avec votre numéro de sécurité sociale sur un coin de table." },
+        { "type": "paragraphe", "texte": "Saisir dans une IA en ligne, c'est comme laisser ces informations dans un endroit public : quelqu'un peut les lire, les conserver, les réutiliser." },
+        { "type": "paragraphe", "texte": "La règle est la même : ce qui est personnel ou confidentiel ne sort pas de votre main." },
+        {
+          "type": "tableau",
+          "legende": "Les 3 « jamais »",
+          "entetes": ["Type d'information", "Pourquoi c'est « jamais »"],
+          "lignes": [
+            ["Mes mots de passe", "Risque de sécurité direct : quelqu'un pourrait prendre le contrôle d'un compte."],
+            ["Les données personnelles d'autres personnes", "Je n'ai pas le droit de transmettre les informations d'une autre personne sans son accord."],
+            ["Les informations confidentielles de mon employeur", "C'est une règle professionnelle, souvent encadrée par un contrat ou une charte informatique."]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Point de vigilance",
+          "texte": "Les conditions d'utilisation des outils varient et changent. Certains utilisent les conversations pour améliorer leurs modèles, d'autres non. Cela dépend souvent des paramètres du compte. La règle prudente ci-dessus reste valable, quelle que soit la politique affichée."
+        }
+      ]
+    },
+    {
+      "id": "s4-etape-3",
+      "titre": "Quatre questions de débat",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Ces questions sont vraiment débattues, y compris entre spécialistes. Le formateur ne tranche pas : il présente les positions en présence." },
+        { "type": "paragraphe", "texte": "Les réponses honnêtes sont celles qui reconnaissent ce qui est encore incertain." },
+        { "type": "sous_titre", "texte": "Question 1 : l'IA va-t-elle supprimer des emplois du numérique ?" },
+        { "type": "paragraphe", "texte": "**Ce qu'on observe :** certaines tâches sont automatisées (rédaction de code simple, réponses de premier niveau)." },
+        { "type": "paragraphe", "texte": "**Ce qui est débattu :** est-ce que cela détruit des emplois, ou est-ce que cela déplace leur contenu ? Les avis d'experts divergent réellement." },
+        { "type": "paragraphe", "texte": "**Ce qu'on peut dire honnêtement :** personne ne sait. Ce qui est sûr, c'est que savoir utiliser l'outil est aujourd'hui un atout, pas un risque." },
+        { "type": "sous_titre", "texte": "Question 2 : est-ce tricher d'utiliser une IA ?" },
+        { "type": "paragraphe", "texte": "**Cela dépend du contexte :** en formation, c'est l'organisme qui fixe la règle. En entreprise, c'est la politique interne. Il faut connaître la règle du lieu où vous êtes." },
+        { "type": "paragraphe", "texte": "**Distinction utile :** utiliser l'IA pour comprendre (par exemple, faire expliquer un terme) est différent de l'utiliser pour produire à votre place un travail censé démontrer votre compétence." },
+        { "type": "sous_titre", "texte": "Question 3 : le travail des auteurs dont les textes ont servi à entraîner ces outils" },
+        { "type": "paragraphe", "texte": "**Ce qu'on sait (janvier 2025) :** les modèles ont été entraînés sur d'immenses quantités de textes, souvent sans accord explicite des auteurs. Des procédures judiciaires sont en cours dans plusieurs pays." },
+        { "type": "paragraphe", "texte": "**Point d'incertitude :** l'état du droit évolue vite. Ce qui est vrai en janvier 2025 peut avoir changé depuis. Sujet ouvert." },
+        { "type": "sous_titre", "texte": "Question 4 : les biais" },
+        { "type": "paragraphe", "texte": "**Ce qu'on observe :** ces outils reproduisent les biais présents dans leurs textes d'entraînement : stéréotypes de genre, de nationalité, parfois de handicap." },
+        { "type": "paragraphe", "texte": "**Conséquence directe pour vous :** les représentations du handicap dans ces outils sont souvent pauvres. Si vous leur demandez « à quoi ressemble un informaticien », vous obtenez rarement quelqu'un qui vous ressemble." },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Conclusion honnête",
+          "texte": "Ces quatre questions n'ont pas de réponse tranchée à ce jour. Le formateur ne vous demande pas d'avoir un avis. Il vous demande d'écouter les autres et de vous faire le vôtre."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s4-e09",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Ce que je retiens de ce débat, en une phrase :",
+          "explicationCorrection": "Il n'y a pas de bonne réponse. Ce qui compte : avoir écouté les autres, et vous être fait votre propre avis.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    }
+  ]
+}

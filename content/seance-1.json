@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "id": "seance-1",
+  "titre": "Première rencontre avec une IA",
+  "objectifs": [
+    "découvrir l'IA générative en la manipulant, avant d'en parler ;",
+    "connaître les mots de base et les 4 outils courants."
+  ],
+  "etapes": [
+    {
+      "id": "s1-etape-1",
+      "titre": "Ce qu'est une IA générative",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Durée de la séance :** 1 h 45." },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "3 phrases à retenir",
+          "numerotee": true,
+          "elements": [
+            "L'IA produit du texte plausible, pas de la vérité.",
+            "Elle se trompe avec assurance.",
+            "Ce n'est pas un moteur de recherche."
+          ]
+        },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/01-ia-generative-plausible.jpg",
+          "alt": "Schéma en 3 parties reliées par des flèches, avec une phrase en bas. Le texte du schéma est écrit juste après l'image.",
+          "legende": "Comment une IA générative produit sa réponse.",
+          "transcription": {
+            "titre": "Ce que montre le schéma :",
+            "elements": [
+              "À gauche : des livres, une page web et des feuilles. Texte : « Énormément de textes lus ».",
+              "Une flèche mène au milieu : une boîte. Texte : « Le modèle : il calcule le mot le plus probable ».",
+              "Une flèche mène à droite : une bulle de dialogue. Texte : « Une réponse plausible ».",
+              "En bas, sur une bande orange : « Plausible ne veut pas dire vrai. »"
+            ]
+          }
+        },
+        { "type": "sous_titre", "texte": "Pour comparer : la boulangerie du coin" },
+        { "type": "paragraphe", "texte": "Imaginez une boulangerie qui ne cuisine pas le pain elle-même. Elle a vu des milliers de pains dans sa vie. Elle connaît la forme, la couleur, la croûte, l'odeur." },
+        { "type": "paragraphe", "texte": "Quand vous lui demandez un pain, elle en fabrique un qui **ressemble** à un vrai pain : doré, rond, appétissant. Mais ce n'est pas garanti que ce soit du vrai pain, ni que la recette corresponde à ce que vous voulez." },
+        { "type": "paragraphe", "texte": "L'IA générative fonctionne pareil : elle produit un texte qui **ressemble** à un texte juste, sans garantir qu'il le soit. C'est pour cela qu'il faut vérifier." },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/02-analogie-boulangerie.jpg",
+          "alt": "Dessin de deux vitrines de boulangerie remplies de pains, presque identiques, avec une loupe entre les deux. Le texte est écrit juste après l'image.",
+          "legende": "Un vrai pain et un pain de décoration se ressemblent.",
+          "transcription": {
+            "titre": "Ce que montre le dessin :",
+            "elements": [
+              "À gauche, une vitrine avec l'étiquette « Vrai pain ».",
+              "À droite, une vitrine presque identique avec l'étiquette « Pain factice de décoration ».",
+              "Au milieu, une loupe.",
+              "En bas : « De l'extérieur, rien ne les distingue. »"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s1-etape-2",
+      "titre": "Glossaire minimal",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Voici les mots importants de la journée. Gardez ce glossaire sous la main." },
+        {
+          "type": "definitions",
+          "elements": [
+            { "terme": "IA générative", "definition": "Un programme qui produit du texte (ou des images) à la demande, à partir de ce que vous lui écrivez." },
+            { "terme": "Modèle", "definition": "Le « moteur » de l'outil. Chaque outil a le sien, et ils ne se valent pas tous. Un modèle, c'est comme le moteur d'une voiture : différents modèles donnent des réponses différentes." },
+            { "terme": "Prompt ou demande", "definition": "Ce que vous écrivez à l'IA. C'est votre question ou votre consigne." },
+            { "terme": "Hallucination", "definition": "Quand l'IA invente une information fausse en ayant l'air sûre d'elle. Elle ne sait pas qu'elle ne sait pas." },
+            { "terme": "Donnée personnelle", "definition": "Une information qui permet d'identifier quelqu'un : un nom, une adresse, un numéro de téléphone, une photo." },
+            { "terme": "Conversation", "definition": "L'échange complet avec l'IA. Elle se souvient de ce que vous avez dit plus haut **dans la même conversation**. Si vous ouvrez une nouvelle fenêtre, elle repart de zéro." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s1-etape-3",
+      "titre": "Panorama des 4 outils courants",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Informations de janvier 2025",
+          "texte": "Les informations ci-dessous ont été vérifiées en janvier 2025. Le formateur les confirme le jour de l'atelier, car les outils changent souvent."
+        },
+        {
+          "type": "tableau",
+          "legende": "Les 4 outils d'IA courants (informations de janvier 2025)",
+          "entetes": ["Outil", "Éditeur", "Accès (janvier 2025)", "Particularité"],
+          "lignes": [
+            ["ChatGPT", "OpenAI", "Version gratuite disponible. Inscription souvent avec vérification par téléphone.", "Le plus connu du grand public. Très polyvalent."],
+            ["Claude", "Anthropic", "Version gratuite disponible. Inscription souvent avec vérification par téléphone.", "Réponses souvent plus longues, plus nuancées. Bon pour rédiger ou résumer."],
+            ["Gemini", "Google", "Version gratuite, accessible avec un compte Google (Gmail).", "Intégré à l'écosystème Google (Docs, Gmail, etc.)."],
+            ["Copilot", "Microsoft", "Version gratuite, accessible avec un compte Microsoft (Outlook, Hotmail).", "Intégré à Windows et aux outils Office (Word, Excel)."]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Message clé",
+          "texte": "Ces quatre outils font globalement la même chose, mais ils ne répondent pas pareil. Aucun n'est « le meilleur » dans l'absolu. L'après-midi, vous verrez qu'ils peuvent même se contredire."
+        }
+      ]
+    },
+    {
+      "id": "s1-etape-4",
+      "titre": "Manipulation libre : vos notes",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Pendant 15 minutes, vous avez utilisé librement l'outil d'IA mis à votre disposition par le formateur." },
+        { "type": "paragraphe", "texte": "Notez ce qui vous a marqué : une réponse étonnante, une réponse décevante, un mot que vous ne connaissiez pas, une question que vous vous posez encore." },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "À retenir pour la suite",
+          "elements": [
+            "L'IA produit du texte plausible, pas de la vérité.",
+            "Elle se trompe avec assurance.",
+            "Ce n'est pas un moteur de recherche.",
+            "Le glossaire de l'étape 2 est à garder sous la main toute la journée."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s1-e01",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Vos impressions après la manipulation libre : qu'est-ce qui vous a marqué ?",
+          "explicationCorrection": "Il n'y a pas de bonne ou de mauvaise impression. Gardez ces notes : à la fin de la journée, vous verrez ce qui a changé.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 30
+        },
+        {
+          "id": "s1-e02",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Une question que vous vous posez encore :",
+          "explicationCorrection": "Si c'est un mot, regardez d'abord le glossaire de l'étape 2. Sinon, posez votre question au formateur : il n'y a pas de question bête.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 20
+        }
+      ]
+    }
+  ]
+}

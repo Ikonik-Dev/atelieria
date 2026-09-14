@@ -1,0 +1,369 @@
+{
+  "version": 1,
+  "id": "seance-3",
+  "titre": "Vérifier : l'IA se trompe",
+  "objectifs": [
+    "construire un réflexe de vérification ;",
+    "distinguer IA et moteur de recherche ;",
+    "comparer deux outils."
+  ],
+  "etapes": [
+    {
+      "id": "s3-etape-1",
+      "titre": "L'IA peut se tromper",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Durée de la séance :** 1 h 45." },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Hallucination",
+          "elements": [
+            "Une « hallucination », c'est quand l'IA invente une information fausse.",
+            "Elle ne dit pas « je ne sais pas » : elle produit quand même quelque chose.",
+            "Ce quelque chose ressemble à une bonne réponse.",
+            "Le danger n'est pas qu'elle se trompe. Le danger, c'est qu'elle se trompe du même ton que quand elle a raison."
+          ]
+        },
+        { "type": "paragraphe", "texte": "**Conclusion :** ce qui est **vraisemblable** n'est pas forcément **vrai**. C'est à vous de vérifier." },
+        { "type": "sous_titre", "texte": "Pour comparer : une annonce dans le RER" },
+        { "type": "paragraphe", "texte": "Une annonce vocale dans le RER peut dire « train terminus, tout le monde descend » avec un ton très assuré, même si la rame va en fait jusqu'à la station suivante." },
+        { "type": "paragraphe", "texte": "Vous faites confiance au ton, pas à la réalité du quai. Si vous ne vérifiez pas sur le plan, vous pouvez descendre trop tôt." },
+        { "type": "paragraphe", "texte": "L'IA, c'est pareil : un ton très assuré ne veut pas dire une information vraie. Vérifiez toujours ailleurs." }
+      ]
+    },
+    {
+      "id": "s3-etape-2",
+      "titre": "Les signaux de vigilance",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Règle",
+          "texte": "Dès que vous voyez l'un de ces signaux dans une réponse d'IA, vous vérifiez l'information ailleurs : moteur de recherche, document officiel, personne compétente."
+        },
+        {
+          "type": "tableau",
+          "legende": "Les signaux de vigilance",
+          "entetes": ["Je vérifie quand je vois…", "Pourquoi"],
+          "lignes": [
+            ["Une date, un chiffre, un nom propre très précis", "Une information très précise est facile à inventer. Vérifiez-la sur un site officiel."],
+            ["Une citation attribuée à quelqu'un", "L'IA peut inventer une phrase et l'attribuer à tort à une personne connue."],
+            ["Une information sur une actualité récente", "L'IA peut ne pas connaître les événements des dernières semaines."],
+            ["Un calcul en plusieurs étapes", "Les opérations s'enchaînent : si une étape est fausse, tout le résultat est faux."],
+            ["**Une question dont je ne connais rien**", "Sans repère personnel, vous ne pouvez pas repérer l'erreur. Prudence maximale."]
+          ]
+        },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/06-signaux-vigilance.jpg",
+          "alt": "Un grand panneau « attention » orange, entouré de 6 étiquettes, avec un avertissement rouge en bas. Le texte est écrit juste après l'image.",
+          "legende": "Les signaux de vigilance.",
+          "transcription": {
+            "titre": "Ce que montre le dessin :",
+            "elements": [
+              "Autour du panneau, 6 étiquettes : « une date », « un chiffre », « un nom propre très précis », « une citation attribuée », « une actualité récente », « un calcul en plusieurs étapes ».",
+              "En bas, dans un cadre rouge : « Prudence maximale : quand je ne connais rien au sujet. »"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3-etape-3",
+      "titre": "IA ou moteur de recherche ? Exercice de tri",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Vous allez lire 8 situations, une par écran." },
+        { "type": "paragraphe", "texte": "Pour chaque situation, choisissez l'outil le plus adapté : **IA**, **moteur de recherche**, ou **les deux**." },
+        { "type": "paragraphe", "texte": "Dites aussi pourquoi, en quelques mots." }
+      ],
+      "exercices": [
+        {
+          "id": "s3-e01",
+          "type": "qcm_unique",
+          "question": "Situation 1 : connaître le prix du billet de train Lyon–Paris demain. Quel outil est le plus adapté ?",
+          "options": [
+            { "id": "a", "texte": "IA" },
+            { "id": "b", "texte": "Moteur de recherche" },
+            { "id": "c", "texte": "Les deux" }
+          ],
+          "reponseCorrecte": "b",
+          "sansNote": true,
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Plusieurs réponses peuvent se justifier. Ici, c'est une donnée réelle et actuelle : il faut une source fiable (SNCF, comparateurs).",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s3-e02",
+          "type": "qcm_unique",
+          "question": "Situation 2 : comprendre ce que veut dire « serveur » en termes simples. Quel outil est le plus adapté ?",
+          "options": [
+            { "id": "a", "texte": "IA" },
+            { "id": "b", "texte": "Moteur de recherche" },
+            { "id": "c", "texte": "Les deux" }
+          ],
+          "reponseCorrecte": "a",
+          "sansNote": true,
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Plusieurs réponses peuvent se justifier. L'IA adapte l'explication à votre niveau. Le moteur renvoie des définitions techniques.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s3-e03",
+          "type": "qcm_unique",
+          "question": "Situation 3 : savoir qui a gagné le match de football hier soir. Quel outil est le plus adapté ?",
+          "options": [
+            { "id": "a", "texte": "IA" },
+            { "id": "b", "texte": "Moteur de recherche" },
+            { "id": "c", "texte": "Les deux" }
+          ],
+          "reponseCorrecte": "b",
+          "sansNote": true,
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Plusieurs réponses peuvent se justifier. C'est une actualité : l'IA peut ne pas la connaître. Le moteur renvoie des résultats à jour.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s3-e04",
+          "type": "qcm_unique",
+          "question": "Situation 4 : reformuler un mail que vous trouvez trop agressif. Quel outil est le plus adapté ?",
+          "options": [
+            { "id": "a", "texte": "IA" },
+            { "id": "b", "texte": "Moteur de recherche" },
+            { "id": "c", "texte": "Les deux" }
+          ],
+          "reponseCorrecte": "a",
+          "sansNote": true,
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Plusieurs réponses peuvent se justifier. C'est une production de texte adaptée au ton visé. Le moteur ne transforme pas un texte.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s3-e05",
+          "type": "qcm_unique",
+          "question": "Situation 5 : trouver l'adresse d'une administration (CAF, préfecture, mairie). Quel outil est le plus adapté ?",
+          "options": [
+            { "id": "a", "texte": "IA" },
+            { "id": "b", "texte": "Moteur de recherche" },
+            { "id": "c", "texte": "Les deux" }
+          ],
+          "reponseCorrecte": "b",
+          "sansNote": true,
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Plusieurs réponses peuvent se justifier. C'est une donnée vérifiable, et l'adresse doit être exacte. Le moteur renvoie vers le site officiel.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s3-e06",
+          "type": "qcm_unique",
+          "question": "Situation 6 : avoir des idées pour organiser une présentation. Quel outil est le plus adapté ?",
+          "options": [
+            { "id": "a", "texte": "IA" },
+            { "id": "b", "texte": "Moteur de recherche" },
+            { "id": "c", "texte": "Les deux" }
+          ],
+          "reponseCorrecte": "a",
+          "sansNote": true,
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Plusieurs réponses peuvent se justifier. C'est une production d'idées nouvelles. Le moteur renvoie des pages qui existent déjà.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s3-e07",
+          "type": "qcm_unique",
+          "question": "Situation 7 : vérifier une information lue sur un forum en ligne. Quel outil est le plus adapté ?",
+          "options": [
+            { "id": "a", "texte": "IA" },
+            { "id": "b", "texte": "Moteur de recherche" },
+            { "id": "c", "texte": "Les deux" }
+          ],
+          "reponseCorrecte": "b",
+          "sansNote": true,
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Plusieurs réponses peuvent se justifier. Vérifier, c'est croiser avec des sources fiables. On ne demande pas à une IA de vérifier.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s3-e08",
+          "type": "qcm_unique",
+          "question": "Situation 8 : faire un résumé d'un texte que vous avez sous les yeux. Quel outil est le plus adapté ?",
+          "options": [
+            { "id": "a", "texte": "IA" },
+            { "id": "b", "texte": "Moteur de recherche" },
+            { "id": "c", "texte": "Les deux" }
+          ],
+          "reponseCorrecte": "a",
+          "sansNote": true,
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Plusieurs réponses peuvent se justifier. C'est le traitement d'un texte que vous fournissez : l'IA peut le résumer, le moteur ne le fait pas.",
+          "difficulte": "moyen"
+        }
+      ]
+    },
+    {
+      "id": "s3-etape-4",
+      "titre": "À retenir : IA ou moteur de recherche ?",
+      "ouvertureApres": ["s3-e01", "s3-e02", "s3-e03", "s3-e04", "s3-e05", "s3-e06", "s3-e07", "s3-e08"],
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Règle à retenir",
+          "texte": "L'IA est bonne pour **transformer, expliquer, produire** du texte. Le moteur de recherche est meilleur pour **trouver un fait précis, vérifiable et actuel**."
+        },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/07-ia-ou-moteur-balance.jpg",
+          "alt": "Dessin d'une balance. À gauche, un robot pour l'IA. À droite, une loupe pour le moteur de recherche. Le texte est écrit juste après l'image.",
+          "legende": "IA ou moteur de recherche : chacun son usage.",
+          "transcription": {
+            "titre": "Ce que montre le dessin :",
+            "elements": [
+              "Côté IA : « L'IA : transformer, expliquer, produire ». Exemples : reformuler un mail, résumer un texte, expliquer un mot.",
+              "Côté moteur : « Le moteur : trouver un fait vérifiable et actuel ». Exemples : horaire de train, adresse d'une administration, prix d'un billet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3-etape-5",
+      "titre": "Comparaison de deux outils",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Posez exactement la même question à deux outils d'IA différents. La même, mot pour mot." },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Question suggérée",
+          "texte": "« Explique en cinq lignes ce que fait un technicien support informatique au quotidien. »"
+        },
+        { "type": "paragraphe", "texte": "Ensuite, remplissez la grille de comparaison. Il y a un écran par ligne de la grille." },
+        {
+          "type": "liste",
+          "numerotee": true,
+          "elements": [
+            "Les deux outils comparés.",
+            "Longueur de la réponse.",
+            "Clarté pour moi.",
+            "Éléments présents dans l'un et pas l'autre.",
+            "Quelque chose qui me paraît douteux.",
+            "Celui que je préfère, et pourquoi."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s3-e09",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Quels outils comparez-vous ? Écrivez le nom de l'outil A et le nom de l'outil B.",
+          "explicationCorrection": "Pour que la comparaison soit juste, posez exactement la même question aux deux outils, mot pour mot.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 10
+        },
+        {
+          "id": "s3-e10",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Longueur de la réponse : comment est-elle pour l'outil A, puis pour l'outil B ?",
+          "explicationCorrection": "Il n'y a pas de bonne réponse : notez ce que vous observez. La question demandait « cinq lignes » : les deux outils ont-ils respecté la consigne ?",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s3-e11",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Clarté pour moi : la réponse de l'outil A est-elle claire ? Et celle de l'outil B ?",
+          "explicationCorrection": "C'est votre avis, et il compte. Si une réponse n'est pas claire, vous pouvez relancer l'outil : « Je ne comprends pas ce mot, explique plus simplement. »",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s3-e12",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Éléments présents dans l'un et pas dans l'autre : qu'avez-vous trouvé ?",
+          "explicationCorrection": "Les outils font globalement la même chose, mais ils ne répondent pas pareil. Ils peuvent même se contredire.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s3-e13",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Quelque chose qui vous paraît douteux, dans l'outil A ou dans l'outil B ? Si rien ne vous paraît douteux, écrivez-le.",
+          "explicationCorrection": "Pensez aux signaux de vigilance (étape 2) : une date, un chiffre, un nom propre, une citation, un calcul. En cas de doute, vérifiez ailleurs.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s3-e14",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Celui que je préfère, et pourquoi :",
+          "explicationCorrection": "Justifiez votre choix avec un critère de la grille (longueur, clarté, éléments en plus, éléments douteux), et pas seulement avec une impression.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    },
+    {
+      "id": "s3-etape-6",
+      "titre": "Chasse à l'erreur",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Le formateur vous a remis 3 textes imprimés : ce sont des réponses données par une IA." },
+        { "type": "paragraphe", "texte": "Au moins l'une des trois contient une information fausse. Votre travail, à deux : trouver laquelle, et la **prouver**." },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Démarche en 4 étapes",
+          "numerotee": true,
+          "elements": [
+            "Je repère ce qui est vérifiable : date, chiffre, nom propre, citation.",
+            "Je choisis une source fiable où chercher : site officiel, encyclopédie, document.",
+            "Je compare ce que dit l'IA avec ce que dit la source.",
+            "Je note la preuve, avec la source consultée."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s3-e15",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Texte n°1 : qu'est-ce qui vous semble faux, et pourquoi ? Si rien ne vous semble faux, écrivez ce que vous avez vérifié.",
+          "explicationCorrection": "La réponse sera donnée lors de la mise en commun avec le formateur. Dire « je crois que c'est faux » ne suffit pas : il faut une preuve, c'est-à-dire une source fiable qui dit autre chose que l'IA.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 60
+        },
+        {
+          "id": "s3-e16",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Texte n°2 : qu'est-ce qui vous semble faux, et pourquoi ? Si rien ne vous semble faux, écrivez ce que vous avez vérifié.",
+          "explicationCorrection": "La réponse sera donnée lors de la mise en commun avec le formateur. Commencez par ce qui est vérifiable : les dates, les chiffres, les noms propres, les citations.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 60
+        },
+        {
+          "id": "s3-e17",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Texte n°3 : qu'est-ce qui vous semble faux, et pourquoi ? Si rien ne vous semble faux, écrivez ce que vous avez vérifié.",
+          "explicationCorrection": "La réponse sera donnée lors de la mise en commun avec le formateur. Si la première vérification ne donne rien, cherchez dans une autre source.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 60
+        },
+        {
+          "id": "s3-e18",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Source utilisée pour vérifier (site, document, personne) :",
+          "explicationCorrection": "Une source fiable, c'est par exemple un site officiel, une encyclopédie ou un document. Si possible, comparez au moins deux sources.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    }
+  ]
+}

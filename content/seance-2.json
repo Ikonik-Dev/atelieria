@@ -1,0 +1,331 @@
+{
+  "version": 1,
+  "id": "seance-2",
+  "titre": "La méthode des 4 questions",
+  "objectifs": [
+    "apprendre à formuler une demande claire ;",
+    "améliorer le résultat par itération ;",
+    "vous entraîner avec le parcours de votre choix : A, B ou C."
+  ],
+  "etapes": [
+    {
+      "id": "s2-etape-1",
+      "titre": "Les 4 questions avant d'écrire",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Durée de la séance :** 1 h 45." },
+        { "type": "paragraphe", "texte": "Avant d'écrire votre demande, répondez à ces 4 questions :" },
+        {
+          "type": "definitions",
+          "elements": [
+            { "terme": "QUOI ?", "definition": "Qu'est-ce que je veux exactement ? (un texte, une explication, une liste, une correction, un plan…)" },
+            { "terme": "POUR QUI ?", "definition": "Qui va lire ? (moi-même, mon formateur, un client, un collègue…)" },
+            { "terme": "COMMENT ?", "definition": "Quelle longueur ? Quel ton ? (court, simple, poli, formel, en plusieurs paragraphes…)" },
+            { "terme": "AVEC QUOI ?", "definition": "Quelles informations dois-je donner pour que l'IA comprenne ma situation ? (le contexte, les contraintes, un exemple…)" }
+          ]
+        },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/03-quatre-questions.jpg",
+          "alt": "Schéma en 4 cases, avec une flèche en cercle au milieu. Le texte du schéma est écrit juste après l'image.",
+          "legende": "Les 4 questions à se poser avant d'écrire.",
+          "transcription": {
+            "titre": "Ce que montre le schéma :",
+            "elements": [
+              "Case « QUOI » : Qu'est-ce que je veux exactement ?",
+              "Case « POUR QUI » : Qui va lire ?",
+              "Case « COMMENT » : Quelle longueur, quel ton ?",
+              "Case « AVEC QUOI » : Quelles informations je donne ?",
+              "Au milieu, une flèche orange en cercle : « Puis je recommence si besoin »."
+            ]
+          }
+        },
+        { "type": "sous_titre", "texte": "Pour comparer : le marché de quartier" },
+        { "type": "paragraphe", "texte": "Au marché, vous ne dites pas juste « je veux des légumes » au commerçant." },
+        { "type": "paragraphe", "texte": "Vous précisez : **quoi** (des tomates), **pour qui** (pour une salade de 4 personnes), **comment** (bien mûres), **avec quoi** (j'ai déjà des oignons et du basilic)." },
+        { "type": "paragraphe", "texte": "L'IA, c'est pareil : plus votre demande est précise, plus la réponse sera utile. Les 4 questions sont votre « liste de courses » pour l'IA." }
+      ]
+    },
+    {
+      "id": "s2-etape-2",
+      "titre": "Exemple complet : avant et après",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Avant : une demande vague",
+          "texte": "« Écris un texte. »"
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Après : une demande structurée avec les 4 questions",
+          "elements": [
+            "**QUOI :** un e-mail professionnel.",
+            "**POUR QUI :** mon responsable, qui est en déplacement.",
+            "**COMMENT :** 5 lignes, ton poli, pas de pièce jointe.",
+            "**AVEC QUOI :** je serai absent mardi matin pour un rendez-vous médical ; je reprends mardi après-midi."
+          ]
+        },
+        { "type": "paragraphe", "texte": "**Demande envoyée :** « Rédige un e-mail de 5 lignes, poli et professionnel, pour prévenir mon responsable que je serai absent mardi matin pour un rendez-vous médical et que je reprends mardi après-midi. »" },
+        { "type": "paragraphe", "texte": "**Constat :** la première demande (« écris un texte ») produit une réponse vague. La seconde, structurée avec les 4 questions, produit une réponse directement utilisable. La qualité de la demande détermine la qualité de la réponse." }
+      ]
+    },
+    {
+      "id": "s2-etape-3",
+      "titre": "L'itération : on ne recommence pas, on précise",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "L'itération en 3 étapes",
+          "numerotee": true,
+          "elements": [
+            "Vous envoyez votre demande à l'IA.",
+            "Vous lisez la réponse.",
+            "Si elle ne vous convient pas, vous précisez ce qui ne va pas, sans tout recommencer."
+          ]
+        },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/04-iteration-conversation.jpg",
+          "alt": "Schéma en cercle : 4 étapes reliées par des flèches, qui recommencent. Le texte du schéma est écrit juste après l'image.",
+          "legende": "L'itération : après l'étape 4, on revient à l'étape 1.",
+          "transcription": {
+            "titre": "En haut du schéma : « C'est une conversation, pas une commande unique. » Puis 4 étapes en cercle :",
+            "numerotee": true,
+            "elements": [
+              "J'écris ma demande.",
+              "Je lis la réponse.",
+              "Ce n'est pas ce que je voulais.",
+              "Je précise et je renvoie."
+            ]
+          }
+        },
+        { "type": "paragraphe", "texte": "Exemples de relance utile :" },
+        {
+          "type": "liste",
+          "elements": [
+            "« C'est trop long, fais trois phrases. »",
+            "« Je ne comprends pas ce mot, explique plus simplement. »",
+            "« Le ton est trop froid, rends-le plus chaleureux. »",
+            "« Tu promets que le problème sera réglé aujourd'hui, je ne peux pas le garantir. »"
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Important",
+          "texte": "Pendant cet atelier, on vous demandera de faire au moins 2 allers-retours (demande, réponse, relance). C'est normal que la première réponse ne soit pas parfaite. C'est en dialoguant qu'on obtient un résultat utile."
+        },
+        { "type": "sous_titre", "texte": "Pour comparer : la colocation" },
+        { "type": "paragraphe", "texte": "Demander quelque chose à une IA, c'est comme demander un service à un colocataire." },
+        { "type": "paragraphe", "texte": "Plus vous êtes précis (quoi, pour qui, comment, avec quoi), plus il fait ce que vous attendez." },
+        { "type": "paragraphe", "texte": "Si le résultat ne vous convient pas, vous ne déménagez pas : vous reformulez votre demande. C'est une conversation, pas une commande unique." }
+      ]
+    },
+    {
+      "id": "s2-etape-4",
+      "titre": "Trois parcours au choix",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Comment choisir son parcours ?",
+          "texte": "Vous pouvez changer de parcours d'un exercice à l'autre. Le parcours A est le plus guidé, le parcours C le plus autonome. Choisissez selon votre énergie du moment, pas selon un jugement sur vous-même."
+        },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/05-trois-parcours.jpg",
+          "alt": "Trois lignes parallèles de couleur, reliées par des flèches dans les deux sens. Le texte est écrit juste après l'image.",
+          "legende": "Les trois parcours.",
+          "transcription": {
+            "titre": "Ce que montre le dessin :",
+            "elements": [
+              "Une ligne bleue : « Parcours A – Je découvre ».",
+              "Une ligne verte : « Parcours B – Je m'entraîne ».",
+              "Une ligne orange : « Parcours C – J'approfondis ».",
+              "Des flèches relient les lignes : on peut passer de l'une à l'autre.",
+              "En bas : « On peut changer de parcours en cours de route. »"
+            ]
+          }
+        },
+        { "type": "sous_titre", "texte": "Dans l'application" },
+        {
+          "type": "liste",
+          "elements": [
+            "Chaque parcours est une étape : étape 5 pour le parcours A, étape 6 pour le B, étape 7 pour le C.",
+            "Pour aller au parcours choisi, ouvrez le **plan de la séance**, en bas de l'écran.",
+            "Les exercices des parcours sont marqués **(au choix)**. Vous n'êtes pas obligé de faire les trois parcours."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2-etape-5",
+      "titre": "Parcours A — Je découvre",
+      "auChoix": true,
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Pour qui :** si vous découvrez l'IA ou si vous préférez être accompagné." },
+        { "type": "paragraphe", "texte": "**Situation :** un camarade vous demande ce que veut dire le mot « API » qu'il a vu dans un document de formation." },
+        { "type": "paragraphe", "texte": "**Demande à trous, à compléter :**" },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "La demande à compléter",
+          "texte": "« Explique-moi ce que veut dire ______, en ______ phrases, avec un exemple simple de la vie quotidienne. »"
+        },
+        { "type": "paragraphe", "texte": "Complétez la demande, puis envoyez-la à l'IA. Après avoir reçu la réponse, reformulez-la avec vos propres mots." }
+      ],
+      "exercices": [
+        {
+          "id": "s2-e01",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Recopiez la demande en remplissant les 2 trous.",
+          "reponseModele": "Explique-moi ce que veut dire API, en 3 phrases, avec un exemple simple de la vie quotidienne.",
+          "explicationCorrection": "Le premier trou, c'est le mot à expliquer : « API ». Le second, c'est le nombre de phrases : c'est vous qui choisissez. Peu de phrases, c'est plus facile à lire.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s2-e02",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Ma reformulation, avec mes mots : qu'est-ce qu'une API, d'après la réponse de l'IA ?",
+          "explicationCorrection": "Il n'y a pas une seule bonne réponse. Si vous n'arrivez pas à reformuler, ce n'est pas un échec : relancez l'IA avec « Je ne comprends pas ce mot, explique plus simplement. » Et vérifiez l'information si elle vous paraît douteuse.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 45
+        }
+      ]
+    },
+    {
+      "id": "s2-etape-6",
+      "titre": "Parcours B — Je m'entraîne",
+      "auChoix": true,
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Pour qui :** si vous avez déjà manipulé un peu, et voulez vous entraîner sur un cas concret." },
+        { "type": "paragraphe", "texte": "**Situation :** un utilisateur mécontent vous écrit : « Je n'arrive plus à me connecter à mon compte depuis ce matin, c'est inadmissible. » Vous travaillez au support. Vous devez lui répondre par écrit." },
+        { "type": "paragraphe", "texte": "**Méthode :** avant d'écrire la demande, répondez aux 4 questions. Ensuite, rédigez la demande à l'IA, lisez la réponse, et faites au moins une relance." }
+      ],
+      "exercices": [
+        {
+          "id": "s2-e03",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "QUOI ? Qu'est-ce que vous voulez obtenir de l'IA ?",
+          "reponseModele": "Un début de réponse écrite à l'utilisateur, au sujet de son problème de connexion.",
+          "explicationCorrection": "Le « quoi », c'est le type de texte que vous voulez : ici, une réponse écrite.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 15
+        },
+        {
+          "id": "s2-e04",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "POUR QUI ? Qui va lire la réponse ?",
+          "reponseModele": "L'utilisateur mécontent, qui n'arrive plus à se connecter à son compte.",
+          "explicationCorrection": "Savoir qui va lire aide à choisir le ton. Un utilisateur énervé a besoin d'une réponse calme et respectueuse.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 15
+        },
+        {
+          "id": "s2-e05",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "COMMENT ? Quelle longueur et quel ton voulez-vous ?",
+          "reponseModele": "Court, poli et calme. Sans promettre que le problème sera réglé aujourd'hui.",
+          "explicationCorrection": "Plusieurs réponses sont possibles. Pensez à ce que vous pouvez vraiment tenir : l'IA peut promettre des choses à votre place.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 15
+        },
+        {
+          "id": "s2-e06",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "AVEC QUOI ? Quelles informations donnez-vous à l'IA pour qu'elle comprenne la situation ?",
+          "reponseModele": "Je travaille au support. L'utilisateur n'arrive plus à se connecter à son compte depuis ce matin. Il est mécontent.",
+          "explicationCorrection": "Plus l'IA a d'informations sur la situation, plus sa réponse est utile. Attention : ne donnez pas le nom ni les coordonnées de l'utilisateur. Vous verrez pourquoi en Séance 4.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 15
+        },
+        {
+          "id": "s2-e07",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Ma demande à l'IA : écrivez le texte complet que vous envoyez.",
+          "reponseModele": "Je travaille au support informatique. Un utilisateur m'écrit qu'il n'arrive plus à se connecter à son compte depuis ce matin, et il est mécontent. Rédige un début de réponse court, poli et calme. Ne promets pas que le problème sera réglé aujourd'hui.",
+          "explicationCorrection": "Votre demande n'a pas besoin d'être identique à l'exemple. Vérifiez qu'elle répond aux 4 questions : quoi, pour qui, comment, avec quoi.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 45
+        },
+        {
+          "id": "s2-e08",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Ma relance : relisez la réponse de l'IA. Qu'est-ce que vous lui dites pour préciser ?",
+          "reponseModele": "« C'est trop long, fais trois phrases. » Ou : « Tu promets que le problème sera réglé aujourd'hui, je ne peux pas le garantir. »",
+          "explicationCorrection": "Une bonne relance dit précisément ce qui ne va pas, sans tout recommencer. C'est une conversation, pas une commande unique.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    },
+    {
+      "id": "s2-etape-7",
+      "titre": "Parcours C — J'approfondis",
+      "auChoix": true,
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Pour qui :** si vous êtes à l'aise avec l'IA et voulez l'appliquer à votre projet professionnel." },
+        { "type": "paragraphe", "texte": "**Situation :** choisissez vous-même un cas lié au métier que vous visez. Vous rédigez votre demande, vous envoyez, vous lisez, vous améliorez." },
+        { "type": "paragraphe", "texte": "**Consigne :** faire au moins **2 allers-retours** (demande, réponse, relance, nouvelle réponse). À la fin, recopiez la version finale qui vous satisfait." }
+      ],
+      "exercices": [
+        {
+          "id": "s2-e09",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Mon métier ou domaine visé, et le cas que je choisis :",
+          "explicationCorrection": "Choisissez un cas concret et utile dans ce métier. Par exemple : faire expliquer un mot technique, préparer un message professionnel, comparer deux réponses.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 15
+        },
+        {
+          "id": "s2-e10",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Ma 1re demande à l'IA :",
+          "explicationCorrection": "Vérifiez que votre demande répond aux 4 questions : quoi, pour qui, comment, avec quoi.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 45
+        },
+        {
+          "id": "s2-e11",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Ma 1re relance. Si vous n'en avez pas eu besoin, écrivez « pas besoin » et expliquez pourquoi.",
+          "explicationCorrection": "Une bonne relance dit précisément ce qui ne va pas : trop long, pas assez clair, ton pas adapté, information douteuse…",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 30
+        },
+        {
+          "id": "s2-e12",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Ma 2e relance. Si vous n'en avez pas eu besoin, écrivez « pas besoin » et expliquez pourquoi.",
+          "explicationCorrection": "Chaque relance rapproche le résultat de ce que vous voulez vraiment. Si une relance ne change rien, essayez de dire les choses autrement.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 30
+        },
+        {
+          "id": "s2-e13",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "La version finale que je garde :",
+          "explicationCorrection": "Relisez la version finale avant de l'utiliser. C'est vous qui décidez de ce que vous gardez. Vérifiez les informations précises : dates, chiffres, noms.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    }
+  ]
+}

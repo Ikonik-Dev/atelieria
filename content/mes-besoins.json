@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "id": "mes-besoins",
+  "titre": "Fiche « Mes besoins » et fin du livret",
+  "objectifs": [
+    "faire le point sur votre journée ;",
+    "préparer la suite de votre parcours."
+  ],
+  "etapes": [
+    {
+      "id": "mb-etape-1",
+      "titre": "Fiche « Mes besoins »",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Cette fiche est pour vous",
+          "texte": "Il n'y a pas de note. Elle sert à préparer la suite de votre parcours. Prenez le temps. Vous pouvez ne remplir que les parties que vous souhaitez."
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Cette fiche se remplit sur papier",
+          "texte": "Rien n'est enregistré dans l'application pour cette fiche. Demandez la fiche papier au formateur. Vous pouvez aussi la remplir à l'oral avec lui. Voici ce qu'elle contient, pour vous préparer."
+        },
+        { "type": "sous_titre", "texte": "1. Ce que j'ai réussi à faire" },
+        {
+          "type": "liste",
+          "elements": [
+            "Ouvrir un outil d'IA et écrire une demande",
+            "Obtenir une réponse utile",
+            "Reformuler ma demande quand la réponse ne me convenait pas",
+            "Repérer une information fausse",
+            "Vérifier une information ailleurs",
+            "Comparer deux outils",
+            "Dire ce qu'on ne doit pas écrire dans une IA",
+            "Imaginer un usage pour mon futur métier",
+            "Autre chose que j'ai réussie"
+          ]
+        },
+        { "type": "sous_titre", "texte": "2. Ce qui a été difficile" },
+        {
+          "type": "liste",
+          "elements": [
+            "Savoir quoi demander",
+            "Écrire ma demande clairement",
+            "Lire des réponses longues",
+            "Comprendre certains mots",
+            "Repérer l'erreur",
+            "Savoir comment vérifier",
+            "Ne pas me perdre entre les onglets",
+            "Rester concentré toute la journée",
+            "Autre difficulté"
+          ]
+        },
+        { "type": "sous_titre", "texte": "3. Comment j'ai essayé de résoudre le problème" },
+        {
+          "type": "liste",
+          "elements": [
+            "J'ai reformulé ma demande",
+            "J'ai regardé la fiche",
+            "J'ai demandé au formateur",
+            "J'ai demandé à un autre stagiaire",
+            "J'ai cherché sur Internet",
+            "J'ai recommencé plusieurs fois",
+            "J'ai pris une pause et je suis revenu dessus",
+            "Autre stratégie"
+          ]
+        },
+        { "type": "sous_titre", "texte": "4. Ce qui m'a aidé" },
+        {
+          "type": "liste",
+          "elements": [
+            "Les fiches papier",
+            "Les explications du formateur",
+            "D'avoir essayé avant qu'on m'explique",
+            "Le travail à deux",
+            "Les exemples concrets",
+            "D'avoir du temps",
+            "De savoir qu'il n'y avait pas de note",
+            "Autre aide"
+          ]
+        },
+        { "type": "sous_titre", "texte": "5. Ce dont j'ai besoin pour progresser" },
+        {
+          "type": "liste",
+          "elements": [
+            "M'entraîner davantage à formuler des demandes",
+            "Une fiche avec les étapes écrites",
+            "Plus de temps pour lire",
+            "De l'aide pour écrire (dictée, quelqu'un qui note)",
+            "Un écran ou une police plus adaptés",
+            "Revoir comment vérifier une information",
+            "Comprendre mieux ce qu'on peut et ne peut pas écrire",
+            "Parler de ce que l'IA change pour mon projet professionnel",
+            "Autre besoin"
+          ]
+        },
+        { "type": "sous_titre", "texte": "6. La prochaine action que je souhaite essayer" },
+        {
+          "type": "liste",
+          "elements": [
+            "Je voudrais essayer de…",
+            "Pour ça, j'aurais besoin de…"
+          ]
+        },
+        { "type": "sous_titre", "texte": "7. Et dans mon projet professionnel ?" },
+        {
+          "type": "liste",
+          "elements": [
+            "Un usage de l'IA qui pourrait m'être utile…",
+            "Une chose que l'IA ne fera pas à ma place…"
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Rappel",
+          "elements": [
+            "Cette fiche est pour vous.",
+            "Il n'y a pas de note.",
+            "Ce que vous écrivez aide à préparer la suite de votre parcours."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mb-etape-2",
+      "titre": "Pour réviser : les idées clés en images",
+      "ouvertureApres": ["s3-e01", "s3-e02", "s3-e03", "s3-e04", "s3-e05", "s3-e06", "s3-e07", "s3-e08"],
+      "blocs": [
+        {
+          "type": "illustration",
+          "fichier": "assets/images/08-recapitulatif-trois-idees.jpg",
+          "alt": "Affiche en 3 cases numérotées qui résume trois idées de l'atelier. Le texte de l'affiche est écrit juste après l'image.",
+          "legende": "Trois idées clés de l'atelier.",
+          "transcription": {
+            "titre": "Les 3 cases de l'affiche :",
+            "numerotee": true,
+            "elements": [
+              "« Ce qu'est une IA générative » : énormément de textes lus, puis le modèle calcule le mot le plus probable, puis une réponse plausible. En bas : « Plausible ne veut pas dire vrai. »",
+              "« Analogie de la boulangerie » : deux vitrines, l'une avec du « Vrai pain », l'autre avec du « Pain factice de décoration ». En bas : « De l'extérieur, rien ne les distingue. »",
+              "« IA ou moteur de recherche ? » : une balance. L'IA sert à transformer, expliquer, produire (reformuler un mail, résumer un texte, expliquer un mot). Le moteur sert à trouver un fait vérifiable et actuel (horaire de train, adresse d'une administration, prix d'un billet)."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mb-etape-3",
+      "titre": "Fin du livret",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Vous avez terminé le livret." },
+        { "type": "paragraphe", "texte": "Si vous avez sauté des exercices, ce n'est pas grave : vous pouvez y revenir plus tard." },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "L'essentiel : repartir avec trois choses en tête",
+          "numerotee": true,
+          "elements": [
+            "L'IA produit du texte plausible, pas de la vérité.",
+            "Elle se trompe avec assurance : on vérifie.",
+            "On ne saisit pas ce qui est personnel ou confidentiel."
+          ]
+        },
+        { "type": "paragraphe", "texte": "Avant de partir, pensez à cliquer sur « Enregistrer mon travail dans un fichier »." }
+      ]
+    }
+  ]
+}
