@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <title>Les points de contrôle humain</title>
+  <defs>
+    <marker id="fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4d4d4d"/>
+    </marker>
+    <!-- Main levée -->
+    <g id="main" fill="#0b4a8f">
+      <rect x="-19" y="-2" width="38" height="36" rx="11"/>
+      <rect x="-19" y="-34" width="9" height="40" rx="4.5"/>
+      <rect x="-8" y="-42" width="9" height="48" rx="4.5"/>
+      <rect x="3" y="-39" width="9" height="45" rx="4.5"/>
+      <rect x="13" y="-30" width="8" height="36" rx="4"/>
+      <rect x="-36" y="2" width="22" height="9" rx="4.5" transform="rotate(-40 -19 8)"/>
+    </g>
+  </defs>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#1b1b1b" text-anchor="middle">
+    <!-- Points de contrôle : étiquette, main, trait vers la chaîne -->
+    <text x="380" y="70" font-size="23" font-weight="700">Je vérifie ici</text>
+    <use href="#main" x="380" y="135"/>
+    <line x1="380" y1="175" x2="380" y2="232" stroke="#0b4a8f" stroke-width="5" stroke-dasharray="10 7"/>
+
+    <text x="760" y="70" font-size="23" font-weight="700">Je vérifie ici</text>
+    <use href="#main" x="760" y="135"/>
+    <line x1="760" y1="175" x2="760" y2="232" stroke="#0b4a8f" stroke-width="5" stroke-dasharray="10 7"/>
+
+    <text x="950" y="70" font-size="23" font-weight="700">Je vérifie ici</text>
+    <use href="#main" x="950" y="135"/>
+    <line x1="950" y1="175" x2="950" y2="232" stroke="#0b4a8f" stroke-width="5" stroke-dasharray="10 7"/>
+
+    <!-- Chaîne de 6 étapes -->
+    <rect x="30" y="240" width="130" height="100" rx="14" fill="#ececec" stroke="#4d4d4d" stroke-width="5"/>
+    <text x="95" y="306" font-size="46" font-weight="700">1</text>
+    <line x1="164" y1="290" x2="212" y2="290" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <rect x="220" y="240" width="130" height="100" rx="14" fill="#ececec" stroke="#4d4d4d" stroke-width="5"/>
+    <text x="285" y="306" font-size="46" font-weight="700">2</text>
+    <line x1="354" y1="290" x2="402" y2="290" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <rect x="410" y="240" width="130" height="100" rx="14" fill="#ececec" stroke="#4d4d4d" stroke-width="5"/>
+    <text x="475" y="306" font-size="46" font-weight="700">3</text>
+    <line x1="544" y1="290" x2="592" y2="290" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <rect x="600" y="240" width="130" height="100" rx="14" fill="#ececec" stroke="#4d4d4d" stroke-width="5"/>
+    <text x="665" y="306" font-size="46" font-weight="700">4</text>
+    <line x1="734" y1="290" x2="782" y2="290" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <rect x="790" y="240" width="130" height="100" rx="14" fill="#ececec" stroke="#4d4d4d" stroke-width="5"/>
+    <text x="855" y="306" font-size="46" font-weight="700">5</text>
+    <line x1="924" y1="290" x2="972" y2="290" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <rect x="980" y="240" width="130" height="100" rx="14" fill="#ffe3c7" stroke="#b34d00" stroke-width="8"/>
+    <text x="1045" y="306" font-size="46" font-weight="700">6</text>
+    <text x="1045" y="376" font-size="22" font-weight="700" fill="#8a3b00">action</text>
+    <text x="1045" y="402" font-size="22" font-weight="700" fill="#8a3b00">irréversible</text>
+
+    <!-- Légende -->
+    <text x="560" y="410" font-size="32" font-weight="700">Je choisis où je reprends la main.</text>
+
+    <!-- Encadré orange -->
+    <rect x="220" y="470" width="760" height="96" rx="14" fill="#ffe3c7" stroke="#b34d00" stroke-width="5"/>
+    <text x="600" y="530" font-size="34" font-weight="700">Avant une action irréversible : toujours.</text>
+  </g>
+</svg>

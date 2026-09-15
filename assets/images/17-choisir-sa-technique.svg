@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <title>Choisir sa technique</title>
+  <defs>
+    <marker id="fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4d4d4d"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#1b1b1b" text-anchor="middle">
+    <!-- Question de départ -->
+    <rect x="330" y="36" width="540" height="88" rx="14" fill="#ececec" stroke="#4d4d4d" stroke-width="5"/>
+    <text x="600" y="93" font-size="36" font-weight="700">De quoi ai-je besoin ?</text>
+
+    <!-- Branches -->
+    <line x1="600" y1="124" x2="600" y2="170" stroke="#4d4d4d" stroke-width="6"/>
+    <line x1="120" y1="170" x2="1080" y2="170" stroke="#4d4d4d" stroke-width="6" stroke-linecap="round"/>
+    <line x1="120" y1="170" x2="120" y2="222" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <line x1="360" y1="170" x2="360" y2="222" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <line x1="600" y1="170" x2="600" y2="222" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <line x1="840" y1="170" x2="840" y2="222" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <line x1="1080" y1="170" x2="1080" y2="222" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+
+    <!-- Situations (bleu) -->
+    <rect x="12" y="232" width="216" height="120" rx="12" fill="#dce9f8" stroke="#0b4a8f" stroke-width="4"/>
+    <text x="120" y="284" font-size="24">J'ai déjà</text>
+    <text x="120" y="316" font-size="24">un modèle</text>
+
+    <rect x="252" y="232" width="216" height="120" rx="12" fill="#dce9f8" stroke="#0b4a8f" stroke-width="4"/>
+    <text x="360" y="284" font-size="24">La tâche a</text>
+    <text x="360" y="316" font-size="24">plusieurs étapes</text>
+
+    <rect x="492" y="232" width="216" height="120" rx="12" fill="#dce9f8" stroke="#0b4a8f" stroke-width="4"/>
+    <text x="600" y="284" font-size="24">Je veux une</text>
+    <text x="600" y="316" font-size="24">forme précise</text>
+
+    <rect x="732" y="232" width="216" height="120" rx="12" fill="#dce9f8" stroke="#0b4a8f" stroke-width="4"/>
+    <text x="840" y="284" font-size="24">Une erreur</text>
+    <text x="840" y="316" font-size="24">serait grave</text>
+
+    <rect x="972" y="232" width="216" height="120" rx="12" fill="#dce9f8" stroke="#0b4a8f" stroke-width="4"/>
+    <text x="1080" y="284" font-size="24">C'est flou,</text>
+    <text x="1080" y="316" font-size="24">même pour moi</text>
+
+    <line x1="120" y1="352" x2="120" y2="412" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <line x1="360" y1="352" x2="360" y2="412" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <line x1="600" y1="352" x2="600" y2="412" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <line x1="840" y1="352" x2="840" y2="412" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+    <line x1="1080" y1="352" x2="1080" y2="412" stroke="#4d4d4d" stroke-width="6" marker-end="url(#fleche)"/>
+
+    <!-- Techniques (orange) -->
+    <rect x="12" y="422" width="216" height="150" rx="12" fill="#ffe3c7" stroke="#b34d00" stroke-width="6"/>
+    <text x="120" y="488" font-size="25" font-weight="700">Je donne</text>
+    <text x="120" y="521" font-size="25" font-weight="700">un exemple</text>
+
+    <rect x="252" y="422" width="216" height="150" rx="12" fill="#ffe3c7" stroke="#b34d00" stroke-width="6"/>
+    <text x="360" y="488" font-size="25" font-weight="700">Je découpe</text>
+    <text x="360" y="521" font-size="25" font-weight="700">la tâche</text>
+
+    <rect x="492" y="422" width="216" height="150" rx="12" fill="#ffe3c7" stroke="#b34d00" stroke-width="6"/>
+    <text x="600" y="472" font-size="25" font-weight="700">Je décris</text>
+    <text x="600" y="505" font-size="25" font-weight="700">le résultat</text>
+    <text x="600" y="538" font-size="25" font-weight="700">attendu</text>
+
+    <rect x="732" y="422" width="216" height="150" rx="12" fill="#ffe3c7" stroke="#b34d00" stroke-width="6"/>
+    <text x="840" y="488" font-size="25" font-weight="700">Je fixe</text>
+    <text x="840" y="521" font-size="25" font-weight="700">les limites</text>
+
+    <rect x="972" y="422" width="216" height="150" rx="12" fill="#ffe3c7" stroke="#b34d00" stroke-width="6"/>
+    <text x="1080" y="472" font-size="25" font-weight="700">Je fais poser</text>
+    <text x="1080" y="505" font-size="25" font-weight="700">des questions</text>
+    <text x="1080" y="538" font-size="25" font-weight="700">d'abord</text>
+  </g>
+</svg>

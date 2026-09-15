@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <title>Ce qui est stable, ce qui bouge</title>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#1b1b1b">
+    <!-- Zone « Stable » -->
+    <rect x="30" y="30" width="555" height="515" rx="16" fill="#eef4fc" stroke="#0b4a8f" stroke-width="5"/>
+    <text x="307" y="92" font-size="40" font-weight="700" text-anchor="middle" fill="#0b4a8f">Stable</text>
+    <g fill="#0b4a8f">
+      <rect x="62" y="136" width="22" height="22" rx="3"/>
+      <rect x="62" y="236" width="22" height="22" rx="3"/>
+      <rect x="62" y="336" width="22" height="22" rx="3"/>
+      <rect x="62" y="436" width="22" height="22" rx="3"/>
+    </g>
+    <text x="104" y="156" font-size="26">Une erreur non vue</text>
+    <text x="104" y="188" font-size="26">se propage</text>
+    <text x="104" y="256" font-size="26">Ce que l'IA a sous les yeux</text>
+    <text x="104" y="288" font-size="26">compte beaucoup</text>
+    <text x="104" y="356" font-size="26">Un humain valide</text>
+    <text x="104" y="388" font-size="26">avant l'irréversible</text>
+    <text x="104" y="456" font-size="26">Lire les actions et les résultats</text>
+    <text x="104" y="488" font-size="26">aide à trouver l'erreur</text>
+
+    <!-- Séparation -->
+    <line x1="600" y1="30" x2="600" y2="545" stroke="#4d4d4d" stroke-width="5"/>
+
+    <!-- Zone « Ça bouge vite » -->
+    <rect x="615" y="30" width="555" height="515" rx="16" fill="#fff1e3" stroke="#b34d00" stroke-width="5"/>
+    <text x="892" y="92" font-size="40" font-weight="700" text-anchor="middle" fill="#8a3b00">Ça bouge vite</text>
+    <g fill="#b34d00">
+      <circle cx="658" cy="157" r="12"/>
+      <circle cx="658" cy="257" r="12"/>
+      <circle cx="658" cy="357" r="12"/>
+      <circle cx="658" cy="457" r="12"/>
+    </g>
+    <text x="688" y="166" font-size="26">Ce que les outils savent faire</text>
+    <text x="688" y="266" font-size="26">Leur nom</text>
+    <text x="688" y="366" font-size="26">Leur fiabilité réelle</text>
+    <text x="688" y="466" font-size="26">Ce qu'on appelle un agent</text>
+
+    <!-- Bandeau date -->
+    <rect x="150" y="575" width="900" height="70" rx="12" fill="#ececec" stroke="#4d4d4d" stroke-width="4"/>
+    <text x="600" y="621" font-size="30" font-weight="700" text-anchor="middle">Date de ce document : 14 septembre 2026.</text>
+  </g>
+</svg>

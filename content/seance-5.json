@@ -1,0 +1,541 @@
+{
+  "version": 1,
+  "id": "seance-5",
+  "titre": "Aller plus loin : du prompt au contexte",
+  "objectifs": [
+    "passer des 4 questions à une demande en 6 cases ;",
+    "connaître 5 techniques de demande, et savoir quand elles ne servent à rien ;",
+    "choisir ce que l'IA a sous les yeux : ce que vous donnez, et ce que vous retirez ;",
+    "distinguer ce qui est prouvé de ce qui ne l'est pas."
+  ],
+  "etapes": [
+    {
+      "id": "s5-etape-1",
+      "titre": "Avant de commencer",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Pour qui :** cette séance sert à aller plus loin, après l'atelier d'une journée. Vous utilisez déjà les 4 questions : quoi, pour qui, comment, avec quoi." },
+        { "type": "paragraphe", "texte": "**Durée conseillée :** 1 h 30 à 1 h 45, en 4 séquences. Le formateur peut l'adapter." },
+        {
+          "type": "tableau",
+          "legende": "Le déroulé de la séance",
+          "entetes": ["Séquence", "Durée", "Comment on travaille"],
+          "lignes": [
+            ["1. Des 4 questions aux 6 cases, et 5 techniques", "25 min", "À l'écran"],
+            ["2. Le contexte : ce que je donne, ce que je retire", "25 min", "Sur papier, puis à l'oral à deux"],
+            ["3. Choisir sa technique", "20 min", "À l'écran"],
+            ["4. Prouvé ou pas prouvé ?", "20 min", "À l'oral, en groupe"]
+          ]
+        },
+        { "type": "sous_titre", "texte": "D'où viennent les informations ?" },
+        { "type": "paragraphe", "texte": "Dans cette séance, les informations importantes ont une étiquette. L'étiquette dit d'où vient l'information." },
+        {
+          "type": "tableau",
+          "legende": "Les 3 étiquettes",
+          "entetes": ["Étiquette", "Ce qu'elle veut dire"],
+          "lignes": [
+            ["**Mesuré**", "Des chercheurs ont fait des tests et ont compté. Attention : sur certains outils, à une certaine date."],
+            ["**Observé**", "Des personnes l'ont vu arriver, plusieurs fois. Mais personne n'a compté combien de fois."],
+            ["**Supposé**", "Des spécialistes le pensent ou le conseillent. Ce n'est pas prouvé."]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Informations de septembre 2026",
+          "texte": "Les outils d'IA changent vite. Le formateur confirme ces informations le jour de la séance."
+        }
+      ]
+    },
+    {
+      "id": "s5-etape-2",
+      "titre": "Les mots de la séance",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Gardez ces mots sous la main pendant la séance." },
+        {
+          "type": "definitions",
+          "elements": [
+            { "terme": "Technique de demande", "definition": "Une façon d'écrire sa demande, qui a un nom et qu'on peut réutiliser. Exemple : « donner un exemple »." },
+            { "terme": "Format", "definition": "La forme de la réponse : une liste, un tableau, 3 parties, 10 lignes maximum…" },
+            { "terme": "Contexte", "definition": "Tout ce que l'IA a sous les yeux au moment de répondre : votre demande, la conversation d'avant, les documents ajoutés, les réglages de l'outil." },
+            { "terme": "Itération", "definition": "Rappel de la séance 2 : on précise sa demande, réponse après réponse, sans tout recommencer." },
+            { "terme": "Prompt", "definition": "Rappel de la séance 1 : ce que vous écrivez à l'IA. En français, on dit aussi « demande »." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5-etape-3",
+      "titre": "Des 4 questions aux 6 cases",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 1 — à l'écran, 25 minutes.**" },
+        { "type": "paragraphe", "texte": "Pour une demande simple, les 4 questions suffisent. Pour une demande complexe, on ajoute des cases." },
+        {
+          "type": "tableau",
+          "legende": "La demande en 6 cases",
+          "entetes": ["Case", "Ce que j'écris", "Lien avec les 4 questions"],
+          "lignes": [
+            ["Objectif", "Ce que je veux obtenir, et pour quoi faire.", "QUOI et POUR QUI"],
+            ["Format attendu", "La forme de la réponse : parties, longueur, liste ou tableau.", "COMMENT"],
+            ["Limites", "Ce que l'IA ne doit pas faire. Par exemple : « N'invente pas de chiffre. »", "Nouveau"],
+            ["Données fournies", "Les informations et les documents utiles. Seulement les utiles.", "AVEC QUOI"],
+            ["Évaluation", "Comment je saurai que la réponse est bonne.", "Nouveau"],
+            ["Suite", "Ce que je ferai ensuite avec le résultat.", "Nouveau"]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Exemple : au support informatique",
+          "elements": [
+            "**Avant, avec les 4 questions :** « Rédige une réponse courte et polie à un utilisateur qui n'arrive plus à se connecter. »",
+            "**Objectif :** aider l'utilisateur à se reconnecter seul, s'il le peut.",
+            "**Format attendu :** 3 étapes numérotées, 8 lignes maximum.",
+            "**Limites :** ne demande jamais son mot de passe. Ne promets pas de délai.",
+            "**Données fournies :** le message d'erreur « compte verrouillé » et notre procédure de déverrouillage.",
+            "**Évaluation :** un utilisateur débutant peut suivre les étapes sans aide.",
+            "**Suite :** si cela ne marche pas, je propose un rendez-vous par téléphone."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Ce qu'on sait : supposé",
+          "texte": "Les 6 cases sont un aide-mémoire pratique. Aucune étude ne prouve que c'est le meilleur ordre. Écrivez-les dans l'ordre qui vous aide."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s5-e01",
+          "type": "qcm_unique",
+          "question": "Dans la demande en 6 cases, que veut dire la case « Évaluation » ?",
+          "options": [
+            { "id": "a", "texte": "La note que je donne à l'IA après sa réponse." },
+            { "id": "b", "texte": "Comment je saurai que la réponse est bonne." },
+            { "id": "c", "texte": "Le prix de l'outil d'IA." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "La case « Évaluation » dit à l'avance ce qu'est une bonne réponse pour vous. Par exemple : « un débutant peut suivre les étapes sans aide ». Elle vous aide aussi à relire la réponse.",
+          "difficulte": "facile"
+        }
+      ]
+    },
+    {
+      "id": "s5-etape-4",
+      "titre": "5 techniques : les 3 plus utiles",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Voici 5 techniques de demande. Elles vont de la plus utile à la plus spécialisée. Cette étape présente les 3 premières." },
+        { "type": "paragraphe", "texte": "Pour chaque technique : le principe, une comparaison, un exemple avant et après, et le cas où elle ne sert à rien." },
+        { "type": "sous_titre", "texte": "Technique 1 : je décris le résultat attendu" },
+        { "type": "paragraphe", "texte": "**Le principe :** je dis à quoi doit ressembler la réponse." },
+        { "type": "paragraphe", "texte": "**Pour comparer :** au guichet de la gare, vous pouvez dire à l'agent : « Écrivez-moi juste les lignes et les changements. » Vous repartez avec un trajet facile à suivre." },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Avant et après : au support informatique",
+          "elements": [
+            "**Avant :** « Résume ce ticket. »",
+            "**Après :** « Résume ce ticket en 3 lignes : le problème, ce qui a déjà été essayé, ce qu'il reste à faire. »"
+          ]
+        },
+        { "type": "paragraphe", "texte": "**Inutile quand :** la question est simple. « Que veut dire DNS ? » n'a pas besoin de format." },
+        { "type": "paragraphe", "texte": "**Attention, c'est mesuré :** un format très rigide, par exemple un code informatique à remplir case par case, peut faire baisser la qualité du raisonnement (tests de 2024)." },
+        { "type": "sous_titre", "texte": "Technique 2 : je donne un exemple" },
+        { "type": "paragraphe", "texte": "**Le principe :** je montre un exemple de ce que je veux. L'IA reprend la même forme." },
+        { "type": "paragraphe", "texte": "**Pour comparer :** au cordonnier de la gare, vous donnez votre clé. Il fabrique une copie de la même forme. Si votre clé est tordue, la copie l'est aussi." },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Avant et après : en test logiciel",
+          "elements": [
+            "**Avant :** « Écris des rapports de bug pour ces 3 problèmes. »",
+            "**Après :** « Voici un rapport de bug de notre équipe, avec 4 rubriques : titre, étapes pour reproduire, résultat attendu, résultat obtenu. Écris les 3 rapports suivants sur le même modèle. »"
+          ]
+        },
+        { "type": "paragraphe", "texte": "**Gênant quand :** l'exemple est mal choisi. L'IA copie aussi ses défauts, ou reprend les mêmes mots. C'est **observé**." },
+        { "type": "paragraphe", "texte": "**Attention, c'est mesuré :** avec certains modèles qui « réfléchissent » avant de répondre, des exemples ont fait baisser les résultats (DeepSeek-R1, 2025). Essayez avec et sans exemple." },
+        { "type": "sous_titre", "texte": "Technique 3 : je découpe la tâche" },
+        { "type": "paragraphe", "texte": "**Le principe :** je demande une étape à la fois. Je vérifie chaque étape avant de passer à la suivante." },
+        { "type": "paragraphe", "texte": "**Pour comparer :** pour aller de Saint-Denis à Massy, vous vérifiez la direction à chaque correspondance. Une erreur de quai au début, et tout le trajet part dans le mauvais sens." },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Avant et après : en développement",
+          "elements": [
+            "**Avant :** « Crée une application de réservation de salles. »",
+            "**Après :** « Étape 1 : fais la liste des écrans nécessaires. Attends ma validation avant d'écrire du code. »"
+          ]
+        },
+        { "type": "paragraphe", "texte": "**Inutile quand :** la tâche est courte. Chaque étape en plus demande du temps et une relecture." },
+        { "type": "paragraphe", "texte": "**Ce qu'on sait :** c'est un conseil très répandu, donc **supposé** pour la plupart des tâches. Des tests en laboratoire (2022) ont montré un gain sur des problèmes à plusieurs étapes." }
+      ],
+      "exercices": [
+        {
+          "id": "s5-e02",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Réécrivez cette demande avec la technique 1, « je décris le résultat attendu » : « Fais-moi un compte rendu de la réunion. »",
+          "reponseModele": "Rédige le compte rendu de la réunion d'équipe en 3 parties : les décisions prises, les actions à faire (qui, quoi, pour quand), les questions restées ouvertes. Une page maximum, avec des phrases courtes.",
+          "explicationCorrection": "Votre demande n'a pas besoin d'être identique à l'exemple. Vérifiez qu'elle dit la forme de la réponse : les parties, la longueur, ou la présentation.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 45
+        }
+      ]
+    },
+    {
+      "id": "s5-etape-5",
+      "titre": "5 techniques : les 2 plus spécialisées",
+      "blocs": [
+        { "type": "sous_titre", "texte": "Technique 4 : je fixe les limites" },
+        { "type": "paragraphe", "texte": "**Le principe :** je dis ce que l'IA ne doit pas faire. Et je l'autorise à dire « je ne sais pas »." },
+        { "type": "paragraphe", "texte": "**Pour comparer :** à l'accueil de la mairie, un agent qui dit « je ne sais pas, voyez le service état civil » vous aide plus qu'un agent qui invente une réponse." },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Avant et après : en administration réseau",
+          "elements": [
+            "**Avant :** « Donne-moi les commandes pour configurer ce routeur. »",
+            "**Après :** « Donne les commandes pour ce modèle précis de routeur. Si tu n'es pas sûr d'une commande, écris « à vérifier dans la documentation ». Ne propose aucune commande qui efface la configuration. »"
+          ]
+        },
+        { "type": "paragraphe", "texte": "**La limite de la technique :** écrire « ne fais pas » ne garantit rien. L'IA peut ne pas respecter la consigne. C'est **observé**, y compris dans des incidents réels." },
+        { "type": "paragraphe", "texte": "Pour une action dangereuse, une phrase ne suffit pas : il faut une vraie interdiction dans l'outil. Vous le verrez en séance 6." },
+        { "type": "sous_titre", "texte": "Technique 5 : je fais poser des questions d'abord" },
+        { "type": "paragraphe", "texte": "**Le principe :** je demande à l'IA de me poser ses questions avant de répondre." },
+        { "type": "paragraphe", "texte": "**Pour comparer :** à la pharmacie du quartier, avant de conseiller un produit, le pharmacien demande : « C'est pour qui ? Vous prenez d'autres médicaments ? »" },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Avant et après : au support informatique",
+          "elements": [
+            "**Avant :** « Mon ordinateur est lent. Que faire ? »",
+            "**Après :** « Mon ordinateur est lent. Avant de proposer une solution, pose-moi jusqu'à 5 questions. Attends mes réponses. »"
+          ]
+        },
+        { "type": "paragraphe", "texte": "**Inutile quand :** vous avez déjà donné toutes les informations. Les questions rallongent l'échange." },
+        { "type": "paragraphe", "texte": "**Ce qu'on sait :** quand une demande est incomplète, les IA font souvent des suppositions au lieu de demander. C'est **mesuré** (simulations de 2025). Que cette technique corrige le problème, c'est **supposé** : nous n'avons pas trouvé de mesure." }
+      ],
+      "exercices": [
+        {
+          "id": "s5-e03",
+          "type": "qcm_unique",
+          "question": "Vous demandez à l'IA un tableau de prix de matériel. Quelle phrase fixe une limite utile ?",
+          "options": [
+            { "id": "a", "texte": "« Réponds bien, c'est important. »" },
+            { "id": "b", "texte": "« Si un prix te manque, écris « prix inconnu » au lieu de l'inventer. »" },
+            { "id": "c", "texte": "« Tu es le meilleur expert du monde en matériel. »" }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Cette phrase dit précisément ce que l'IA ne doit pas faire (inventer un prix), et ce qu'elle doit faire à la place. « Réponds bien » ne dit rien de précis. Et « tu es un expert » ne rend pas les réponses plus justes : vous le verrez dans la séquence 4.",
+          "difficulte": "facile"
+        }
+      ]
+    },
+    {
+      "id": "s5-etape-6",
+      "titre": "Le contexte : ce que je donne, ce que je retire",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 2 — sur papier, puis à l'oral à deux, 25 minutes.**" },
+        { "type": "paragraphe", "texte": "En séance 2, vous avez appris la question « avec quoi ? » : donner les informations utiles. Ici, on va plus loin." },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "L'idée clé",
+          "elements": [
+            "Soigner sa phrase ne suffit pas.",
+            "Il faut aussi choisir ce que l'IA a sous les yeux.",
+            "Ce que vous donnez compte. Ce que vous retirez compte aussi."
+          ]
+        },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/16-du-prompt-au-contexte.svg",
+          "alt": "Schéma en deux panneaux : avant, et maintenant. Le texte du schéma est écrit juste après l'image.",
+          "legende": "Du prompt au contexte.",
+          "transcription": {
+            "titre": "Ce que montre le schéma :",
+            "elements": [
+              "À gauche, le titre « Avant : je soigne ma phrase ». Une seule bulle, « Ma demande », va vers une boîte « Le modèle ».",
+              "À droite, le titre « Maintenant : je choisis ce qu'il a sous les yeux ». La même boîte « Le modèle » reçoit 4 blocs : « Ma demande », « Mes documents », « Les messages d'avant », « Les règles à respecter ».",
+              "Un 5e bloc, en pointillés, est arrêté par une croix : « Ce que je retire exprès ».",
+              "En bas : « Le contexte compte, pas seulement la phrase. »"
+            ]
+          }
+        },
+        { "type": "sous_titre", "texte": "Pour comparer : le dossier pour la CAF" },
+        { "type": "paragraphe", "texte": "Au guichet, vous donnez les pièces demandées : l'attestation de cette année, le justificatif de domicile." },
+        { "type": "paragraphe", "texte": "Si vous donnez tout votre classeur, l'agent risque de prendre la vieille attestation. Et il voit des papiers qui ne le regardent pas." },
+        { "type": "paragraphe", "texte": "Avec l'IA, c'est pareil : on donne les bonnes pièces, on retire les autres." },
+        {
+          "type": "tableau",
+          "legende": "Ce que je donne, ce que je retire",
+          "entetes": ["Je donne", "Je retire"],
+          "lignes": [
+            ["Ma demande complète, écrite en une fois", "Les informations personnelles (séance 4 : les « 3 jamais »)"],
+            ["Les documents utiles et à jour", "Les anciennes versions qui contredisent les nouvelles"],
+            ["Un exemple, si j'ai un modèle", "Les documents hors sujet"],
+            ["Les règles à respecter", "Les longs historiques dont l'IA n'a pas besoin"]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Pourquoi trop d'informations peut nuire",
+          "elements": [
+            "**Mesuré :** quand le texte donné est très long, les IA retrouvent moins bien une information, même pour des tâches simples (tests de 2023, et de 2025 sur 18 modèles).",
+            "**Mesuré :** une information placée au milieu d'un long texte est souvent moins bien utilisée qu'au début ou à la fin (tests de 2023).",
+            "**Observé :** si deux documents se contredisent, l'IA peut prendre la mauvaise version.",
+            "**Ce qu'on ne sait pas :** si « trop » est pire que « pas assez ». Personne ne l'a mesuré de façon générale. Cela dépend de la tâche."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Quand la conversation part de travers",
+          "elements": [
+            "Relancer reste souvent utile (séance 2).",
+            "**Mesuré en 2025 :** quand une demande arrive en petits morceaux, les IA réussissent moins bien, avec 39 % de baisse en moyenne dans l'étude. Et quand elles prennent une mauvaise piste, elles la gardent.",
+            "**Conseil :** si les relances ne changent plus rien, ouvrez une nouvelle conversation. Écrivez une demande complète, en une fois.",
+            "Rappel de la séance 1 : une nouvelle conversation repart de zéro."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Activité sur papier, puis à deux",
+          "numerotee": true,
+          "elements": [
+            "Le formateur vous donne 6 cartes. Chaque carte est une information.",
+            "La situation : vous demandez à l'IA une réponse pour un client dont l'imprimante ne marche plus.",
+            "Faites deux tas : « je donne » et « je retire ».",
+            "Comparez avec votre voisin, à l'oral. Êtes-vous d'accord ?",
+            "Ensuite, répondez à l'écran."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s5-e04",
+          "type": "qcm_multiple",
+          "question": "Vous demandez à l'IA une réponse pour un client dont l'imprimante ne marche plus. Quelles informations donnez-vous à l'IA ?",
+          "options": [
+            { "id": "a", "texte": "Le modèle de l'imprimante et le message d'erreur exact." },
+            { "id": "b", "texte": "Ce que le client a déjà essayé." },
+            { "id": "c", "texte": "Le nom, l'adresse et le téléphone du client." },
+            { "id": "d", "texte": "La procédure de dépannage à jour de votre entreprise." },
+            { "id": "e", "texte": "L'ancienne procédure de 2019, qui n'est plus valable." },
+            { "id": "f", "texte": "Les 200 tickets de ce client depuis 5 ans." }
+          ],
+          "reponsesCorrectes": ["a", "b", "d"],
+          "explicationCorrection": "À donner : le modèle et le message d'erreur, ce qui a déjà été essayé, la procédure à jour. À retirer : les coordonnées du client, car ce sont des données personnelles (séance 4) et l'IA n'en a pas besoin. L'ancienne procédure peut contredire la nouvelle. Les 200 tickets noient les informations utiles : si un ancien ticket parle de la même panne, donnez seulement celui-là.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s5-e05",
+          "type": "qcm_unique",
+          "question": "Depuis 10 messages, votre conversation avec l'IA part de travers. Les relances ne changent plus rien. Que faites-vous ?",
+          "options": [
+            { "id": "a", "texte": "Je continue à corriger, message après message." },
+            { "id": "b", "texte": "J'ouvre une nouvelle conversation, avec une demande complète écrite en une fois." },
+            { "id": "c", "texte": "J'écris ma demande en majuscules." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Relancer est souvent utile. Mais quand les relances ne changent plus rien, repartir à zéro est souvent mieux. Dans une étude de 2025, les IA gardaient une mauvaise piste prise au début de la conversation. Une nouvelle conversation efface cette piste. Écrire en majuscules n'est pas une technique prouvée.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s5-e06",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Dans le métier que vous visez : citez une information que vous retireriez exprès avant de demander de l'aide à une IA. Dites pourquoi.",
+          "explicationCorrection": "Plusieurs réponses sont possibles. Exemples : les mots de passe et les adresses des serveurs (administration réseau) ; les données des clients (support) ; le code d'un projet confidentiel, selon la charte de l'employeur (développement) ; une ancienne version d'un cahier de tests (test logiciel). Il y a deux bonnes raisons de retirer une information : protéger les personnes et l'entreprise, et ne pas embrouiller l'IA.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    },
+    {
+      "id": "s5-etape-7",
+      "titre": "Choisir sa technique",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 3 — à l'écran, 20 minutes.**" },
+        { "type": "paragraphe", "texte": "Face à une tâche, posez-vous une question : « De quoi ai-je besoin ? »" },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/17-choisir-sa-technique.svg",
+          "alt": "Arbre de décision : une question en haut, et 5 branches qui mènent chacune à une technique. Le texte est écrit juste après l'image.",
+          "legende": "Choisir sa technique.",
+          "transcription": {
+            "titre": "Ce que montre l'arbre :",
+            "elements": [
+              "En haut, la question : « De quoi ai-je besoin ? »",
+              "« J'ai déjà un modèle » mène à « Je donne un exemple ».",
+              "« La tâche a plusieurs étapes » mène à « Je découpe la tâche ».",
+              "« Je veux une forme précise » mène à « Je décris le résultat attendu ».",
+              "« Une erreur serait grave » mène à « Je fixe les limites ».",
+              "« C'est flou, même pour moi » mène à « Je fais poser des questions d'abord »."
+            ]
+          }
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "À savoir",
+          "elements": [
+            "Les techniques se combinent.",
+            "Pour une tâche simple, aucune technique n'est nécessaire : une demande claire suffit."
+          ]
+        },
+        { "type": "paragraphe", "texte": "Vous allez lire 4 situations, une par écran. Pour chacune, choisissez la technique la plus utile. Plusieurs réponses peuvent se justifier : il n'y a pas de note." }
+      ],
+      "exercices": [
+        {
+          "id": "s5-e07",
+          "type": "qcm_unique",
+          "question": "Situation 1 : vous avez une fiche d'inventaire bien faite. Vous voulez 20 fiches présentées exactement pareil. Quelle technique est la plus utile ?",
+          "options": [
+            { "id": "a", "texte": "Je décris le résultat attendu" },
+            { "id": "b", "texte": "Je donne un exemple" },
+            { "id": "c", "texte": "Je découpe la tâche" },
+            { "id": "d", "texte": "Je fixe les limites" },
+            { "id": "e", "texte": "Je fais poser des questions d'abord" }
+          ],
+          "reponseCorrecte": "b",
+          "sansNote": true,
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Plusieurs réponses peuvent se justifier. Vous avez déjà un modèle : le montrer est le plus simple. Décrire le résultat attendu marche aussi, mais c'est plus long à écrire.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s5-e08",
+          "type": "qcm_unique",
+          "question": "Situation 2 : vous préparez le remplacement de 30 ordinateurs : l'inventaire, le planning, puis le message aux utilisateurs. Quelle technique est la plus utile ?",
+          "options": [
+            { "id": "a", "texte": "Je décris le résultat attendu" },
+            { "id": "b", "texte": "Je donne un exemple" },
+            { "id": "c", "texte": "Je découpe la tâche" },
+            { "id": "d", "texte": "Je fixe les limites" },
+            { "id": "e", "texte": "Je fais poser des questions d'abord" }
+          ],
+          "reponseCorrecte": "c",
+          "sansNote": true,
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Plusieurs réponses peuvent se justifier. La tâche a 3 parties. En les faisant une par une, vous vérifiez chaque partie avant de passer à la suivante.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s5-e09",
+          "type": "qcm_unique",
+          "question": "Situation 3 : vous demandez à l'IA comment supprimer des comptes utilisateurs sur un serveur. Quelle technique est la plus utile ?",
+          "options": [
+            { "id": "a", "texte": "Je décris le résultat attendu" },
+            { "id": "b", "texte": "Je donne un exemple" },
+            { "id": "c", "texte": "Je découpe la tâche" },
+            { "id": "d", "texte": "Je fixe les limites" },
+            { "id": "e", "texte": "Je fais poser des questions d'abord" }
+          ],
+          "reponseCorrecte": "d",
+          "sansNote": true,
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Plusieurs réponses peuvent se justifier. Une erreur serait grave : des comptes supprimés par erreur. Fixez des limites, par exemple : « Signale chaque commande qui supprime quelque chose. N'invente aucune commande. » Et vérifiez dans la documentation officielle.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s5-e10",
+          "type": "qcm_unique",
+          "question": "Situation 4 : un utilisateur vous écrit « rien ne marche depuis ce matin ». Vous voulez l'aide de l'IA pour chercher la cause. Quelle technique est la plus utile ?",
+          "options": [
+            { "id": "a", "texte": "Je décris le résultat attendu" },
+            { "id": "b", "texte": "Je donne un exemple" },
+            { "id": "c", "texte": "Je découpe la tâche" },
+            { "id": "d", "texte": "Je fixe les limites" },
+            { "id": "e", "texte": "Je fais poser des questions d'abord" }
+          ],
+          "reponseCorrecte": "e",
+          "sansNote": true,
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Plusieurs réponses peuvent se justifier. La situation est floue. Si l'IA vous pose d'abord des questions, elle ne part pas d'une supposition. Ses questions peuvent aussi vous aider à interroger l'utilisateur.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s5-e11",
+          "type": "qcm_unique",
+          "question": "Une vidéo en ligne promet : « Avec ce prompt secret, votre IA sera 10 fois meilleure. » Que faites-vous ?",
+          "options": [
+            { "id": "a", "texte": "Je l'utilise tel quel pour toutes mes demandes." },
+            { "id": "b", "texte": "Je le teste sur une de mes tâches, et je compare avec ma demande habituelle." },
+            { "id": "c", "texte": "Je le partage tout de suite avec mes collègues." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Une promesse n'est pas une preuve. Aucune formule ne marche pour toutes les tâches et tous les outils : c'est mesuré (2025). Tester sur votre tâche et comparer les réponses, c'est la seule façon de savoir. Et vérifiez toujours le résultat (séance 3).",
+          "difficulte": "facile"
+        }
+      ]
+    },
+    {
+      "id": "s5-etape-8",
+      "titre": "Prouvé ou pas prouvé ?",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 4 — à l'oral, en groupe, 20 minutes.**" },
+        { "type": "paragraphe", "texte": "On lit beaucoup de « recettes » sur Internet pour mieux parler aux IA. Certaines ont été testées. D'autres non." },
+        {
+          "type": "tableau",
+          "legende": "Idées répandues : ce qu'on en sait",
+          "entetes": ["Idée répandue", "Ce qu'on sait", "Étiquette"],
+          "lignes": [
+            ["« Écrire « Tu es un expert » rend l'IA plus juste. »", "Sur 2 410 questions de connaissances, ajouter un rôle n'a pas amélioré les réponses en moyenne. Un rôle peut changer le style de la réponse : ça, c'est observé.", "Mesuré (2023-2024)"],
+            ["« Promettre un pourboire ou menacer l'IA l'aide à mieux répondre. »", "En moyenne, pas d'effet. Sur une question, ça peut aider ; sur une autre, ça peut nuire. Impossible de prévoir.", "Mesuré (2025)"],
+            ["« Être poli améliore toujours la réponse. »", "Parfois oui, parfois non.", "Mesuré (2025)"],
+            ["« Écrire « réfléchis étape par étape » améliore toujours la réponse. »", "Utile sur les anciens modèles. Sur les modèles récents qui raisonnent déjà : gain faible, et réponse plus lente.", "Mesuré (2025)"],
+            ["« Plus je donne d'informations, mieux c'est. »", "Non : dans un texte très long, les IA retrouvent moins bien les informations.", "Mesuré (2023 et 2025)"],
+            ["« Il existe un prompt parfait, à copier. »", "Non : l'effet d'une formule change selon la tâche et selon l'outil.", "Mesuré (2025)"],
+            ["« Une demande bien écrite garantit une bonne réponse. »", "Non : même bien demandée, l'IA peut se tromper (séance 3).", "Observé"]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Attention à ces résultats",
+          "elements": [
+            "Ces tests ont été faits en laboratoire, sur des modèles de 2023 à 2025.",
+            "Votre outil peut réagir autrement.",
+            "Ce qui reste vrai avec tous les outils : vérifier la réponse."
+          ]
+        },
+        { "type": "sous_titre", "texte": "Pour le débat" },
+        {
+          "type": "liste",
+          "elements": [
+            "Avez-vous déjà suivi une « recette » trouvée sur Internet pour parler à une IA ?",
+            "Est-ce que ça marchait vraiment ? Comment le savoir ?",
+            "Qu'est-ce qui vous surprend le plus dans ce tableau ?"
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "À retenir de la séance",
+          "numerotee": true,
+          "elements": [
+            "Pour une demande complexe : 6 cases.",
+            "5 techniques, à choisir selon la tâche. Aucune n'est magique.",
+            "Le contexte compte : je donne ce qui est utile, je retire le reste.",
+            "Si la conversation part de travers : nouvelle conversation, demande complète.",
+            "Une recette non testée n'est pas une preuve."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s5-e12",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Ce que je retiens de cette séance, en une phrase :",
+          "explicationCorrection": "Il n'y a pas de bonne réponse. Si vous hésitez, relisez l'encadré « À retenir de la séance ».",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    }
+  ]
+}

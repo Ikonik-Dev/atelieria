@@ -11,7 +11,9 @@
     "seance-2.json",
     "seance-3.json",
     "seance-4.json",
-    { "fichier": "mes-besoins.json", "etiquette": "Mes besoins" }
+    { "fichier": "mes-besoins.json", "etiquette": "Mes besoins" },
+    "seance-5.json",
+    "seance-6.json"
   ],
   "titrePage": {
     "accueil": "Accueil — {application}",
@@ -160,7 +162,7 @@
     "importErreurFormat": "Ce fichier n'est pas un travail enregistré de cet atelier. Choisissez le bon fichier : son nom commence par « mon-travail-atelier-ia ».",
     "importErreurVersion": "Ce fichier vient d'une autre version de l'atelier. Il ne peut pas être rechargé. Montrez-le au formateur."
   },
-  "piedDePage": "Atelier « IA : prise en main et usages ». Aucune donnée n'est envoyée sur Internet : votre travail reste dans ce navigateur. Les illustrations ont été créées avec une intelligence artificielle. Les informations sur les outils d'IA datent de janvier 2025 : le formateur les confirme le jour de l'atelier.",
+  "piedDePage": "Atelier « IA : prise en main et usages ». Aucune donnée n'est envoyée sur Internet : votre travail reste dans ce navigateur. Les illustrations ont été créées avec une intelligence artificielle. Les informations sur les outils d'IA datent de janvier 2025 (séances 1 à 4) et de septembre 2026 (séances 5 et 6) : le formateur les confirme le jour de l'atelier.",
   "erreurs": {
     "titreContenu": "Un fichier de contenu a un problème",
     "aideStagiaire": "Si vous êtes stagiaire : prévenez le formateur. Vous pouvez faire une autre partie du livret.",

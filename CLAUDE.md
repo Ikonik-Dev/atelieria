@@ -6,7 +6,7 @@
 >
 > Si une demande contredit une règle de ce fichier, **le signaler explicitement avant d'implémenter**. Ne jamais trancher en silence (voir section 5).
 
-**Dernière mise à jour** : 2026-09-14
+**Dernière mise à jour** : 2026-09-15
 
 ---
 
@@ -36,6 +36,8 @@
 - Découpage : **5 séances**, illustrées par **9 illustrations**.
 
 > **Pour ce projet (voir D-009)** : le livret « IA : prise en main et usages » compte **4 séances**, précédées de « Avant de commencer » (QCM de positionnement) et suivies de « Mes besoins ». Il y a **8 illustrations**. Les analogies du livret viennent de la vie quotidienne : boulangerie, marché de quartier, colocation, annonce dans le RER, carte de fidélité. La description ci-dessus (5 séances, 9 illustrations) est celle du projet d'origine « Culture informatique et Web ».
+>
+> **Depuis D-013** : deux séances « Aller plus loin » (séance 5 : du prompt au contexte ; séance 6 : la boucle agentique) suivent « Mes besoins ». Elles ajoutent 10 schémas SVG (09 à 18), soit 18 illustrations au total. Leurs analogies : guichet de gare, cordonnier, correspondances en RER, dossier CAF, course confiée à un voisin. La couche formateur est dans `formateur/guide-seances-5-6.md`, hors de l'application.
 
 ### 1.3 Objectif technique
 
@@ -231,6 +233,8 @@ culture-web/
 ```
 
 > **Pour ce projet (voir D-009)** : le dossier `content/` contient `interface.json`, `avant-de-commencer.json`, `seance-1.json` à `seance-4.json` et `mes-besoins.json`. `assets/images/` contient 8 illustrations en JPEG (`01-ia-generative-plausible.jpg` à `08-recapitulatif-trois-idees.jpg`). Les fichiers JavaScript sont les mêmes. Arborescence complète et répartition des images : README, section 1.
+>
+> **Depuis D-013** : `content/` contient aussi `seance-5.json` et `seance-6.json` ; `assets/images/` contient aussi 10 schémas SVG (`09-boucle-agentique.svg` à `18-stable-ou-mouvant.svg`) ; le dossier `formateur/` contient le guide des séances 5 et 6.
 
 ### 3.2 Règles de nommage des fichiers
 
@@ -558,3 +562,29 @@ Une entrée par évolution majeure : règle ajoutée, modifiée ou supprimée, n
   - pas de version numérique remplissable, alors que la fiche formateur la cite comme adaptation possible : à rediscuter si besoin ;
   - la phrase du livret « Vos réponses sont confidentielles » (après le QCM de positionnement) est retirée : l'application ne peut pas la garantir (poste partagé, fichier d'export).
 - **Sections du CLAUDE.md impactées** : 2.4
+
+### D-013 — Séances 5 et 6 « Aller plus loin » : contexte et boucle agentique
+
+- **Date** : 2026-09-15
+- **Statut** : Acceptée (proposée par le développeur ; paramètres et placement à confirmer par le formateur)
+- **Demandée ou validée par** : formateur (demande d'intégration de deux modules), développeur (mise en œuvre)
+- **Contexte** : le formateur a fourni un cahier des charges rédigé ailleurs : deux modules (ingénierie de la demande et du contexte ; boucle agentique), avec une couche stagiaire FALC, des encadrés formateur, une activité sur une trace « pensée, action, observation », un ancrage métier, une mise à jour 2026 des sources et 10 prompts d'images. Ses 5 paramètres (durée, métiers, outil disponible, format, acquis) n'étaient pas remplis.
+- **Décision** :
+  - deux fichiers `content/seance-5.json` (8 étapes, 12 exercices) et `content/seance-6.json` (13 étapes, 21 exercices dont 12 au choix), placés **après « Mes besoins »** dans `interface.json` : le déroulé de la journée du livret ne change pas ;
+  - aucun nouveau type d'exercice, aucun nouveau champ, aucune modification du JavaScript ;
+  - paramètres par défaut : métiers support, test logiciel, développement, administration réseau ; **pas d'outil agentique** (trace écrite construite) ; séance 5 en 1 h 30 à 1 h 45, séance 6 en 2 h 15 environ ;
+  - chaque affirmation technique est étiquetée dans la page : **Mesuré**, **Observé** ou **Supposé**, avec sa date ; aucun chiffre sans source ;
+  - la **couche formateur** (encadrés, déroulés minutés, corrigés, trace imprimable, sources, « Ce qui risque d'être faux dans 6 mois ») est dans `formateur/guide-seances-5-6.md`, **hors de l'application** ;
+  - 10 schémas SVG (`09` à `18`), dessinés directement au lieu de prompts pour un générateur d'images, avec transcription textuelle dans la page ; palette bleu, orange, gris ; information jamais portée par la couleur seule.
+- **Raison** :
+  - les encadrés formateur contiennent des réponses : dans l'application, ils seraient lisibles avant validation (règle 2.1) ;
+  - un SVG garde un texte exact en français, pèse peu et reste identique à sa transcription (règle 2.5) ;
+  - l'exigence d'actualité du cahier des charges et le public (reconversion) imposent de ne présenter ni extrapolation comme un fait, ni promesse d'emploi.
+- **Conséquences et limites acceptées** :
+  - l'étape « Fin du livret » est suivie du bouton « Aller à la partie suivante » vers la séance 5 ;
+  - les informations des séances 5 et 6 datent du 14 septembre 2026 et vieilliront vite (pied de page, étapes 1 et 13, section 8 du guide) ;
+  - **le guide formateur est publié dans le dépôt, donc public**, comme les JSON (D-002) : choix du formateur le 2026-09-15 ;
+  - deux phrases des séances 2 (corrigé s2-e06, étape 2) sont en tension avec la séance 5 ; elles n'ont pas été modifiées (à trancher) ;
+  - plusieurs affirmations du cahier des charges ont été nuancées après vérification des sources (liste dans le guide, section 10) ;
+  - aucun essai avec des stagiaires ; tests manuels d'accessibilité à refaire pour ces séances.
+- **Sections du CLAUDE.md impactées** : 1.2, 3.1

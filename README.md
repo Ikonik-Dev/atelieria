@@ -2,6 +2,8 @@
 
 Application web interactive pour les stagiaires d'un ESRP. Elle reprend le **livret du stagiaire** « Atelier IA — Prise en main et usages » : un QCM de positionnement, 4 séances et la fiche « Mes besoins », en FALC (Facile à lire et à comprendre).
 
+Deux séances pour **aller plus loin** s'ajoutent après le livret : **Séance 5 — du prompt au contexte** et **Séance 6 — la boucle agentique**. Elles ne viennent pas du livret : elles ont été rédigées pour l'application. Leur guide pour le formateur est dans [formateur/guide-seances-5-6.md](formateur/guide-seances-5-6.md).
+
 - **Aucun serveur, aucun compte, aucune base de données.** Le site est statique et peut être hébergé sur GitHub Pages.
 - **Tout le contenu est dans des fichiers JSON** (dossier `content/`). Vous pouvez ajouter ou modifier des exercices **sans toucher au code**.
 - Le travail du stagiaire reste **dans son navigateur**. Rien n'est envoyé sur Internet.
@@ -63,10 +65,15 @@ IA_prise_en_main/
 │   ├── seance-2.json           Séance 2 : La méthode des 4 questions (parcours A, B, C)
 │   ├── seance-3.json           Séance 3 : Vérifier : l'IA se trompe
 │   ├── seance-4.json           Séance 4 : Usages responsables
-│   └── mes-besoins.json        Fiche « Mes besoins » (lecture seule) et fin du livret
+│   ├── mes-besoins.json        Fiche « Mes besoins » (lecture seule) et fin du livret
+│   ├── seance-5.json           Séance 5 : Aller plus loin : du prompt au contexte
+│   └── seance-6.json           Séance 6 : Aller plus loin : la boucle agentique (parcours A, B, C)
+│
+├── formateur/
+│   └── guide-seances-5-6.md    Guide du formateur des séances 5 et 6 (hors de l'application)
 │
 └── assets/
-    └── images/                 Les 8 illustrations (renommées et compressées)
+    └── images/                 18 illustrations : 8 JPEG du livret, 10 schémas SVG (séances 5 et 6)
 ```
 
 Les fichiers d'origine placés à la racine du dossier (8 PNG, livret du stagiaire et fiche formateur en PDF) **ne sont pas utilisés** par l'application et **ne sont pas publiés** (voir `.gitignore`).
@@ -81,7 +88,9 @@ Les fichiers d'origine placés à la racine du dossier (8 PNG, livret du stagiai
 | Séance 3 | 6 | 18 | 0 |
 | Séance 4 | 3 | 9 | 0 |
 | Mes besoins | 3 | 0 | 0 |
-| **Total** | **26** | **52** | **13** |
+| Séance 5 | 8 | 12 | 0 |
+| Séance 6 | 13 | 21 | 12 (parcours A, B, C) |
+| **Total** | **47** | **85** | **25** |
 
 ### Répartition des illustrations
 
@@ -95,6 +104,18 @@ Les fichiers d'origine placés à la racine du dossier (8 PNG, livret du stagiai
 | `06-signaux-vigilance.jpg` | Séance 3, étape 2 | |
 | `07-ia-ou-moteur-balance.jpg` | Séance 3, étape 4 | Étape fermée jusqu'au tri « IA ou moteur » (l'image donne des réponses) |
 | `08-recapitulatif-trois-idees.jpg` | Mes besoins, étape 2 | Étape fermée jusqu'au même tri (même raison) |
+| `09-boucle-agentique.svg` | Séance 6, étape 3 | Schéma SVG |
+| `10-echange-simple-ou-boucle.svg` | Séance 6, étape 3 | Schéma SVG |
+| `11-propagation-erreur.svg` | Séance 6, étape 5 | Schéma SVG |
+| `12-pensee-action-observation.svg` | Séance 6, étape 7 | Exemple différent de la trace de l'activité, pour ne pas donner la réponse |
+| `13-permissions-agent.svg` | Séance 6, étape 4 | Schéma SVG |
+| `14-points-de-controle.svg` | Séance 6, étape 11 | Schéma SVG |
+| `15-check-list-verification.svg` | Séance 6, étape 11 | Schéma SVG |
+| `16-du-prompt-au-contexte.svg` | Séance 5, étape 6 | Schéma SVG |
+| `17-choisir-sa-technique.svg` | Séance 5, étape 7 | Schéma SVG |
+| `18-stable-ou-mouvant.svg` | Séance 6, étape 13 | Porte la date des informations (14 septembre 2026) |
+
+Les schémas SVG `09` à `18` utilisent 3 couleurs (bleu, orange, gris). Aucune information ne passe par la couleur seule : coches, croix, pointillés et mots. Leur texte est aussi écrit dans la page (champ `transcription`).
 
 ---
 
@@ -150,7 +171,7 @@ Pour mettre à jour le contenu : modifiez le fichier JSON sur GitHub (icône cra
 
 - **Tout ce qui est dans le dépôt devient public**, y compris les bonnes réponses dans les JSON. Voir [Limites connues](#11-limites-connues).
 - **Plusieurs ateliers sur le même compte GitHub** (par exemple celui-ci et « Culture informatique et Web ») partagent la même adresse d'origine, donc la même zone de sauvegarde du navigateur. Cet atelier utilise son propre nom de sauvegarde (`atelier-ia-progression`) : les travaux ne se mélangent pas. En revanche, « Effacer les données du site » dans le navigateur efface le travail **des deux** ateliers.
-- Les illustrations ont été **générées par une intelligence artificielle**. Le pied de page de l'application le signale. Voir la [section 12](#12-notes-sur-le-contenu-du-livret).
+- Les illustrations ont été **générées par une intelligence artificielle**. Le pied de page de l'application le signale. Les 10 schémas des séances 5 et 6 ont été dessinés en SVG par Claude, une IA. Voir la [section 12](#12-notes-sur-le-contenu-du-livret).
 - GitHub Pages **respecte les majuscules** dans les noms de fichiers, Windows non. Écrivez toujours les noms de fichiers en minuscules, sans espace ni accent.
 - Utilisez toujours des **chemins relatifs** (`assets/images/…`), jamais `/assets/images/…`.
 
@@ -181,7 +202,7 @@ Les deux exercices de tri (Séance 3 et Séance 4) ont une case « Pourquoi ? »
 
 ### Les exercices « au choix »
 
-Les parcours A, B et C de la Séance 2 sont des étapes **au choix**. Leurs exercices sont marqués « (au choix) ». Ils ne comptent pas dans « Exercices faits : … sur … ». Un compteur séparé les indique : « Exercices au choix faits : … sur … ».
+Les parcours A, B et C de la Séance 2 et de la Séance 6 sont des étapes **au choix**. Leurs exercices sont marqués « (au choix) ». Ils ne comptent pas dans « Exercices faits : … sur … ». Un compteur séparé les indique : « Exercices au choix faits : … sur … ».
 
 ### Les étapes fermées
 
@@ -261,14 +282,18 @@ Pour vérifier un fichier, vous pouvez coller son contenu dans un validateur JSO
   "seance-2.json",
   "seance-3.json",
   "seance-4.json",
-  { "fichier": "mes-besoins.json", "etiquette": "Mes besoins" }
+  { "fichier": "mes-besoins.json", "etiquette": "Mes besoins" },
+  "seance-5.json",
+  "seance-6.json"
 ]
 ```
 
 - **L'ordre de la liste est l'ordre du menu** et du bouton « Aller à la partie suivante ».
 - Un **nom de fichier seul** est une séance numérotée : la première est « Séance 1 », la deuxième « Séance 2 », etc.
 - Un **objet `{ "fichier", "etiquette" }`** est une partie non numérotée. L'étiquette remplace « Séance N » dans le menu et les titres.
-- Pour ajouter une séance 5 : créer `content/seance-5.json`, puis ajouter `"seance-5.json"` dans la liste, avant `mes-besoins.json`.
+- Les séances 5 et 6 sont placées **après** « Mes besoins » : le déroulé du livret ne change pas (CLAUDE.md, D-013). Conséquence : la fin de « Mes besoins » propose « Aller à la partie suivante », vers la séance 5.
+- Pour ajouter une séance 7 : créer `content/seance-7.json`, puis ajouter `"seance-7.json"` à la fin de la liste.
+- ⚠️ Le numéro affiché dépend de la **position** du nom de fichier dans la liste, pas du nom du fichier. Si vous déplacez `"seance-5.json"` avant `"seance-4.json"`, elle s'affichera « Séance 4 ».
 
 ### Un fichier de partie
 
@@ -444,7 +469,7 @@ La première case de chaque ligne sert de titre à la ligne. Sur un petit écran
 
 Conseils pour le délai :
 
-- QCM court : pas de délai (champ absent). C'est le cas de tous les QCM de ce livret.
+- QCM court : pas de délai (champ absent). C'est le cas de tous les QCM des séances du livret. Dans les séances 5 et 6, les QCM à plusieurs réponses ont un délai de 10 à 20 secondes.
 - Réponse courte à écrire : 10 à 20 secondes.
 - Réponse longue ou recherche (demande complète, chasse à l'erreur) : 30 à 60 secondes.
 - Le délai freine la précipitation. Il ne prouve pas que le stagiaire a lu.
@@ -482,7 +507,7 @@ Affiché avec des boutons radio : une seule réponse possible.
 
 Affiché avec des cases à cocher. Le message « Plusieurs réponses sont possibles. Cochez toutes les bonnes réponses. » s'affiche automatiquement.
 
-La réponse est **juste seulement si toutes les bonnes cases sont cochées, et aucune mauvaise**. La correction détaille chaque option. Ce livret n'utilise pas encore ce type.
+La réponse est **juste seulement si toutes les bonnes cases sont cochées, et aucune mauvaise**. La correction détaille chaque option. Les séances 5 et 6 utilisent ce type ; les séances du livret ne l'utilisent pas.
 
 ```json
 {
@@ -670,12 +695,16 @@ Le travail est gardé **dans un navigateur, sur un ordinateur**. Il est perdu en
 - **Parcours au choix** : l'application n'impose pas de faire « au moins un parcours ».
 - **`difficulte`** est vérifié mais pas encore utilisé à l'écran.
 - **Informations datées** : le panorama des outils (Séance 1) et la question 3 du débat (Séance 4) décrivent la situation de **janvier 2025**, comme le livret. Elles n'ont pas été revérifiées pour cette application. Le formateur doit les confirmer avant l'atelier, notamment les conditions d'inscription (vérification par téléphone).
+- **Séances 5 et 6 : informations de septembre 2026.** Elles ont été vérifiées le 14 septembre 2026 et vieilliront vite (outils, chiffres d'études, droit européen). La liste « Ce qui risque d'être faux dans 6 mois » est dans le guide du formateur, section 8 : à relire avant chaque session.
+- **Guide du formateur public** : `formateur/guide-seances-5-6.md` contient les réponses attendues des séances 5 et 6. Il est publié dans le dépôt, donc public, comme les JSON (choix du formateur, CLAUDE.md, D-013).
 
 ### Tests réalisés et tests à faire
 
-**Tests automatiques réalisés** le 2026-09-14 dans **Edge 153** et **Chrome 153** (sans fenêtre, via un serveur local) : 72 vérifications, toutes réussies dans les deux navigateurs, sans erreur JavaScript. Ils vérifient notamment :
+**Tests automatiques réalisés** le 2026-09-15 dans **Edge 153** et **Chrome 153** (sans fenêtre, via un serveur local) : 80 vérifications, toutes réussies dans les deux navigateurs, sans erreur JavaScript ni fichier introuvable. Ils vérifient notamment :
 
-- les 6 parties, 26 étapes et 52 exercices s'affichent sans erreur ;
+- les 8 parties, 47 étapes et 85 exercices s'affichent sans erreur ;
+- les 18 images (JPEG et SVG) existent et sont décodées par le navigateur ;
+- séances 5 et 6 : compteurs de l'accueil (obligatoires et « au choix »), exercice sans note, trace de l'activité présente en tableau, lien de la fin de « Mes besoins » vers la séance 5 ;
 - à 320 px de large, il n'y a ni défilement horizontal, ni id en double, ni image sans `alt` ;
 - aucune correction ni explication n'est présente dans la page avant la validation, y compris après un rechargement ;
 - le délai anti-précipitation n'a pas de compte à rebours et fait une seule annonce à la fin ;
@@ -747,6 +776,16 @@ Les contrastes des couleurs ont été **calculés** (formule WCAG) : tous au-des
 - Petites différences entre images et texte, sans contradiction : la boulangerie de l'image compare un vrai pain et un pain de décoration, le texte parle d'une boulangerie qui fabrique un pain ressemblant ; le cycle de l'itération a 4 étapes, l'encadré FALC en a 3.
 - Les images ont été redimensionnées (1200 px de large, 1024 px pour les carrées) et converties en JPEG : environ 840 Ko au total au lieu d'environ 8,8 Mo.
 - **Les 8 fichiers d'origine contiennent un marquage de provenance C2PA** qui mentionne « trainedAlgorithmicMedia » (média produit par un modèle entraîné) et « OpenAI ». Ce marquage a été perdu lors de la compression. Pour rester transparent, le pied de page indique : « Les illustrations ont été créées avec une intelligence artificielle. » Vérifiez les droits de diffusion et l'absence de logo ou de marque avant d'ajouter une nouvelle image.
+
+### Séances 5 et 6 « Aller plus loin »
+
+- **Elles ne viennent pas du livret.** Elles ont été rédigées pour l'application, à partir d'un cahier des charges fourni par le formateur (ingénierie de la demande et du contexte ; boucle agentique). **Tout leur contenu est à relire et valider par le formateur.**
+- **Paramètres non fournis** dans ce cahier des charges : des valeurs par défaut ont été choisies (métiers, durée, absence d'outil agentique). Liste et moyen de les changer : guide du formateur, section 0.
+- **Étiquettes** : chaque affirmation technique est marquée **Mesuré** (une étude a compté), **Observé** (des cas documentés existent) ou **Supposé** (avis d'experts, sans preuve), avec sa date. Les sources sont dans le guide du formateur, section 7.
+- **La trace de l'activité** (séance 6, étape 7) est un exemple construit, pas la copie d'un vrai outil. La page le dit.
+- **Les 10 schémas** ont été dessinés en SVG par Claude (une IA), au lieu d'utiliser les prompts d'images du cahier des charges. Plusieurs corrections ont été apportées à ces prompts (couleurs, lisibilité en noir et blanc, affirmations non prouvées) : guide du formateur, section 10.4.
+- **Tensions avec la séance 2, non modifiées** : le corrigé de `s2-e06` (« Plus l'IA a d'informations sur la situation, plus sa réponse est utile ») et l'étape 2 (« La qualité de la demande détermine la qualité de la réponse ») sont nuancés par la séance 5. Propositions de reformulation : guide du formateur, section 10.5. À trancher.
+- **Aucun essai avec des stagiaires** : les durées annoncées sont des estimations.
 
 ---
 

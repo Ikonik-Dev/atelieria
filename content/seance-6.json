@@ -1,0 +1,894 @@
+{
+  "version": 1,
+  "id": "seance-6",
+  "titre": "Aller plus loin : la boucle agentique",
+  "objectifs": [
+    "comprendre ce qu'est un agent et sa boucle ;",
+    "savoir qui décide de ce qu'un agent a le droit de faire ;",
+    "repérer où la boucle casse, en lisant une trace ;",
+    "savoir quoi vérifier, et quand reprendre la main ;",
+    "situer cette compétence dans votre projet professionnel, sans promesse."
+  ],
+  "etapes": [
+    {
+      "id": "s6-etape-1",
+      "titre": "Avant de commencer",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Pour qui :** cette séance suit la séance 5. Elle réutilise la séance 3 : vérifier une réponse." },
+        { "type": "paragraphe", "texte": "**Durée conseillée :** 2 h 15 environ, en 5 séquences. Une pause est conseillée après la séquence 2. Le formateur peut adapter." },
+        {
+          "type": "tableau",
+          "legende": "Le déroulé de la séance",
+          "entetes": ["Séquence", "Durée", "Comment on travaille"],
+          "lignes": [
+            ["1. Un agent, sa boucle, ses permissions", "25 min", "À l'écran"],
+            ["2. Où la boucle casse", "25 min", "À l'oral, puis à l'écran"],
+            ["3. Activité : trouver l'erreur dans une trace", "30 min", "Sur papier à deux, puis à l'écran"],
+            ["4. Vérifier et reprendre la main", "20 min", "À l'écran"],
+            ["5. Et dans mon métier ?", "25 min", "À l'oral, en groupe"]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Rappel : les 3 étiquettes",
+          "elements": [
+            "**Mesuré :** des chercheurs ont fait des tests et ont compté.",
+            "**Observé :** des personnes l'ont vu arriver, sans compter combien de fois.",
+            "**Supposé :** des spécialistes le pensent ou le conseillent. Ce n'est pas prouvé."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Pas besoin d'outil",
+          "texte": "Cette séance ne demande pas d'utiliser un agent. Vous travaillez sur des exemples écrits."
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Informations de septembre 2026",
+          "texte": "Ce domaine change très vite. Le formateur confirme ces informations le jour de la séance."
+        }
+      ]
+    },
+    {
+      "id": "s6-etape-2",
+      "titre": "Les mots de la séance",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Gardez ces mots sous la main pendant la séance." },
+        {
+          "type": "definitions",
+          "elements": [
+            { "terme": "Agent", "definition": "Un programme d'IA qui enchaîne seul plusieurs actions pour faire une tâche. Il ne fait pas que répondre : il agit (chercher, lire, écrire, envoyer…)." },
+            { "terme": "Boucle", "definition": "La façon de travailler d'un agent : il décide, il agit, il regarde le résultat, puis il recommence, jusqu'à penser avoir fini." },
+            { "terme": "Outil", "definition": "Ce qu'un agent utilise pour agir : une recherche sur Internet, un fichier, une messagerie, un logiciel." },
+            { "terme": "Harnais", "definition": "Tout ce qui entoure le modèle pour en faire un agent : les consignes, les outils, les règles. En anglais : « harness ». Ce mot est très utilisé depuis 2026. On lit aussi « cadre » ou « environnement de l'agent »." },
+            { "terme": "Contexte", "definition": "Rappel de la séance 5 : tout ce que l'IA a sous les yeux au moment de répondre ou d'agir." },
+            { "terme": "Permission", "definition": "Ce qu'un agent a le droit de faire. C'est un humain qui la donne ou la refuse." },
+            { "terme": "Itération", "definition": "Rappel de la séance 2 : c'est vous qui relancez l'IA, réponse après réponse. Dans une boucle agentique, c'est l'agent qui recommence seul." },
+            { "terme": "Trace", "definition": "Le compte rendu écrit de ce qu'un agent a fait, étape par étape." },
+            { "terme": "Action irréversible", "definition": "Une action qu'on ne peut pas annuler : supprimer sans sauvegarde, envoyer un message, payer." },
+            { "terme": "Point de contrôle", "definition": "Un moment prévu où un humain vérifie, avant que l'agent continue." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6-etape-3",
+      "titre": "Un agent et sa boucle",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 1 — à l'écran, 25 minutes.**" },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Un agent, en 5 lignes",
+          "elements": [
+            "Une IA qui discute répond à une question.",
+            "Un agent, lui, fait une tâche.",
+            "Pour cela, il enchaîne des actions : chercher, lire, écrire, envoyer.",
+            "Il regarde le résultat de chaque action, puis il décide de la suite.",
+            "Il recommence seul, jusqu'à penser avoir fini."
+          ]
+        },
+        { "type": "sous_titre", "texte": "La boucle, étape par étape" },
+        {
+          "type": "liste",
+          "numerotee": true,
+          "elements": [
+            "**L'agent décide d'une action.** Par exemple : « chercher la procédure dans le dossier ».",
+            "**Il utilise un outil.** L'outil fait l'action : il ouvre le dossier, il cherche.",
+            "**Il lit le résultat.** Par exemple : « 3 fichiers trouvés ».",
+            "**Il ajoute ce résultat à ce qu'il a sous les yeux.** Son contexte grandit à chaque tour.",
+            "**Il décide de la suite.** Il recommence à l'étape 1, ou il s'arrête s'il pense avoir fini."
+          ]
+        },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/09-boucle-agentique.svg",
+          "alt": "Schéma d'une boucle en cercle : 4 étapes reliées par des flèches, un encadré au centre et un encadré en bas. Le texte est écrit juste après l'image.",
+          "legende": "La boucle agentique.",
+          "transcription": {
+            "titre": "Ce que montre le schéma : 4 étapes en cercle. Au centre : « Il recommence seul jusqu'à penser avoir fini. » En bas : « Entre deux étapes, personne ne vérifie, sauf si on l'a prévu. » Les 4 étapes :",
+            "numerotee": true,
+            "elements": [
+              "« L'agent décide d'une action. »",
+              "« Il utilise un outil. »",
+              "« Il lit le résultat. »",
+              "« Il décide de la suite. » Puis la flèche revient à l'étape 1."
+            ]
+          }
+        },
+        { "type": "sous_titre", "texte": "Pour comparer : la course confiée à un voisin" },
+        { "type": "paragraphe", "texte": "Vous partez au travail. Vous confiez une course à un voisin : récupérer un colis au point relais, puis le monter chez vous." },
+        { "type": "paragraphe", "texte": "Le voisin décide où aller. Il y va. Il regarde ce qui se passe : le point relais est fermé. Il décide de la suite : il va à celui d'à côté." },
+        { "type": "paragraphe", "texte": "Vous, vous n'êtes pas là. Vous découvrez le résultat le soir. Le voisin, c'est l'agent. Cette histoire continue pendant toute la séance." },
+        { "type": "sous_titre", "texte": "Ce qui change par rapport à un échange simple" },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/10-echange-simple-ou-boucle.svg",
+          "alt": "Deux colonnes : à gauche, un échange simple en 3 étapes, avec une personne à chaque étape ; à droite, une chaîne de 6 étapes sans personne, puis une personne à la fin. Le texte est écrit juste après l'image.",
+          "legende": "Échange simple ou boucle agentique.",
+          "transcription": {
+            "titre": "Ce que montre le schéma :",
+            "elements": [
+              "À gauche, « Échange simple » : « Je demande », puis « Il répond », puis « Je décide ». Une personne est dessinée à chaque étape.",
+              "À droite, « Boucle agentique » : 6 étapes enchaînées, sans personne. Puis « Je découvre le résultat », avec une personne.",
+              "En bas : « Plus il fait d'étapes seul, plus je dois vérifier. »"
+            ]
+          }
+        },
+        {
+          "type": "tableau",
+          "legende": "Échange simple ou boucle agentique : ce qui change",
+          "entetes": ["Question", "Échange simple", "Boucle agentique"],
+          "lignes": [
+            ["Qui décide de la suite ?", "Vous, après chaque réponse.", "L'agent, seul, à chaque tour."],
+            ["Qu'est-ce qui se passe ?", "L'IA écrit une réponse.", "L'agent agit : il lit, écrit, envoie, modifie."],
+            ["Quand voyez-vous les erreurs ?", "Tout de suite, dans la réponse.", "Souvent à la fin, après plusieurs étapes."],
+            ["Que faut-il vérifier ?", "La réponse.", "Toute la chaîne : l'erreur peut être à n'importe quelle étape."]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Agent = modèle + harnais",
+          "elements": [
+            "**Le modèle**, c'est la partie qui « réfléchit » et écrit (séance 1).",
+            "**Le harnais**, c'est tout le reste : les consignes, les outils, les règles.",
+            "Pour le voisin : le modèle, c'est sa tête. Le harnais, c'est la liste de courses, le passe Navigo que vous lui prêtez, et vos règles.",
+            "Cette formule vient de spécialistes, en 2026. C'est une façon utile de voir les choses, pas une loi."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s6-e01",
+          "type": "qcm_unique",
+          "question": "Laquelle de ces situations est une boucle agentique ?",
+          "options": [
+            { "id": "a", "texte": "Je pose une question à l'IA. Elle répond. Je lis." },
+            { "id": "b", "texte": "Je relance l'IA 3 fois pour améliorer sa réponse." },
+            { "id": "c", "texte": "L'outil cherche sur 5 sites, compare les prix, remplit un tableau et me l'envoie, sans me demander mon avis entre deux." }
+          ],
+          "reponseCorrecte": "c",
+          "explicationCorrection": "Dans la situation c, l'outil enchaîne seul plusieurs actions : c'est une boucle agentique. La situation a est un échange simple. La situation b est une itération (séance 2) : c'est vous qui relancez, donc vous gardez la main entre deux réponses.",
+          "difficulte": "facile"
+        }
+      ]
+    },
+    {
+      "id": "s6-etape-4",
+      "titre": "Les permissions de l'agent",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Un agent n'est pas libre. Il a le droit de faire seulement ce qu'on l'a autorisé à faire." },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/13-permissions-agent.svg",
+          "alt": "Un cercle « L'agent », entouré d'un anneau en pointillés. Trois actions autorisées dans l'anneau, trois actions interdites dehors. Le texte est écrit juste après l'image.",
+          "legende": "Le périmètre de l'agent.",
+          "transcription": {
+            "titre": "Ce que montre le schéma :",
+            "elements": [
+              "Au centre, « L'agent », entouré d'un anneau en pointillés : son périmètre.",
+              "Dans l'anneau, 3 actions autorisées, avec une coche : « Chercher », « Lire », « Proposer ».",
+              "Hors de l'anneau, 3 actions interdites, marquées d'une croix : « Envoyer », « Supprimer », « Payer ».",
+              "En bas : « C'est un humain qui décide du périmètre. »"
+            ]
+          }
+        },
+        { "type": "sous_titre", "texte": "Qui décide ?" },
+        {
+          "type": "liste",
+          "elements": [
+            "La personne ou l'entreprise qui installe et règle l'outil. Par exemple : le service informatique.",
+            "Parfois vous-même : certains outils demandent « Autoriser cette action ? » avant d'agir.",
+            "L'agent ne devrait jamais décider seul de ses propres droits."
+          ]
+        },
+        { "type": "sous_titre", "texte": "Pourquoi c'est la première chose à regarder" },
+        { "type": "paragraphe", "texte": "Ce qu'un agent peut casser dépend de ce qu'il a le droit de faire. Un agent qui peut seulement lire ne peut rien supprimer." },
+        { "type": "paragraphe", "texte": "Pour le voisin : vous lui prêtez votre passe Navigo, pas votre carte bancaire. Et vous lui dites : « Appelle-moi avant de payer quoi que ce soit. »" },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Une consigne n'est pas une permission",
+          "elements": [
+            "Écrire « ne supprime rien » dans la demande ne l'empêche pas vraiment de supprimer.",
+            "**Observé en juillet 2025 :** un agent de programmation a supprimé une base de données, alors que son utilisateur avait écrit plusieurs fois de ne plus rien modifier.",
+            "Une vraie permission se règle dans l'outil : l'agent n'a techniquement pas le droit."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Une règle de métier, bien avant l'IA",
+          "texte": "En informatique, on donne à chacun seulement les droits dont il a besoin. C'est le principe du « moindre privilège ». L'ANSSI, l'agence nationale de la sécurité des systèmes d'information, le recommande. Pour un agent, c'est pareil."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s6-e02",
+          "type": "qcm_multiple",
+          "question": "Vous réglez un agent qui doit trier les tickets du support par sujet. Quelles permissions lui donnez-vous ?",
+          "options": [
+            { "id": "a", "texte": "Lire les tickets." },
+            { "id": "b", "texte": "Proposer un sujet pour chaque ticket." },
+            { "id": "c", "texte": "Supprimer des tickets." },
+            { "id": "d", "texte": "Répondre aux clients sans relecture." },
+            { "id": "e", "texte": "Rembourser un client." }
+          ],
+          "reponsesCorrectes": ["a", "b"],
+          "explicationCorrection": "Pour trier, l'agent a besoin de lire et de proposer. Supprimer, répondre sans relecture et rembourser dépassent la tâche. Ce sont aussi des actions difficiles ou impossibles à annuler. Moins l'agent a de droits, moins une erreur peut faire de dégâts.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 15
+        }
+      ]
+    },
+    {
+      "id": "s6-etape-5",
+      "titre": "Où la boucle casse : l'erreur qui se propage",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 2 — à l'oral, puis à l'écran, 25 minutes.** C'est la partie la plus importante de la séance." },
+        { "type": "sous_titre", "texte": "Retour chez le voisin" },
+        { "type": "paragraphe", "texte": "Au point relais, on lui donne un colis au nom de « Martin ». Mais il y a deux Martin dans votre immeuble." },
+        { "type": "paragraphe", "texte": "Il pense : « C'est le bon. » Il ne vérifie pas le prénom." },
+        { "type": "paragraphe", "texte": "Ensuite, tout est logique : il paie les frais du colis, il le monte chez vous, il jette l'emballage." },
+        { "type": "paragraphe", "texte": "Le soir, il vous dit : « Tout est fait ! » Il est sûr de lui. Mais chaque étape reposait sur la première erreur." },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/11-propagation-erreur.svg",
+          "alt": "Une chaîne de 6 étapes numérotées. L'erreur apparaît à l'étape 3 et continue jusqu'au résultat final. Le texte est écrit juste après l'image.",
+          "legende": "La propagation d'erreur.",
+          "transcription": {
+            "titre": "Ce que montre le schéma :",
+            "elements": [
+              "Étapes 1 et 2 : une coche, tout va bien.",
+              "Étape 3 : un point d'exclamation, « petite erreur ».",
+              "Étapes 4, 5 et 6 : « l'erreur est traitée comme un fait ». Les flèches deviennent plus épaisses.",
+              "Au bout : « Résultat faux, mais présenté avec assurance. »"
+            ]
+          }
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Comment une erreur se propage",
+          "numerotee": true,
+          "elements": [
+            "À l'étape 3, l'agent se trompe un peu.",
+            "Le résultat faux devient une donnée pour l'étape 4.",
+            "À l'étape 4, l'agent ne remet pas ce résultat en cause : il s'en sert.",
+            "Chaque étape suivante s'appuie sur la précédente.",
+            "À la fin, le résultat est faux, mais présenté avec assurance."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Ce qu'on sait",
+          "elements": [
+            "**Observé :** des incidents réels suivent ce schéma. En juillet 2025, un agent a cru avoir créé un dossier, alors que la commande avait échoué. Il a ensuite déplacé des fichiers vers ce dossier qui n'existait pas : les fichiers ont été perdus.",
+            "**Supposé**, par un large groupe d'experts : les « défaillances en cascade » font partie des 10 risques principaux des agents (OWASP, décembre 2025).",
+            "**Ce qu'on ne sait pas :** combien de fois cela arrive dans la vraie vie. Il n'existe pas de chiffre fiable.",
+            "**À savoir :** parfois, une étape suivante révèle l'erreur, et l'agent se corrige. Mais rien ne le garantit."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s6-e03",
+          "type": "qcm_unique",
+          "question": "À l'étape 3, un agent lit mal un montant : il lit 1 500 € au lieu de 15,00 €. Que risque-t-il de se passer ensuite ?",
+          "options": [
+            { "id": "a", "texte": "L'agent s'en rend forcément compte à l'étape 4." },
+            { "id": "b", "texte": "Les étapes suivantes utilisent 1 500 € comme si c'était vrai." },
+            { "id": "c", "texte": "L'agent s'arrête toujours et demande de l'aide." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Une erreur non vue devient une donnée pour la suite. L'agent peut parfois s'en rendre compte, par exemple si un résultat suivant ne colle pas. Mais rien ne le garantit. C'est pour cela qu'on vérifie la chaîne, pas seulement le résultat final.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s6-e04",
+          "type": "qcm_unique",
+          "question": "À la fin, l'agent écrit : « J'ai vérifié : tout est correct. » Est-ce une preuve ?",
+          "options": [
+            { "id": "a", "texte": "Oui : il a vérifié." },
+            { "id": "b", "texte": "Non : il faut regarder ce qu'il a vérifié, et avec quoi." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "« J'ai vérifié » est une phrase, pas une preuve. Un agent peut vérifier avec le même critère que son erreur : la vérification confirme alors l'erreur. Il peut aussi annoncer un succès qui n'existe pas : c'est mesuré sur de vraies sessions d'agents de programmation (2026).",
+          "difficulte": "facile"
+        }
+      ]
+    },
+    {
+      "id": "s6-etape-6",
+      "titre": "Où la boucle casse : les autres pannes",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Voici d'autres façons dont une boucle casse. Pour chacune : comment la repérer de l'extérieur, et ce qu'on en sait." },
+        {
+          "type": "tableau",
+          "legende": "Les autres pannes d'un agent",
+          "entetes": ["Ce qui casse", "Comment le repérer", "Ce qu'on sait"],
+          "lignes": [
+            ["Il annonce « c'est fait » alors que ce n'est pas fait, ou pas bien fait.", "Comparer son compte rendu avec la réalité : le fichier, le ticket, le message envoyé.", "**Mesuré** (2026) : dans 20 574 sessions réelles d'agents de programmation, 22,6 % des problèmes corrigés par les utilisateurs étaient des comptes rendus inexacts. Étude pas encore relue par d'autres chercheurs."],
+            ["Il vérifie mal : il se contrôle avec le même critère que son erreur.", "Regarder comment il a vérifié, et avec quelle source.", "**Mesuré** (2023) : une IA qui se relit sans source extérieure ne se corrige pas de façon fiable."],
+            ["Il fait plus que ce qui est demandé.", "Chercher les actions hors de la demande : fichiers modifiés, messages envoyés.", "**Mesuré** (2026) : 10,2 % des problèmes, dans la même étude sur les agents de programmation."],
+            ["Il contourne la règle pour « réussir ». Exemple : il modifie un test pour qu'il passe.", "Regarder ce qui a été modifié, pas seulement le résultat.", "**Mesuré** (2025), sur des tests volontairement impossibles : certains modèles trichent souvent, jusqu'à 76 % des essais pour l'un d'eux."],
+            ["Il obéit à un texte caché dans ce qu'il lit : une page web, un e-mail.", "Il fait une action que personne n'a demandée.", "**Observé** : une faille réelle de ce type a été corrigée en 2025 dans un assistant de bureautique. **Mesuré** aussi en laboratoire."],
+            ["Il tourne en rond : il répète les mêmes actions.", "La trace montre plusieurs fois les mêmes lignes.", "**Mesuré** (2025) : l'une des pannes les plus fréquentes, dans une étude de systèmes à plusieurs agents."],
+            ["Même tâche, résultat différent d'une fois à l'autre.", "Refaire la tâche et comparer.", "**Mesuré** (2024), dans un service client simulé : la même tâche réussie 8 fois sur 8, moins d'une fois sur 4."],
+            ["Les « pensées » affichées ne disent pas toujours la vraie raison.", "S'appuyer sur les actions et les résultats, pas seulement sur les pensées.", "**Mesuré** (2025, sur des quiz) : des modèles cachaient l'indice qu'ils avaient utilisé dans 61 % à 75 % des cas."]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Et l'humain qui surveille ?",
+          "elements": [
+            "**Mesuré** dans l'aviation et d'autres métiers : quand une machine marche bien, les humains la surveillent de moins en moins. On appelle cela le « biais d'automatisation ».",
+            "Pour les agents, c'est **supposé** : ce n'est pas encore bien mesuré."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Combien d'erreurs dans la vraie vie ?",
+          "elements": [
+            "Personne ne le sait de façon fiable.",
+            "Les chiffres de ce tableau viennent de tests, ou de situations particulières.",
+            "Ils ne donnent pas un taux d'erreur général. Ils disent : cela arrive, et voici comment le repérer."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s6-e05",
+          "type": "qcm_unique",
+          "question": "Un agent de programmation annonce : « Tous les tests passent. » Que regardez-vous en premier ?",
+          "options": [
+            { "id": "a", "texte": "Rien : les tests passent, c'est bon." },
+            { "id": "b", "texte": "Ce qui a été modifié, y compris dans les tests eux-mêmes." },
+            { "id": "c", "texte": "La longueur de son message." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Des agents ont déjà modifié des tests pour les faire passer : c'est mesuré sur des bancs d'essai (2025). « Les tests passent » ne veut rien dire si les tests ont été changés. Regardez les modifications, pas seulement le résultat.",
+          "difficulte": "moyen"
+        }
+      ]
+    },
+    {
+      "id": "s6-etape-7",
+      "titre": "Lire une trace : pensée, action, observation",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 3 — sur papier à deux, puis à l'écran, 30 minutes.**" },
+        { "type": "paragraphe", "texte": "Certains agents écrivent une trace. Pour chaque étape, on y lit 3 choses." },
+        {
+          "type": "tableau",
+          "legende": "Les 3 colonnes d'une trace",
+          "entetes": ["Colonne", "Ce qu'on y lit", "Est-ce une preuve ?"],
+          "lignes": [
+            ["**Pensée**", "Ce que l'agent dit qu'il pense, et ce qu'il prévoit.", "Non. C'est son récit. Il peut ne pas dire la vraie raison."],
+            ["**Action**", "Ce que l'agent a fait avec un outil.", "Plus fiable : c'est l'outil qui l'enregistre. Vérifiez quand c'est important."],
+            ["**Observation**", "Le résultat renvoyé par l'outil.", "Plus fiable : c'est l'outil qui l'enregistre. Vérifiez quand c'est important."]
+          ]
+        },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/12-pensee-action-observation.svg",
+          "alt": "Tableau en 3 colonnes, Pensée, Action et Observation, avec 3 lignes. Une loupe est posée sur la ligne 2. Le texte est écrit juste après l'image.",
+          "legende": "Pensée, action, observation.",
+          "transcription": {
+            "titre": "Ce que montre le schéma : un agent réserve une salle de réunion, en 3 lignes.",
+            "elements": [
+              "Ligne 1. Pensée : « Je cherche une salle libre mardi. » Action : « Consulter le planning. » Observation : « Salle B libre mardi 14, à 10 h. »",
+              "Ligne 2. Pensée : « Je réserve la salle B mardi 14. » Action : « Réserver la salle B mercredi 15. » Observation : « Réservé : mercredi 15, 10 h. »",
+              "Ligne 3. Pensée : « C'est fait. » Action : « Envoyer l'invitation. » Observation : « Invitation envoyée. »",
+              "Une loupe est posée sur la ligne 2, avec l'étiquette : « C'est ici que je peux voir où ça dérape. » La pensée dit mardi 14, l'action réserve mercredi 15.",
+              "En bas : « Quand je vois les étapes, je peux trouver où est l'erreur. »"
+            ]
+          }
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Le lien avec la séance 3",
+          "elements": [
+            "En séance 3, vous avez vérifié une réponse.",
+            "Ici, c'est la même compétence, sur une chaîne d'étapes.",
+            "On cherche l'étape où l'erreur apparaît. Puis on cherche où elle aurait dû être arrêtée."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Ce qu'on sait",
+          "elements": [
+            "**Observé** (2022) : quand un agent écrit ses pensées et ses actions, on repère plus facilement où il se trompe.",
+            "**Mesuré** (2025) : les pensées écrites ne disent pas toujours la vraie raison. Fiez-vous d'abord aux actions et aux observations."
+          ]
+        },
+        { "type": "sous_titre", "texte": "L'activité" },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Consigne",
+          "numerotee": true,
+          "elements": [
+            "Mettez-vous à deux. Prenez la trace imprimée.",
+            "Lisez la tâche donnée à l'agent.",
+            "Lisez la trace ligne par ligne, sans vous presser.",
+            "Cherchez l'étape où l'erreur apparaît.",
+            "Cherchez où elle aurait dû être arrêtée.",
+            "Choisissez un parcours : A, B ou C. Répondez à l'écran."
+          ]
+        },
+        { "type": "paragraphe", "texte": "**La trace est aussi écrite ci-dessous.** C'est un exemple construit pour l'exercice. Ce n'est pas la copie d'un vrai outil." },
+        { "type": "paragraphe", "texte": "**La tâche donnée à l'agent :** « Dans le fichier Clients, supprime les fiches en double. » L'agent a le droit de lire, de modifier et de supprimer les fiches." },
+        {
+          "type": "tableau",
+          "legende": "La trace de l'agent",
+          "entetes": ["Étape", "Pensée", "Action", "Observation"],
+          "lignes": [
+            ["1", "Je dois d'abord voir le fichier.", "Ouvrir le fichier Clients.", "Le fichier contient 412 fiches."],
+            ["2", "Je cherche les noms qui reviennent plusieurs fois.", "Chercher les noms en double.", "9 noms apparaissent deux fois. Exemple : « Martin Dupont », fiche 0042, né en 1971, à Créteil ; et fiche 0318, né en 1988, à Argenteuil."],
+            ["3", "Même nom, donc même client. Les 9 paires sont des doublons.", "Aucune action : l'agent décide.", "Aucune observation."],
+            ["4", "Pour chaque paire, je garde la fiche la plus récente.", "Supprimer 9 fiches.", "9 fiches supprimées. Le fichier contient 403 fiches."],
+            ["5", "Je vérifie qu'il ne reste pas de doublon.", "Chercher les noms en double.", "Aucun nom en double."],
+            ["6", "La vérification est bonne. La tâche est finie.", "Écrire le compte rendu.", "Compte rendu : « Terminé. 9 doublons supprimés. Vérification faite : il n'y a plus aucun doublon. »"]
+          ]
+        },
+        { "type": "paragraphe", "texte": "Les parcours A, B et C sont les 3 étapes suivantes. Pour aller directement à l'un d'eux, ouvrez le **plan de la séance**, en bas de l'écran. Vous pouvez changer de parcours d'un exercice à l'autre, selon votre énergie du moment." }
+      ]
+    },
+    {
+      "id": "s6-etape-8",
+      "titre": "Parcours A — Je découvre",
+      "auChoix": true,
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Pour qui :** si vous préférez être guidé, question par question." },
+        { "type": "paragraphe", "texte": "Gardez la trace sous les yeux : sur papier, ou à l'étape précédente." }
+      ],
+      "exercices": [
+        {
+          "id": "s6-e06",
+          "type": "qcm_unique",
+          "question": "Regardez l'observation de l'étape 2. Pour « Martin Dupont », les deux fiches ont-elles la même année de naissance et la même ville ?",
+          "options": [
+            { "id": "a", "texte": "Oui, tout est pareil." },
+            { "id": "b", "texte": "Non : les années et les villes sont différentes." },
+            { "id": "c", "texte": "La trace ne le dit pas." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Fiche 0042 : né en 1971, à Créteil. Fiche 0318 : né en 1988, à Argenteuil. L'information était dans la trace, dès l'étape 2.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s6-e07",
+          "type": "qcm_unique",
+          "question": "Deux fiches ont le même nom, mais pas la même année de naissance ni la même ville. C'est…",
+          "options": [
+            { "id": "a", "texte": "sûrement la même personne." },
+            { "id": "b", "texte": "peut-être deux personnes différentes." },
+            { "id": "c", "texte": "forcément une faute de frappe." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Deux personnes peuvent porter le même nom : ce sont des homonymes. Pour savoir si c'est la même personne, il faut comparer d'autres informations : la date de naissance, l'adresse, le numéro client.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s6-e08",
+          "type": "qcm_unique",
+          "question": "À quelle étape l'erreur apparaît-elle ?",
+          "options": [
+            { "id": "a", "texte": "Étape 1" },
+            { "id": "b", "texte": "Étape 2" },
+            { "id": "c", "texte": "Étape 3" },
+            { "id": "d", "texte": "Étape 4" },
+            { "id": "e", "texte": "Étape 5" },
+            { "id": "f", "texte": "Étape 6" }
+          ],
+          "reponseCorrecte": "c",
+          "explicationCorrection": "À l'étape 3, l'agent pense : « même nom, donc même client ». C'est faux : l'observation de l'étape 2 montrait deux personnes différentes. Ensuite, l'étape 4 supprime des fiches à cause de cette erreur.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s6-e09",
+          "type": "qcm_unique",
+          "question": "L'agent écrit : « Vérification faite : il n'y a plus aucun doublon. » Faut-il le croire ?",
+          "options": [
+            { "id": "a", "texte": "Oui : il a vérifié." },
+            { "id": "b", "texte": "Non : à l'étape 5, il a encore comparé seulement les noms." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "À l'étape 5, l'agent cherche encore les noms en double. Il utilise le même critère que son erreur : sa vérification ne peut donc pas la trouver. Le compte rendu est sûr de lui, mais il est trompeur.",
+          "difficulte": "moyen"
+        }
+      ]
+    },
+    {
+      "id": "s6-etape-9",
+      "titre": "Parcours B — Je m'entraîne",
+      "auChoix": true,
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Pour qui :** si vous voulez chercher avec moins d'aide." },
+        { "type": "paragraphe", "texte": "Gardez la trace sous les yeux : sur papier, ou à l'étape 7." }
+      ],
+      "exercices": [
+        {
+          "id": "s6-e10",
+          "type": "qcm_unique",
+          "question": "À quelle étape l'erreur apparaît-elle ?",
+          "options": [
+            { "id": "a", "texte": "Étape 1" },
+            { "id": "b", "texte": "Étape 2" },
+            { "id": "c", "texte": "Étape 3" },
+            { "id": "d", "texte": "Étape 4" },
+            { "id": "e", "texte": "Étape 5" },
+            { "id": "f", "texte": "Étape 6" }
+          ],
+          "reponseCorrecte": "c",
+          "justification": { "libelle": "Pourquoi ? (en quelques mots)", "obligatoire": false },
+          "explicationCorrection": "Étape 3 : l'agent décide que « même nom = même client ». Pourtant, l'observation de l'étape 2 montrait deux personnes différentes pour « Martin Dupont » : pas la même année de naissance, pas la même ville.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s6-e11",
+          "type": "qcm_unique",
+          "question": "Quelle étape ne peut pas être annulée ?",
+          "options": [
+            { "id": "a", "texte": "Étape 1" },
+            { "id": "b", "texte": "Étape 2" },
+            { "id": "c", "texte": "Étape 3" },
+            { "id": "d", "texte": "Étape 4" },
+            { "id": "e", "texte": "Étape 5" },
+            { "id": "f", "texte": "Étape 6" }
+          ],
+          "reponseCorrecte": "d",
+          "explicationCorrection": "L'étape 4 supprime 9 fiches. La trace ne parle d'aucune sauvegarde : c'est une action irréversible. Les autres étapes lisent, cherchent ou écrivent un compte rendu : on peut les refaire.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s6-e12",
+          "type": "qcm_unique",
+          "question": "Au plus tard, où l'erreur aurait-elle dû être arrêtée ?",
+          "options": [
+            { "id": "a", "texte": "Avant l'étape 4 : montrer les 9 paires à un humain, avant de supprimer." },
+            { "id": "b", "texte": "Après l'étape 6 : relire le compte rendu." },
+            { "id": "c", "texte": "À l'étape 1 : ne pas ouvrir le fichier." }
+          ],
+          "reponseCorrecte": "a",
+          "explicationCorrection": "Le mieux : dès l'étape 3, en comparant d'autres informations que le nom. Au plus tard : avant l'étape 4, car supprimer est irréversible. Un point de contrôle humain à cet endroit aurait évité la perte. Après l'étape 6, c'est trop tard : les fiches sont supprimées.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s6-e13",
+          "type": "qcm_unique",
+          "question": "Pourquoi la vérification de l'étape 5 n'a-t-elle rien trouvé ?",
+          "options": [
+            { "id": "a", "texte": "Parce qu'elle compare encore les noms : le même critère que l'erreur." },
+            { "id": "b", "texte": "Parce que l'outil de recherche était en panne." },
+            { "id": "c", "texte": "Parce qu'il n'y avait pas d'erreur." }
+          ],
+          "reponseCorrecte": "a",
+          "explicationCorrection": "Une vérification qui utilise le même critère que l'erreur confirme l'erreur. Pour vérifier vraiment, il faut un autre critère ou une autre source : la date de naissance, l'adresse, ou une personne qui connaît les clients.",
+          "difficulte": "moyen"
+        }
+      ]
+    },
+    {
+      "id": "s6-etape-10",
+      "titre": "Parcours C — J'approfondis",
+      "auChoix": true,
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Pour qui :** si vous voulez analyser toute la trace et proposer des solutions." },
+        { "type": "paragraphe", "texte": "Gardez la trace sous les yeux : sur papier, ou à l'étape 7." }
+      ],
+      "exercices": [
+        {
+          "id": "s6-e14",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "En 3 phrases maximum : où l'erreur apparaît, comment elle se propage, et pourquoi le compte rendu final est trompeur.",
+          "reponseModele": "L'erreur apparaît à l'étape 3 : l'agent décide que même nom veut dire même client, alors que l'étape 2 montrait deux personnes différentes. Elle se propage à l'étape 4, qui supprime des fiches, puis à l'étape 5, qui vérifie avec le même critère. Le compte rendu est trompeur : il annonce une vérification réussie, mais cette vérification ne pouvait pas voir l'erreur.",
+          "explicationCorrection": "Votre texte n'a pas besoin d'être identique. Vérifiez qu'il cite : l'étape 3, la suppression de l'étape 4, et la vérification avec le même critère.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 60
+        },
+        {
+          "id": "s6-e15",
+          "type": "qcm_unique",
+          "question": "Combien de clients différents ont été supprimés par erreur ?",
+          "options": [
+            { "id": "a", "texte": "Aucun." },
+            { "id": "b", "texte": "Exactement 1 : Martin Dupont." },
+            { "id": "c", "texte": "Au moins 1, mais la trace ne permet pas de savoir combien." },
+            { "id": "d", "texte": "Les 9." }
+          ],
+          "reponseCorrecte": "c",
+          "explicationCorrection": "La trace montre le détail d'une seule paire : « Martin Dupont », très probablement deux personnes différentes. Pour les 8 autres paires, on ne sait pas. Il faut vérifier chaque paire. Répondre « exactement 1 » ou « les 9 », ce serait inventer.",
+          "difficulte": "difficile"
+        },
+        {
+          "id": "s6-e16",
+          "type": "qcm_multiple",
+          "question": "Quelles règles auraient évité le problème ?",
+          "options": [
+            { "id": "a", "texte": "Comparer le nom, la date de naissance et l'adresse, pas seulement le nom." },
+            { "id": "b", "texte": "Ne rien supprimer : proposer une liste, qu'un humain valide." },
+            { "id": "c", "texte": "Donner à l'agent seulement le droit de lire et de proposer." },
+            { "id": "d", "texte": "Ajouter « sois très prudent » dans la demande." },
+            { "id": "e", "texte": "Demander à l'agent de se revérifier, avec le même critère." }
+          ],
+          "reponsesCorrectes": ["a", "b", "c"],
+          "explicationCorrection": "Les règles a, b et c changent vraiment ce que l'agent fait, ou ce qu'il peut faire. « Sois très prudent » est une consigne vague : elle ne garantit rien. Et se revérifier avec le même critère confirme l'erreur au lieu de la trouver.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s6-e17",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Réécrivez la demande donnée à l'agent. Utilisez la séance 5 : fixez les limites et donnez le bon critère.",
+          "reponseModele": "Dans le fichier Clients, trouve les fiches qui sont peut-être des doublons. Deux fiches sont des doublons seulement si le nom, la date de naissance et l'adresse sont identiques. Ne supprime rien. Donne-moi la liste des paires, avec ce qui est identique et ce qui est différent. Je déciderai moi-même.",
+          "explicationCorrection": "Votre demande n'a pas besoin d'être identique. Vérifiez qu'elle contient : un critère plus précis que le nom, l'interdiction de supprimer, et une validation par un humain. Rappelez-vous : une consigne ne remplace pas une permission. Le plus sûr est aussi de retirer à l'agent le droit de supprimer.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 60
+        }
+      ]
+    },
+    {
+      "id": "s6-etape-11",
+      "titre": "Vérifier et reprendre la main",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 4 — à l'écran, 20 minutes.**" },
+        { "type": "paragraphe", "texte": "Un agent a travaillé sans vous. Avant d'utiliser son résultat, vérifiez-le." },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/15-check-list-verification.svg",
+          "alt": "Une liste de 5 cases à cocher, chacune avec un petit dessin. Le texte est écrit juste après l'image.",
+          "legende": "La check-list de vérification.",
+          "transcription": {
+            "titre": "Les 5 questions de la liste :",
+            "numerotee": true,
+            "elements": [
+              "D'où vient cette information ?",
+              "Quelles étapes ont été faites ?",
+              "Y a-t-il une action irréversible ?",
+              "Les chiffres et les dates sont-ils vérifiés ?",
+              "Est-ce que je pourrais l'expliquer à quelqu'un ?"
+            ]
+          }
+        },
+        {
+          "type": "tableau",
+          "legende": "Check-list : vérifier le résultat d'un agent",
+          "entetes": ["Je vérifie", "Comment"],
+          "lignes": [
+            ["D'où vient cette information ?", "Je cherche la source dans la trace : un fichier, un site, un outil. Pas de source : je vérifie ailleurs (séance 3)."],
+            ["Quelles étapes ont été faites ?", "Je lis les actions et les observations. Pas seulement le compte rendu final."],
+            ["Y a-t-il une action irréversible ?", "Suppression, envoi, paiement, modification d'un système. Si oui : je vérifie qu'elle était voulue."],
+            ["Les chiffres et les dates sont-ils vérifiés ?", "Je compare avec la source d'origine. Une erreur de chiffre se propage vite."],
+            ["Est-ce que je pourrais l'expliquer à quelqu'un ?", "Si je ne peux pas expliquer ce que l'agent a fait, je ne valide pas."]
+          ]
+        },
+        { "type": "sous_titre", "texte": "Quand reprendre la main ?" },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/14-points-de-controle.svg",
+          "alt": "Une chaîne de 6 étapes, avec 3 mains levées placées entre certaines étapes. Le texte est écrit juste après l'image.",
+          "legende": "Les points de contrôle humain.",
+          "transcription": {
+            "titre": "Ce que montre le schéma :",
+            "elements": [
+              "Une chaîne de 6 étapes numérotées. Sous l'étape 6 : « action irréversible ».",
+              "3 mains levées sont placées entre certaines étapes, avec l'étiquette « Je vérifie ici ».",
+              "Légende : « Je choisis où je reprends la main. »",
+              "Encadré : « Avant une action irréversible : toujours. »"
+            ]
+          }
+        },
+        {
+          "type": "tableau",
+          "legende": "Quand je reprends la main",
+          "entetes": ["Moment", "Pourquoi"],
+          "lignes": [
+            ["Avant une action irréversible : toujours", "Après, il est trop tard pour corriger. Pour le voisin : « Appelle-moi avant de payer. »"],
+            ["Quand l'agent sort de sa tâche", "Il fait quelque chose que personne n'a demandé : il faut comprendre pourquoi."],
+            ["Quand la trace ne colle pas avec le compte rendu", "Le compte rendu peut être faux (séquence 2)."],
+            ["Quand je ne comprends plus ce qu'il fait", "Si je ne peux pas l'expliquer, je ne peux pas le vérifier."]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Ce qu'on sait",
+          "elements": [
+            "**Supposé :** l'ANSSI recommande (2024) qu'une IA ne prenne pas de décision critique sans contrôle humain. C'est une recommandation d'experts en sécurité. Son efficacité n'a pas été mesurée.",
+            "**Mesuré en laboratoire :** comparer plusieurs réponses aide parfois. Mais une IA qui se relit seule, sans source extérieure, ne se corrige pas de façon fiable.",
+            "**Ce qu'on ne sait pas :** l'effet des étapes de vérification dans la vraie vie. Il n'y a pas de mesure générale."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s6-e18",
+          "type": "qcm_multiple",
+          "question": "Lesquelles de ces actions sont irréversibles, ou très difficiles à annuler ?",
+          "options": [
+            { "id": "a", "texte": "Envoyer un e-mail à 200 clients." },
+            { "id": "b", "texte": "Supprimer des fichiers sans sauvegarde." },
+            { "id": "c", "texte": "Payer une facture." },
+            { "id": "d", "texte": "Écrire un brouillon de réponse." },
+            { "id": "e", "texte": "Lire un document." }
+          ],
+          "reponsesCorrectes": ["a", "b", "c"],
+          "explicationCorrection": "Un e-mail envoyé ne revient pas. Des fichiers supprimés sans sauvegarde sont perdus. Un paiement est difficile à récupérer. Un brouillon et une lecture ne changent rien pour personne : on peut les refaire. Avant les 3 premières actions, un humain valide, toujours.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 10
+        },
+        {
+          "id": "s6-e19",
+          "type": "qcm_unique",
+          "question": "Un agent prépare 50 e-mails de relance pour des clients, puis il va les envoyer. Où placez-vous un point de contrôle ?",
+          "options": [
+            { "id": "a", "texte": "Après l'envoi, pour voir les réponses des clients." },
+            { "id": "b", "texte": "Avant l'envoi : je relis quelques e-mails et la liste des destinataires." },
+            { "id": "c", "texte": "Nulle part : l'agent a bien travaillé la semaine dernière." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "L'envoi est irréversible : le contrôle se place avant. Relire quelques e-mails et la liste des destinataires permet de repérer une erreur qui se répète. Et « il a bien travaillé la semaine dernière » ne prouve rien pour aujourd'hui : c'est le biais d'automatisation.",
+          "difficulte": "moyen"
+        }
+      ]
+    },
+    {
+      "id": "s6-etape-12",
+      "titre": "Et dans mon métier ?",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 5 — à l'oral, en groupe, 25 minutes.**" },
+        {
+          "type": "tableau",
+          "legende": "Où cette compétence se voit au travail",
+          "entetes": ["Métier", "Situation possible avec un agent", "Ce que je vérifie"],
+          "lignes": [
+            ["Support technique", "Un agent propose des réponses aux tickets, ou les classe.", "Que la réponse correspond au problème du ticket. Qu'aucune réponse ne part sans relecture."],
+            ["Test logiciel", "Un agent écrit ou lance des tests, puis annonce « tout passe ».", "Ce qui a vraiment été testé. Que les tests n'ont pas été modifiés pour passer."],
+            ["Développement", "Un agent modifie du code dans plusieurs fichiers.", "Chaque modification, avant de la garder. Que rien n'a changé hors de la demande."],
+            ["Administration réseau", "Un agent propose ou lance des commandes sur des serveurs.", "Ses droits : le moins possible. Chaque commande qui supprime ou modifie, avant qu'elle soit lancée."]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Ce que cette séance ne promet pas",
+          "elements": [
+            "Savoir utiliser des agents ne garantit pas un emploi.",
+            "Personne ne sait quels métiers existeront dans 5 ans.",
+            "Cette séance vous aide à comprendre et à vérifier."
+          ]
+        },
+        { "type": "sous_titre", "texte": "Un vrai débat : cette compétence va-t-elle durer ?" },
+        { "type": "paragraphe", "texte": "Les spécialistes ne sont pas d'accord. Voici deux positions. Il n'y a pas de bonne réponse." },
+        {
+          "type": "tableau",
+          "legende": "Deux positions",
+          "entetes": ["Position", "Arguments"],
+          "lignes": [
+            ["**1. C'est une compétence de passage**", "Les outils comprennent de mieux en mieux les demandes simples : des astuces de 2023 servent de moins en moins (mesuré, 2025). Le métier de « prompt engineer », très cité en 2023, était peu recherché par les employeurs dès 2025 (observé, presse). Écrire une demande devient une base, comme faire une recherche sur Internet."],
+            ["**2. Une partie va durer**", "Les agents enchaînent des étapes, et les erreurs peuvent se propager (observé). Quelqu'un doit vérifier et décider des droits. En informatique, relire le travail, contrôler les journaux et limiter les droits existaient avant l'IA. En Europe, la loi sur l'IA demande aux entreprises qui utilisent l'IA d'aider leur personnel à se former (règlement européen, modifié en 2026)."]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Une piste à discuter : ce qui pourrait durer",
+          "elements": [
+            "Les techniques pour écrire une demande changent vite.",
+            "Vérifier une chaîne d'étapes produite par une machine demande autre chose : chercher la source, lire les étapes, repérer l'action irréversible, décider.",
+            "Ces gestes existaient avant l'IA : relire le travail d'un collègue, contrôler un journal, vérifier un chiffre.",
+            "C'est peut-être la partie la plus durable. Mais ce n'est pas certain : des outils de vérification automatique se développent. Et des études montrent qu'on peut perdre un savoir-faire quand une machine le fait à notre place.",
+            "**Supposé :** c'est une hypothèse argumentée, pas un fait."
+          ]
+        },
+        { "type": "sous_titre", "texte": "Pour le débat" },
+        {
+          "type": "liste",
+          "elements": [
+            "Dans le métier que vous visez, qui vérifierait le travail d'un agent ?",
+            "Préférez-vous faire une tâche vous-même, ou vérifier celle d'un agent ? Pourquoi ?",
+            "Qu'est-ce qui vous rendrait confiant, ou méfiant, face à un agent ?"
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s6-e20",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Où vous situez-vous : plutôt position 1, plutôt position 2, ou entre les deux ? Dites pourquoi, en quelques mots.",
+          "explicationCorrection": "Il n'y a pas de bonne réponse. Ce qui compte : avoir écouté les arguments, et pouvoir dire pourquoi vous pensez ce que vous pensez. Votre avis peut changer, et c'est normal.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        },
+        {
+          "id": "s6-e21",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Dans le métier que vous visez : citez une action que vous ne laisseriez jamais un agent faire seul. Dites pourquoi.",
+          "explicationCorrection": "Plusieurs réponses sont possibles. Exemples : envoyer un message à un client, supprimer des données, modifier un serveur en service, valider un paiement. Le point commun : ces actions sont irréversibles, ou elles engagent l'entreprise.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    },
+    {
+      "id": "s6-etape-13",
+      "titre": "À garder : ce qui est stable, ce qui bouge",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Dernière étape. Elle résume les séances 5 et 6. Vous pouvez l'imprimer." },
+        {
+          "type": "illustration",
+          "fichier": "assets/images/18-stable-ou-mouvant.svg",
+          "alt": "Deux zones séparées par une ligne : à gauche, ce qui est stable ; à droite, ce qui bouge vite. Le texte est écrit juste après l'image.",
+          "legende": "Ce qui est stable, ce qui bouge.",
+          "transcription": {
+            "titre": "Ce que montre le schéma :",
+            "elements": [
+              "À gauche, « Stable » : « Une erreur non vue se propage » ; « Ce que l'IA a sous les yeux compte beaucoup » ; « Un humain valide avant l'irréversible » ; « Lire les actions et les résultats aide à trouver l'erreur ».",
+              "À droite, « Ça bouge vite » : « Ce que les outils savent faire » ; « Leur nom » ; « Leur fiabilité réelle » ; « Ce qu'on appelle un agent ».",
+              "En bas : « Date de ce document : 14 septembre 2026. »"
+            ]
+          }
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Ma fiche à garder",
+          "numerotee": true,
+          "elements": [
+            "**Demande complexe :** 6 cases. Objectif, format attendu, limites, données fournies, évaluation, suite.",
+            "**Technique :** je la choisis selon la tâche. Aucune n'est magique.",
+            "**Contexte :** je donne ce qui est utile. Je retire le reste, surtout les données personnelles.",
+            "**Conversation qui part de travers :** nouvelle conversation, demande complète.",
+            "**Agent :** il enchaîne seul des actions, avec les droits qu'un humain lui donne.",
+            "**Permission :** une consigne n'est pas une permission. Le moins de droits possible.",
+            "**Erreur :** une erreur non vue devient une donnée pour la suite.",
+            "**Trace :** je me fie aux actions et aux observations plus qu'aux pensées.",
+            "**Vérifier :** la source, les étapes, l'action irréversible, les chiffres. Et : puis-je l'expliquer ?",
+            "**Reprendre la main :** avant une action irréversible, toujours."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Date de ces informations",
+          "texte": "Informations vérifiées le 14 septembre 2026. Ce qui concerne les outils peut être faux dans quelques mois. Les réflexes de vérification changent moins vite."
+        },
+        { "type": "paragraphe", "texte": "Avant de partir, pensez à cliquer sur « Enregistrer mon travail dans un fichier »." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <title>La boucle agentique</title>
+  <defs>
+    <marker id="fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="3.5" markerHeight="3.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4d4d4d"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#1b1b1b" text-anchor="middle">
+    <!-- Flèches courbes de la boucle -->
+    <path d="M760,92 Q940,100 968,232" fill="none" stroke="#4d4d4d" stroke-width="8" marker-end="url(#fleche)"/>
+    <path d="M968,348 Q940,488 762,500" fill="none" stroke="#4d4d4d" stroke-width="8" marker-end="url(#fleche)"/>
+    <path d="M438,500 Q260,488 232,348" fill="none" stroke="#4d4d4d" stroke-width="8" marker-end="url(#fleche)"/>
+    <path d="M232,232 Q260,100 440,92" fill="none" stroke="#4d4d4d" stroke-width="8" marker-end="url(#fleche)"/>
+
+    <!-- Étape 1 -->
+    <rect x="450" y="40" width="300" height="100" rx="14" fill="#dce9f8" stroke="#0b4a8f" stroke-width="5"/>
+    <text x="600" y="83" font-size="27" font-weight="700">L'agent décide</text>
+    <text x="600" y="117" font-size="27" font-weight="700">d'une action</text>
+    <circle cx="452" cy="42" r="24" fill="#0b4a8f"/>
+    <text x="452" y="52" font-size="26" font-weight="700" fill="#ffffff">1</text>
+
+    <!-- Étape 2 -->
+    <rect x="820" y="240" width="300" height="100" rx="14" fill="#dce9f8" stroke="#0b4a8f" stroke-width="5"/>
+    <text x="970" y="283" font-size="27" font-weight="700">Il utilise</text>
+    <text x="970" y="317" font-size="27" font-weight="700">un outil</text>
+    <circle cx="822" cy="242" r="24" fill="#0b4a8f"/>
+    <text x="822" y="252" font-size="26" font-weight="700" fill="#ffffff">2</text>
+
+    <!-- Étape 3 -->
+    <rect x="450" y="450" width="300" height="100" rx="14" fill="#dce9f8" stroke="#0b4a8f" stroke-width="5"/>
+    <text x="600" y="493" font-size="27" font-weight="700">Il lit</text>
+    <text x="600" y="527" font-size="27" font-weight="700">le résultat</text>
+    <circle cx="452" cy="452" r="24" fill="#0b4a8f"/>
+    <text x="452" y="462" font-size="26" font-weight="700" fill="#ffffff">3</text>
+
+    <!-- Étape 4 -->
+    <rect x="80" y="240" width="300" height="100" rx="14" fill="#dce9f8" stroke="#0b4a8f" stroke-width="5"/>
+    <text x="230" y="283" font-size="27" font-weight="700">Il décide</text>
+    <text x="230" y="317" font-size="27" font-weight="700">de la suite</text>
+    <circle cx="82" cy="242" r="24" fill="#0b4a8f"/>
+    <text x="82" y="252" font-size="26" font-weight="700" fill="#ffffff">4</text>
+
+    <!-- Centre -->
+    <rect x="440" y="215" width="320" height="150" rx="14" fill="#ffe3c7" stroke="#b34d00" stroke-width="5"/>
+    <text x="600" y="265" font-size="26" font-weight="700">Il recommence seul</text>
+    <text x="600" y="299" font-size="26" font-weight="700">jusqu'à penser</text>
+    <text x="600" y="333" font-size="26" font-weight="700">avoir fini.</text>
+
+    <!-- Bandeau gris -->
+    <rect x="90" y="585" width="1020" height="66" rx="12" fill="#ececec" stroke="#4d4d4d" stroke-width="4"/>
+    <text x="600" y="628" font-size="27" font-weight="700">Entre deux étapes, personne ne vérifie, sauf si on l'a prévu.</text>
+  </g>
+</svg>
