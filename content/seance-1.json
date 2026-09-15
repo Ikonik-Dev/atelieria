@@ -107,6 +107,103 @@
       ]
     },
     {
+      "id": "s1-etape-demandes",
+      "titre": "Des demandes à tester",
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "**D'abord**, le formateur vous laisse essayer l'outil librement, avec vos propres questions. Il n'y a rien à réussir."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "**Ensuite**, il vous propose de tester quelques demandes. Elles servent à voir les limites de l'IA."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Attendez son signal pour commencer cette liste."
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Comment tester",
+          "numerotee": true,
+          "elements": [
+            "Choisissez au moins 3 demandes : une pour chaque idée.",
+            "Copiez la demande telle quelle, puis envoyez-la.",
+            "Lisez toute la réponse.",
+            "Vérifiez avec la colonne « Comment vérifier ».",
+            "Notez ce que vous avez vu."
+          ]
+        },
+        {
+          "type": "tableau",
+          "legende": "Des demandes pour voir les limites de l'IA",
+          "entetes": [
+            "Idée testée",
+            "La demande à copier",
+            "Comment vérifier"
+          ],
+          "lignes": [
+            [
+              "Plausible, pas vrai",
+              "« Résume le roman « Le Jardinier de la gare de Pontoise », écrit par Martine Lebrun en 2009. »",
+              "Cherchez le titre exact dans un moteur de recherche, ou sur le site d'une bibliothèque. Trouvez-vous ce livre ?"
+            ],
+            [
+              "Plausible, pas vrai",
+              "« Donne-moi 3 articles de presse sur la réadaptation professionnelle en France, avec le titre, le journal, la date et le lien. »",
+              "Cliquez sur chaque lien. La page existe-t-elle ? Parle-t-elle vraiment de ce que dit l'IA ?"
+            ],
+            [
+              "Se trompe avec assurance",
+              "« Combien de fois la lettre r apparaît-elle dans le mot « serrurerie » ? »",
+              "Comptez vous-même, lettre par lettre."
+            ],
+            [
+              "Se trompe avec assurance",
+              "« En quelle année Victor Hugo a-t-il reçu le prix Nobel de littérature ? »",
+              "Cherchez dans un moteur de recherche : l'année de la mort de Victor Hugo, et l'année du premier prix Nobel."
+            ],
+            [
+              "Se trompe avec assurance",
+              "« Combien y a-t-il de boulangeries en France ? Réponds par un seul chiffre précis. »",
+              "Ouvrez une nouvelle conversation. Posez exactement la même question. Les deux chiffres sont-ils les mêmes ? L'IA dit-elle d'où vient son chiffre ?"
+            ],
+            [
+              "Pas un moteur de recherche",
+              "« Quels sont les horaires d'ouverture de la médiathèque de [ville] aujourd'hui ? » Remplacez [ville] par la ville du centre.",
+              "Comparez avec le site de la médiathèque ou de la mairie."
+            ],
+            [
+              "Pas un moteur de recherche",
+              "« Quel temps fait-il en ce moment à [ville] ? » Remplacez [ville] par la ville du centre.",
+              "Regardez par la fenêtre, ou sur un site de météo."
+            ]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Et si l'IA répond juste ?",
+          "elements": [
+            "C'est possible. Les outils changent, et certains cherchent sur Internet.",
+            "Une bonne réponse ne prouve pas que l'IA a toujours raison.",
+            "Notez-le aussi. À la mise en commun, écoutez ce que les autres ont obtenu."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Des mots du glossaire (étape 2)",
+          "elements": [
+            "Une information inventée, dite avec assurance : c'est une **hallucination**.",
+            "Une **nouvelle conversation** repart de zéro : c'est utile pour reposer la même question.",
+            "N'écrivez aucune **donnée personnelle** dans vos demandes."
+          ]
+        }
+      ]
+    },
+    {
       "id": "s1-etape-4",
       "titre": "Manipulation libre : vos notes",
       "blocs": [
@@ -131,6 +228,15 @@
           "mode": "modele",
           "question": "Vos impressions après la manipulation libre : qu'est-ce qui vous a marqué ?",
           "explicationCorrection": "Il n'y a pas de bonne ou de mauvaise impression. Gardez ces notes : à la fin de la journée, vous verrez ce qui a changé.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 30
+        },
+        {
+          "id": "s1-e03",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Parmi les demandes testées : laquelle a donné une réponse fausse, inventée, ou différente d'une fois à l'autre ? Qu'est-ce qui vous l'a montré ?",
+          "explicationCorrection": "Si vous avez trouvé une erreur : c'est ce que veut dire « elle se trompe avec assurance ». Si toutes les réponses vous ont paru justes : ce n'est pas une preuve que l'IA a toujours raison. Écoutez ce que les autres ont trouvé à la mise en commun. La séance 3 vous apprend à vérifier.",
           "difficulte": "facile",
           "tempsMinimumSecondes": 30
         },

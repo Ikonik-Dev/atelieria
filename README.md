@@ -70,6 +70,7 @@ IA_prise_en_main/
 │   └── seance-6.json           Séance 6 : Aller plus loin : la boucle agentique (parcours A, B, C)
 │
 ├── formateur/
+│   ├── guide-seance-1-demandes-a-tester.md  Séance 1 : demandes à tester après le temps libre
 │   └── guide-seances-5-6.md    Guide du formateur des séances 5 et 6 (hors de l'application)
 │
 └── assets/
@@ -83,14 +84,14 @@ Les fichiers d'origine placés à la racine du dossier (8 PNG, livret du stagiai
 | Partie | Étapes | Exercices | Dont « au choix » |
 |---|---|---|---|
 | Avant de commencer | 3 | 10 | 0 |
-| Séance 1 | 4 | 2 | 0 |
+| Séance 1 | 5 | 3 | 0 |
 | Séance 2 | 7 | 13 | 13 (parcours A, B, C) |
 | Séance 3 | 6 | 18 | 0 |
 | Séance 4 | 3 | 9 | 0 |
 | Mes besoins | 3 | 0 | 0 |
 | Séance 5 | 8 | 12 | 0 |
 | Séance 6 | 13 | 21 | 12 (parcours A, B, C) |
-| **Total** | **47** | **85** | **25** |
+| **Total** | **48** | **86** | **25** |
 
 ### Répartition des illustrations
 
@@ -700,9 +701,9 @@ Le travail est gardé **dans un navigateur, sur un ordinateur**. Il est perdu en
 
 ### Tests réalisés et tests à faire
 
-**Tests automatiques réalisés** le 2026-09-15 dans **Edge 153** et **Chrome 153** (sans fenêtre, via un serveur local) : 80 vérifications, toutes réussies dans les deux navigateurs, sans erreur JavaScript ni fichier introuvable. Ils vérifient notamment :
+**Tests automatiques réalisés** le 2026-09-15 dans **Edge 153** et **Chrome 153** (sans fenêtre, via un serveur local) : 82 vérifications, toutes réussies dans les deux navigateurs, sans erreur JavaScript ni fichier introuvable. Ils vérifient notamment :
 
-- les 8 parties, 47 étapes et 85 exercices s'affichent sans erreur ;
+- les 8 parties, 48 étapes et 86 exercices s'affichent sans erreur ;
 - les 18 images (JPEG et SVG) existent et sont décodées par le navigateur ;
 - séances 5 et 6 : compteurs de l'accueil (obligatoires et « au choix »), exercice sans note, trace de l'activité présente en tableau, lien de la fin de « Mes besoins » vers la séance 5 ;
 - à 320 px de large, il n'y a ni défilement horizontal, ni id en double, ni image sans `alt` ;
@@ -738,6 +739,7 @@ Les contrastes des couleurs ont été **calculés** (formule WCAG) : tous au-des
 - **Les exemples de réponse** du parcours A (`s2-e01`) et du parcours B (`s2-e03` à `s2-e08`). Le livret ne donne pas de réponse modèle pour ces exercices.
 - Le découpage des zones d'écriture en exercices : un écran par case du livret (parcours B et C, grille de comparaison, chasse à l'erreur).
 - Quelques objectifs de présentation (« Avant de commencer », Séance 1 ligne 2, Séance 2 ligne 3, « Mes besoins »), l'étape « Après le QCM » et la liste « Dans l'application » (Séance 2, étape 4).
+- **L'étape « Des demandes à tester » de la Séance 1** et l'exercice `s1-e03` (CLAUDE.md, D-014). Le livret prévoit une manipulation libre, sans liste. Risque : un stagiaire peut n'obtenir que des réponses justes et ne pas voir les limites annoncées. L'étape vient **après** le temps libre, pour garder l'observation prévue par la fiche formateur. Aucune demande ne garantit une erreur : le guide `formateur/guide-seance-1-demandes-a-tester.md` explique comment les tester avant l'atelier et préparer une capture de secours.
 - Les valeurs de `difficulte` (les parcours A, B et C sont en `facile`, `moyen` et `difficile`) et de `tempsMinimumSecondes`.
 
 ### Adaptations du livret

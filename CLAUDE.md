@@ -588,3 +588,22 @@ Une entrée par évolution majeure : règle ajoutée, modifiée ou supprimée, n
   - plusieurs affirmations du cahier des charges ont été nuancées après vérification des sources (liste dans le guide, section 10) ;
   - aucun essai avec des stagiaires ; tests manuels d'accessibilité à refaire pour ces séances.
 - **Sections du CLAUDE.md impactées** : 1.2, 3.1
+
+### D-014 — Séance 1 : demandes à tester après la manipulation libre
+
+- **Date** : 2026-09-15
+- **Statut** : Acceptée (placement « en deux temps » choisi par le formateur ; contenu à essayer avec des stagiaires)
+- **Demandée ou validée par** : formateur
+- **Contexte** : la manipulation libre de la séance 1 doit faire constater que l'IA produit du texte plausible, se trompe avec assurance et n'est pas un moteur de recherche. Un stagiaire peut n'obtenir que des réponses justes. La fiche formateur fait pourtant de la manipulation « à l'aveugle » le cœur de l'observation (« que demande spontanément le stagiaire ? »).
+- **Décision** :
+  - nouvelle étape `s1-etape-demandes` (« Des demandes à tester »), placée avant « Manipulation libre : vos notes » et utilisée **après** le temps libre, au signal du formateur : 7 demandes réparties sur les 3 idées, avec une colonne « Comment vérifier » ;
+  - nouvel exercice `s1-e03` (texte libre, non noté) : une réponse fausse, inventée ou changeante, et comment on l'a vue ;
+  - note formateur `formateur/guide-seance-1-demandes-a-tester.md` : déroulé, réponses de référence, test préalable obligatoire, capture de secours réelle et datée.
+- **Raison** : garder l'observation spontanée prévue par la fiche, tout en augmentant les chances de rencontrer une erreur. Aucune demande ne garantit une erreur, d'où la capture de secours (déjà prévue par la fiche pour la séance 3).
+- **Conséquences et limites acceptées** :
+  - contenu ajouté au livret : l'étape « vos notes » passe de l'étape 4 à l'étape 5 ;
+  - les demandes vieilliront avec les outils : à retester avant chaque atelier ;
+  - le titre du roman inventé n'a pas été vérifié dans un catalogue : à contrôler par le formateur ;
+  - le menu permet d'ouvrir la liste avant la fin du temps libre ;
+  - tension existante, non modifiée : l'étape 1 montre les 3 formules avant la manipulation (ordre du livret).
+- **Sections du CLAUDE.md impactées** : aucune règle ; contenu de la séance 1
