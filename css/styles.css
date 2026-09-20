@@ -825,3 +825,13 @@ thead th {
   display: inline-block;
   padding-block: 0.3rem;
 }
+
+/* ---------- Bloc « telechargement » : lien présenté comme un bouton ---------- */
+.telechargement {
+  margin-block: 0.75rem;
+}
+
+.telechargement .bouton {
+  gap: 0.4rem;
+  text-align: left;
+}

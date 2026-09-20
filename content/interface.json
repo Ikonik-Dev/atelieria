@@ -12,8 +12,10 @@
     "seance-3.json",
     "seance-4.json",
     { "fichier": "mes-besoins.json", "etiquette": "Mes besoins" },
+    { "fichier": "bilan.json", "etiquette": "Bilan" },
     "seance-5.json",
-    "seance-6.json"
+    "seance-6.json",
+    "seance-7.json"
   ],
   "titrePage": {
     "accueil": "Accueil — {application}",
@@ -28,7 +30,7 @@
     "info": "ℹ",
     "attention": "⚠",
     "astuce": "★",
-    "verrou": "🔒"
+    "verrou": "🔒", "telechargement": "⬇"
   },
   "navigation": {
     "lienEvitement": "Aller au contenu",
@@ -189,7 +191,8 @@
       "versionInconnue": "La version « {valeur} » n'est pas reconnue. Version possible : {valeurs}.",
       "reponsesAccepteesManquantes": "En mode « comparaison », il faut une liste « reponsesAcceptees » avec au moins une réponse.",
       "modeleOuExplication": "En mode « modele », il faut au moins un des deux champs : « reponseModele » ou « explicationCorrection ».",
-      "idExerciceInconnu": "L'exercice « {valeur} » n'existe dans aucune partie du livret."
+      "idExerciceInconnu": "L'exercice « {valeur} » n'existe dans aucune partie du livret.",
+      "cheminRelatif": "Le chemin « {valeur} » doit être relatif, en minuscules, sans espace ni accent. Exemple : assets/documents/mon-fichier.pdf."
     },
     "titreSeanceIndisponible": "Cette partie n'est pas disponible",
     "texteSeanceIndisponible": "Le fichier de cette partie a un problème.",

@@ -2,7 +2,7 @@
  * blocs-lecon.js — Affichage des parties « à lire » d'une étape.
  *
  * Dans le JSON, chaque étape a une liste "blocs". Chaque bloc a un "type" :
- *   paragraphe, sous_titre, liste, definitions, encadre, illustration, tableau.
+ *   paragraphe, sous_titre, liste, definitions, encadre, illustration, tableau, telechargement.
  * Le détail des champs de chaque bloc est dans le README.
  *
  * Aucun exercice ni aucune correction n'est affiché ici.
@@ -14,6 +14,10 @@ import {
 } from './outils.js';
 
 const STYLES_ENCADRE = ['info', 'attention', 'astuce'];
+
+// Chemin relatif, en minuscules, sans espace ni accent (obligatoire pour GitHub Pages).
+// Refusés : « /assets/... », « https://... », « ../... ».
+const CHEMIN_RELATIF = /^(?![a-z]+:)(?!\/)(?!\.\.)[a-z0-9._/-]+$/;
 
 /* ------------------------------------------------------------------
  * Vérification des blocs
@@ -78,6 +82,13 @@ const verificateurs = {
     bloc.lignes.forEach((ligne, index) => {
       if (!Array.isArray(ligne)) erreurs.push({ champ: `${p}lignes[${index + 1}]`, code: 'typeListe' });
     });
+  },
+  telechargement(bloc, erreurs, p) {
+    verifierTexteObligatoire(bloc, 'fichier', erreurs, p);
+    verifierTexteObligatoire(bloc, 'libelle', erreurs, p);
+    if (estTexteNonVide(bloc.fichier) && !CHEMIN_RELATIF.test(bloc.fichier)) {
+      erreurs.push({ champ: `${p}fichier`, code: 'cheminRelatif', valeur: bloc.fichier });
+    }
   }
 };
 
@@ -181,6 +192,16 @@ const constructeurs = {
     table.append(corps);
     // Sur un petit écran, le tableau peut défiler horizontalement dans son cadre.
     return creer('div', { classe: 'tableau-defilant', tabindex: '0', role: 'region', 'aria-label': bloc.legende }, [table]);
+  },
+  telechargement(bloc, textes) {
+    // Un vrai lien (<a download>) présenté comme un bouton : il fonctionne au clavier,
+    // et le lecteur d'écran l'annonce comme un lien. Le libellé du JSON dit le format du fichier.
+    const nomFichier = bloc.fichier.split('/').pop();
+    const lien = creer('a', { classe: 'bouton bouton-secondaire', href: bloc.fichier, download: nomFichier }, [
+      creer('span', { classe: 'icone', 'aria-hidden': 'true', texte: textes.icones.telechargement }),
+      ajouterTexteRiche(creer('span'), bloc.libelle)
+    ]);
+    return creer('p', { classe: 'telechargement' }, [lien]);
   }
 };
 

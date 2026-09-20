@@ -311,8 +311,11 @@
       "id": "s3-etape-6",
       "titre": "Chasse à l'erreur",
       "blocs": [
-        { "type": "paragraphe", "texte": "Le formateur vous a remis 3 textes imprimés : ce sont des réponses données par une IA." },
+        { "type": "paragraphe", "texte": "Le formateur vous donne 3 textes : ce sont des réponses écrites par une IA. Vous pouvez les lire sur papier, ou les télécharger ci-dessous." },
         { "type": "paragraphe", "texte": "Au moins l'une des trois contient une information fausse. Votre travail, à deux : trouver laquelle, et la **prouver**." },
+        { "type": "telechargement", "fichier": "assets/documents/chasse-erreur-3-textes.pdf", "libelle": "Télécharger les 3 textes en PDF, pour les lire ou les imprimer (91 Ko)" },
+        { "type": "telechargement", "fichier": "assets/documents/chasse-erreur-3-textes.docx", "libelle": "Télécharger les 3 textes en Word, pour écrire dedans (15 Ko)" },
+        { "type": "paragraphe", "texte": "Si le téléchargement ne marche pas, demandez les textes sur papier au formateur." },
         {
           "type": "encadre",
           "style": "info",

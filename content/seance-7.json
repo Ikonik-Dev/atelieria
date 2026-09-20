@@ -1,0 +1,466 @@
+{
+  "version": 1,
+  "id": "seance-7",
+  "titre": "Aller plus loin : l'IA sur mon ordinateur",
+  "objectifs": [
+    "comprendre ce que change une IA installée sur l'ordinateur ;",
+    "choisir un modèle selon la machine et selon la tâche."
+  ],
+  "etapes": [
+    {
+      "id": "s7-etape-1",
+      "titre": "Avant de commencer",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Durée conseillée :** 1 h 30 environ." },
+        {
+          "type": "tableau",
+          "legende": "Le déroulé de la séance",
+          "entetes": ["Séquence", "Durée", "Comment on travaille"],
+          "lignes": [
+            ["1. En ligne ou sur mon ordinateur ?", "20 min", "Écran"],
+            ["2. La démonstration : couper Internet", "20 min", "Le formateur montre, vous observez"],
+            ["3. Ce que ma machine peut faire tourner", "25 min", "Écran, puis à deux"],
+            ["4. Choisir selon la tâche", "25 min", "Écran, puis à l'oral"]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Vous n'avez rien à installer",
+          "elements": [
+            "C'est le formateur qui installe et qui montre.",
+            "Vous n'avez pas besoin de comprendre l'installation.",
+            "Ce qui compte : savoir **quand** cet outil est utile, et **ce qu'il ne fait pas**."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Rappel : les 3 étiquettes",
+          "elements": [
+            "**Mesuré** : une étude ou une mesure a compté.",
+            "**Observé** : des cas existent, mais on ne connaît pas leur fréquence.",
+            "**Supposé** : c'est un avis ou une recommandation, sans preuve."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Informations de septembre 2026",
+          "texte": "Les chiffres de cette séance ont été vérifiés le 21 septembre 2026, sur les machines du centre. Sur une autre machine, les résultats seront différents. Le formateur le confirme le jour de l'atelier."
+        }
+      ]
+    },
+    {
+      "id": "s7-etape-2",
+      "titre": "Les mots de la séance",
+      "blocs": [
+        { "type": "paragraphe", "texte": "Gardez ces mots sous la main pendant la séance." },
+        {
+          "type": "definitions",
+          "elements": [
+            { "terme": "IA locale", "definition": "Une IA installée sur l'ordinateur. Elle fonctionne sans Internet, une fois installée." },
+            { "terme": "Modèle", "definition": "Rappel de la séance 1 : le « moteur » de l'outil. Pour une IA locale, c'est un gros fichier à télécharger." },
+            { "terme": "Paramètres", "definition": "Ce que le modèle a appris, compté en milliards. Un modèle « de 3 milliards » est plus petit qu'un modèle « de 8 milliards »." },
+            { "terme": "Mémoire vidéo", "definition": "La mémoire de la carte graphique. C'est elle qui décide de la taille du modèle qu'on peut utiliser confortablement." },
+            { "terme": "Quantification", "definition": "Une façon de compresser un modèle pour qu'il prenne moins de place. La version courante s'appelle « Q4 »." },
+            { "terme": "Hors ligne", "definition": "Qui fonctionne sans connexion à Internet." },
+            { "terme": "Licence", "definition": "Le texte qui dit ce que l'on a le droit de faire avec un logiciel ou un modèle : l'utiliser au travail, le modifier, le partager." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7-etape-3",
+      "titre": "En ligne ou sur mon ordinateur ?",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 1 — à l'écran, 20 minutes.**" },
+        { "type": "paragraphe", "texte": "Jusqu'ici, vous avez utilisé une IA **en ligne** : votre demande part sur Internet, et la réponse revient." },
+        { "type": "paragraphe", "texte": "Une IA **locale** est installée sur l'ordinateur. Votre demande ne sort pas de la machine." },
+        { "type": "sous_titre", "texte": "Pour comparer : le dictionnaire de la maison" },
+        { "type": "paragraphe", "texte": "Vous avez un dictionnaire chez vous. Il est toujours disponible, même sans réseau. Personne ne sait ce que vous y cherchez." },
+        { "type": "paragraphe", "texte": "Mais il date de son année d'impression. Il ne connaît pas les mots nouveaux, ni l'actualité." },
+        { "type": "paragraphe", "texte": "Pour une information récente, vous appelez quelqu'un ou vous cherchez sur Internet. C'est exactement la différence entre une IA locale et une IA en ligne." },
+        {
+          "type": "tableau",
+          "legende": "Ce qui change entre les deux",
+          "entetes": ["Question", "IA en ligne", "IA sur mon ordinateur"],
+          "lignes": [
+            ["Où va ma demande ?", "Sur les serveurs de l'éditeur", "Nulle part : elle reste sur la machine"],
+            ["Faut-il Internet ?", "Oui, toujours", "Seulement pour l'installation"],
+            ["Est-ce rapide ?", "En général oui", "Cela dépend de la machine"],
+            ["Connaît-elle l'actualité ?", "Parfois, si l'outil cherche sur Internet", "Non"],
+            ["Est-ce que ça coûte ?", "Gratuit ou payant selon l'offre", "Le logiciel est gratuit ; le matériel et l'électricité, non"],
+            ["Qui décide des mises à jour ?", "L'éditeur, sans vous prévenir", "Vous : le modèle installé ne change pas tout seul"]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Ce qu'on sait",
+          "elements": [
+            "**Fait vérifiable :** une fois le modèle téléchargé, une IA locale fonctionne sans Internet.",
+            "**Fait vérifiable :** les outils en ligne changent de version sans prévenir. Une réponse obtenue hier peut être différente demain.",
+            "**Ce qui ne change pas :** locale ou en ligne, l'IA produit du texte plausible. Elle se trompe dans les deux cas (séance 3)."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s7-e01",
+          "type": "qcm_unique",
+          "question": "Quelle est la différence principale entre une IA locale et une IA en ligne ?",
+          "options": [
+            { "id": "a", "texte": "L'IA locale ne se trompe jamais." },
+            { "id": "b", "texte": "Avec l'IA locale, ma demande ne sort pas de l'ordinateur." },
+            { "id": "c", "texte": "L'IA locale est toujours plus rapide." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est le seul vrai avantage, et il est important : rien n'est envoyé sur Internet. Pour le reste, une IA locale se trompe autant, et elle est souvent plus lente.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s7-e02",
+          "type": "qcm_unique",
+          "question": "Vous devez trouver le tarif d'un service public, à jour aujourd'hui. Quel outil ?",
+          "options": [
+            { "id": "a", "texte": "L'IA locale : elle est plus sûre." },
+            { "id": "b", "texte": "Le site officiel, trouvé avec un moteur de recherche." },
+            { "id": "c", "texte": "L'IA locale, puis je vérifie avec l'IA en ligne." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Une IA locale ne connaît pas l'actualité et ne consulte aucun site. C'est la règle de la séance 3 : pour un fait précis et actuel, on va à la source officielle.",
+          "difficulte": "facile"
+        }
+      ]
+    },
+    {
+      "id": "s7-etape-4",
+      "titre": "La démonstration : couper Internet",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 2 — le formateur montre, 20 minutes.**" },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Ce que vous allez voir",
+          "numerotee": true,
+          "elements": [
+            "Le formateur pose une question à une IA installée sur son ordinateur.",
+            "Il coupe le Wi-Fi, ou il débranche le câble réseau.",
+            "Il repose une question. La réponse arrive quand même.",
+            "Il pose la même question à une IA en ligne : elle ne répond plus."
+          ]
+        },
+        { "type": "paragraphe", "texte": "Regardez aussi **la vitesse** : le texte s'écrit-il plus vite que vous ne le lisez ?" },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Ce que cette démonstration prouve, et ne prouve pas",
+          "elements": [
+            "**Elle prouve** que la demande ne part pas sur Internet.",
+            "**Elle ne prouve pas** que la réponse est vraie.",
+            "**Elle ne prouve pas** que vos données sont protégées sur un poste partagé : la conversation reste écrite sur le disque de l'ordinateur."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s7-e03",
+          "type": "qcm_unique",
+          "question": "Le formateur a coupé Internet et l'IA locale a répondu. Qu'est-ce que cela prouve ?",
+          "options": [
+            { "id": "a", "texte": "Que la réponse est exacte." },
+            { "id": "b", "texte": "Que la demande n'est pas partie sur Internet." },
+            { "id": "c", "texte": "Que mes données sont protégées, quoi qu'il arrive." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est la seule chose démontrée. L'exactitude se vérifie comme d'habitude (séance 3). Et sur un poste partagé, la conversation reste lisible par la personne suivante.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s7-e04",
+          "type": "qcm_multiple",
+          "question": "Sur un ordinateur partagé par plusieurs personnes, que faut-il savoir à propos d'une IA locale ?",
+          "options": [
+            { "id": "a", "texte": "Les conversations sont enregistrées sur le disque de l'ordinateur." },
+            { "id": "b", "texte": "La personne suivante peut les retrouver." },
+            { "id": "c", "texte": "Tout s'efface automatiquement à la fermeture." },
+            { "id": "d", "texte": "Les « 3 jamais » de la séance 4 restent utiles." }
+          ],
+          "reponsesCorrectes": ["a", "b", "d"],
+          "explicationCorrection": "« Local » ne veut pas dire « privé ». Rien ne part sur Internet, mais tout reste sur la machine. Sur un poste partagé, la prudence de la séance 4 s'applique toujours.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 15
+        }
+      ]
+    },
+    {
+      "id": "s7-etape-5",
+      "titre": "Ce que ma machine peut faire tourner",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 3 — à l'écran, puis à deux, 25 minutes.**" },
+        { "type": "sous_titre", "texte": "Pour comparer : le plan de travail de la cuisine" },
+        { "type": "paragraphe", "texte": "Pour cuisiner, vous posez vos ingrédients sur le plan de travail. Tout ce qui tient dessus est à portée de main." },
+        { "type": "paragraphe", "texte": "Ce qui ne tient pas reste dans le placard. Vous pouvez quand même cuisiner, mais vous faites des allers-retours. C'est plus lent." },
+        { "type": "paragraphe", "texte": "Dans l'ordinateur, le plan de travail s'appelle la **mémoire vidéo**. Le placard, c'est la mémoire de l'ordinateur." },
+        { "type": "paragraphe", "texte": "**Un modèle qui tient dans la mémoire vidéo est rapide. Un modèle trop gros oblige la machine à des allers-retours : il devient lent.**" },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Les machines du centre",
+          "elements": [
+            "Mémoire vidéo : **4 Go**.",
+            "Mémoire de l'ordinateur : 16 Go, dont une partie utilisée par Windows.",
+            "Vérifié le 21 septembre 2026 par le formateur, sur les postes du centre."
+          ]
+        },
+        {
+          "type": "tableau",
+          "legende": "Quel modèle tient sur ces machines",
+          "entetes": ["Taille du modèle", "Place occupée", "Sur nos machines"],
+          "lignes": [
+            ["1 à 2 milliards", "Environ 1 Go", "Très rapide, mais réponses souvent faibles"],
+            ["**3 à 4 milliards**", "Environ 2 Go", "**Le bon choix : tient dans la mémoire vidéo**"],
+            ["7 à 8 milliards", "Environ 4,5 Go", "Ne tient pas : fonctionne, mais lentement"],
+            ["13 milliards et plus", "8 Go et plus", "Beaucoup trop gros : la machine devient pénible"]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Le calcul, en une ligne",
+          "texte": "Un modèle compressé en « Q4 » occupe environ **0,6 Go par milliard de paramètres**. Un modèle de 3 milliards occupe donc environ 2 Go."
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Activité à deux",
+          "elements": [
+            "Le formateur vous donne les chiffres relevés sur les postes.",
+            "À deux, dites quel modèle vous choisiriez, et pourquoi.",
+            "Puis répondez à l'écran."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s7-e05",
+          "type": "qcm_unique",
+          "question": "Un modèle de 7 milliards de paramètres occupe environ 4,5 Go. La mémoire vidéo est de 4 Go. Que va-t-il se passer ?",
+          "options": [
+            { "id": "a", "texte": "Le modèle refusera de démarrer." },
+            { "id": "b", "texte": "Il fonctionnera, mais plus lentement : une partie reste dans le placard." },
+            { "id": "c", "texte": "Il fonctionnera normalement." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est l'analogie du plan de travail : ce qui ne tient pas reste dans le placard, et il faut faire des allers-retours. La machine y arrive, mais la réponse s'écrit beaucoup plus lentement.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 10
+        },
+        {
+          "id": "s7-e06",
+          "type": "qcm_unique",
+          "question": "Sur une machine avec 4 Go de mémoire vidéo, quelle taille de modèle choisir par défaut ?",
+          "options": [
+            { "id": "a", "texte": "Le plus gros possible : les réponses seront meilleures." },
+            { "id": "b", "texte": "Un modèle de 3 à 4 milliards, qui tient dans la mémoire vidéo." },
+            { "id": "c", "texte": "Peu importe : la taille ne change rien." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "On choisit le plus grand modèle qui **tient**. Au-delà, on perd en confort bien plus qu'on ne gagne en qualité.",
+          "difficulte": "facile"
+        }
+      ]
+    },
+    {
+      "id": "s7-etape-6",
+      "titre": "Plus gros ne veut pas dire meilleur",
+      "blocs": [
+        { "type": "paragraphe", "texte": "C'est l'idée la plus importante de la séance." },
+        { "type": "paragraphe", "texte": "Un modèle plus gros améliore surtout deux choses : **ce qu'il a mémorisé** et **les raisonnements compliqués**." },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Pourquoi ce n'est pas l'argument qu'on croit",
+          "elements": [
+            "**Ce qu'il a mémorisé n'est pas ce qu'il faut lui demander.** Pour un fait précis, on va à la source (séance 3). Prendre un modèle plus gros pour « avoir de meilleures réponses factuelles » renforce le mauvais réflexe.",
+            "**Les tâches utiles dépendent peu de la taille.** Résumer un texte que je fournis, reformuler, changer le ton, extraire des informations : tout ce qu'il faut est **dans ma demande**, pas dans le modèle.",
+            "**Un modèle trop gros casse l'itération.** Si chaque réponse prend deux minutes, on ne relance plus, on accepte la première réponse. On perd alors plus de qualité qu'on n'en gagne (séance 2)."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "À retenir",
+          "texte": "Sur une même machine, **une meilleure demande sur un petit modèle bat presque toujours une demande vague sur un gros modèle**."
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "La démonstration du formateur",
+          "numerotee": true,
+          "elements": [
+            "Demande vague envoyée au gros modèle.",
+            "Demande travaillée envoyée au petit modèle : objectif, format attendu, limites, texte fourni.",
+            "On compare les deux réponses, et les temps d'attente.",
+            "Question au groupe : qu'est-ce qui a changé ? La machine, ou la demande ?"
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s7-e07",
+          "type": "qcm_unique",
+          "question": "Votre résumé est décevant. Quelle est la première chose à essayer ?",
+          "options": [
+            { "id": "a", "texte": "Installer un modèle plus gros." },
+            { "id": "b", "texte": "Revoir ma demande : objectif, format attendu, informations fournies." },
+            { "id": "c", "texte": "Changer d'ordinateur." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Pour résumer un texte que vous fournissez, l'information est dans votre demande, pas dans le modèle. Les 6 cases de la séance 5 servent exactement à cela.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s7-e08",
+          "type": "qcm_multiple",
+          "question": "Quels inconvénients a un modèle trop gros pour la machine ?",
+          "options": [
+            { "id": "a", "texte": "Les réponses arrivent lentement." },
+            { "id": "b", "texte": "On arrête de relancer, donc on accepte la première réponse." },
+            { "id": "c", "texte": "Il invente moins d'informations." },
+            { "id": "d", "texte": "L'ordinateur chauffe et devient bruyant." }
+          ],
+          "reponsesCorrectes": ["a", "b", "d"],
+          "explicationCorrection": "Un modèle plus gros n'empêche pas d'inventer : il hallucine lui aussi. Les trois autres réponses sont des inconvénients bien réels, et le deuxième est le plus coûteux pour la qualité du travail.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 15
+        },
+        {
+          "id": "s7-e09",
+          "type": "qcm_unique",
+          "question": "Un collègue affirme : « Avec un modèle deux fois plus gros, mes demandes donneront de meilleurs résultats. » Que répondez-vous ?",
+          "options": [
+            { "id": "a", "texte": "C'est vrai pour toutes les tâches." },
+            { "id": "b", "texte": "Cela dépend de la tâche : pour travailler un texte qu'on fournit, la demande compte plus que la taille." },
+            { "id": "c", "texte": "C'est faux : les gros modèles sont toujours moins bons." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Les deux réponses extrêmes sont fausses. Un gros modèle aide sur les connaissances et les raisonnements difficiles. Sur un texte fourni, c'est la demande qui fait la différence.",
+          "difficulte": "moyen"
+        }
+      ]
+    },
+    {
+      "id": "s7-etape-7",
+      "titre": "Choisir selon la tâche",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Séquence 4 — à l'écran, puis à l'oral, 25 minutes.**" },
+        {
+          "type": "tableau",
+          "legende": "Quel outil pour quelle tâche",
+          "entetes": ["Ce que je veux faire", "Le bon choix", "Pourquoi"],
+          "lignes": [
+            ["Résumer ou reformuler un texte que je fournis", "IA locale, petit modèle", "Tout est dans ma demande"],
+            ["Traduire, corriger l'orthographe", "IA locale, petit modèle", "Tâche bien maîtrisée par les petits modèles"],
+            ["Travailler un document confidentiel", "IA locale", "Rien ne part sur Internet"],
+            ["Chercher un fait précis ou récent", "Moteur de recherche, source officielle", "Aucune IA ne remplace une source (séance 3)"],
+            ["Une tâche longue et compliquée", "IA en ligne", "Les modèles en ligne sont plus puissants"],
+            ["Une question sur un sujet que je ne connais pas du tout", "Prudence maximale, et vérification", "Sans repère, je ne peux pas voir l'erreur"]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Les licences : une question de travail",
+          "elements": [
+            "Un modèle a une licence, comme un logiciel.",
+            "Certaines licences autorisent tout usage professionnel. D'autres posent des conditions.",
+            "En entreprise, c'est une vraie question : on la pose avant d'installer, pas après.",
+            "Le formateur vous montre où lire la licence d'un modèle."
+          ]
+        },
+        { "type": "sous_titre", "texte": "Pour le débat" },
+        {
+          "type": "liste",
+          "elements": [
+            "Dans le métier que vous visez, y a-t-il des documents qui ne devraient jamais sortir de l'entreprise ?",
+            "Une IA plus lente mais qui garde les données sur place : bon échange, ou pas ?",
+            "Qui devrait décider d'installer ce type d'outil sur un poste de travail ?"
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s7-e10",
+          "type": "qcm_multiple",
+          "question": "Pour quelles tâches une IA locale avec un petit modèle convient-elle bien ?",
+          "options": [
+            { "id": "a", "texte": "Résumer un compte rendu que je fournis." },
+            { "id": "b", "texte": "Connaître le résultat d'un match d'hier." },
+            { "id": "c", "texte": "Reformuler un message trop sec." },
+            { "id": "d", "texte": "Travailler un document confidentiel." },
+            { "id": "e", "texte": "Donner le tarif exact d'une prestation." }
+          ],
+          "reponsesCorrectes": ["a", "c", "d"],
+          "explicationCorrection": "Les cas b et e demandent un fait réel et actuel : une IA locale ne le connaît pas et ne peut pas le vérifier. On utilise une source officielle.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s7-e11",
+          "type": "qcm_unique",
+          "question": "Votre entreprise vous interdit d'envoyer ses documents à une IA en ligne. Une IA locale change-t-elle quelque chose ?",
+          "options": [
+            { "id": "a", "texte": "Oui : les données ne sortent pas de la machine. Mais il faut quand même l'accord de l'entreprise." },
+            { "id": "b", "texte": "Non : c'est pareil, les données partent aussi." },
+            { "id": "c", "texte": "Oui : je peux installer ce que je veux sur mon poste de travail." },
+            { "id": "d", "texte": "Non : c'est interdit dans tous les cas." }
+          ],
+          "reponseCorrecte": "a",
+          "explicationCorrection": "Le risque d'envoi disparaît, et c'est un vrai changement. Mais installer un logiciel sur un poste professionnel demande une autorisation, et la charte de l'entreprise s'applique toujours (séance 4).",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 15
+        },
+        {
+          "id": "s7-e12",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Dans le métier que vous visez : citez une tâche où une IA installée sur l'ordinateur serait utile. Dites pourquoi.",
+          "explicationCorrection": "Plusieurs réponses sont possibles. Deux bonnes raisons : les données restent sur la machine, ou la tâche consiste à travailler un texte qu'on fournit. Si votre tâche demande un fait précis et actuel, l'IA locale n'est pas le bon outil.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    },
+    {
+      "id": "s7-etape-8",
+      "titre": "À garder de cette séance",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Ma fiche à garder",
+          "numerotee": true,
+          "elements": [
+            "**IA locale :** installée sur l'ordinateur. Ma demande ne part pas sur Internet.",
+            "**Local ne veut pas dire privé :** la conversation reste écrite sur la machine.",
+            "**Local ne veut pas dire vrai :** elle se trompe comme les autres. Je vérifie.",
+            "**Pas d'actualité :** pour un fait précis ou récent, je vais à la source.",
+            "**La mémoire vidéo décide :** sur nos machines, 4 Go, donc un modèle de 3 à 4 milliards.",
+            "**Plus gros n'est pas meilleur :** une meilleure demande sur un petit modèle bat une demande vague sur un gros modèle.",
+            "**La lenteur coûte cher :** si je n'ose plus relancer, je perds en qualité.",
+            "**Licence :** avant d'installer au travail, je regarde ce que la licence autorise, et je demande l'accord."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Date de ces informations",
+          "texte": "Informations vérifiées le 21 septembre 2026, sur les machines du centre. Les outils et les modèles changent vite : les noms et les tailles seront peut-être différents dans six mois. Les réflexes de cette séance, eux, changent moins vite."
+        },
+        { "type": "paragraphe", "texte": "Avant de partir, pensez à cliquer sur « Enregistrer mon travail dans un fichier »." }
+      ]
+    }
+  ]
+}

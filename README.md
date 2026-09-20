@@ -66,15 +66,19 @@ IA_prise_en_main/
 │   ├── seance-3.json           Séance 3 : Vérifier : l'IA se trompe
 │   ├── seance-4.json           Séance 4 : Usages responsables
 │   ├── mes-besoins.json        Fiche « Mes besoins » (lecture seule) et fin du livret
+│   ├── bilan.json              Bilan de l'atelier : QCM général de fin (séances 1 à 4, puis 5 et 6 au choix)
 │   ├── seance-5.json           Séance 5 : Aller plus loin : du prompt au contexte
-│   └── seance-6.json           Séance 6 : Aller plus loin : la boucle agentique (parcours A, B, C)
+│   ├── seance-6.json           Séance 6 : Aller plus loin : la boucle agentique (parcours A, B, C)
+│   └── seance-7.json           Séance 7 : Aller plus loin : l'IA sur mon ordinateur (IA locale)
 │
 ├── formateur/
+│   ├── guide-ia-locale-et-outils.md  Installer Ollama, LM Studio, Claude Desktop : licences, limites, procédures
 │   ├── guide-seance-1-demandes-a-tester.md  Séance 1 : demandes à tester après le temps libre
 │   └── guide-seances-5-6.md    Guide du formateur des séances 5 et 6 (hors de l'application)
 │
 └── assets/
-    └── images/                 18 illustrations : 8 JPEG du livret, 10 schémas SVG (séances 5 et 6)
+    ├── images/                 18 illustrations : 8 JPEG du livret, 10 schémas SVG (séances 5 et 6)
+    └── documents/              Fichiers à télécharger (séance 3 : les 3 textes de la chasse à l'erreur, en PDF et Word)
 ```
 
 Les fichiers d'origine placés à la racine du dossier (8 PNG, livret du stagiaire et fiche formateur en PDF) **ne sont pas utilisés** par l'application et **ne sont pas publiés** (voir `.gitignore`).
@@ -89,9 +93,11 @@ Les fichiers d'origine placés à la racine du dossier (8 PNG, livret du stagiai
 | Séance 3 | 6 | 18 | 0 |
 | Séance 4 | 3 | 9 | 0 |
 | Mes besoins | 3 | 0 | 0 |
+| Bilan | 6 | 25 | 8 (séances 5 et 6) |
 | Séance 5 | 8 | 12 | 0 |
 | Séance 6 | 13 | 21 | 12 (parcours A, B, C) |
-| **Total** | **48** | **86** | **25** |
+| Séance 7 | 8 | 12 | 0 |
+| **Total** | **62** | **123** | **33** |
 
 ### Répartition des illustrations
 
@@ -454,6 +460,28 @@ Dans tous les textes, vous pouvez mettre des mots **en gras** en les entourant d
 
 La première case de chaque ligne sert de titre à la ligne. Sur un petit écran, le tableau défile horizontalement dans son cadre.
 
+### Téléchargement
+
+Un lien pour télécharger un fichier (PDF, Word…), présenté comme un bouton.
+
+```json
+{
+  "type": "telechargement",
+  "fichier": "assets/documents/chasse-erreur-3-textes.pdf",
+  "libelle": "Télécharger les 3 textes en PDF, pour les lire ou les imprimer (91 Ko)"
+}
+```
+
+| Champ | Obligatoire | Rôle |
+|---|---|---|
+| `fichier` | Oui | Chemin **relatif**, en minuscules, sans espace ni accent. Rangez les fichiers dans `assets/documents/`. Un chemin qui commence par `/`, `../` ou `https://` est refusé (message d'erreur « cheminRelatif »). |
+| `libelle` | Oui | Le texte du bouton. **Écrivez le format et le poids du fichier** (« en PDF », « 91 Ko ») : la personne sait ce qu'elle va recevoir avant de cliquer. |
+
+- Un bloc = un fichier. Pour proposer deux formats, mettez deux blocs.
+- Le fichier est public, comme tout le dépôt : **n'y mettez jamais de corrigé**.
+- Prévoyez une solution de repli dans un paragraphe, par exemple : « Si le téléchargement ne marche pas, demandez les textes sur papier au formateur. »
+- Si vous remplacez le fichier, pensez à mettre à jour le poids dans `libelle`.
+
 ---
 
 ## 8. Les 3 types d'exercices
@@ -701,9 +729,9 @@ Le travail est gardé **dans un navigateur, sur un ordinateur**. Il est perdu en
 
 ### Tests réalisés et tests à faire
 
-**Tests automatiques réalisés** le 2026-09-15 dans **Edge 153** et **Chrome 153** (sans fenêtre, via un serveur local) : 82 vérifications, toutes réussies dans les deux navigateurs, sans erreur JavaScript ni fichier introuvable. Ils vérifient notamment :
+**Tests automatiques réalisés** le 2026-09-15 dans **Edge 153** et **Chrome 153** (sans fenêtre, via un serveur local) : 87 vérifications, toutes réussies dans les deux navigateurs, sans erreur JavaScript ni fichier introuvable. Ils vérifient notamment :
 
-- les 8 parties, 48 étapes et 86 exercices s'affichent sans erreur ;
+- les 10 parties, 62 étapes et 123 exercices s'affichent sans erreur ;
 - les 18 images (JPEG et SVG) existent et sont décodées par le navigateur ;
 - séances 5 et 6 : compteurs de l'accueil (obligatoires et « au choix »), exercice sans note, trace de l'activité présente en tableau, lien de la fin de « Mes besoins » vers la séance 5 ;
 - à 320 px de large, il n'y a ni défilement horizontal, ni id en double, ni image sans `alt` ;
@@ -740,6 +768,9 @@ Les contrastes des couleurs ont été **calculés** (formule WCAG) : tous au-des
 - Le découpage des zones d'écriture en exercices : un écran par case du livret (parcours B et C, grille de comparaison, chasse à l'erreur).
 - Quelques objectifs de présentation (« Avant de commencer », Séance 1 ligne 2, Séance 2 ligne 3, « Mes besoins »), l'étape « Après le QCM » et la liste « Dans l'application » (Séance 2, étape 4).
 - **L'étape « Des demandes à tester » de la Séance 1** et l'exercice `s1-e03` (CLAUDE.md, D-014). Le livret prévoit une manipulation libre, sans liste. Risque : un stagiaire peut n'obtenir que des réponses justes et ne pas voir les limites annoncées. L'étape vient **après** le temps libre, pour garder l'observation prévue par la fiche formateur. Aucune demande ne garantit une erreur : le guide `formateur/guide-seance-1-demandes-a-tester.md` explique comment les tester avant l'atelier et préparer une capture de secours.
+- **Les 3 textes de la chasse à l'erreur (Séance 3)** : `assets/documents/chasse-erreur-3-textes.pdf` et `.docx`, téléchargeables depuis l'écran (bloc `telechargement`, CLAUDE.md, D-015). Ils ont été **rédigés par une IA avec des erreurs placées volontairement** : ce ne sont pas des réponses obtenues spontanément. La fiche formateur recommande plutôt des réponses réelles et datées. Si le formateur remplace un texte, il remplace aussi les deux fichiers. La phrase du livret « Le formateur vous a remis 3 textes imprimés » est adaptée pour mentionner le téléchargement.
+- **Le « Bilan » de fin d'atelier** (`content/bilan.json`, CLAUDE.md, D-016) : 17 questions sur les séances 1 à 4, puis 8 questions « au choix » sur les séances 5 et 6, et 2 questions ouvertes. Il ne vient pas du livret. Aucune question ne reprend le QCM de positionnement, pour mesurer la compréhension plutôt que la mémoire du matin. Les identifiants sont en `s90-eNN`, hors de la numérotation des séances.
+- **La Séance 7 « L'IA sur mon ordinateur »** (CLAUDE.md, D-017) : IA locale, choix d'un modèle selon la machine et la tâche. Elle ne vient pas du livret. **Aucune installation n'est nécessaire côté stagiaire** : le formateur fait la démonstration. Les chiffres de matériel (4 Go de mémoire vidéo) sont ceux des postes du centre, relevés le 21 septembre 2026 : à revérifier sur d'autres machines. Procédures d'installation, licences et mesures : `formateur/guide-ia-locale-et-outils.md`.
 - Les valeurs de `difficulte` (les parcours A, B et C sont en `facile`, `moyen` et `difficile`) et de `tempsMinimumSecondes`.
 
 ### Adaptations du livret

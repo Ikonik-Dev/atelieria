@@ -6,7 +6,7 @@
 >
 > Si une demande contredit une règle de ce fichier, **le signaler explicitement avant d'implémenter**. Ne jamais trancher en silence (voir section 5).
 
-**Dernière mise à jour** : 2026-09-15
+**Dernière mise à jour** : 2026-09-21
 
 ---
 
@@ -607,3 +607,59 @@ Une entrée par évolution majeure : règle ajoutée, modifiée ou supprimée, n
   - le menu permet d'ouvrir la liste avant la fin du temps libre ;
   - tension existante, non modifiée : l'étape 1 montre les 3 formules avant la manipulation (ordre du livret).
 - **Sections du CLAUDE.md impactées** : aucune règle ; contenu de la séance 1
+
+### D-015 — Bloc « telechargement » et textes de la chasse à l'erreur
+
+- **Date** : 2026-09-15
+- **Statut** : Acceptée
+- **Demandée ou validée par** : formateur (bouton de téléchargement, phrase à adapter), développeur (mise en œuvre)
+- **Contexte** : la séance 3 (« Chasse à l'erreur ») supposait 3 textes imprimés remis par le formateur. Le formateur veut que le stagiaire puisse aussi les télécharger depuis l'écran. Aucun bloc « à lire » ne permettait un lien.
+- **Décision** :
+  - nouveau type de bloc `telechargement` (`fichier`, `libelle`) dans `blocs-lecon.js` : un lien `<a download>` présenté comme un bouton ; chemin obligatoirement relatif, en minuscules (code d'erreur `cheminRelatif`) ; icône dans `interface.json` (`icones.telechargement`) ;
+  - les 3 textes sont dans `assets/documents/` en PDF (lire, imprimer) et en Word (écrire dedans) ; le corrigé reste dans `formateur/seance-3-chasse-erreur/` ;
+  - phrase adaptée : « Le formateur vous donne 3 textes : ce sont des réponses écrites par une IA. Vous pouvez les lire sur papier, ou les télécharger ci-dessous. », avec une solution de repli si le téléchargement échoue.
+- **Raison** : un vrai lien reste utilisable au clavier et annoncé correctement par un lecteur d'écran ; le libellé dit le format et le poids du fichier. Les textes téléchargés ne contiennent aucune réponse (règle 2.1 respectée).
+- **Conséquences et limites acceptées** :
+  - modification du JavaScript (nouveau bloc, pas nouveau type d'exercice) : documentée dans le README, section 7 ;
+  - les 3 textes sont **construits** (erreurs placées volontairement par une IA), alors que la fiche formateur recommande des réponses d'IA réelles et datées ; si le formateur remplace un texte, il doit aussi remplacer les deux fichiers téléchargeables ;
+  - les fichiers sont publics une fois poussés ; le corrigé aussi s'il est poussé (à décider).
+- **Sections du CLAUDE.md impactées** : 2.3 (nouveau bloc de contenu), 3.1 (`assets/documents/`)
+
+### D-016 — Bilan de fin d'atelier (QCM général)
+
+- **Date** : 2026-09-20
+- **Statut** : Acceptée (demandée par le formateur ; contenu des questions à valider par lui)
+- **Demandée ou validée par** : formateur
+- **Contexte** : le formateur veut prolonger l'atelier. Premier besoin retenu : un QCM général de fin, sans contrainte technique. L'atelier n'avait qu'un QCM de positionnement au début.
+- **Décision** :
+  - nouvelle partie `content/bilan.json`, étiquette « Bilan », placée **après « Mes besoins » et avant la séance 5** : la journée du livret se termine donc par le bilan ;
+  - 6 étapes : 15 questions notées sur les séances 1 à 4, une étape `auChoix` de 8 questions sur les séances 5 et 6, et 2 questions ouvertes de fin ;
+  - identifiants d'exercices en **`s90-eNN`**, hors de la numérotation des séances, pour ne pas bloquer une future séance 7 ;
+  - aucune question ne reprend le QCM de positionnement (`s0`) : les questions portent sur ce qui a été travaillé dans la journée.
+- **Raison** : un bilan qui reprend les mêmes questions que le matin mesure surtout la mémoire immédiate. L'étape « au choix » évite d'afficher un retard aux stagiaires qui n'ont pas suivi les séances 5 et 6 (même raison qu'en D-011).
+- **Conséquences et limites acceptées** :
+  - **aucune comparaison automatique** avec les réponses du matin : l'application ne sait pas confronter deux réponses. Le bilan renvoie le stagiaire vers « Avant de commencer », où ses réponses restent affichées ;
+  - le bilan est noté (juste ou faux), alors que le QCM de positionnement ne l'est pas : c'est assumé, et l'étape 1 précise que ce n'est pas un examen ;
+  - un stagiaire qui fait les séances 5 et 6 doit revenir en arrière dans le menu pour les 8 questions au choix ;
+  - questions et corrigés rédigés par une IA, **non essayés avec des stagiaires** : à relire par le formateur.
+- **Sections du CLAUDE.md impactées** : aucune règle ; contenu
+
+### D-017 — Séance 7 « L'IA sur mon ordinateur » (IA locale)
+
+- **Date** : 2026-09-21
+- **Statut** : Acceptée (demandée par le formateur ; contenu à valider par lui, non essayé avec des stagiaires)
+- **Demandée ou validée par** : formateur
+- **Contexte** : le formateur dispose du code administrateur des postes et souhaite aborder l'IA locale (Ollama, LM Studio), en se limitant autant que possible aux logiciels libres. Claude Desktop est payant et non pris en charge par le centre. Les postes ont une carte graphique de 4 Go, limitée à 35 W.
+- **Décision** :
+  - nouvelle partie `content/seance-7.json`, placée **après la séance 6** : 8 étapes, 12 exercices, identifiants `s7-eNN` ;
+  - **aucune installation côté stagiaire** : le formateur fait la démonstration, les exercices ne demandent aucun outil ;
+  - contenu centré sur deux idées : « local ne veut dire ni privé ni vrai », et « plus gros ne veut pas dire meilleur » ;
+  - la contrainte matérielle est enseignée par une analogie (le plan de travail de la cuisine) et une règle de calcul simple : environ 0,6 Go par milliard de paramètres en Q4 ;
+  - la couche technique (procédures d'installation, licences des outils et des modèles, mesures de vitesse, relevé de configuration sous Windows) est dans `formateur/guide-ia-locale-et-outils.md`, hors de l'application.
+- **Raison** : l'intérêt pédagogique de l'IA locale est la question des données (séance 4) et le choix raisonné d'un outil, pas la performance. Enseigner « installer un gros modèle améliore les réponses » irait contre la séance 3 (pour un fait, on va à la source) et contre la séance 2 (la lenteur casse l'itération).
+- **Conséquences et limites acceptées** :
+  - les chiffres de matériel sont ceux des postes du centre au 21 septembre 2026 : à revérifier ailleurs ;
+  - les noms et tailles de modèles vieilliront vite : la séance ne cite aucun nom, seulement des tailles en milliards de paramètres ;
+  - la séance dépend d'une démonstration du formateur : sans elle, l'étape 4 perd son intérêt ;
+  - erreur corrigée en cours de rédaction : la bande passante mémoire, annoncée d'abord à 88 Go/s, est en réalité d'environ 190 Go/s. Les guides ont été corrigés.
+- **Sections du CLAUDE.md impactées** : aucune règle ; contenu

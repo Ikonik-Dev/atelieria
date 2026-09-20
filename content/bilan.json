@@ -1,0 +1,429 @@
+{
+  "version": 1,
+  "id": "bilan",
+  "titre": "Bilan de l'atelier",
+  "objectifs": [
+    "revoir les idées importantes de la journée ;",
+    "repérer ce qui est acquis et ce qui reste à travailler."
+  ],
+  "etapes": [
+    {
+      "id": "bilan-etape-1",
+      "titre": "Avant de commencer le bilan",
+      "blocs": [
+        { "type": "paragraphe", "texte": "**Durée :** 30 à 40 minutes." },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Ce bilan n'est pas un examen",
+          "elements": [
+            "Il sert à voir ce que vous avez retenu.",
+            "Il n'y a pas de moyenne, et personne ne vous compare aux autres.",
+            "Une réponse fausse indique seulement un point à revoir avec le formateur.",
+            "Prenez votre temps. Vous pouvez vous arrêter et revenir plus tard."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Comment il est organisé",
+          "elements": [
+            "**15 questions** sur le livret : séances 1 à 4.",
+            "**8 questions au choix** sur les séances 5 et 6, « Aller plus loin ». Faites-les seulement si vous avez suivi ces séances.",
+            "La correction s'affiche après chaque réponse, comme d'habitude."
+          ]
+        },
+        { "type": "paragraphe", "texte": "Le matin, vous avez répondu au **QCM de positionnement**. Les questions d'aujourd'hui sont différentes : elles portent sur ce qui a été travaillé pendant la journée." }
+      ]
+    },
+    {
+      "id": "bilan-etape-2",
+      "titre": "Le livret : séances 1 à 4",
+      "blocs": [
+        { "type": "sous_titre", "texte": "Ce que fait une IA (séance 1)" }
+      ],
+      "exercices": [
+        {
+          "id": "s90-e01",
+          "type": "qcm_unique",
+          "question": "On dit qu'une IA produit un texte « plausible ». Qu'est-ce que cela veut dire ?",
+          "options": [
+            { "id": "a", "texte": "Le texte est vrai, car l'IA a lu beaucoup de documents." },
+            { "id": "b", "texte": "Le texte ressemble à un texte juste, sans qu'on sache s'il l'est." },
+            { "id": "c", "texte": "Le texte est toujours court et simple." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Plausible veut dire « vraisemblable », pas « vrai ». Rappel de la boulangerie (séance 1) : un pain de décoration ressemble à un vrai pain. De l'extérieur, rien ne les distingue.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s90-e02",
+          "type": "qcm_multiple",
+          "question": "Qu'est-ce qui est vrai à propos d'une hallucination ?",
+          "options": [
+            { "id": "a", "texte": "L'IA invente une information fausse." },
+            { "id": "b", "texte": "L'IA prévient qu'elle n'est pas sûre." },
+            { "id": "c", "texte": "Elle garde le même ton assuré que quand elle a raison." },
+            { "id": "d", "texte": "Cela arrive seulement avec les outils gratuits." }
+          ],
+          "reponsesCorrectes": ["a", "c"],
+          "explicationCorrection": "Une hallucination, c'est une information inventée, dite avec assurance. L'IA ne sait pas qu'elle ne sait pas : elle ne prévient donc pas. Et cela arrive avec tous les outils, gratuits ou payants.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 15
+        },
+        {
+          "id": "s90-e03",
+          "type": "qcm_unique",
+          "question": "Vous ouvrez une nouvelle conversation avec l'IA. Que se passe-t-il ?",
+          "options": [
+            { "id": "a", "texte": "Elle se souvient de tout ce que vous avez dit avant." },
+            { "id": "b", "texte": "Elle repart de zéro : il faut redonner les informations utiles." },
+            { "id": "c", "texte": "Elle devient plus intelligente." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Une nouvelle conversation repart de zéro (glossaire, séance 1). C'est un inconvénient quand on oublie de redonner le contexte. C'est un avantage quand la conversation part de travers : on repart proprement.",
+          "difficulte": "facile"
+        },
+        { "id": "s90-e04", "type": "qcm_unique", "question": "Quelle phrase décrit le mieux la différence entre une IA et un moteur de recherche ?", "options": [{ "id": "a", "texte": "Le moteur trouve des pages qui existent ; l'IA fabrique un texte nouveau." }, { "id": "b", "texte": "Le moteur est gratuit ; l'IA est payante." }, { "id": "c", "texte": "Le moteur est ancien ; l'IA le remplace partout." }], "reponseCorrecte": "a", "explicationCorrection": "L'IA est bonne pour transformer, expliquer, produire du texte. Le moteur est meilleur pour trouver un fait précis, vérifiable et actuel (séance 3).", "difficulte": "facile" }
+      ]
+    },
+    {
+      "id": "bilan-etape-3",
+      "titre": "Demander et vérifier",
+      "blocs": [
+        { "type": "sous_titre", "texte": "Écrire sa demande (séance 2)" }
+      ],
+      "exercices": [
+        {
+          "id": "s90-e05",
+          "type": "qcm_unique",
+          "question": "Voici une demande : « Fais un résumé de ce texte, en 5 lignes, pour un collègue qui ne connaît pas le sujet. » Laquelle des 4 questions n'a pas de réponse dans cette demande ?",
+          "options": [
+            { "id": "a", "texte": "QUOI ?" },
+            { "id": "b", "texte": "POUR QUI ?" },
+            { "id": "c", "texte": "COMMENT ?" },
+            { "id": "d", "texte": "AVEC QUOI ?" }
+          ],
+          "reponseCorrecte": "d",
+          "explicationCorrection": "QUOI : un résumé. POUR QUI : un collègue qui ne connaît pas le sujet. COMMENT : 5 lignes. Il manque AVEC QUOI : le texte lui-même n'est pas fourni. Sans lui, l'IA invente.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 10
+        },
+        {
+          "id": "s90-e06",
+          "type": "qcm_unique",
+          "question": "La réponse de l'IA est trop longue et trop technique. Que faites-vous en premier ?",
+          "options": [
+            { "id": "a", "texte": "Je recommence tout dans une nouvelle conversation." },
+            { "id": "b", "texte": "Je lui dis ce qui ne va pas : « plus court, et sans mot technique »." },
+            { "id": "c", "texte": "J'essaie un autre outil d'IA." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est l'itération (séance 2) : on précise, on ne recommence pas. Comme en colocation, on dit ce qui ne va pas plutôt que de tout refaire soi-même.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s90-e07",
+          "type": "qcm_multiple",
+          "question": "Qu'est-ce qui rend vraiment une demande plus utile ?",
+          "options": [
+            { "id": "a", "texte": "Dire la forme attendue : longueur, liste, tableau." },
+            { "id": "b", "texte": "Donner les informations utiles sur la situation." },
+            { "id": "c", "texte": "Écrire en majuscules." },
+            { "id": "d", "texte": "Dire à qui la réponse est destinée." },
+            { "id": "e", "texte": "Écrire « c'est très important pour moi »." }
+          ],
+          "reponsesCorrectes": ["a", "b", "d"],
+          "explicationCorrection": "Les majuscules et les phrases d'insistance ne changent rien de fiable. Ce qui aide : dire quoi, pour qui, comment, et avec quelles informations (séance 2).",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 15
+        },
+        {
+          "id": "s90-e08",
+          "type": "qcm_multiple",
+          "question": "Dans une réponse d'IA, qu'est-ce qui doit vous alerter et demander une vérification ?",
+          "options": [
+            { "id": "a", "texte": "Une date très précise." },
+            { "id": "b", "texte": "Une citation attribuée à quelqu'un." },
+            { "id": "c", "texte": "Un texte bien écrit et bien présenté." },
+            { "id": "d", "texte": "Un calcul en plusieurs étapes." },
+            { "id": "e", "texte": "Une information sur un événement récent." }
+          ],
+          "reponsesCorrectes": ["a", "b", "d", "e"],
+          "explicationCorrection": "Ce sont 4 des signaux de vigilance de la séance 3. Attention à la réponse c : un texte bien présenté n'est pas un signe de vérité. C'est même ce qui rend l'erreur difficile à voir.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s90-e09",
+          "type": "qcm_unique",
+          "question": "Vous voulez l'horaire du train de demain matin. Quel outil est le plus adapté ?",
+          "options": [
+            { "id": "a", "texte": "L'IA : elle répond plus vite." },
+            { "id": "b", "texte": "Le site officiel du transporteur, trouvé avec un moteur de recherche." },
+            { "id": "c", "texte": "L'IA, puis je vérifie avec une autre IA." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est une donnée réelle et actuelle : il faut une source fiable. Vérifier une IA avec une autre IA ne prouve rien : les deux peuvent se tromper, et parfois de la même façon.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s90-e10",
+          "type": "qcm_unique",
+          "question": "L'IA écrit à la fin de sa réponse : « J'ai vérifié, ces informations sont exactes. » Que faites-vous ?",
+          "options": [
+            { "id": "a", "texte": "Je la crois : elle a vérifié." },
+            { "id": "b", "texte": "Je vérifie moi-même : cette phrase ne prouve rien." },
+            { "id": "c", "texte": "Je lui demande de vérifier une deuxième fois." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Cette phrase fait partie du texte produit : elle n'est pas une preuve. Redemander à la même IA de se vérifier ne donne pas non plus de garantie (séances 3 et 6).",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s90-e11",
+          "type": "qcm_multiple",
+          "question": "Qu'est-ce qui peut servir de **preuve** qu'une information est fausse ?",
+          "options": [
+            { "id": "a", "texte": "Un site officiel qui dit autre chose." },
+            { "id": "b", "texte": "Un calcul que j'ai refait moi-même." },
+            { "id": "c", "texte": "Mon impression que « ça sonne bizarre »." },
+            { "id": "d", "texte": "Une autre IA qui n'est pas d'accord." },
+            { "id": "e", "texte": "Un document de mon entreprise à jour." }
+          ],
+          "reponsesCorrectes": ["a", "b", "e"],
+          "explicationCorrection": "Une impression est un point de départ utile, mais ce n'est pas une preuve : elle sert à décider quoi vérifier. Un désaccord entre deux IA montre seulement qu'au moins l'une des deux se trompe.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s90-e12",
+          "type": "qcm_unique",
+          "question": "Vous posez une question sur un sujet que vous ne connaissez pas du tout. Qu'est-ce que cela change ?",
+          "options": [
+            { "id": "a", "texte": "Rien : l'IA est justement faite pour ça." },
+            { "id": "b", "texte": "C'est le cas le plus risqué : sans repère, je ne peux pas voir l'erreur." },
+            { "id": "c", "texte": "La réponse sera plus courte." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est le dernier signal de vigilance de la séance 3, et le plus important : on repère d'autant mieux une erreur qu'on connaît déjà un peu le sujet. Prudence maximale, et vérification ailleurs.",
+          "difficulte": "moyen"
+        }
+      ]
+    },
+    {
+      "id": "bilan-etape-4",
+      "titre": "Usages responsables",
+      "blocs": [
+        { "type": "sous_titre", "texte": "Ce que je saisis, ce que je ne saisis pas (séance 4)" }
+      ],
+      "exercices": [
+        {
+          "id": "s90-e13",
+          "type": "qcm_multiple",
+          "question": "Quels contenus ne doivent **jamais** être saisis dans une IA en ligne ?",
+          "options": [
+            { "id": "a", "texte": "Mes mots de passe." },
+            { "id": "b", "texte": "Les données personnelles d'autres personnes." },
+            { "id": "c", "texte": "Une question sur un mot que je ne comprends pas." },
+            { "id": "d", "texte": "Les informations confidentielles de mon employeur." }
+          ],
+          "reponsesCorrectes": ["a", "b", "d"],
+          "explicationCorrection": "Ce sont les 3 « jamais » de la séance 4. Poser une question sur un mot ne pose aucun problème : c'est même un bon usage.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 10
+        },
+        {
+          "id": "s90-e14",
+          "type": "qcm_unique",
+          "question": "Vous voulez faire résumer le compte rendu d'une réunion interne, qui cite les noms de vos collègues. Que faites-vous ?",
+          "options": [
+            { "id": "a", "texte": "Je le saisis tel quel : c'est juste un résumé." },
+            { "id": "b", "texte": "Je retire ou je remplace les noms avant de le saisir, si la charte de l'entreprise le permet." },
+            { "id": "c", "texte": "Je demande d'abord leur accord à chaque collègue." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Anonymiser d'abord, c'est le réflexe de la séance 4. La réponse c n'est pas absurde, mais elle est rarement praticable : vérifier la charte de votre employeur est plus sûr et plus rapide.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 10
+        },
+        {
+          "id": "s90-e15",
+          "type": "qcm_unique",
+          "question": "Un collègue vous dit : « Cet outil promet qu'il n'utilise pas nos conversations. Donc on peut tout y mettre. » Que répondez-vous ?",
+          "options": [
+            { "id": "a", "texte": "Il a raison : la promesse de l'éditeur suffit." },
+            { "id": "b", "texte": "Les conditions changent et dépendent des réglages : la règle prudente reste la même." },
+            { "id": "c", "texte": "Aucun outil ne respecte jamais ses promesses." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Point de vigilance de la séance 4 : les conditions d'utilisation varient et changent. La question à se poser reste : « Est-ce que je serais gêné que ce texte soit lu par quelqu'un d'autre ? »",
+          "difficulte": "moyen"
+        }
+      ]
+    },
+    {
+      "id": "bilan-etape-5",
+      "titre": "Aller plus loin : séances 5 et 6 (au choix)",
+      "auChoix": true,
+      "blocs": [
+        { "type": "paragraphe", "texte": "Ces 8 questions portent sur les séances 5 et 6. Faites-les seulement si vous avez suivi ces séances." },
+        { "type": "paragraphe", "texte": "Elles ne comptent pas dans le total du bilan." }
+      ],
+      "exercices": [
+        {
+          "id": "s90-e16",
+          "type": "qcm_unique",
+          "question": "Laquelle de ces phrases fixe une limite **vérifiable** à l'IA ?",
+          "options": [
+            { "id": "a", "texte": "« Sois très rigoureux dans ta réponse. »" },
+            { "id": "b", "texte": "« N'utilise que le document que je te donne. Si l'information n'y est pas, écris : information absente. »" },
+            { "id": "c", "texte": "« Ne te trompe pas. »" }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Une limite utile est vérifiable après coup : on peut regarder si l'IA a écrit « information absente » au lieu d'inventer. « Sois rigoureux » ne se vérifie pas, et ne garantit rien (séance 5).",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s90-e17",
+          "type": "qcm_unique",
+          "question": "Un collègue dit : « J'ai collé les 200 pages du dossier client, comme ça l'IA a tout. » Que lui répondez-vous ?",
+          "options": [
+            { "id": "a", "texte": "C'est la bonne méthode : plus il y a d'informations, mieux c'est." },
+            { "id": "b", "texte": "Dans un texte très long, les IA retrouvent moins bien une information : mieux vaut donner les pages utiles et à jour." },
+            { "id": "c", "texte": "Cela n'a aucune importance." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Mesuré en 2023 et 2025 : quand le texte s'allonge, les IA retrouvent moins bien une information. Et un dossier client contient des données personnelles (séance 4). On donne les bonnes pièces, pas tout le classeur.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 10
+        },
+        {
+          "id": "s90-e18",
+          "type": "qcm_unique",
+          "question": "Qu'est-ce qui distingue une boucle agentique d'un simple échange avec une IA ?",
+          "options": [
+            { "id": "a", "texte": "L'agent enchaîne seul plusieurs actions, sans demander mon avis entre deux." },
+            { "id": "b", "texte": "L'agent répond plus longuement." },
+            { "id": "c", "texte": "Je relance l'IA plusieurs fois de suite." }
+          ],
+          "reponseCorrecte": "a",
+          "explicationCorrection": "Relancer soi-même, c'est de l'itération : c'est vous qui décidez de la suite. Dans une boucle agentique, c'est l'agent qui recommence seul, jusqu'à penser avoir fini (séance 6).",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s90-e19",
+          "type": "qcm_unique",
+          "question": "Vous écrivez à un agent : « Ne supprime aucun fichier. » L'agent a le droit technique de supprimer. Que peut-il se passer ?",
+          "options": [
+            { "id": "a", "texte": "Rien : la consigne l'en empêche." },
+            { "id": "b", "texte": "Il peut quand même supprimer : une consigne n'est pas une permission." },
+            { "id": "c", "texte": "L'outil refusera de démarrer." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "C'est le point clé de la séance 6. Une consigne est une phrase, une permission est un droit. Le plus sûr est de retirer le droit de supprimer.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s90-e20",
+          "type": "qcm_multiple",
+          "question": "Dans la trace d'un agent, sur quoi peut-on le plus s'appuyer ?",
+          "options": [
+            { "id": "a", "texte": "Les actions faites avec un outil." },
+            { "id": "b", "texte": "Les résultats renvoyés par l'outil." },
+            { "id": "c", "texte": "Les « pensées » écrites par l'agent." },
+            { "id": "d", "texte": "Le compte rendu final." }
+          ],
+          "reponsesCorrectes": ["a", "b"],
+          "explicationCorrection": "Les actions et les observations sont enregistrées par l'outil. Les pensées sont le récit de l'agent : mesuré en 2025, elles ne disent pas toujours la vraie raison. Le compte rendu final peut être trompeur, même quand chaque phrase paraît vraie.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s90-e21",
+          "type": "qcm_unique",
+          "question": "Un agent a préparé la suppression de 40 fichiers en double. Où placez-vous le point de contrôle humain ?",
+          "options": [
+            { "id": "a", "texte": "Après la suppression, pour vérifier le résultat." },
+            { "id": "b", "texte": "Avant la suppression : je regarde la liste et je décide." },
+            { "id": "c", "texte": "Nulle part : l'agent a déjà vérifié." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Supprimer sans sauvegarde est irréversible. Après, il est trop tard : c'est exactement l'erreur de la trace étudiée en séance 6, où l'agent a supprimé des fiches de clients différents qui portaient le même nom.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s90-e22",
+          "type": "qcm_unique",
+          "question": "Une vidéo affirme : « Les agents s'auto-régulent, l'humain n'est plus nécessaire. » Que pensez-vous de cette phrase ?",
+          "options": [
+            { "id": "a", "texte": "C'est vrai : les outils progressent vite." },
+            { "id": "b", "texte": "Ce qui régule un agent, ce sont des vérifications prévues à l'avance par des humains, et elles n'existent pas pour toutes les tâches." },
+            { "id": "c", "texte": "C'est faux : un agent ne réussit jamais une tâche seul." }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Dans les démonstrations de programmation, ce sont souvent des tests automatiques qui arrêtent l'agent quand il se trompe : quelqu'un les a écrits avant. Pour un compte rendu ou un courrier, ce contrôle automatique n'existe pas. La réponse c est excessive : un agent réussit beaucoup de tâches.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s90-e23",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Un collègue veut lancer un agent sur le dossier des clients. Que lui dites-vous, en une ou deux phrases ?",
+          "reponseModele": "Avant de lancer : regarde quels droits tu lui donnes, retire-lui le droit de supprimer et d'envoyer, et demande-lui de te proposer une liste que tu valides toi-même.",
+          "explicationCorrection": "Votre phrase n'a pas besoin d'être identique. Vérifiez qu'elle parle des droits donnés à l'agent, ou d'un contrôle humain avant une action qu'on ne peut pas annuler.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    },
+    {
+      "id": "bilan-etape-6",
+      "titre": "Fin du bilan",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Que faire de vos résultats",
+          "elements": [
+            "Regardez les questions où vous vous êtes trompé : ce sont vos points à revoir.",
+            "Chaque correction indique la séance concernée. Vous pouvez y retourner avec le menu.",
+            "Parlez-en au formateur : c'est à cela que sert ce bilan."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Comparer avec ce matin",
+          "elements": [
+            "Le matin, vous avez répondu au QCM de positionnement.",
+            "Ouvrez « Avant de commencer » dans le menu : vos réponses du matin y sont toujours affichées.",
+            "Qu'est-ce qui a changé pour vous depuis ?"
+          ]
+        },
+        { "type": "paragraphe", "texte": "Avant de partir, pensez à cliquer sur « Enregistrer mon travail dans un fichier »." }
+      ],
+      "exercices": [
+        {
+          "id": "s90-e24",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Une chose que je sais faire maintenant, et que je ne savais pas faire ce matin :",
+          "explicationCorrection": "Il n'y a pas de bonne réponse. Si vous hésitez, regardez les questions du bilan où vous avez répondu juste.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s90-e25",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Une chose que je veux encore travailler :",
+          "explicationCorrection": "Notez-la aussi sur la fiche « Mes besoins », ou dites-la au formateur. C'est ce qui permet d'adapter la suite de votre parcours.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 20
+        }
+      ]
+    }
+  ]
+}
