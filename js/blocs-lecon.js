@@ -211,3 +211,19 @@ export function afficherBlocs(blocs, conteneur, textes) {
     conteneur.append(constructeurs[bloc.type](bloc, textes));
   }
 }
+
+/**
+ * Construit le « rappel » d'une étape (voir D-018) : le document à analyser (une trace,
+ * des textes, une demande à compléter…) affiché en haut de chaque exercice de l'étape,
+ * pour que le stagiaire n'ait pas à revenir en arrière.
+ * Élément <details> ouvert par défaut : on peut le replier, et il reste utilisable
+ * au clavier et avec un lecteur d'écran. Il ne doit jamais contenir de réponse (règle 2.1).
+ */
+export function construireRappel(rappel, textes) {
+  const contenu = creer('div', { classe: 'rappel-contenu' });
+  afficherBlocs(rappel.blocs, contenu, textes);
+  return creer('details', { classe: 'rappel', open: true }, [
+    ajouterTexteRiche(creer('summary'), rappel.titre),
+    contenu
+  ]);
+}

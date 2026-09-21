@@ -467,9 +467,66 @@
       "id": "s6-etape-8",
       "titre": "Parcours A — Je découvre",
       "auChoix": true,
+      "rappel": {
+        "titre": "Rappel : la tâche et la trace de l'agent",
+        "blocs": [
+          {
+            "type": "paragraphe",
+            "texte": "**La tâche donnée à l'agent :** « Dans le fichier Clients, supprime les fiches en double. » L'agent a le droit de lire, de modifier et de supprimer les fiches."
+          },
+          {
+            "type": "tableau",
+            "legende": "La trace de l'agent",
+            "entetes": [
+              "Étape",
+              "Pensée",
+              "Action",
+              "Observation"
+            ],
+            "lignes": [
+              [
+                "1",
+                "Je dois d'abord voir le fichier.",
+                "Ouvrir le fichier Clients.",
+                "Le fichier contient 412 fiches."
+              ],
+              [
+                "2",
+                "Je cherche les noms qui reviennent plusieurs fois.",
+                "Chercher les noms en double.",
+                "9 noms apparaissent deux fois. Exemple : « Martin Dupont », fiche 0042, né en 1971, à Créteil ; et fiche 0318, né en 1988, à Argenteuil."
+              ],
+              [
+                "3",
+                "Même nom, donc même client. Les 9 paires sont des doublons.",
+                "Aucune action : l'agent décide.",
+                "Aucune observation."
+              ],
+              [
+                "4",
+                "Pour chaque paire, je garde la fiche la plus récente.",
+                "Supprimer 9 fiches.",
+                "9 fiches supprimées. Le fichier contient 403 fiches."
+              ],
+              [
+                "5",
+                "Je vérifie qu'il ne reste pas de doublon.",
+                "Chercher les noms en double.",
+                "Aucun nom en double."
+              ],
+              [
+                "6",
+                "La vérification est bonne. La tâche est finie.",
+                "Écrire le compte rendu.",
+                "Compte rendu : « Terminé. 9 doublons supprimés. Vérification faite : il n'y a plus aucun doublon. »"
+              ]
+            ]
+          }
+        ]
+      },
       "blocs": [
         { "type": "paragraphe", "texte": "**Pour qui :** si vous préférez être guidé, question par question." },
-        { "type": "paragraphe", "texte": "Gardez la trace sous les yeux : sur papier, ou à l'étape précédente." }
+        { "type": "paragraphe", "texte": "La trace de l'agent est rappelée en haut de chaque exercice. Vous pouvez la replier ou la déplier." }
       ],
       "exercices": [
         {
@@ -532,9 +589,66 @@
       "id": "s6-etape-9",
       "titre": "Parcours B — Je m'entraîne",
       "auChoix": true,
+      "rappel": {
+        "titre": "Rappel : la tâche et la trace de l'agent",
+        "blocs": [
+          {
+            "type": "paragraphe",
+            "texte": "**La tâche donnée à l'agent :** « Dans le fichier Clients, supprime les fiches en double. » L'agent a le droit de lire, de modifier et de supprimer les fiches."
+          },
+          {
+            "type": "tableau",
+            "legende": "La trace de l'agent",
+            "entetes": [
+              "Étape",
+              "Pensée",
+              "Action",
+              "Observation"
+            ],
+            "lignes": [
+              [
+                "1",
+                "Je dois d'abord voir le fichier.",
+                "Ouvrir le fichier Clients.",
+                "Le fichier contient 412 fiches."
+              ],
+              [
+                "2",
+                "Je cherche les noms qui reviennent plusieurs fois.",
+                "Chercher les noms en double.",
+                "9 noms apparaissent deux fois. Exemple : « Martin Dupont », fiche 0042, né en 1971, à Créteil ; et fiche 0318, né en 1988, à Argenteuil."
+              ],
+              [
+                "3",
+                "Même nom, donc même client. Les 9 paires sont des doublons.",
+                "Aucune action : l'agent décide.",
+                "Aucune observation."
+              ],
+              [
+                "4",
+                "Pour chaque paire, je garde la fiche la plus récente.",
+                "Supprimer 9 fiches.",
+                "9 fiches supprimées. Le fichier contient 403 fiches."
+              ],
+              [
+                "5",
+                "Je vérifie qu'il ne reste pas de doublon.",
+                "Chercher les noms en double.",
+                "Aucun nom en double."
+              ],
+              [
+                "6",
+                "La vérification est bonne. La tâche est finie.",
+                "Écrire le compte rendu.",
+                "Compte rendu : « Terminé. 9 doublons supprimés. Vérification faite : il n'y a plus aucun doublon. »"
+              ]
+            ]
+          }
+        ]
+      },
       "blocs": [
         { "type": "paragraphe", "texte": "**Pour qui :** si vous voulez chercher avec moins d'aide." },
-        { "type": "paragraphe", "texte": "Gardez la trace sous les yeux : sur papier, ou à l'étape 7." }
+        { "type": "paragraphe", "texte": "La trace de l'agent est rappelée en haut de chaque exercice. Vous pouvez la replier ou la déplier." }
       ],
       "exercices": [
         {
@@ -602,9 +716,66 @@
       "id": "s6-etape-10",
       "titre": "Parcours C — J'approfondis",
       "auChoix": true,
+      "rappel": {
+        "titre": "Rappel : la tâche et la trace de l'agent",
+        "blocs": [
+          {
+            "type": "paragraphe",
+            "texte": "**La tâche donnée à l'agent :** « Dans le fichier Clients, supprime les fiches en double. » L'agent a le droit de lire, de modifier et de supprimer les fiches."
+          },
+          {
+            "type": "tableau",
+            "legende": "La trace de l'agent",
+            "entetes": [
+              "Étape",
+              "Pensée",
+              "Action",
+              "Observation"
+            ],
+            "lignes": [
+              [
+                "1",
+                "Je dois d'abord voir le fichier.",
+                "Ouvrir le fichier Clients.",
+                "Le fichier contient 412 fiches."
+              ],
+              [
+                "2",
+                "Je cherche les noms qui reviennent plusieurs fois.",
+                "Chercher les noms en double.",
+                "9 noms apparaissent deux fois. Exemple : « Martin Dupont », fiche 0042, né en 1971, à Créteil ; et fiche 0318, né en 1988, à Argenteuil."
+              ],
+              [
+                "3",
+                "Même nom, donc même client. Les 9 paires sont des doublons.",
+                "Aucune action : l'agent décide.",
+                "Aucune observation."
+              ],
+              [
+                "4",
+                "Pour chaque paire, je garde la fiche la plus récente.",
+                "Supprimer 9 fiches.",
+                "9 fiches supprimées. Le fichier contient 403 fiches."
+              ],
+              [
+                "5",
+                "Je vérifie qu'il ne reste pas de doublon.",
+                "Chercher les noms en double.",
+                "Aucun nom en double."
+              ],
+              [
+                "6",
+                "La vérification est bonne. La tâche est finie.",
+                "Écrire le compte rendu.",
+                "Compte rendu : « Terminé. 9 doublons supprimés. Vérification faite : il n'y a plus aucun doublon. »"
+              ]
+            ]
+          }
+        ]
+      },
       "blocs": [
         { "type": "paragraphe", "texte": "**Pour qui :** si vous voulez analyser toute la trace et proposer des solutions." },
-        { "type": "paragraphe", "texte": "Gardez la trace sous les yeux : sur papier, ou à l'étape 7." }
+        { "type": "paragraphe", "texte": "La trace de l'agent est rappelée en haut de chaque exercice. Vous pouvez la replier ou la déplier." }
       ],
       "exercices": [
         {

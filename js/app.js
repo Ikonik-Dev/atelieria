@@ -15,17 +15,19 @@
  *   #/seance-2/s2-etape-3   → étape (partie à lire)
  *   #/seance-2/s2-e04       → exercice
  *
- * Deux réglages d'étape, lus dans les JSON :
+ * Trois réglages d'étape, lus dans les JSON :
  *   - "auChoix": true         → exercices facultatifs (parcours A, B, C) :
  *                               ils ne comptent pas dans les exercices obligatoires ;
  *   - "ouvertureApres": [ids] → l'étape reste fermée tant que ces exercices
  *                               ne sont pas validés (elle contient des réponses).
  *                               Son contenu n'est pas inséré dans la page avant.
+ *   - "rappel": { titre, blocs } → document affiché en haut de chaque exercice
+ *                               de l'étape, pour ne pas revenir en arrière (D-018).
  */
 
 import { formater, creer, ajouterTexteRiche } from './outils.js';
 import { chargerContenu } from './chargeur-contenu.js';
-import { afficherBlocs } from './blocs-lecon.js';
+import { afficherBlocs, construireRappel } from './blocs-lecon.js';
 import { afficherExercice } from './moteur-exercices.js';
 import {
   initialiserProgression, lireExercice, compterFaits, nombreTotalFaits,
@@ -471,6 +473,8 @@ function afficherEcranSeance(main, seance, index) {
     if (exercicesManquants(ecran.etape).length > 0) {
       afficherVerrou(main, ecran.etape);
     } else {
+      // Rappel de l'étape (D-018) : le document à analyser reste sous les yeux pendant l'exercice.
+      if (ecran.etape.rappel) main.append(construireRappel(ecran.etape.rappel, textes));
       const conteneur = creer('div', { classe: 'exercice' });
       main.append(conteneur);
       ecranActif = afficherExercice({

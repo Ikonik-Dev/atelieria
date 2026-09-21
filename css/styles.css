@@ -835,3 +835,18 @@ thead th {
   gap: 0.4rem;
   text-align: left;
 }
+
+/* ---------- Rappel d'étape : document gardé sous les yeux pendant les exercices (D-018) ---------- */
+.rappel {
+  margin-block: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--principal);
+  border-radius: 0.5rem;
+  background: var(--neutre-fond);
+}
+
+.rappel summary {
+  padding-block: 0.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}

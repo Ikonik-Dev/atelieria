@@ -663,3 +663,21 @@ Une entrée par évolution majeure : règle ajoutée, modifiée ou supprimée, n
   - la séance dépend d'une démonstration du formateur : sans elle, l'étape 4 perd son intérêt ;
   - erreur corrigée en cours de rédaction : la bande passante mémoire, annoncée d'abord à 88 Go/s, est en réalité d'environ 190 Go/s. Les guides ont été corrigés.
 - **Sections du CLAUDE.md impactées** : aucune règle ; contenu
+
+### D-018 — Rappel d'étape : le document à analyser reste sous les yeux
+
+- **Date** : 2026-09-21
+- **Statut** : Acceptée
+- **Demandée ou validée par** : formateur (constat), développeur (mise en œuvre)
+- **Contexte** : le formateur constate qu'un exercice comme `s6-e10` (« À quelle étape l'erreur apparaît-elle ? ») oblige à revenir à l'écran précédent pour relire la trace. Un exercice = un écran (D-007) : le document à analyser disparaît dès qu'on passe aux questions. C'est un obstacle réel pour un public qui a des difficultés de mémoire de travail ou de concentration (1.1).
+- **Décision** :
+  - nouveau champ d'étape facultatif **`rappel`** : `{ "titre", "blocs" }`. Ses blocs s'affichent **en haut de chaque écran d'exercice** de l'étape, dans un élément `<details>` **ouvert par défaut**, que le stagiaire peut replier ;
+  - pas de rappel sur l'écran de l'étape elle-même, ni sur une étape fermée (D-011) ;
+  - deux familles d'exercices, deux traitements : un exercice qui **analyse un document** reçoit un rappel (le document) ; un exercice qui **vérifie une connaissance** n'en reçoit pas, mais sa question est rendue compréhensible seule ;
+  - rappels ajoutés : séance 2 (parcours A), séance 3 (étapes 5 et 6), séance 6 (parcours A, B, C). Questions rendues autonomes : `s7-e05` (le mot « placard » venait d'une analogie de l'écran précédent), `s1-e03` (indique où sont les demandes testées).
+- **Raison** : **signalé au formateur** : la règle 2.3 réserve les modifications du JavaScript aux nouveaux types d'exercice. Il s'agit ici d'un champ de format, comme `auChoix` et `ouvertureApres` (D-011) ; tout le contenu reste dans les JSON, et le formateur peut ajouter un rappel à n'importe quelle étape sans développeur. Un `<details>` natif reste utilisable au clavier et au lecteur d'écran.
+- **Conséquences et limites acceptées** :
+  - le rappel ne doit **jamais** contenir de réponse (règle 2.1) : c'est une règle d'écriture, que le code ne peut pas vérifier ;
+  - le contenu d'un rappel est une **copie** du bloc d'origine : si le formateur modifie la trace de la séance 6, il doit modifier aussi les trois rappels ;
+  - un rappel long allonge chaque écran d'exercice, surtout sur un petit écran ; d'où la possibilité de le replier.
+- **Sections du CLAUDE.md impactées** : 2.3 (champ de format ajouté), 4.1

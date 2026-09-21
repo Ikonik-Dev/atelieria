@@ -164,6 +164,17 @@
       "id": "s2-etape-5",
       "titre": "Parcours A — Je découvre",
       "auChoix": true,
+      "rappel": {
+        "titre": "Rappel : la demande à compléter",
+        "blocs": [
+          {
+            "type": "encadre",
+            "style": "astuce",
+            "titre": "La demande à compléter",
+            "texte": "« Explique-moi ce que veut dire ______, en ______ phrases, avec un exemple simple de la vie quotidienne. »"
+          }
+        ]
+      },
       "blocs": [
         { "type": "paragraphe", "texte": "**Pour qui :** si vous découvrez l'IA ou si vous préférez être accompagné." },
         { "type": "paragraphe", "texte": "**Situation :** un camarade vous demande ce que veut dire le mot « API » qu'il a vu dans un document de formation." },

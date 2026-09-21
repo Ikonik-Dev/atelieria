@@ -235,7 +235,7 @@
           "id": "s1-e03",
           "type": "texte_libre",
           "mode": "modele",
-          "question": "Parmi les demandes testées : laquelle a donné une réponse fausse, inventée, ou différente d'une fois à l'autre ? Qu'est-ce qui vous l'a montré ?",
+          "question": "Parmi les demandes de l'étape « Des demandes à tester » : laquelle a donné une réponse fausse, inventée, ou différente d'une fois à l'autre ? Qu'est-ce qui vous l'a montré ?",
           "explicationCorrection": "Si vous avez trouvé une erreur : c'est ce que veut dire « elle se trompe avec assurance ». Si toutes les réponses vous ont paru justes : ce n'est pas une preuve que l'IA a toujours raison. Écoutez ce que les autres ont trouvé à la mise en commun. La séance 3 vous apprend à vérifier.",
           "difficulte": "facile",
           "tempsMinimumSecondes": 30

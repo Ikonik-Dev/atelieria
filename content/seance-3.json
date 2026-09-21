@@ -228,6 +228,21 @@
     {
       "id": "s3-etape-5",
       "titre": "Comparaison de deux outils",
+      "rappel": {
+        "titre": "Rappel : la question posée aux deux outils",
+        "blocs": [
+          {
+            "type": "encadre",
+            "style": "astuce",
+            "titre": "Question suggérée",
+            "texte": "« Explique en cinq lignes ce que fait un technicien support informatique au quotidien. »"
+          },
+          {
+            "type": "paragraphe",
+            "texte": "Vous avez posé exactement la même question aux deux outils, mot pour mot."
+          }
+        ]
+      },
       "blocs": [
         { "type": "paragraphe", "texte": "Posez exactement la même question à deux outils d'IA différents. La même, mot pour mot." },
         {
@@ -310,6 +325,37 @@
     {
       "id": "s3-etape-6",
       "titre": "Chasse à l'erreur",
+      "rappel": {
+        "titre": "Rappel : les 3 textes et la démarche",
+        "blocs": [
+          {
+            "type": "paragraphe",
+            "texte": "Les 3 textes sont sur papier. Vous pouvez aussi les télécharger ici."
+          },
+          {
+            "type": "telechargement",
+            "fichier": "assets/documents/chasse-erreur-3-textes.pdf",
+            "libelle": "Télécharger les 3 textes en PDF, pour les lire ou les imprimer (91 Ko)"
+          },
+          {
+            "type": "telechargement",
+            "fichier": "assets/documents/chasse-erreur-3-textes.docx",
+            "libelle": "Télécharger les 3 textes en Word, pour écrire dedans (15 Ko)"
+          },
+          {
+            "type": "encadre",
+            "style": "info",
+            "titre": "Démarche en 4 étapes",
+            "numerotee": true,
+            "elements": [
+              "Je repère ce qui est vérifiable : date, chiffre, nom propre, citation.",
+              "Je choisis une source fiable où chercher : site officiel, encyclopédie, document.",
+              "Je compare ce que dit l'IA avec ce que dit la source.",
+              "Je note la preuve, avec la source consultée."
+            ]
+          }
+        ]
+      },
       "blocs": [
         { "type": "paragraphe", "texte": "Le formateur vous donne 3 textes : ce sont des réponses écrites par une IA. Vous pouvez les lire sur papier, ou les télécharger ci-dessous." },
         { "type": "paragraphe", "texte": "Au moins l'une des trois contient une information fausse. Votre travail, à deux : trouver laquelle, et la **prouver**." },

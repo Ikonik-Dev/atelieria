@@ -249,11 +249,11 @@
           "question": "Un modèle de 7 milliards de paramètres occupe environ 4,5 Go. La mémoire vidéo est de 4 Go. Que va-t-il se passer ?",
           "options": [
             { "id": "a", "texte": "Le modèle refusera de démarrer." },
-            { "id": "b", "texte": "Il fonctionnera, mais plus lentement : une partie reste dans le placard." },
+            { "id": "b", "texte": "Il fonctionnera, mais plus lentement : une partie du modèle ira dans la mémoire de l'ordinateur, qui est plus lente." },
             { "id": "c", "texte": "Il fonctionnera normalement." }
           ],
           "reponseCorrecte": "b",
-          "explicationCorrection": "C'est l'analogie du plan de travail : ce qui ne tient pas reste dans le placard, et il faut faire des allers-retours. La machine y arrive, mais la réponse s'écrit beaucoup plus lentement.",
+          "explicationCorrection": "Ce qui ne tient pas dans la mémoire vidéo va dans la mémoire de l'ordinateur, qui est plus lente. C'est l'analogie du plan de travail et du placard (étape 5) : il faut faire des allers-retours. La machine y arrive, mais la réponse s'écrit beaucoup plus lentement.",
           "difficulte": "moyen",
           "tempsMinimumSecondes": 10
         },

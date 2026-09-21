@@ -346,6 +346,7 @@ Pour vérifier un fichier, vous pouvez coller son contenu dans un validateur JSO
 | `exercices` | Non | Liste ordonnée des exercices de l'étape. Voir section 8. |
 | `auChoix` | Non | `true` : exercices facultatifs, marqués « (au choix) », hors du total obligatoire. `false` par défaut. |
 | `ouvertureApres` | Non | Liste d'`id` d'exercices. Tant qu'ils ne sont pas tous validés, le contenu de l'étape (blocs et exercices) n'est pas affiché. Les exercices peuvent être dans une autre partie. |
+| `rappel` | Non | Un document à garder sous les yeux pendant les exercices de l'étape : `{ "titre": "…", "blocs": [ … ] }`. Il s'affiche en haut de **chaque écran d'exercice** de l'étape, ouvert, et le stagiaire peut le replier. **N'y mettez jamais une réponse** : seulement le document à analyser (une trace, des textes, une demande à compléter). |
 
 Exemples :
 
@@ -363,6 +364,31 @@ Exemples :
 ```
 
 Utilisez `ouvertureApres` **seulement** pour un contenu qui donne des réponses : chaque étape fermée est une contrainte de plus pour le stagiaire.
+
+Utilisez `rappel` quand les exercices d'une étape portent sur un document montré plus tôt (CLAUDE.md, D-018). Sans lui, le stagiaire doit revenir en arrière pour relire le document, puis retrouver sa question. Exemple, séance 6, parcours B :
+
+```json
+{
+  "id": "s6-etape-9",
+  "titre": "Parcours B — Je m'entraîne",
+  "auChoix": true,
+  "rappel": {
+    "titre": "Rappel : la tâche et la trace de l'agent",
+    "blocs": [
+      { "type": "tableau", "legende": "La trace de l'agent", "entetes": ["Étape", "Pensée", "Action", "Observation"], "lignes": [] }
+    ]
+  },
+  "blocs": [],
+  "exercices": []
+}
+```
+
+Deux règles :
+
+- **Un document, pas une leçon.** Si le rappel contient la leçon qui donne la réponse, l'exercice devient une simple recherche dans un tableau. Pour un exercice de connaissance, rendez plutôt la **question** compréhensible seule.
+- **Court.** Le rappel s'affiche sur chaque écran d'exercice de l'étape. Un rappel très long repousse la question vers le bas.
+
+Rappels en place : séance 2 (parcours A, la demande à compléter), séance 3 (comparaison de deux outils ; chasse à l'erreur), séance 6 (parcours A, B et C, la trace de l'agent).
 
 Déroulé à l'écran : présentation de la partie → étape 1 (à lire) → exercices de l'étape 1 → étape 2 (à lire) → etc. Chaque exercice a son propre écran. Le repère « Séance 2 › Étape 3 sur 7 › Exercice 4 sur 13 » est toujours visible en haut.
 
@@ -729,7 +755,7 @@ Le travail est gardé **dans un navigateur, sur un ordinateur**. Il est perdu en
 
 ### Tests réalisés et tests à faire
 
-**Tests automatiques réalisés** le 2026-09-15 dans **Edge 153** et **Chrome 153** (sans fenêtre, via un serveur local) : 87 vérifications, toutes réussies dans les deux navigateurs, sans erreur JavaScript ni fichier introuvable. Ils vérifient notamment :
+**Tests automatiques réalisés** le 2026-09-15 dans **Edge 153** et **Chrome 153** (sans fenêtre, via un serveur local) : 91 vérifications, toutes réussies dans les deux navigateurs, sans erreur JavaScript ni fichier introuvable. Ils vérifient notamment :
 
 - les 10 parties, 62 étapes et 123 exercices s'affichent sans erreur ;
 - les 18 images (JPEG et SVG) existent et sont décodées par le navigateur ;

@@ -143,6 +143,15 @@ function verifierSeance(seance, fichier, idsUtilises, idsExercices, references) 
       }
     }
     verifierBlocs(etape.blocs, erreursEtape, '');
+    // "rappel" : document affiché en haut de chaque exercice de l'étape (voir D-018)
+    if (etape.rappel !== undefined) {
+      if (!estObjet(etape.rappel)) {
+        erreursEtape.push({ champ: 'rappel', code: 'typeObjet' });
+      } else {
+        verifierTexteObligatoire(etape.rappel, 'titre', erreursEtape, 'rappel.');
+        verifierBlocs(etape.rappel.blocs, erreursEtape, 'rappel.');
+      }
+    }
     ajouter(erreursEtape, idEtape);
 
     if (etape.exercices === undefined) return;
