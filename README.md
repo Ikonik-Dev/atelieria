@@ -72,13 +72,14 @@ IA_prise_en_main/
 │   └── seance-7.json           Séance 7 : Aller plus loin : l'IA sur mon ordinateur (IA locale)
 │
 ├── formateur/
+│   ├── atelier-banc-essai/     Affiche des règles à imprimer pour le banc d'essai (séance 7)
 │   ├── guide-ia-locale-et-outils.md  Installer Ollama, LM Studio, Claude Desktop : licences, limites, procédures
 │   ├── guide-seance-1-demandes-a-tester.md  Séance 1 : demandes à tester après le temps libre
 │   └── guide-seances-5-6.md    Guide du formateur des séances 5 et 6 (hors de l'application)
 │
 └── assets/
     ├── images/                 18 illustrations : 8 JPEG du livret, 10 schémas SVG (séances 5 et 6)
-    └── documents/              Fichiers à télécharger (séance 3 : les 3 textes de la chasse à l'erreur, en PDF et Word)
+    └── documents/              Fichiers à télécharger (séance 3 : les 3 textes de la chasse à l'erreur ; séance 7 : la fiche de mesure et les textes du banc d'essai)
 ```
 
 Les fichiers d'origine placés à la racine du dossier (8 PNG, livret du stagiaire et fiche formateur en PDF) **ne sont pas utilisés** par l'application et **ne sont pas publiés** (voir `.gitignore`).
@@ -96,8 +97,8 @@ Les fichiers d'origine placés à la racine du dossier (8 PNG, livret du stagiai
 | Bilan | 6 | 25 | 8 (séances 5 et 6) |
 | Séance 5 | 8 | 12 | 0 |
 | Séance 6 | 13 | 21 | 12 (parcours A, B, C) |
-| Séance 7 | 8 | 12 | 0 |
-| **Total** | **62** | **123** | **33** |
+| Séance 7 | 9 | 20 | 8 (banc d'essai) |
+| **Total** | **63** | **131** | **41** |
 
 ### Répartition des illustrations
 
@@ -388,7 +389,7 @@ Deux règles :
 - **Un document, pas une leçon.** Si le rappel contient la leçon qui donne la réponse, l'exercice devient une simple recherche dans un tableau. Pour un exercice de connaissance, rendez plutôt la **question** compréhensible seule.
 - **Court.** Le rappel s'affiche sur chaque écran d'exercice de l'étape. Un rappel très long repousse la question vers le bas.
 
-Rappels en place : séance 2 (parcours A, la demande à compléter), séance 3 (comparaison de deux outils ; chasse à l'erreur), séance 6 (parcours A, B et C, la trace de l'agent).
+Rappels en place : séance 2 (parcours A, la demande à compléter), séance 3 (comparaison de deux outils ; chasse à l'erreur), séance 6 (parcours A, B et C, la trace de l'agent), séance 7 (banc d'essai, le mode opératoire de la mesure).
 
 Déroulé à l'écran : présentation de la partie → étape 1 (à lire) → exercices de l'étape 1 → étape 2 (à lire) → etc. Chaque exercice a son propre écran. Le repère « Séance 2 › Étape 3 sur 7 › Exercice 4 sur 13 » est toujours visible en haut.
 
@@ -755,9 +756,9 @@ Le travail est gardé **dans un navigateur, sur un ordinateur**. Il est perdu en
 
 ### Tests réalisés et tests à faire
 
-**Tests automatiques réalisés** le 2026-09-15 dans **Edge 153** et **Chrome 153** (sans fenêtre, via un serveur local) : 91 vérifications, toutes réussies dans les deux navigateurs, sans erreur JavaScript ni fichier introuvable. Ils vérifient notamment :
+**Tests automatiques réalisés** le 2026-09-15 dans **Edge 153** et **Chrome 153** (sans fenêtre, via un serveur local) : 98 vérifications, toutes réussies dans les deux navigateurs, sans erreur JavaScript ni fichier introuvable. Ils vérifient notamment :
 
-- les 10 parties, 62 étapes et 123 exercices s'affichent sans erreur ;
+- les 10 parties, 63 étapes et 131 exercices s'affichent sans erreur ;
 - les 18 images (JPEG et SVG) existent et sont décodées par le navigateur ;
 - séances 5 et 6 : compteurs de l'accueil (obligatoires et « au choix »), exercice sans note, trace de l'activité présente en tableau, lien de la fin de « Mes besoins » vers la séance 5 ;
 - à 320 px de large, il n'y a ni défilement horizontal, ni id en double, ni image sans `alt` ;
@@ -797,6 +798,7 @@ Les contrastes des couleurs ont été **calculés** (formule WCAG) : tous au-des
 - **Les 3 textes de la chasse à l'erreur (Séance 3)** : `assets/documents/chasse-erreur-3-textes.pdf` et `.docx`, téléchargeables depuis l'écran (bloc `telechargement`, CLAUDE.md, D-015). Ils ont été **rédigés par une IA avec des erreurs placées volontairement** : ce ne sont pas des réponses obtenues spontanément. La fiche formateur recommande plutôt des réponses réelles et datées. Si le formateur remplace un texte, il remplace aussi les deux fichiers. La phrase du livret « Le formateur vous a remis 3 textes imprimés » est adaptée pour mentionner le téléchargement.
 - **Le « Bilan » de fin d'atelier** (`content/bilan.json`, CLAUDE.md, D-016) : 17 questions sur les séances 1 à 4, puis 8 questions « au choix » sur les séances 5 et 6, et 2 questions ouvertes. Il ne vient pas du livret. Aucune question ne reprend le QCM de positionnement, pour mesurer la compréhension plutôt que la mémoire du matin. Les identifiants sont en `s90-eNN`, hors de la numérotation des séances.
 - **La Séance 7 « L'IA sur mon ordinateur »** (CLAUDE.md, D-017) : IA locale, choix d'un modèle selon la machine et la tâche. Elle ne vient pas du livret. **Aucune installation n'est nécessaire côté stagiaire** : le formateur fait la démonstration. Les chiffres de matériel (4 Go de mémoire vidéo) sont ceux des postes du centre, relevés le 21 septembre 2026 : à revérifier sur d'autres machines. Procédures d'installation, licences et mesures : `formateur/guide-ia-locale-et-outils.md`.
+- **Le « banc d'essai » de la séance 7** (étape au choix, exercices `s7-e13` à `s7-e20`, CLAUDE.md, D-019) : une activité de 2 heures en binômes, prévue pour occuper un groupe **sans formateur dans la salle**. Elle suppose deux modèles locaux **installés et testés sur chaque poste** : sans cela, elle perd son objet, et il faut passer au plan B décrit dans le guide (section 3.7). Les documents imprimables (`assets/documents/banc-essai-*`) contiennent des textes construits, signalés comme tels, et **aucune valeur de référence** : le fichier est public, un chiffre « attendu » pré-répondrait la première manche.
 - Les valeurs de `difficulte` (les parcours A, B et C sont en `facile`, `moyen` et `difficile`) et de `tempsMinimumSecondes`.
 
 ### Adaptations du livret

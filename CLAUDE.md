@@ -681,3 +681,24 @@ Une entrée par évolution majeure : règle ajoutée, modifiée ou supprimée, n
   - le contenu d'un rappel est une **copie** du bloc d'origine : si le formateur modifie la trace de la séance 6, il doit modifier aussi les trois rappels ;
   - un rappel long allonge chaque écran d'exercice, surtout sur un petit écran ; d'où la possibilité de le replier.
 - **Sections du CLAUDE.md impactées** : 2.3 (champ de format ajouté), 4.1
+
+### D-019 — Banc d'essai : les stagiaires manipulent l'IA locale, sans formateur dans la salle
+
+- **Date** : 2026-09-25
+- **Statut** : Acceptée (demandée par le formateur ; **modifie D-017**, qui reste valable pour le reste de la séance 7)
+- **Demandée ou validée par** : formateur
+- **Contexte** : le formateur doit occuper 6 à 8 stagiaires pendant 3 heures, dont **2 heures sans lui dans la salle** (réunion). Tous les postes auront Ollama installé et testé. Certains stagiaires ont fini la séance 7, d'autres non.
+- **Décision** :
+  - nouvelle étape `s7-etape-banc-essai` (« Le banc d'essai »), **`auChoix: true`**, ajoutée à la fin de `content/seance-7.json` : 8 exercices `s7-e13` à `s7-e20`, 7 en texte libre non noté et 1 QCM `sansNote` ;
+  - 4 manches de mesure comparant deux modèles locaux (un de 3 à 4 milliards, un de 7 à 8 milliards) : vitesse, texte fourni contre question de connaissances, demande travaillée contre taille, effet d'un texte long ;
+  - un `rappel` (D-018) donne le **mode opératoire** de la mesure, jamais un résultat attendu ;
+  - documents imprimables dans `assets/documents/` : fiche de mesure (PDF et Word) et les 2 textes fournis ; affiche des 5 règles dans `formateur/atelier-banc-essai/` ;
+  - déroulé des 3 heures, préparation de la veille, constats attendus et plan B : guide IA locale, nouvelle section 3.7.
+- **Raison** : la séance 7 affirme « plus gros ne veut pas dire meilleur » ; le banc d'essai le fait **mesurer**, ce qui est la démarche de la séance 3. L'étape est au choix pour ne pas afficher de retard à ceux qui ne la font pas (D-011), et pour que le parcours obligatoire de la séance 7 continue de ne demander aucun outil.
+- **Conséquences et limites acceptées** :
+  - **D-017 disait « aucune installation côté stagiaire, les exercices ne demandent aucun outil ».** Ce n'est plus vrai pour cette étape : elle suppose deux modèles installés et testés sur chaque poste. Sans eux, elle perd son objet, comme l'étape 4 sans démonstration ;
+  - **pendant 2 heures, personne ne dépannera** : les consignes prévoient de passer à la manche suivante et de noter l'incident. Ce sont des règles écrites, pas des verrous techniques ;
+  - risques nommés et non supprimés : un modèle local n'est pas filtré comme un outil en ligne (le choix des modèles installés est la seule vraie protection), et un binôme peut saturer le disque en téléchargeant un gros modèle ;
+  - le repère affiche « Exercice n sur 20 » alors que la carte d'accueil affiche « 0 sur 12 » : comportement existant du moteur pour les exercices au choix (séances 2 et 6) ;
+  - activité **non essayée avec des stagiaires** ; durées estimées ; textes fournis construits par une IA et signalés comme tels.
+- **Sections du CLAUDE.md impactées** : aucune règle ; contenu de la séance 7 (modifie D-017)

@@ -220,6 +220,49 @@ Elle prend 15 minutes, et démonte l'idée fausse mieux qu'un discours.
 
 ---
 
+### 3.7 Le banc d'essai en binômes (2 heures, sans formateur dans la salle)
+
+Activité au choix, dans l'application : **séance 7, dernière étape**. Deux modèles locaux passent 4 manches de mesure. Les stagiaires écrivent sur une fiche papier, puis recopient dans l'application.
+
+**Déroulé des 3 heures**
+
+| Temps | Qui | Quoi |
+|---|---|---|
+| 0:00 – 0:25 | Vous | Consignes, binômes, affiche au mur, **et test d'une mesure sur chaque poste** |
+| 0:25 – 2:25 | Le groupe seul | Les 4 manches, puis la préparation de la restitution |
+| 2:25 – 3:00 | Vous | Mise en commun, tableau collectif, décision « quel modèle pour quelle tâche » |
+
+**Préparation la veille — obligatoire.** Sans elle, l'activité n'a pas lieu.
+
+1. Installer **deux modèles** sur **chaque** poste : un de 3 à 4 milliards, un de 7 à 8 milliards. Les lancer une fois, pour que le téléchargement soit fait.
+2. Vérifier l'espace disque restant : au moins 10 Go.
+3. Brancher les postes sur secteur et régler Windows en mode performances (section 3.1 bis).
+4. Imprimer : la **fiche de mesure** (une par binôme), les **2 textes** (un par binôme), l'**affiche des règles** (`formateur/atelier-banc-essai/banc-essai-affiche-regles.docx`).
+5. Écrire au tableau le chemin exact : **menu → Séance 7 → Plan de la séance → dernière étape**. Le bouton « Continuer » n'y mène pas : il ignore les exercices au choix.
+
+**Les 25 minutes avant de partir.** Le test poste par poste n'est pas une formalité : un binôme dont l'outil ne démarre pas travaillera 2 heures sans mesurer. Faites lancer une réponse courte sur chaque machine, devant vous.
+
+**Les constats attendus, manche par manche**
+
+| Manche | Ce que les binômes devraient constater | Ce qu'il ne faut pas affirmer |
+|---|---|---|
+| 1. Vitesse | Le petit modèle est confortable ; le gros fait attendre | « Le petit modèle est meilleur » : il est mieux adapté à cette machine |
+| 2. Texte fourni ou connaissances | Sur le texte fourni, les deux s'en sortent ; sur la connaissance, il faut une source | « L'IA locale ne sait rien » : elle sait, mais on ne peut pas s'y fier sans vérifier |
+| 3. Demande contre taille | La demande travaillée sur le petit modèle bat la demande vague sur le gros | Que ce sera vrai pour toutes les tâches |
+| 4. Texte long | L'attente avant la réponse s'allonge nettement | Un chiffre général : cela dépend du texte et de la machine |
+
+**Gérer le groupe inégal.** Ceux qui ont fini la séance 7 commencent le banc d'essai et deviennent référents du protocole. Les autres finissent la séance 7 (45 min), puis rejoignent à la manche 2 : les manches sont indépendantes.
+
+**Au retour : la mise en commun (35 minutes).** Chaque binôme donne ses 3 phrases, chacune avec un chiffre. Reportez les vitesses relevées dans un tableau collectif au tableau blanc. Terminez par une décision commune : quel modèle garder par défaut, et pour quelle tâche. Ramassez les fiches : les incidents notés vous disent quels postes revoir.
+
+**Ce que vous observez** : qui mesure avant d'écrire ; qui vérifie la question de connaissances avec une source ; qui attribue un mauvais résultat au modèle plutôt qu'à sa demande ; qui ose écrire « nous n'avons pas réussi ».
+
+**Plan B, si rien ne fonctionne le jour J.** Les manches deviennent une analyse sur papier : distribuez vos propres captures d'écran (une réponse du petit modèle, une du gros, avec les vitesses affichées) et faites remplir la même fiche. Les exercices de l'application restent utilisables : ils demandent des constats, pas un accès à l'outil.
+
+**Limites de cette activité, à dire au groupe** : elle mesure **ces deux modèles, sur ces machines, ce jour-là**. Elle ne dit rien des outils en ligne, ni d'une autre machine. Et une mesure unique n'est pas une preuve : c'est un ordre de grandeur.
+
+---
+
 ## 4. Procédure — Ollama (recommandé)
 
 **Durée :** 15 à 30 minutes selon le débit réseau.

@@ -12,6 +12,7 @@
       "titre": "Avant de commencer",
       "blocs": [
         { "type": "paragraphe", "texte": "**Durée conseillée :** 1 h 30 environ." },
+        { "type": "paragraphe", "texte": "Une activité en plus est proposée à la fin de la séance : **le banc d'essai**, à deux, environ 2 heures. Elle est au choix." },
         {
           "type": "tableau",
           "legende": "Le déroulé de la séance",
@@ -460,6 +461,204 @@
           "texte": "Informations vérifiées le 21 septembre 2026, sur les machines du centre. Les outils et les modèles changent vite : les noms et les tailles seront peut-être différents dans six mois. Les réflexes de cette séance, eux, changent moins vite."
         },
         { "type": "paragraphe", "texte": "Avant de partir, pensez à cliquer sur « Enregistrer mon travail dans un fichier »." }
+      ]
+    },
+    {
+      "id": "s7-etape-banc-essai",
+      "titre": "Le banc d'essai : deux modèles à l'épreuve (à deux, au choix)",
+      "auChoix": true,
+      "rappel": {
+        "titre": "Rappel : comment mesurer",
+        "blocs": [
+          {
+            "type": "paragraphe",
+            "texte": "Vous comparez deux modèles : un **petit** (3 à 4 milliards) et un **gros** (7 à 8 milliards)."
+          },
+          {
+            "type": "encadre",
+            "style": "astuce",
+            "titre": "Les 4 gestes de la mesure",
+            "numerotee": true,
+            "elements": [
+              "Je lance le modèle en mode détaillé : ollama run le-nom-du-modele --verbose",
+              "Je pose la même demande aux deux modèles, mot pour mot.",
+              "Je relève la vitesse affichée à la fin de la réponse : la ligne « eval rate », en jetons par seconde.",
+              "Je mesure d'abord. J'écris et je valide ensuite."
+            ]
+          }
+        ]
+      },
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "**À deux, environ 2 heures.** Vous mesurez, vous notez, et vous préparez ce que vous direz au groupe."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Cette activité est **au choix**. Elle ne compte pas dans les exercices de la séance."
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Les 4 manches",
+          "numerotee": true,
+          "elements": [
+            "**La vitesse et le confort :** la même demande sur les deux modèles.",
+            "**Un texte fourni, puis une question de connaissances :** et on vérifie la réponse avec une source.",
+            "**La demande contre la taille :** une demande vague au gros modèle, une demande travaillée au petit.",
+            "**Le texte long :** le même travail, avec un texte beaucoup plus long."
+          ]
+        },
+        {
+          "type": "definitions",
+          "elements": [
+            {
+              "terme": "Jeton",
+              "definition": "Un petit morceau de mot. L'IA écrit sa réponse jeton par jeton."
+            },
+            {
+              "terme": "Vitesse",
+              "definition": "Le nombre de jetons écrits par seconde. L'outil l'affiche à la fin de la réponse, sur la ligne « eval rate »."
+            },
+            {
+              "terme": "Confortable",
+              "definition": "Se dit d'un texte qui s'écrit plus vite que vous ne le lisez."
+            }
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Ce que vous n'écrivez pas",
+          "elements": [
+            "N'écrivez **aucun nom de personne** dans les cases : ni le vôtre, ni celui de votre binôme.",
+            "N'écrivez aucune information personnelle dans vos demandes à l'IA. Le poste est partagé.",
+            "Écrivez ce que vous mesurez : des chiffres et des constats."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Si ça ne marche pas",
+          "elements": [
+            "L'outil ne démarre pas ? Un modèle est absent ? **Vous n'êtes pas bloqué.**",
+            "Notez l'heure et le problème sur la fiche, passez à la manche suivante.",
+            "Le dernier exercice sert justement à dire ce qui n'a pas marché.",
+            "N'installez rien et ne mettez rien à jour."
+          ]
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Imprimez ou ouvrez la fiche de mesure : vous écrivez dessus à côté de la machine, puis vous recopiez ici."
+        },
+        {
+          "type": "telechargement",
+          "fichier": "assets/documents/banc-essai-fiche-mesure.pdf",
+          "libelle": "Télécharger la fiche de mesure en PDF, pour l'imprimer (104 Ko)"
+        },
+        {
+          "type": "telechargement",
+          "fichier": "assets/documents/banc-essai-fiche-mesure.docx",
+          "libelle": "Télécharger la fiche de mesure en Word, pour écrire dedans (20 Ko)"
+        },
+        {
+          "type": "telechargement",
+          "fichier": "assets/documents/banc-essai-textes.pdf",
+          "libelle": "Télécharger les 2 textes à utiliser, en PDF (94 Ko)"
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s7-e13",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Quels modèles testez-vous ? Donnez leur nom et leur taille en milliards.",
+          "explicationCorrection": "Gardez ces noms sous la main : toutes vos mesures ne valent que pour ces deux modèles, sur cette machine.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 30
+        },
+        {
+          "id": "s7-e14",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Manche 1 : quelles vitesses avez-vous relevées ? Dites ensuite lequel est confortable à utiliser.",
+          "explicationCorrection": "Une vitesse se donne en jetons par seconde. Si vous n'avez pas pu la relever, dites-le : c'est une information utile aussi.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        },
+        {
+          "id": "s7-e15",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Manche 2 : qu'est-ce qui change entre le résumé du texte fourni et la question de connaissances ? Citez la source utilisée pour vérifier.",
+          "explicationCorrection": "Une réponse sans source vérifiée n'est pas une réponse vérifiée (séance 3). La source compte autant que le constat.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 45
+        },
+        {
+          "id": "s7-e16",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Manche 3 : quelle réponse est la plus utilisable ? Dites quelles cases de la séance 5 vous aviez remplies.",
+          "explicationCorrection": "Les 6 cases de la séance 5 : objectif, format attendu, limites, données fournies, évaluation, suite. Notez celles qui ont changé quelque chose.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 45
+        },
+        {
+          "id": "s7-e17",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Manche 4 : qu'est-ce que le texte long a changé ? Parlez du temps d'attente, puis de la qualité.",
+          "explicationCorrection": "Le temps avant le début de la réponse et la vitesse d'écriture sont deux choses différentes. Dites laquelle a le plus bougé.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 45
+        },
+        {
+          "id": "s7-e18",
+          "type": "qcm_unique",
+          "question": "Après vos mesures : quel modèle garderiez-vous sur cette machine ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Le petit modèle, de 3 à 4 milliards."
+            },
+            {
+              "id": "b",
+              "texte": "Le gros modèle, de 7 à 8 milliards."
+            },
+            {
+              "id": "c",
+              "texte": "Cela dépend de la tâche : je garde les deux."
+            }
+          ],
+          "reponseCorrecte": "c",
+          "sansNote": true,
+          "justification": {
+            "libelle": "Pourquoi ? Donnez un chiffre que vous avez relevé.",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Il n'y a pas de note : votre réponse dépend de vos mesures et de vos tâches. Ce qui compte, c'est le chiffre qui la justifie.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 15
+        },
+        {
+          "id": "s7-e19",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Votre restitution : écrivez les 3 phrases que vous direz au groupe. Chaque phrase donne un constat et un chiffre.",
+          "explicationCorrection": "Un constat sans chiffre reste une impression. Un chiffre sans constat ne se retient pas. Les deux ensemble, c'est une mesure.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 60
+        },
+        {
+          "id": "s7-e20",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Qu'est-ce qui n'a pas marché, ou que vous n'avez pas pu mesurer ?",
+          "explicationCorrection": "Dire ce qui n'a pas marché fait partie du travail. C'est ce qui permet au formateur de corriger le poste ou la consigne.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 30
+        }
       ]
     }
   ]
