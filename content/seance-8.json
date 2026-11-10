@@ -1,0 +1,1528 @@
+{
+  "version": 1,
+  "id": "seance-8",
+  "titre": "Esprit critique et usages métier",
+  "objectifs": [
+    "choisir le bon niveau de vérification selon ce qui se passe si l'IA se trompe ;",
+    "repérer les erreurs d'une IA dans des tâches de votre futur métier : support, réseau, développement, test ;",
+    "utiliser l'IA à deux : l'un demande, l'autre vérifie ;",
+    "savoir qui est responsable d'un travail fait avec une IA."
+  ],
+  "etapes": [
+    {
+      "id": "s8-etape-1",
+      "titre": "Avant de commencer : travailler en autonomie",
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "**Durée de la séance :** 3 h 20, avec une pause."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Vous avez fini les séances 1 à 7. Cette séance les met en pratique, sur des tâches de votre futur métier."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Vous avancez **seul ou à deux**, à votre rythme. Le formateur est dans la salle. Il vient vous aider si vous restez bloqué."
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Je bloque ? Les 4 réflexes, dans l'ordre",
+          "elements": [
+            "Je relis la consigne et le rappel en haut de l'écran.",
+            "Je demande à mon voisin ou à ma voisine.",
+            "Je relis la séance 3 (les signaux de vigilance) ou la séance 2 (les 4 questions).",
+            "J'appelle le formateur."
+          ],
+          "numerotee": true
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Aider un voisin",
+          "elements": [
+            "Je l'aide à trouver. Je ne donne pas la réponse.",
+            "Je pose une question : « Qu'est-ce que tu as déjà vérifié ? »",
+            "Je montre où chercher : le rappel, la séance 3, une source fiable."
+          ]
+        },
+        {
+          "type": "tableau",
+          "legende": "Repères de temps",
+          "entetes": [
+            "Étape",
+            "Durée conseillée"
+          ],
+          "lignes": [
+            [
+              "Étape 2 : combien je vérifie ?",
+              "25 minutes"
+            ],
+            [
+              "Étapes 3 à 6 : les 4 cas métier",
+              "1 h 15 (environ 20 minutes par cas)"
+            ],
+            [
+              "Pause",
+              "15 minutes"
+            ],
+            [
+              "Étape 7 : à deux, l'un demande, l'autre vérifie",
+              "50 minutes"
+            ],
+            [
+              "Étape 8 : qui est responsable ?",
+              "15 minutes"
+            ],
+            [
+              "Étape 9 : pour aller plus loin (au choix)",
+              "Si vous avez fini en avance"
+            ],
+            [
+              "Étape 10 : à garder",
+              "10 minutes"
+            ]
+          ]
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Ces durées sont des repères. Vous pouvez aller plus vite ou plus lentement."
+        }
+      ]
+    },
+    {
+      "id": "s8-etape-2",
+      "titre": "Combien je vérifie ? Le niveau selon l'enjeu",
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Une réponse d'IA peut toujours être fausse. Mais tout ne demande pas le même travail de vérification."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Pour choisir, posez-vous **2 questions** :"
+        },
+        {
+          "type": "liste",
+          "elements": [
+            "Si c'est faux, que se passe-t-il ? Et pour qui ?",
+            "Est-ce que je peux revenir en arrière ?"
+          ],
+          "numerotee": true
+        },
+        {
+          "type": "tableau",
+          "legende": "Les 3 niveaux de vérification",
+          "entetes": [
+            "Niveau",
+            "Quand ?",
+            "Ce que je fais"
+          ],
+          "lignes": [
+            [
+              "**1. Je relis**",
+              "Une erreur ne gêne personne. Je peux corriger facilement.",
+              "Je lis la réponse en entier. Je corrige ce qui ne va pas."
+            ],
+            [
+              "**2. Je vérifie à la source**",
+              "La réponse contient un fait : un prix, une date, un chiffre, une règle, un nom.",
+              "Je retrouve l'information sur un site officiel ou dans un document fiable."
+            ],
+            [
+              "**3. Je fais valider**",
+              "L'erreur coûterait cher, ou l'action ne peut pas être annulée.",
+              "Je demande à une personne compétente avant d'agir : mon responsable, un collègue expert, le service concerné."
+            ]
+          ]
+        },
+        {
+          "type": "sous_titre",
+          "texte": "Pour comparer : le ticket de caisse et le bail"
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Un ticket de caisse, vous le regardez en 5 secondes. Si c'est faux, vous perdez quelques centimes."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Un bail d'appartement, vous le lisez ligne par ligne. Vous vérifiez le loyer et les dates."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Avant de signer un contrat important, vous le faites parfois relire par quelqu'un qui s'y connaît."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Avec l'IA, c'est pareil : plus l'enjeu est grand, plus vous vérifiez."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Vous allez lire 7 situations, une par écran. Pour chacune, choisissez le niveau de vérification."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s8-e01",
+          "type": "qcm_unique",
+          "question": "Situation 1 : l'IA vous propose 5 idées de titre pour votre présentation de fin de stage. Quel niveau de vérification ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Je relis"
+            },
+            {
+              "id": "b",
+              "texte": "Je vérifie à la source"
+            },
+            {
+              "id": "c",
+              "texte": "Je fais valider par une personne compétente"
+            }
+          ],
+          "reponseCorrecte": "a",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Niveau 1 : je relis. Ce sont des idées. Vous choisissez celle qui vous plaît. Une mauvaise idée ne fait de tort à personne.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s8-e02",
+          "type": "qcm_unique",
+          "question": "Situation 2 : l'IA vous donne une commande qui supprime tous les fichiers d'un dossier, sur un serveur utilisé par toute l'entreprise. Quel niveau de vérification ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Je relis"
+            },
+            {
+              "id": "b",
+              "texte": "Je vérifie à la source"
+            },
+            {
+              "id": "c",
+              "texte": "Je fais valider par une personne compétente"
+            }
+          ],
+          "reponseCorrecte": "c",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Niveau 3 : je fais valider. Une suppression ne s'annule pas toujours. Le serveur sert à tout le monde. Avant de lancer la commande, faites-la valider, et vérifiez qu'une sauvegarde existe.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s8-e03",
+          "type": "qcm_unique",
+          "question": "Situation 3 : l'IA reformule un mail que vous avez écrit à votre formateur. Quel niveau de vérification ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Je relis"
+            },
+            {
+              "id": "b",
+              "texte": "Je vérifie à la source"
+            },
+            {
+              "id": "c",
+              "texte": "Je fais valider par une personne compétente"
+            }
+          ],
+          "reponseCorrecte": "a",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Niveau 1 : je relis. C'est votre texte. Vérifiez seulement que le sens n'a pas changé, et que le ton vous ressemble.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s8-e04",
+          "type": "qcm_unique",
+          "question": "Situation 4 : l'IA vous donne le prix d'une licence de logiciel, pour un devis à un client. Quel niveau de vérification ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Je relis"
+            },
+            {
+              "id": "b",
+              "texte": "Je vérifie à la source"
+            },
+            {
+              "id": "c",
+              "texte": "Je fais valider par une personne compétente"
+            }
+          ],
+          "reponseCorrecte": "b",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Niveau 2 : je vérifie à la source. Un prix change souvent, et l'IA ne connaît pas les prix du jour. Un devis faux engage l'entreprise. Prenez le prix sur le site de l'éditeur ou chez le fournisseur.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s8-e05",
+          "type": "qcm_unique",
+          "question": "Situation 5 : l'IA vous explique un mot technique que vous ne connaissez pas, juste pour comprendre. Quel niveau de vérification ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Je relis"
+            },
+            {
+              "id": "b",
+              "texte": "Je vérifie à la source"
+            },
+            {
+              "id": "c",
+              "texte": "Je fais valider par une personne compétente"
+            }
+          ],
+          "reponseCorrecte": "a",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Niveau 1 : je relis. Pour comprendre, c'est suffisant. Attention : si vous réutilisez l'explication dans un document ou un examen, passez au niveau 2.",
+          "difficulte": "facile"
+        },
+        {
+          "id": "s8-e06",
+          "type": "qcm_unique",
+          "question": "Situation 6 : l'IA vous propose de changer les droits d'accès de tous les utilisateurs de l'entreprise, en une seule opération. Quel niveau de vérification ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Je relis"
+            },
+            {
+              "id": "b",
+              "texte": "Je vérifie à la source"
+            },
+            {
+              "id": "c",
+              "texte": "Je fais valider par une personne compétente"
+            }
+          ],
+          "reponseCorrecte": "c",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Niveau 3 : je fais valider. Une erreur peut bloquer tout le monde, ou donner accès à des fichiers confidentiels. Ce type d'opération se décide avec le responsable informatique.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s8-e07",
+          "type": "qcm_unique",
+          "question": "Situation 7 : l'IA vous donne la date de fin de support d'une version de Windows, pour une note à votre responsable. Quel niveau de vérification ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Je relis"
+            },
+            {
+              "id": "b",
+              "texte": "Je vérifie à la source"
+            },
+            {
+              "id": "c",
+              "texte": "Je fais valider par une personne compétente"
+            }
+          ],
+          "reponseCorrecte": "b",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Niveau 2 : je vérifie à la source. Une date précise est un signal de vigilance. La source fiable, c'est le site de Microsoft. Notez la source dans votre note.",
+          "difficulte": "moyen"
+        }
+      ]
+    },
+    {
+      "id": "s8-etape-3",
+      "titre": "Cas 1 : support informatique, une réponse à une utilisatrice",
+      "rappel": {
+        "titre": "Rappel : le ticket, la demande et la réponse de l'IA",
+        "blocs": [
+          {
+            "type": "tableau",
+            "legende": "La demande du technicien à l'IA",
+            "entetes": [
+              "Élément",
+              "Contenu"
+            ],
+            "lignes": [
+              [
+                "Le ticket",
+                "« Bonjour, je suis Sonia Benali, comptabilité, mon portable : 06 12 34 56 78. Depuis ce matin, Outlook ne reçoit plus aucun mail. Je débute en informatique. »"
+              ],
+              [
+                "La demande",
+                "« Écris une réponse polie à cette utilisatrice. Elle débute en informatique. »"
+              ]
+            ]
+          },
+          {
+            "type": "tableau",
+            "legende": "La réponse de l'IA, phrase par phrase",
+            "entetes": [
+              "Phrase",
+              "Ce que l'IA a écrit"
+            ],
+            "lignes": [
+              [
+                "1",
+                "« Bonjour Madame Benali, merci pour votre message. »"
+              ],
+              [
+                "2",
+                "« Ce problème vient d'une panne générale de Microsoft ce matin. »"
+              ],
+              [
+                "3",
+                "« Vérifiez d'abord que vous êtes bien connectée à Internet : ouvrez un site web. »"
+              ],
+              [
+                "4",
+                "« Si cela ne suffit pas, supprimez votre profil Outlook, puis recréez-le. »"
+              ],
+              [
+                "5",
+                "« Envoyez-moi votre mot de passe : je vérifierai votre compte. »"
+              ]
+            ]
+          }
+        ]
+      },
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Un technicien support reçoit un ticket. Il demande à une IA d'écrire la réponse."
+        },
+        {
+          "type": "tableau",
+          "legende": "La demande du technicien à l'IA",
+          "entetes": [
+            "Élément",
+            "Contenu"
+          ],
+          "lignes": [
+            [
+              "Le ticket",
+              "« Bonjour, je suis Sonia Benali, comptabilité, mon portable : 06 12 34 56 78. Depuis ce matin, Outlook ne reçoit plus aucun mail. Je débute en informatique. »"
+            ],
+            [
+              "La demande",
+              "« Écris une réponse polie à cette utilisatrice. Elle débute en informatique. »"
+            ]
+          ]
+        },
+        {
+          "type": "tableau",
+          "legende": "La réponse de l'IA, phrase par phrase",
+          "entetes": [
+            "Phrase",
+            "Ce que l'IA a écrit"
+          ],
+          "lignes": [
+            [
+              "1",
+              "« Bonjour Madame Benali, merci pour votre message. »"
+            ],
+            [
+              "2",
+              "« Ce problème vient d'une panne générale de Microsoft ce matin. »"
+            ],
+            [
+              "3",
+              "« Vérifiez d'abord que vous êtes bien connectée à Internet : ouvrez un site web. »"
+            ],
+            [
+              "4",
+              "« Si cela ne suffit pas, supprimez votre profil Outlook, puis recréez-le. »"
+            ],
+            [
+              "5",
+              "« Envoyez-moi votre mot de passe : je vérifierai votre compte. »"
+            ]
+          ]
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Lisez la demande et la réponse. Puis répondez aux 3 questions."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s8-e08",
+          "type": "qcm_multiple",
+          "question": "Dans la réponse de l'IA, quelles phrases posent problème ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Phrase 1 : « Bonjour Madame Benali, merci pour votre message. »"
+            },
+            {
+              "id": "b",
+              "texte": "Phrase 2 : « Ce problème vient d'une panne générale de Microsoft ce matin. »"
+            },
+            {
+              "id": "c",
+              "texte": "Phrase 3 : « Vérifiez d'abord que vous êtes bien connectée à Internet. »"
+            },
+            {
+              "id": "d",
+              "texte": "Phrase 4 : « Supprimez votre profil Outlook, puis recréez-le. »"
+            },
+            {
+              "id": "e",
+              "texte": "Phrase 5 : « Envoyez-moi votre mot de passe. »"
+            }
+          ],
+          "reponsesCorrectes": [
+            "b",
+            "d",
+            "e"
+          ],
+          "explicationCorrection": "Phrase 2 : l'IA ne sait pas s'il y a une panne. Elle invente une cause qui « sonne bien ». Phrase 4 : supprimer un profil est une action lourde. Elle peut faire perdre des réglages. C'est au support de la faire, après les vérifications simples, pas à une débutante seule. Phrase 5 : un support ne demande **jamais** un mot de passe. C'est l'un des « 3 jamais » de la séance 4. Les phrases 1 et 3 sont correctes.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s8-e09",
+          "type": "qcm_unique",
+          "question": "Et dans la demande du technicien à l'IA, qu'est-ce qui pose problème ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Rien : la demande est claire."
+            },
+            {
+              "id": "b",
+              "texte": "Il a collé le nom complet et le numéro de portable de l'utilisatrice."
+            },
+            {
+              "id": "c",
+              "texte": "Il a demandé une réponse polie."
+            },
+            {
+              "id": "d",
+              "texte": "Il a dit que l'utilisatrice débute en informatique."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Le nom et le numéro de portable sont des données personnelles d'une autre personne. L'IA n'en a pas besoin pour écrire la réponse. Il fallait les retirer avant de coller le ticket. Dire que l'utilisatrice débute est utile : l'IA adapte ses mots.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s8-e10",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Réécrivez la phrase 2 (la cause du problème) pour qu'elle soit honnête.",
+          "reponseModele": "Nous cherchons la cause du problème. Nous revenons vers vous dès que nous en savons plus.",
+          "explicationCorrection": "Une phrase honnête ne donne pas une cause que personne n'a vérifiée. Elle dit ce qu'on sait, et ce qu'on va faire.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    },
+    {
+      "id": "s8-etape-4",
+      "titre": "Cas 2 : réseau, découper un réseau en sous-réseaux",
+      "rappel": {
+        "titre": "Rappel : la demande et la réponse de l'IA",
+        "blocs": [
+          {
+            "type": "tableau",
+            "legende": "La demande à l'IA",
+            "entetes": [
+              "Élément",
+              "Contenu"
+            ],
+            "lignes": [
+              [
+                "La demande",
+                "« Je dois découper le réseau 192.168.10.0/24 en 4 sous-réseaux de même taille. Donne-moi les adresses de chaque sous-réseau. »"
+              ]
+            ]
+          },
+          {
+            "type": "tableau",
+            "legende": "La réponse de l'IA, phrase par phrase",
+            "entetes": [
+              "Phrase",
+              "Ce que l'IA a écrit"
+            ],
+            "lignes": [
+              [
+                "1",
+                "« Il faut emprunter 2 bits : le nouveau masque est /26, soit 255.255.255.192. »"
+              ],
+              [
+                "2",
+                "« Chaque sous-réseau contient 64 adresses, dont 62 utilisables pour des machines. »"
+              ],
+              [
+                "3",
+                "« Sous-réseau 1 : de 192.168.10.0 à 192.168.10.63. »"
+              ],
+              [
+                "4",
+                "« Sous-réseau 2 : de 192.168.10.64 à 192.168.10.127. »"
+              ],
+              [
+                "5",
+                "« Sous-réseau 3 : de 192.168.10.128 à 192.168.10.192. »"
+              ],
+              [
+                "6",
+                "« Sous-réseau 4 : de 192.168.10.192 à 192.168.10.255. »"
+              ],
+              [
+                "7",
+                "« La passerelle de chaque sous-réseau est obligatoirement sa dernière adresse, par exemple 192.168.10.63. »"
+              ],
+              [
+                "8",
+                "« Pour appliquer le changement, redémarrez le routeur principal maintenant. »"
+              ]
+            ]
+          }
+        ]
+      },
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Une technicienne réseau doit découper un réseau en 4 parties. Elle demande les adresses à une IA."
+        },
+        {
+          "type": "tableau",
+          "legende": "La demande à l'IA",
+          "entetes": [
+            "Élément",
+            "Contenu"
+          ],
+          "lignes": [
+            [
+              "La demande",
+              "« Je dois découper le réseau 192.168.10.0/24 en 4 sous-réseaux de même taille. Donne-moi les adresses de chaque sous-réseau. »"
+            ]
+          ]
+        },
+        {
+          "type": "tableau",
+          "legende": "La réponse de l'IA, phrase par phrase",
+          "entetes": [
+            "Phrase",
+            "Ce que l'IA a écrit"
+          ],
+          "lignes": [
+            [
+              "1",
+              "« Il faut emprunter 2 bits : le nouveau masque est /26, soit 255.255.255.192. »"
+            ],
+            [
+              "2",
+              "« Chaque sous-réseau contient 64 adresses, dont 62 utilisables pour des machines. »"
+            ],
+            [
+              "3",
+              "« Sous-réseau 1 : de 192.168.10.0 à 192.168.10.63. »"
+            ],
+            [
+              "4",
+              "« Sous-réseau 2 : de 192.168.10.64 à 192.168.10.127. »"
+            ],
+            [
+              "5",
+              "« Sous-réseau 3 : de 192.168.10.128 à 192.168.10.192. »"
+            ],
+            [
+              "6",
+              "« Sous-réseau 4 : de 192.168.10.192 à 192.168.10.255. »"
+            ],
+            [
+              "7",
+              "« La passerelle de chaque sous-réseau est obligatoirement sa dernière adresse, par exemple 192.168.10.63. »"
+            ],
+            [
+              "8",
+              "« Pour appliquer le changement, redémarrez le routeur principal maintenant. »"
+            ]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Aide pour le calcul",
+          "elements": [
+            "Un réseau /24 contient 256 adresses : de .0 à .255.",
+            "4 sous-réseaux de même taille : 256 ÷ 4 = 64 adresses chacun.",
+            "Dans chaque sous-réseau, la première adresse désigne le réseau. La dernière sert à la diffusion (« broadcast »). On ne les donne pas aux machines.",
+            "Les sous-réseaux se suivent sans se chevaucher : une adresse appartient à un seul sous-réseau."
+          ]
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Refaites le calcul vous-même. Puis répondez aux 3 questions."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s8-e11",
+          "type": "qcm_multiple",
+          "question": "Dans la réponse de l'IA, quelles phrases posent problème ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Phrase 1 : le masque /26, soit 255.255.255.192."
+            },
+            {
+              "id": "b",
+              "texte": "Phrase 2 : 64 adresses, dont 62 utilisables."
+            },
+            {
+              "id": "c",
+              "texte": "Phrase 5 : sous-réseau 3, de .128 à .192."
+            },
+            {
+              "id": "d",
+              "texte": "Phrase 6 : sous-réseau 4, de .192 à .255."
+            },
+            {
+              "id": "e",
+              "texte": "Phrase 7 : la passerelle est obligatoirement la dernière adresse."
+            },
+            {
+              "id": "f",
+              "texte": "Phrase 8 : redémarrez le routeur principal maintenant."
+            }
+          ],
+          "reponsesCorrectes": [
+            "c",
+            "e",
+            "f"
+          ],
+          "explicationCorrection": "Phrase 5 : le sous-réseau 3 s'arrête à .191. L'adresse .192 est le début du sous-réseau 4 : elle ne peut pas être dans les deux. Phrase 7 : la dernière adresse (.63) sert à la diffusion. Elle ne peut pas être une passerelle. La passerelle est souvent la première adresse utilisable (.1), mais c'est un choix, pas une obligation. Phrase 8 : redémarrer le routeur principal coupe le réseau pour tout le monde. Cela se prévoit et se fait valider. Les phrases 1, 2 et 6 sont justes.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        },
+        {
+          "id": "s8-e12",
+          "type": "texte_libre",
+          "mode": "comparaison",
+          "question": "Quelle est la dernière adresse du sous-réseau 3 ? Écrivez l'adresse complète.",
+          "reponsesAcceptees": [
+            "192.168.10.191"
+          ],
+          "fautesAcceptees": 0,
+          "reponseModele": "192.168.10.191",
+          "explicationCorrection": "Le sous-réseau 3 commence à 192.168.10.128. Il contient 64 adresses : 128 + 64 − 1 = 191. L'IA a écrit .192 : c'est une erreur d'une seule unité, facile à rater si on ne refait pas le calcul.",
+          "difficulte": "difficile",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s8-e13",
+          "type": "qcm_unique",
+          "question": "Comment vérifier un calcul d'adresses donné par une IA ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Je demande à l'IA si elle est sûre."
+            },
+            {
+              "id": "b",
+              "texte": "Je refais le calcul, ou j'utilise un calculateur de sous-réseaux."
+            },
+            {
+              "id": "c",
+              "texte": "Je pose la même question une deuxième fois."
+            },
+            {
+              "id": "d",
+              "texte": "Je fais confiance si le masque est juste."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Un calcul se vérifie en le refaisant, ou avec un outil fait pour ça. L'IA peut répondre « oui, je suis sûre » et se tromper quand même. Et ici, le masque était juste, mais une adresse était fausse.",
+          "difficulte": "moyen"
+        }
+      ]
+    },
+    {
+      "id": "s8-etape-5",
+      "titre": "Cas 3 : développement, une fonction et un paquet à installer",
+      "rappel": {
+        "titre": "Rappel : la demande et la réponse de l'IA",
+        "blocs": [
+          {
+            "type": "tableau",
+            "legende": "La demande à l'IA",
+            "entetes": [
+              "Élément",
+              "Contenu"
+            ],
+            "lignes": [
+              [
+                "La demande",
+                "« Écris une fonction JavaScript qui vérifie qu'une adresse mail est valide. Dis-moi aussi ce que je dois installer. »"
+              ]
+            ]
+          },
+          {
+            "type": "tableau",
+            "legende": "La réponse de l'IA, phrase par phrase (sans le code)",
+            "entetes": [
+              "Phrase",
+              "Ce que l'IA a écrit"
+            ],
+            "lignes": [
+              [
+                "1",
+                "« Voici une fonction qui vérifie que l'adresse contient un @, puis un point après le @. »"
+              ],
+              [
+                "2",
+                "« Cette fonction détecte toutes les adresses invalides, sans exception. »"
+              ],
+              [
+                "3",
+                "« Je l'ai testée : elle fonctionne parfaitement. »"
+              ],
+              [
+                "4",
+                "« Installez d'abord la bibliothèque avec la commande : npm install verif-mail-express »"
+              ],
+              [
+                "5",
+                "« Pour plus de sécurité, collez ici votre fichier .env, avec vos clés d'accès : je vérifierai vos réglages. »"
+              ],
+              [
+                "6",
+                "« Pour être sûr qu'une adresse existe vraiment, le plus fiable est d'envoyer un mail de confirmation. »"
+              ]
+            ]
+          }
+        ]
+      },
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Un développeur demande à une IA une fonction pour vérifier des adresses mail."
+        },
+        {
+          "type": "tableau",
+          "legende": "La demande à l'IA",
+          "entetes": [
+            "Élément",
+            "Contenu"
+          ],
+          "lignes": [
+            [
+              "La demande",
+              "« Écris une fonction JavaScript qui vérifie qu'une adresse mail est valide. Dis-moi aussi ce que je dois installer. »"
+            ]
+          ]
+        },
+        {
+          "type": "tableau",
+          "legende": "La réponse de l'IA, phrase par phrase (sans le code)",
+          "entetes": [
+            "Phrase",
+            "Ce que l'IA a écrit"
+          ],
+          "lignes": [
+            [
+              "1",
+              "« Voici une fonction qui vérifie que l'adresse contient un @, puis un point après le @. »"
+            ],
+            [
+              "2",
+              "« Cette fonction détecte toutes les adresses invalides, sans exception. »"
+            ],
+            [
+              "3",
+              "« Je l'ai testée : elle fonctionne parfaitement. »"
+            ],
+            [
+              "4",
+              "« Installez d'abord la bibliothèque avec la commande : npm install verif-mail-express »"
+            ],
+            [
+              "5",
+              "« Pour plus de sécurité, collez ici votre fichier .env, avec vos clés d'accès : je vérifierai vos réglages. »"
+            ],
+            [
+              "6",
+              "« Pour être sûr qu'une adresse existe vraiment, le plus fiable est d'envoyer un mail de confirmation. »"
+            ]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Un mot de la séance",
+          "elements": [
+            "**Paquet (ou bibliothèque)** : du code écrit par d'autres personnes, que l'on installe dans son projet avec une commande, par exemple npm install.",
+            "**Fichier .env** : un fichier qui contient les réglages secrets d'un projet, par exemple des mots de passe ou des clés d'accès à un service."
+          ]
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Lisez la demande et la réponse. Puis répondez aux 3 questions."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s8-e14",
+          "type": "qcm_multiple",
+          "question": "Dans la réponse de l'IA, quelles phrases posent problème ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Phrase 1 : la fonction vérifie un @, puis un point après le @."
+            },
+            {
+              "id": "b",
+              "texte": "Phrase 2 : elle détecte toutes les adresses invalides, sans exception."
+            },
+            {
+              "id": "c",
+              "texte": "Phrase 3 : je l'ai testée, elle fonctionne parfaitement."
+            },
+            {
+              "id": "d",
+              "texte": "Phrase 4 : installez la bibliothèque verif-mail-express."
+            },
+            {
+              "id": "e",
+              "texte": "Phrase 5 : collez ici votre fichier .env."
+            },
+            {
+              "id": "f",
+              "texte": "Phrase 6 : le plus fiable est d'envoyer un mail de confirmation."
+            }
+          ],
+          "reponsesCorrectes": [
+            "b",
+            "c",
+            "d",
+            "e"
+          ],
+          "explicationCorrection": "Phrase 2 : faux. Vérifier un @ et un point laisse passer beaucoup d'adresses fausses, par exemple « a@b.c ». Phrase 3 : l'IA n'a rien testé sur votre ordinateur. Elle écrit une phrase rassurante. Phrase 4 : ce nom de paquet a été inventé pour l'exercice. Une IA peut proposer un paquet qui n'existe pas : il faut le vérifier avant de l'installer. Phrase 5 : un fichier .env contient des secrets. On ne le colle jamais dans une IA. Les phrases 1 et 6 sont justes.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        },
+        {
+          "id": "s8-e15",
+          "type": "qcm_multiple",
+          "question": "Avant d'installer un paquet proposé par une IA, que vérifiez-vous ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Qu'il existe vraiment sur le site officiel des paquets (pour JavaScript : npmjs.com)."
+            },
+            {
+              "id": "b",
+              "texte": "Qui le publie, et s'il est encore mis à jour."
+            },
+            {
+              "id": "c",
+              "texte": "Combien de personnes l'utilisent."
+            },
+            {
+              "id": "d",
+              "texte": "Que son nom sonne sérieux."
+            },
+            {
+              "id": "e",
+              "texte": "Que l'IA le recommande une deuxième fois."
+            }
+          ],
+          "reponsesCorrectes": [
+            "a",
+            "b",
+            "c"
+          ],
+          "explicationCorrection": "Une IA invente parfois des noms de paquets. Des chercheurs l'ont observé en 2024 et 2025. Le risque : une personne malveillante peut publier un faux paquet sous ce nom inventé, avec du code dangereux dedans. Un nom sérieux ou une deuxième recommandation de l'IA ne prouvent rien. Seul le site officiel le prouve.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s8-e16",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Un collègue veut coller son fichier .env dans une IA « pour qu'elle vérifie ses réglages ». Que lui dites-vous, en une ou deux phrases ?",
+          "reponseModele": "Non : ce fichier contient des mots de passe et des clés d'accès. Si tu veux de l'aide, remplace d'abord les vraies valeurs par des valeurs inventées.",
+          "explicationCorrection": "Le fichier .env contient des secrets de l'entreprise. Ce sont des informations confidentielles de l'employeur : l'un des « 3 jamais » de la séance 4. Si on a besoin d'aide, on remplace les vraies valeurs par des valeurs inventées.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    },
+    {
+      "id": "s8-etape-6",
+      "titre": "Cas 4 : test logiciel, les cas de test d'un mot de passe",
+      "rappel": {
+        "titre": "Rappel : la règle, la demande et la réponse de l'IA",
+        "blocs": [
+          {
+            "type": "tableau",
+            "legende": "La demande à l'IA",
+            "entetes": [
+              "Élément",
+              "Contenu"
+            ],
+            "lignes": [
+              [
+                "La règle à tester",
+                "« Un mot de passe est valide s'il contient de 8 à 20 caractères. 8 et 20 sont acceptés. »"
+              ],
+              [
+                "La demande",
+                "« Propose les cas de test pour cette règle. »"
+              ]
+            ]
+          },
+          {
+            "type": "tableau",
+            "legende": "La réponse de l'IA, phrase par phrase",
+            "entetes": [
+              "Phrase",
+              "Ce que l'IA a écrit"
+            ],
+            "lignes": [
+              [
+                "1",
+                "« Mot de passe de 8 caractères : accepté. »"
+              ],
+              [
+                "2",
+                "« Mot de passe de 7 caractères : refusé. »"
+              ],
+              [
+                "3",
+                "« Mot de passe de 20 caractères : accepté. »"
+              ],
+              [
+                "4",
+                "« Mot de passe de 21 caractères : accepté. »"
+              ],
+              [
+                "5",
+                "« Ces 4 cas suffisent : la règle est entièrement testée. »"
+              ],
+              [
+                "6",
+                "« J'ai lancé ces tests sur votre application : ils passent tous. »"
+              ]
+            ]
+          }
+        ]
+      },
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Une testeuse doit vérifier une règle de mot de passe. Elle demande à une IA de proposer les cas de test."
+        },
+        {
+          "type": "tableau",
+          "legende": "La demande à l'IA",
+          "entetes": [
+            "Élément",
+            "Contenu"
+          ],
+          "lignes": [
+            [
+              "La règle à tester",
+              "« Un mot de passe est valide s'il contient de 8 à 20 caractères. 8 et 20 sont acceptés. »"
+            ],
+            [
+              "La demande",
+              "« Propose les cas de test pour cette règle. »"
+            ]
+          ]
+        },
+        {
+          "type": "tableau",
+          "legende": "La réponse de l'IA, phrase par phrase",
+          "entetes": [
+            "Phrase",
+            "Ce que l'IA a écrit"
+          ],
+          "lignes": [
+            [
+              "1",
+              "« Mot de passe de 8 caractères : accepté. »"
+            ],
+            [
+              "2",
+              "« Mot de passe de 7 caractères : refusé. »"
+            ],
+            [
+              "3",
+              "« Mot de passe de 20 caractères : accepté. »"
+            ],
+            [
+              "4",
+              "« Mot de passe de 21 caractères : accepté. »"
+            ],
+            [
+              "5",
+              "« Ces 4 cas suffisent : la règle est entièrement testée. »"
+            ],
+            [
+              "6",
+              "« J'ai lancé ces tests sur votre application : ils passent tous. »"
+            ]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Un mot de la séance",
+          "elements": [
+            "**Cas de test** : une situation précise que l'on essaie, avec le résultat attendu. Par exemple : « mot de passe de 8 caractères : accepté »."
+          ]
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Lisez la règle et la réponse. Puis répondez aux 3 questions."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s8-e17",
+          "type": "qcm_multiple",
+          "question": "Dans la réponse de l'IA, quelles phrases posent problème ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Phrase 1 : 8 caractères, accepté."
+            },
+            {
+              "id": "b",
+              "texte": "Phrase 2 : 7 caractères, refusé."
+            },
+            {
+              "id": "c",
+              "texte": "Phrase 3 : 20 caractères, accepté."
+            },
+            {
+              "id": "d",
+              "texte": "Phrase 4 : 21 caractères, accepté."
+            },
+            {
+              "id": "e",
+              "texte": "Phrase 5 : ces 4 cas suffisent, la règle est entièrement testée."
+            },
+            {
+              "id": "f",
+              "texte": "Phrase 6 : j'ai lancé ces tests, ils passent tous."
+            }
+          ],
+          "reponsesCorrectes": [
+            "d",
+            "e",
+            "f"
+          ],
+          "explicationCorrection": "Phrase 4 : 21 caractères, c'est plus que 20. Le résultat attendu est « refusé ». Phrase 5 : tester les limites (7, 8, 20, 21) est une bonne idée, mais il manque des cas, par exemple un mot de passe vide. Phrase 6 : l'IA n'a pas accès à votre application. Elle ne peut pas avoir lancé les tests. Les phrases 1, 2 et 3 sont justes.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s8-e18",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Proposez 2 cas de test que l'IA a oubliés. Pour chacun, écrivez le résultat attendu.",
+          "reponseModele": "Mot de passe vide : refusé. Mot de passe de 14 caractères : accepté. Mot de passe avec des espaces ou des accents : la règle ne le dit pas, je pose la question.",
+          "explicationCorrection": "D'autres réponses sont possibles. Un bon cas de test dit toujours ce que l'on essaie et ce que l'on attend. S'il y a un doute sur la règle, on pose la question au lieu de deviner.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 45
+        },
+        {
+          "id": "s8-e19",
+          "type": "qcm_unique",
+          "question": "L'IA écrit « les tests passent tous ». Qu'en faites-vous ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Je l'écris dans mon rapport de test."
+            },
+            {
+              "id": "b",
+              "texte": "Je lance les tests moi-même, et je regarde le résultat."
+            },
+            {
+              "id": "c",
+              "texte": "Je demande à l'IA de confirmer."
+            },
+            {
+              "id": "d",
+              "texte": "Je supprime les tests, puisqu'ils passent."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Un résultat de test se constate, il ne se croit pas sur parole. Seul le résultat réel, sur l'application, compte. C'est la même idée qu'en séance 6 : on lit ce qui s'est vraiment passé.",
+          "difficulte": "moyen"
+        }
+      ]
+    },
+    {
+      "id": "s8-etape-7",
+      "titre": "À deux : l'un demande, l'autre vérifie",
+      "rappel": {
+        "titre": "Rappel : les rôles et la grille de vérification",
+        "blocs": [
+          {
+            "type": "liste",
+            "elements": [
+              "**Personne A** écrit la demande avec les 4 questions, l'envoie à l'IA, et lit la réponse à voix haute ou la montre.",
+              "**Personne B** vérifie la réponse avec la grille ci-dessous.",
+              "Ensuite, A améliore sa demande une fois. Puis vous échangez les rôles."
+            ]
+          },
+          {
+            "type": "encadre",
+            "style": "info",
+            "titre": "La grille de B",
+            "elements": [
+              "Je repère ce qui est vérifiable : chiffre, date, nom, commande, paquet, phrase « j'ai testé ».",
+              "Je choisis le niveau : je relis, je vérifie à la source, ou je fais valider.",
+              "Je vérifie au moins une information à une source fiable.",
+              "Je note ce qui est faux, douteux ou incomplet."
+            ],
+            "numerotee": true
+          }
+        ]
+      },
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Mettez-vous à deux. Utilisez l'outil d'IA de la salle : en ligne, ou installé sur l'ordinateur."
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Règle de sécurité",
+          "texte": "Utilisez seulement des informations inventées. Aucun vrai nom, aucun vrai numéro, aucun vrai mot de passe."
+        },
+        {
+          "type": "sous_titre",
+          "texte": "Les rôles"
+        },
+        {
+          "type": "liste",
+          "elements": [
+            "**Personne A** écrit la demande avec les 4 questions de la séance 2 : quoi, pour qui, comment, avec quoi. Elle l'envoie à l'IA.",
+            "**Personne B** vérifie la réponse avec la grille. Elle ne regarde pas la demande en train de s'écrire.",
+            "A améliore sa demande **une fois**, à partir de ce que B a trouvé. Vous comparez les deux réponses.",
+            "Vous **échangez les rôles** avec une autre tâche."
+          ],
+          "numerotee": true
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "La grille de B",
+          "elements": [
+            "Je repère ce qui est vérifiable : chiffre, date, nom, commande, paquet, phrase « j'ai testé ».",
+            "Je choisis le niveau : je relis, je vérifie à la source, ou je fais valider.",
+            "Je vérifie au moins une information à une source fiable.",
+            "Je note ce qui est faux, douteux ou incomplet."
+          ],
+          "numerotee": true
+        },
+        {
+          "type": "tableau",
+          "legende": "Des tâches à choisir",
+          "entetes": [
+            "Métier",
+            "Tâche"
+          ],
+          "lignes": [
+            [
+              "Support informatique",
+              "Écrire une réponse à un utilisateur qui n'arrive plus à imprimer."
+            ],
+            [
+              "Réseau",
+              "Expliquer à un collègue débutant la différence entre un switch et un routeur, en 5 lignes."
+            ],
+            [
+              "Développement",
+              "Écrire une fonction qui calcule l'âge d'une personne à partir de sa date de naissance."
+            ],
+            [
+              "Test logiciel",
+              "Proposer les cas de test d'un champ « code postal » français."
+            ],
+            [
+              "Autre métier",
+              "Une tâche du métier que vous visez. Demandez l'accord du formateur."
+            ]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Si l'outil d'IA ne répond pas",
+          "elements": [
+            "Essayez une fois de plus. Puis essayez l'autre outil de la salle.",
+            "Si rien ne marche : notez le problème, répondez aux questions avec ce que vous avez, et passez à l'étape 8.",
+            "Prévenez le formateur à la fin de l'étape, pas pendant."
+          ]
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Chaque personne répond aux 4 questions sur son propre ordinateur."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s8-e20",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Quand vous étiez la personne A : écrivez la demande complète que vous avez envoyée à l'IA.",
+          "explicationCorrection": "Vérifiez que votre demande répond aux 4 questions : quoi, pour qui, comment, avec quoi. Et qu'elle ne contient aucune vraie donnée personnelle.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 45
+        },
+        {
+          "id": "s8-e21",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Quand vous étiez la personne B : qu'avez-vous vérifié dans la réponse de votre binôme, et avec quelle source ?",
+          "explicationCorrection": "Une bonne vérification dit **quoi** (une commande, un chiffre, une affirmation) et **où** (site officiel, documentation, personne compétente). « J'ai relu » ne suffit pas pour un fait.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 45
+        },
+        {
+          "id": "s8-e22",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Qu'est-ce qui était faux, douteux ou incomplet dans la réponse ? Quel niveau de vérification avez-vous choisi ? Si rien n'était faux, écrivez ce que vous avez vérifié pour en être sûr.",
+          "explicationCorrection": "Ne rien trouver est un résultat possible. Ce qui compte, c'est de pouvoir dire ce que vous avez vérifié, et pourquoi ce niveau de vérification vous semblait suffisant.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 45
+        },
+        {
+          "id": "s8-e23",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Après l'amélioration de la demande : qu'est-ce qui a changé dans la réponse de l'IA ?",
+          "explicationCorrection": "Souvent, une demande plus précise donne une réponse plus utile. Mais elle peut toujours contenir des erreurs : la vérification reste nécessaire.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    },
+    {
+      "id": "s8-etape-8",
+      "titre": "Qui est responsable ?",
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "L'IA écrit. Mais c'est vous qui envoyez, publiez ou lancez la commande."
+        },
+        {
+          "type": "sous_titre",
+          "texte": "Pour comparer : le GPS"
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Le GPS vous dit de tourner dans une rue en sens interdit. Vous voyez le panneau. Si vous tournez quand même, c'est vous qui payez l'amende, pas le GPS."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "L'IA, c'est pareil : c'est un outil. La personne qui utilise sa réponse en reste responsable."
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "À retenir",
+          "elements": [
+            "Au travail, ce que vous envoyez à un client engage aussi votre entreprise.",
+            "« C'est l'IA qui l'a écrit » n'est pas une excuse.",
+            "Si vous n'avez pas pu vérifier, dites-le : « réponse à confirmer »."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s8-e24",
+          "type": "qcm_unique",
+          "question": "Un technicien envoie à un client une procédure écrite par une IA, sans la relire. La procédure efface des données du client. Qui doit en répondre devant le client ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "L'entreprise qui a créé l'IA."
+            },
+            {
+              "id": "b",
+              "texte": "Personne : c'est une erreur de machine."
+            },
+            {
+              "id": "c",
+              "texte": "Le technicien et son entreprise."
+            },
+            {
+              "id": "d",
+              "texte": "Le client, qui a suivi la procédure."
+            }
+          ],
+          "reponseCorrecte": "c",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Le client a reçu la procédure du technicien, pas de l'IA. C'est donc le technicien et son entreprise qui en répondent. Relire avant d'envoyer, et faire valider une action qui efface des données, aurait évité le problème.",
+          "difficulte": "moyen"
+        },
+        {
+          "id": "s8-e25",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Un collègue vous dit : « L'IA l'a écrit, donc c'est bon. » Que lui répondez-vous, en une ou deux phrases ?",
+          "reponseModele": "Pas forcément : l'IA peut se tromper avec assurance. C'est nous qui l'envoyons, donc c'est à nous de vérifier.",
+          "explicationCorrection": "Il n'y a pas une seule bonne réponse. L'idée importante : l'IA produit du texte vraisemblable, pas forcément vrai. Et c'est la personne qui utilise la réponse qui en est responsable.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    },
+    {
+      "id": "s8-etape-9",
+      "titre": "Pour aller plus loin : l'IA se relit elle-même (au choix)",
+      "auChoix": true,
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Cette étape est **au choix**, pour ceux qui ont fini en avance."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Reprenez la conversation de l'étape 7, avec la réponse que votre binôme a vérifiée."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Envoyez à l'IA ce message :"
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Le message à envoyer",
+          "texte": "« Relis ta réponse précédente. Liste tout ce qui pourrait être faux, inventé, ou à vérifier. »"
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Comparez la liste de l'IA avec ce que votre binôme a trouvé."
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "À savoir",
+          "elements": [
+            "Une IA qui se relit trouve parfois de vraies erreurs.",
+            "Mais elle peut aussi en oublier, ou en inventer de nouvelles.",
+            "Sa relecture est une aide. Ce n'est pas une preuve."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s8-e26",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Qu'est-ce que l'IA a signalé elle-même dans sa réponse ?",
+          "explicationCorrection": "Notez ce que l'IA a listé, même si cela vous semble faux. Vous comparez à la question suivante.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        },
+        {
+          "id": "s8-e27",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "L'IA a-t-elle trouvé la même chose que votre binôme ? Plus ? Moins ? Autre chose ?",
+          "explicationCorrection": "Tous les résultats sont intéressants. Si l'IA a trouvé moins que votre binôme, elle ne voit pas toutes ses erreurs. Si elle a trouvé plus, vérifiez quand même : elle peut se tromper aussi en se corrigeant.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        },
+        {
+          "id": "s8-e28",
+          "type": "qcm_unique",
+          "question": "L'IA écrit : « J'ai relu ma réponse, tout est juste. » Est-ce une preuve ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Oui : elle a relu."
+            },
+            {
+              "id": "b",
+              "texte": "Non : il faut vérifier à une source fiable."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "L'IA ne vérifie pas dans le monde réel. Elle produit une nouvelle réponse vraisemblable. Pour un fait, la preuve vient d'une source fiable, ou d'un test réel.",
+          "difficulte": "facile"
+        }
+      ]
+    },
+    {
+      "id": "s8-etape-10",
+      "titre": "À garder de cette séance",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Ma fiche à garder",
+          "elements": [
+            "**Avant de vérifier :** je me demande ce qui se passe si c'est faux, et si je peux revenir en arrière.",
+            "**3 niveaux :** je relis, je vérifie à la source, je fais valider.",
+            "**Un calcul :** je le refais, ou j'utilise un outil fait pour ça.",
+            "**« J'ai testé », « tout est juste » :** l'IA ne peut pas le prouver. Je constate moi-même.",
+            "**Un paquet ou une commande proposés par l'IA :** je vérifie sur le site officiel avant de les utiliser.",
+            "**Une action qui ne s'annule pas :** je la fais valider avant.",
+            "**Mes demandes :** jamais de mot de passe, de secret ni de donnée personnelle d'une autre personne.",
+            "**Responsabilité :** c'est moi qui envoie, donc c'est moi qui réponds."
+          ],
+          "numerotee": true
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Date de ces informations",
+          "texte": "Séance rédigée le 10 novembre 2026. Les outils changent vite. Les réflexes de vérification changent beaucoup moins."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Avant de partir, pensez à cliquer sur « Enregistrer mon travail dans un fichier »."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s8-e29",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Dans le métier que vous visez : citez une situation où vous vérifierez toujours la réponse d'une IA. Dites à quel niveau.",
+          "explicationCorrection": "Plusieurs réponses sont possibles. Exemples : une commande sur un serveur (niveau 3), un prix dans un devis (niveau 2), une réponse envoyée à un client (au moins niveau 1, souvent niveau 2).",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@
 >
 > Si une demande contredit une règle de ce fichier, **le signaler explicitement avant d'implémenter**. Ne jamais trancher en silence (voir section 5).
 
-**Dernière mise à jour** : 2026-09-21
+**Dernière mise à jour** : 2026-11-10
 
 ---
 
@@ -702,3 +702,24 @@ Une entrée par évolution majeure : règle ajoutée, modifiée ou supprimée, n
   - le repère affiche « Exercice n sur 20 » alors que la carte d'accueil affiche « 0 sur 12 » : comportement existant du moteur pour les exercices au choix (séances 2 et 6) ;
   - activité **non essayée avec des stagiaires** ; durées estimées ; textes fournis construits par une IA et signalés comme tels.
 - **Sections du CLAUDE.md impactées** : aucune règle ; contenu de la séance 7 (modifie D-017)
+
+### D-020 — Séance 8 « Esprit critique et usages métier », en autonomie avec entraide
+
+- **Date** : 2026-11-10
+- **Statut** : Acceptée (demandée par le formateur ; contenu à valider par lui, non essayé avec des stagiaires)
+- **Demandée ou validée par** : formateur
+- **Contexte** : le formateur anime un atelier « IA – fiabilité, esprit critique et premiers usages métier » de 13 h 20 à 17 h 00. Les stagiaires ont fini les séances 1 à 7. Format voulu : **autonomie et entraide**, le formateur n'intervient qu'en cas de difficulté. Les séances existantes couvrent la vérification (3) et les usages responsables (4), mais l'ancrage métier se limite à l'étape 12 de la séance 6.
+- **Décision** :
+  - nouvelle partie `content/seance-8.json`, placée **après la séance 7** : 10 étapes, 29 exercices `s8-e01` à `s8-e29`, dont 3 au choix (étape 9) ;
+  - une notion nouvelle, **le niveau de vérification selon l'enjeu** (je relis / je vérifie à la source / je fais valider), puis **4 cas métier** reprenant les métiers de D-013 (support, réseau, développement, test), chacun avec un `rappel` (D-018) qui contient la demande et la réponse de l'IA, jamais la correction ;
+  - une étape **à deux** (l'un demande avec les 4 questions de la séance 2, l'autre vérifie avec une grille), une étape sur la responsabilité, une étape au choix où l'IA se relit elle-même ;
+  - l'étape 1 donne les « 4 réflexes » quand on bloque (consigne, voisin, séances 2 et 3, formateur) et des repères de durée ;
+  - aucun nouveau type, aucun nouveau champ, aucune modification du JavaScript ; guide formateur court : `formateur/guide-seance-8.md` ;
+  - pied de page (`interface.json`) : dates des informations mises à jour.
+- **Raison** : appliquer des réflexes déjà vus à des tâches du métier visé, sans répéter les exercices des séances 3 et 4. Des réponses d'IA construites garantissent que chaque stagiaire rencontre une erreur, ce qu'une manipulation libre ne garantit pas (même raison qu'en D-014 et D-015).
+- **Conséquences et limites acceptées** :
+  - les réponses d'IA des cas 1 à 4 sont **construites** ; le nom de paquet `verif-mail-express` est inventé et non vérifié sur le registre npm ; le nom et le numéro du ticket sont fictifs ;
+  - l'étape 7 suppose un outil d'IA utilisable dans la salle (en ligne ou local) ; sans lui, elle prévoit de passer à l'étape 8 ;
+  - le cas 2 (calcul de sous-réseaux) peut être difficile pour les stagiaires hors réseau : une aide au calcul est dans l'étape, sans donner le résultat ;
+  - questions, corrigés et durées rédigés par une IA, **à relire par le formateur** ; tests NVDA et zoom 200 % non refaits pour cette séance (chargement et parcours d'exercices vérifiés en navigateur automatisé).
+- **Sections du CLAUDE.md impactées** : aucune règle ; contenu

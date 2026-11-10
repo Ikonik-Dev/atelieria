@@ -69,13 +69,15 @@ IA_prise_en_main/
 │   ├── bilan.json              Bilan de l'atelier : QCM général de fin (séances 1 à 4, puis 5 et 6 au choix)
 │   ├── seance-5.json           Séance 5 : Aller plus loin : du prompt au contexte
 │   ├── seance-6.json           Séance 6 : Aller plus loin : la boucle agentique (parcours A, B, C)
-│   └── seance-7.json           Séance 7 : Aller plus loin : l'IA sur mon ordinateur (IA locale)
+│   ├── seance-7.json           Séance 7 : Aller plus loin : l'IA sur mon ordinateur (IA locale)
+│   └── seance-8.json           Séance 8 : Esprit critique et usages métier (4 cas métier, travail à deux)
 │
 ├── formateur/
 │   ├── atelier-banc-essai/     Affiche des règles à imprimer pour le banc d'essai (séance 7)
 │   ├── guide-ia-locale-et-outils.md  Installer Ollama, LM Studio, Claude Desktop : licences, limites, procédures
 │   ├── guide-seance-1-demandes-a-tester.md  Séance 1 : demandes à tester après le temps libre
-│   └── guide-seances-5-6.md    Guide du formateur des séances 5 et 6 (hors de l'application)
+│   ├── guide-seances-5-6.md    Guide du formateur des séances 5 et 6 (hors de l'application)
+│   └── guide-seance-8.md       Guide du formateur de la séance 8 : déroulé, difficultés probables, plan B
 │
 └── assets/
     ├── images/                 18 illustrations : 8 JPEG du livret, 10 schémas SVG (séances 5 et 6)
@@ -98,7 +100,8 @@ Les fichiers d'origine placés à la racine du dossier (8 PNG, livret du stagiai
 | Séance 5 | 8 | 12 | 0 |
 | Séance 6 | 13 | 21 | 12 (parcours A, B, C) |
 | Séance 7 | 9 | 20 | 8 (banc d'essai) |
-| **Total** | **63** | **131** | **41** |
+| Séance 8 | 10 | 29 | 3 (l'IA se relit elle-même) |
+| **Total** | **73** | **160** | **44** |
 
 ### Répartition des illustrations
 
@@ -389,7 +392,7 @@ Deux règles :
 - **Un document, pas une leçon.** Si le rappel contient la leçon qui donne la réponse, l'exercice devient une simple recherche dans un tableau. Pour un exercice de connaissance, rendez plutôt la **question** compréhensible seule.
 - **Court.** Le rappel s'affiche sur chaque écran d'exercice de l'étape. Un rappel très long repousse la question vers le bas.
 
-Rappels en place : séance 2 (parcours A, la demande à compléter), séance 3 (comparaison de deux outils ; chasse à l'erreur), séance 6 (parcours A, B et C, la trace de l'agent), séance 7 (banc d'essai, le mode opératoire de la mesure).
+Rappels en place : séance 2 (parcours A, la demande à compléter), séance 3 (comparaison de deux outils ; chasse à l'erreur), séance 6 (parcours A, B et C, la trace de l'agent), séance 7 (banc d'essai, le mode opératoire de la mesure), séance 8 (les 4 cas métier ; les rôles et la grille du travail à deux).
 
 Déroulé à l'écran : présentation de la partie → étape 1 (à lire) → exercices de l'étape 1 → étape 2 (à lire) → etc. Chaque exercice a son propre écran. Le repère « Séance 2 › Étape 3 sur 7 › Exercice 4 sur 13 » est toujours visible en haut.
 
@@ -799,6 +802,7 @@ Les contrastes des couleurs ont été **calculés** (formule WCAG) : tous au-des
 - **Le « Bilan » de fin d'atelier** (`content/bilan.json`, CLAUDE.md, D-016) : 17 questions sur les séances 1 à 4, puis 8 questions « au choix » sur les séances 5 et 6, et 2 questions ouvertes. Il ne vient pas du livret. Aucune question ne reprend le QCM de positionnement, pour mesurer la compréhension plutôt que la mémoire du matin. Les identifiants sont en `s90-eNN`, hors de la numérotation des séances.
 - **La Séance 7 « L'IA sur mon ordinateur »** (CLAUDE.md, D-017) : IA locale, choix d'un modèle selon la machine et la tâche. Elle ne vient pas du livret. **Aucune installation n'est nécessaire côté stagiaire** : le formateur fait la démonstration. Les chiffres de matériel (4 Go de mémoire vidéo) sont ceux des postes du centre, relevés le 21 septembre 2026 : à revérifier sur d'autres machines. Procédures d'installation, licences et mesures : `formateur/guide-ia-locale-et-outils.md`.
 - **Le « banc d'essai » de la séance 7** (étape au choix, exercices `s7-e13` à `s7-e20`, CLAUDE.md, D-019) : une activité de 2 heures en binômes, prévue pour occuper un groupe **sans formateur dans la salle**. Elle suppose deux modèles locaux **installés et testés sur chaque poste** : sans cela, elle perd son objet, et il faut passer au plan B décrit dans le guide (section 3.7). Les documents imprimables (`assets/documents/banc-essai-*`) contiennent des textes construits, signalés comme tels, et **aucune valeur de référence** : le fichier est public, un chiffre « attendu » pré-répondrait la première manche.
+- **La Séance 8 « Esprit critique et usages métier »** (CLAUDE.md, D-020) : elle met en pratique les séances 1 à 7 sur 4 cas métier (support, réseau, développement, test) et un travail à deux (l'un demande, l'autre vérifie). Elle ne vient pas du livret. Prévue pour 3 h 20 **en autonomie avec entraide** : le formateur intervient seulement en cas de blocage. Les réponses d'IA des 4 cas sont **construites** (erreurs placées volontairement), et le nom de paquet `verif-mail-express` est inventé pour l'exercice. Déroulé et plan B : `formateur/guide-seance-8.md`.
 - Les valeurs de `difficulte` (les parcours A, B et C sont en `facile`, `moyen` et `difficile`) et de `tempsMinimumSecondes`.
 
 ### Adaptations du livret
