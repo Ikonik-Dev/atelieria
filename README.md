@@ -80,7 +80,7 @@ IA_prise_en_main/
 │   └── guide-seance-8.md       Guide du formateur de la séance 8 : déroulé, difficultés probables, plan B
 │
 └── assets/
-    ├── polices/                Polices Bricolage Grotesque (titres) et IBM Plex Sans (texte), en fichiers locaux, avec leur licence SIL OFL
+    ├── polices/                Polices Bricolage Grotesque (titres), IBM Plex Sans (texte) et IBM Plex Mono (repères), en fichiers locaux, avec leur licence SIL OFL
     ├── images/                 18 illustrations : 8 JPEG du livret, 10 schémas SVG (séances 5 et 6)
     └── documents/              Fichiers à télécharger (séance 3 : les 3 textes de la chasse à l'erreur ; séance 7 : la fiche de mesure et les textes du banc d'essai)
 ```
