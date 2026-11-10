@@ -727,7 +727,7 @@ Une entrée par évolution majeure : règle ajoutée, modifiée ou supprimée, n
 ### D-021 — Style « maquette » : nouvelle palette et polices hébergées dans le dépôt
 
 - **Date** : 2026-11-10
-- **Statut** : Acceptée (demandée par le formateur ; sur la branche `style-maquette`, à fusionner après validation)
+- **Statut** : Acceptée (demandée par le formateur ; fusionnée dans `main` le 2026-11-10 à sa demande, avant les tests NVDA, clavier et zoom 200 %)
 - **Demandée ou validée par** : formateur
 - **Contexte** : le formateur apprécie le style d'une page d'atelier faite à part (fond gris-bleu, accent bleu, surligneur jaune, titres en Bricolage Grotesque, texte en IBM Plex Sans) et veut l'appliquer à l'application.
 - **Décision** :
