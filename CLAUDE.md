@@ -723,3 +723,22 @@ Une entrée par évolution majeure : règle ajoutée, modifiée ou supprimée, n
   - le cas 2 (calcul de sous-réseaux) peut être difficile pour les stagiaires hors réseau : une aide au calcul est dans l'étape, sans donner le résultat ;
   - questions, corrigés et durées rédigés par une IA, **à relire par le formateur** ; tests NVDA et zoom 200 % non refaits pour cette séance (chargement et parcours d'exercices vérifiés en navigateur automatisé).
 - **Sections du CLAUDE.md impactées** : aucune règle ; contenu
+
+### D-021 — Style « maquette » : nouvelle palette et polices hébergées dans le dépôt
+
+- **Date** : 2026-11-10
+- **Statut** : Acceptée (demandée par le formateur ; sur la branche `style-maquette`, à fusionner après validation)
+- **Demandée ou validée par** : formateur
+- **Contexte** : le formateur apprécie le style d'une page d'atelier faite à part (fond gris-bleu, accent bleu, surligneur jaune, titres en Bricolage Grotesque, texte en IBM Plex Sans) et veut l'appliquer à l'application.
+- **Décision** :
+  - **signalé au formateur** : la maquette chargeait ses polices depuis Google Fonts, interdit par la règle 2.6. Les polices sont donc **copiées dans `assets/polices/`** (woff2, sous-ensemble latin, environ 140 Ko) avec leur licence SIL OFL, et déclarées par `@font-face` en chemin relatif. Aucun service tiers ;
+  - nouvelle palette dans les variables `:root` de `css/styles.css`, contrastes recalculés : texte 14,5:1, texte secondaire 5,4:1, bleu principal 7,2:1, vert « juste » foncé à `#17704a` (5,3:1 sur son fond) car la teinte de la maquette n'atteignait que 4,3:1 ;
+  - **signalé au formateur** : les filets très clairs de la maquette (1,4:1) ne respectent pas le 3:1 des composants (règle 2.5). Ils sont réservés aux cadres décoratifs ; les options, champs et boutons gardent un contour à 3,4:1 au moins ;
+  - habillage ajouté en fin de feuille de style (section « Style maquette ») : menu en pastilles, encadré « info » en pointillés bleus, surligneur jaune sous le titre des pages d'accueil et de présentation (jamais seul : le texte reste bleu nuit), coins arrondis ;
+  - pas de thème sombre : l'application n'en avait pas ; aucun changement de HTML, de JavaScript ni de JSON.
+- **Raison** : changer l'apparence sans toucher aux règles d'accessibilité ni à la séparation contenu/logique.
+- **Conséquences et limites acceptées** :
+  - le surligneur est retiré à l'impression et en mode contraste élevé de Windows ;
+  - si une police ne se charge pas, la page retombe sur Arial (pile de secours conservée) ;
+  - tests faits en navigateur automatisé (chargement des polices, aucune erreur, pas de défilement horizontal à 320 px) ; tests NVDA, clavier et zoom 200 % à refaire avant fusion.
+- **Sections du CLAUDE.md impactées** : 2.5 et 2.6 (appliquées, non modifiées) ; 3.1 (`assets/polices/`)

@@ -3,35 +3,86 @@
  *
  * Repères :
  *   - police sans empattement, 18 px de base, interligne 1,6 ;
- *   - fond crème (moins fatigant que le blanc pur), texte presque noir ;
+ *   - fond gris-bleu clair (moins fatigant que le blanc pur), texte bleu nuit ;
  *   - contrastes vérifiés : au moins 4,5:1 pour le texte, 3:1 pour les contours ;
  *   - focus clavier très visible ;
  *   - zones cliquables d'au moins 44 × 44 px ;
  *   - aucune animation ; rien ne dépasse à 320 px de large.
  * Les couleurs ne portent jamais seules une information : il y a toujours un texte.
+ *
+ * Style « maquette » (novembre 2026) : fond gris-bleu, accent bleu, surligneur jaune,
+ * titres en Bricolage Grotesque, texte en IBM Plex Sans. Les deux polices sont
+ * hébergées dans assets/polices/ (licence SIL OFL), jamais chargées depuis un service tiers.
  */
+
+/* ---------- Polices (fichiers locaux, règle 2.6) ---------- */
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/polices/bricolage-grotesque-latin-700-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../assets/polices/bricolage-grotesque-latin-800-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/polices/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/polices/ibm-plex-sans-latin-600-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/polices/ibm-plex-sans-latin-700-normal.woff2") format("woff2");
+}
 
 /* ---------- Couleurs ---------- */
 :root {
-  --fond: #fdfaf2;
+  --fond: #f1f3f7;
   --fond-carte: #ffffff;
-  --texte: #1b1b1b;
-  --texte-doux: #3d3d3d;
-  --bordure: #6b6b6b;
-  --principal: #0b4a8f;        /* bleu : 8,4:1 sur le fond crème */
-  --principal-fonce: #073262;
-  --juste: #1a6b2c;            /* vert : 5,8:1 sur son fond vert clair */
-  --juste-fond: #e6f4e8;
-  --faux: #a3262a;             /* rouge : 6,3:1 sur son fond rose */
-  --faux-fond: #fbeaea;
-  --neutre-fond: #e8f0fa;
-  --attention: #7a4a00;        /* brun-orangé : 6,8:1 sur son fond jaune */
-  --attention-fond: #fff3d6;
-  --astuce-fond: #f1ecfa;
-  --astuce: #4b2c83;
+  --texte: #15203b;            /* bleu nuit : 14,5:1 sur le fond */
+  --texte-doux: #59637a;       /* 5,4:1 sur le fond, 6:1 sur blanc */
+  --bordure: #7a8399;          /* contours des éléments cliquables : 3,4:1 sur le fond, 3,8:1 sur blanc */
+  --filet: #d7dce6;            /* filets décoratifs seulement (cadres, séparateurs) */
+  --principal: #2a3ccc;        /* bleu : 7,2:1 sur le fond */
+  --principal-fonce: #1d2a99;
+  --principal-doux: #e6e9fb;
+  --surligneur: #eef25e;       /* jaune : jamais seul, toujours sous un texte bleu nuit (13,4:1) */
+  --juste: #17704a;            /* vert : 5,3:1 sur son fond vert clair */
+  --juste-fond: #e2f3ea;
+  --faux: #c2352c;             /* rouge : 4,6:1 sur son fond rose */
+  --faux-fond: #fbe7e5;
+  --neutre-fond: #e6e9fb;
+  --attention: #8a5510;        /* brun-orangé : 5,5:1 sur son fond */
+  --attention-fond: #fbf0dc;
+  --astuce-fond: #f1ebfa;
+  --astuce: #5a2d91;
   --focus: #ffbf00;
-  --inactif-fond: #e4e4e4;
-  --inactif-texte: #3d3d3d;
+  --inactif-fond: #e3e6ee;
+  --inactif-texte: #454d60;
+  --rayon: 0.6rem;
+  --police-texte: "IBM Plex Sans", Arial, Verdana, "Segoe UI", Helvetica, sans-serif;
+  --police-titres: "Bricolage Grotesque", "IBM Plex Sans", Arial, "Segoe UI", sans-serif;
 }
 
 /* ---------- Base ---------- */
@@ -51,7 +102,7 @@ body {
   padding-inline: 1rem;
   background: var(--fond);
   color: var(--texte);
-  font-family: Arial, Verdana, "Segoe UI", Helvetica, sans-serif;
+  font-family: var(--police-texte);
   line-height: 1.6;
   text-align: left;
   overflow-wrap: break-word;
@@ -849,4 +900,215 @@ thead th {
   padding-block: 0.6rem;
   font-weight: 700;
   cursor: pointer;
+}
+
+/* ==================================================================
+ * Style « maquette » (novembre 2026)
+ * Placé à la fin pour remplacer l'habillage des blocs ci-dessus,
+ * sans toucher à leur rôle ni à leurs règles d'accessibilité.
+ * ================================================================== */
+
+/* Titres : police d'affichage, resserrée */
+h1, h2, h3, h4,
+.nom-application,
+.question,
+.resultat {
+  font-family: var(--police-titres);
+  text-wrap: balance;
+}
+
+h1 { font-weight: 800; letter-spacing: -0.015em; }
+h2 { font-weight: 700; letter-spacing: -0.01em; }
+
+/* Le titre principal des pages d'accueil et de présentation est souligné au surligneur jaune.
+   Sur les écrans d'étape et d'exercice, le h1 est le rappel discret de la séance : pas de surligneur. */
+main h1:not(.titre-seance) {
+  display: inline;
+  background: linear-gradient(transparent 62%, var(--surligneur) 62%, var(--surligneur) 92%, transparent 92%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+main h1:not(.titre-seance) + * {
+  margin-top: 1rem;
+}
+
+/* En-tête : bande blanche, filet fin, nom de l'atelier en gras */
+.entete {
+  border-bottom: 1px solid var(--filet);
+  box-shadow: 0 1px 0 var(--filet);
+}
+
+.nom-application {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.nom-application a {
+  text-decoration-color: var(--principal);
+}
+
+.sous-titre {
+  font-family: var(--police-texte);
+}
+
+.menu-seances a {
+  border-radius: 999px;
+  border-width: 2px;
+  padding-inline: 1rem;
+}
+
+.repere {
+  font-variant-numeric: tabular-nums;
+}
+
+.repere strong {
+  color: var(--principal);
+}
+
+/* Cadres : coins plus ronds, filets fins pour les cadres décoratifs */
+.carte-seance,
+.plan,
+.illustration,
+.qcm,
+.texte-libre,
+.justification,
+.dialogue {
+  border-radius: var(--rayon);
+}
+
+.carte-seance,
+.plan,
+.illustration {
+  border: 1px solid var(--filet);
+}
+
+.carte-seance {
+  padding-inline: 1.25rem;
+}
+
+.carte-seance h3 {
+  color: var(--principal);
+}
+
+/* Les zones de réponse gardent un contour visible (3:1), car on écrit ou on coche dedans */
+.qcm,
+.texte-libre,
+.justification {
+  border: 1px solid var(--filet);
+}
+
+.option {
+  border-color: var(--bordure);
+  border-radius: 0.5rem;
+  background: var(--fond-carte);
+}
+
+.option:hover {
+  background: var(--principal-doux);
+}
+
+.texte-libre input,
+.texte-libre textarea,
+.justification textarea {
+  border: 2px solid var(--bordure);
+  border-radius: 0.5rem;
+  background: var(--fond);
+}
+
+.texte-libre input:focus,
+.texte-libre textarea:focus,
+.justification textarea:focus {
+  border-color: var(--principal);
+  background: var(--fond-carte);
+}
+
+/* Boutons */
+.bouton {
+  border-radius: 0.5rem;
+}
+
+.bouton-principal:hover {
+  background: var(--principal-fonce);
+  border-color: var(--principal-fonce);
+}
+
+/* Encadrés : l'encadré « info » prend le style « consigne » de la maquette (pointillés bleus) */
+.encadre {
+  padding: 0.75rem 1.1rem;
+  border: 2px dashed var(--principal);
+  border-radius: var(--rayon);
+  background: var(--principal-doux);
+}
+
+.encadre-attention {
+  border: 2px solid var(--attention);
+  border-left-width: 6px;
+  background: var(--attention-fond);
+}
+
+.encadre-astuce {
+  border: 2px solid var(--astuce);
+  border-left-width: 6px;
+  background: var(--astuce-fond);
+}
+
+.encadre-titre {
+  font-family: var(--police-titres);
+  font-weight: 700;
+}
+
+/* Tableaux : filets fins, en-tête bleu pâle */
+table {
+  border-radius: var(--rayon);
+}
+
+th,
+td {
+  border-color: var(--filet);
+}
+
+thead th {
+  background: var(--principal-doux);
+  color: var(--texte);
+}
+
+/* Rappel d'étape (D-018) */
+.rappel {
+  border: 2px solid var(--principal);
+  border-radius: var(--rayon);
+  background: var(--principal-doux);
+}
+
+/* Zone de sauvegarde */
+.sauvegarde {
+  border-radius: var(--rayon);
+}
+
+/* Correction */
+.correction {
+  border-radius: var(--rayon);
+}
+
+/* Pied de page */
+.pied {
+  border-top: 1px solid var(--filet);
+}
+
+.navigation-ecrans {
+  border-top: 1px solid var(--filet);
+}
+
+/* Impression : pas de surligneur sur papier */
+@media print {
+  main h1:not(.titre-seance) {
+    background: none;
+  }
+}
+
+/* Mode contraste élevé de Windows : les couleurs du système remplacent le surligneur */
+@media (forced-colors: active) {
+  main h1:not(.titre-seance) {
+    background: none;
+  }
 }
