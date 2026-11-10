@@ -737,7 +737,9 @@ Une entrée par évolution majeure : règle ajoutée, modifiée ou supprimée, n
   - habillage ajouté en fin de feuille de style (section « Style maquette ») : en-tête sur une ligne (nom, barre oblique bleue décorative masquée aux lecteurs d'écran, repère en pastille) ; **sur grand écran (70em de large et 40em de haut au moins), le menu des séances devient une colonne « programme » à gauche**, la séance en cours marquée par un trait, un fond blanc et du gras ; sur petit écran ou avec un fort zoom, le menu reste en haut, en pastilles ; encadré « info » et rappel en pointillés bleus ; encadrés « attention » et « astuce », correction et sauvegarde en fond pâle avec trait à gauche ; tableaux sans quadrillage ; surligneur jaune sous le titre des pages d'accueil et de présentation (jamais seul : le texte reste bleu nuit) ;
   - troisième police, IBM Plex Mono (400 et 500), pour le repère et les en-têtes de tableau seulement ; pas pour les phrases (FALC) ;
   - 2026-11-10, seconde version : la première, jugée trop éloignée de la maquette par le formateur, gardait le menu en haut et les cadres d'origine ;
-  - pas de thème sombre : l'application n'en avait pas ; aucun changement de HTML, de JavaScript ni de JSON.
+  - **thème sombre** repris de la maquette (`prefers-color-scheme: dark`) : fond bleu nuit, texte clair, bleu `#8f9cff`. Le formateur voit la maquette en sombre : sans ce thème, le fond de l'application ne lui ressemblait pas. Contrastes vérifiés : texte 15,5:1, texte secondaire 6,8:1, bleu 7,4:1, contours 3,7:1, textes colorés sur leurs fonds entre 5,5:1 et 7,7:1. Les blancs écrits en dur dans la feuille de style sont remplacés par des variables (`--sur-principal`, `--fond-carte`) pour suivre le thème ;
+  - surligneur pleine hauteur sous le grand titre, comme la maquette, avec un texte foncé dessus dans les deux thèmes (`--encre-surligneur`) ;
+  - aucun changement de HTML, de JavaScript ni de JSON.
 - **Raison** : changer l'apparence sans toucher aux règles d'accessibilité ni à la séparation contenu/logique.
 - **Conséquences et limites acceptées** :
   - le surligneur est retiré à l'impression et en mode contraste élevé de Windows ;

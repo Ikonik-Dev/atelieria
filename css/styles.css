@@ -83,6 +83,40 @@
   --rayon: 0.6rem;
   --police-texte: "IBM Plex Sans", Arial, Verdana, "Segoe UI", Helvetica, sans-serif;
   --police-titres: "Bricolage Grotesque", "IBM Plex Sans", Arial, "Segoe UI", sans-serif;
+  --sur-principal: #ffffff;    /* texte posé sur le bleu principal */
+  --encre-surligneur: #15203b; /* texte posé sur le surligneur jaune */
+}
+
+/* ---------- Thème sombre : celui de la maquette, si l'ordinateur est réglé en mode sombre ----------
+   Contrastes vérifiés : texte 15,5:1, texte secondaire 6,8:1, bleu 7,4:1 sur le fond,
+   contours 3,7:1, textes colorés sur leurs fonds pâles entre 5,5:1 et 7,7:1. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --fond: #0e1320;
+    --fond-carte: #161d2c;
+    --texte: #e7ebf4;
+    --texte-doux: #9ba5ba;
+    --bordure: #6b7690;
+    --filet: #2a3347;
+    --principal: #8f9cff;
+    --principal-fonce: #b3bcff;
+    --principal-doux: #232b4a;
+    --surligneur: #d7dc45;
+    --encre-surligneur: #11182a;
+    --sur-principal: #0e1320;
+    --juste: #4cc48c;
+    --juste-fond: #12291f;
+    --faux: #ff7066;
+    --faux-fond: #331a19;
+    --neutre-fond: #232b4a;
+    --attention: #e8ab4c;
+    --attention-fond: #30240f;
+    --astuce: #c4a7f5;
+    --astuce-fond: #2a2140;
+    --inactif-fond: #232b3d;
+    --inactif-texte: #b6bfd0;
+  }
 }
 
 /* ---------- Base ---------- */
@@ -201,7 +235,7 @@ strong {
   z-index: 100;
   padding: 0.75rem 1rem;
   background: var(--texte);
-  color: #ffffff;
+  color: var(--fond);
   font-weight: 700;
 }
 
@@ -287,7 +321,7 @@ strong {
 /* Onglet de la séance en cours : couleur ET soulignement épais (pas la couleur seule) */
 .menu-seances a[aria-current="page"] {
   background: var(--principal);
-  color: #ffffff;
+  color: var(--sur-principal);
   text-decoration: underline;
   text-decoration-thickness: 0.15em;
 }
@@ -373,12 +407,12 @@ strong {
 
 .bouton-principal {
   background: var(--principal);
-  color: #ffffff;
+  color: var(--sur-principal);
 }
 
 .bouton-principal:hover {
   background: var(--principal-fonce);
-  color: #ffffff;
+  color: var(--sur-principal);
 }
 
 .bouton-secondaire {
@@ -683,7 +717,7 @@ thead th {
   border-radius: 0.3rem;
   font: inherit;
   color: var(--texte);
-  background: #ffffff;
+  background: var(--fond-carte);
 }
 
 .texte-libre input:disabled,
@@ -853,7 +887,7 @@ thead th {
   border-radius: 0.3rem;
   font: inherit;
   color: var(--texte);
-  background: #ffffff;
+  background: var(--fond-carte);
 }
 
 .justification textarea:disabled {
@@ -956,7 +990,9 @@ main h1:not(.titre-seance) {
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.25;
-  background: linear-gradient(transparent 58%, var(--surligneur) 58%, var(--surligneur) 90%, transparent 90%);
+  padding-inline: 0.15em;
+  color: var(--encre-surligneur);
+  background: linear-gradient(transparent 12%, var(--surligneur) 12%, var(--surligneur) 88%, transparent 88%);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
@@ -1077,7 +1113,7 @@ main h1:not(.titre-seance) + * {
 .menu-seances a[aria-current="page"] {
   border-color: var(--principal);
   background: var(--principal);
-  color: #ffffff;
+  color: var(--sur-principal);
 }
 
 /* ---------- Zone de sauvegarde : comme les retours « à surveiller » de la maquette ---------- */
