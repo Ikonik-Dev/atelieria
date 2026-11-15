@@ -1,0 +1,1453 @@
+{
+  "version": 1,
+  "id": "seance-9",
+  "titre": "Revenir sur les pièges",
+  "objectifs": [
+    "lire une consigne et savoir quelle réponse est attendue ;",
+    "comparer une réponse d'IA avec sa source, phrase par phrase, sans signaler les phrases justes ;",
+    "retirer les données personnelles avant de demander de l'aide à une IA ;",
+    "répondre avec vos propres mots, et rester responsable de ce que vous envoyez."
+  ],
+  "etapes": [
+    {
+      "id": "s9-etape-1",
+      "titre": "Avant de commencer",
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "**Durée de la séance :** 3 h 20, avec une pause."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "La semaine dernière, en séance 8, certains points ont été difficiles. Cette séance les reprend, un par un, plus lentement."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Ce n'est pas une punition. C'est un entraînement : les mêmes gestes, avec une méthode."
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Écrivez de vraies réponses",
+          "elements": [
+            "Dans les questions où l'on écrit, un point ou un mot seul ne suffit pas.",
+            "Écrivez au moins une phrase, avec vos mots.",
+            "Le formateur lit toutes les réponses."
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Je bloque ? Les 4 réflexes, dans l'ordre",
+          "elements": [
+            "Je relis la consigne et le rappel en haut de l'écran.",
+            "Je demande à mon voisin ou à ma voisine.",
+            "Je relis la séance 8 dans le menu.",
+            "J'appelle le formateur."
+          ],
+          "numerotee": true
+        },
+        {
+          "type": "tableau",
+          "legende": "Repères de temps",
+          "entetes": [
+            "Étape",
+            "Durée conseillée"
+          ],
+          "lignes": [
+            [
+              "Étape 2 : lire la consigne",
+              "20 minutes"
+            ],
+            [
+              "Étape 3 : la méthode des 3 étiquettes",
+              "20 minutes"
+            ],
+            [
+              "Étapes 4 et 5 : deux entraînements",
+              "45 minutes"
+            ],
+            [
+              "Pause",
+              "15 minutes"
+            ],
+            [
+              "Étape 6 : les données personnelles",
+              "30 minutes"
+            ],
+            [
+              "Étapes 7 et 8 : responsabilité, mes mots",
+              "30 minutes"
+            ],
+            [
+              "Étape 9 : défi à deux",
+              "25 minutes"
+            ],
+            [
+              "Étape 10 : à garder",
+              "10 minutes"
+            ]
+          ]
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Ces durées sont des repères. Si vous finissez une étape très vite, relisez vos réponses avant de passer à la suite."
+        }
+      ]
+    },
+    {
+      "id": "s9-etape-2",
+      "titre": "Lire la consigne : le verbe dit ce qu'il faut faire",
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Une consigne contient presque toujours un **verbe d'action**. Ce verbe dit quelle réponse est attendue."
+        },
+        {
+          "type": "tableau",
+          "legende": "Les verbes des consignes",
+          "entetes": [
+            "Verbe",
+            "Ce que vous faites",
+            "Exemple"
+          ],
+          "lignes": [
+            [
+              "Recopier",
+              "Écrire exactement le même texte.",
+              "Recopiez le nom de la clé."
+            ],
+            [
+              "Réécrire, reformuler",
+              "Écrire autrement : plus clair, ou corrigé.",
+              "Réécrivez la phrase pour qu'elle soit honnête."
+            ],
+            [
+              "Calculer",
+              "Faire le calcul. Écrire le résultat, pas la phrase.",
+              "Calculez le total."
+            ],
+            [
+              "Donner, citer",
+              "Écrire un élément précis : un nom, un nombre, une adresse.",
+              "Donnez la dernière adresse."
+            ],
+            [
+              "Expliquer",
+              "Dire pourquoi, avec vos mots, en une ou deux phrases.",
+              "Expliquez pourquoi c'est faux."
+            ],
+            [
+              "Choisir, cocher",
+              "Sélectionner une ou plusieurs réponses.",
+              "Cochez les phrases fausses."
+            ]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Avant d'écrire",
+          "elements": [
+            "Je relis la consigne.",
+            "Je cherche le verbe.",
+            "Je me demande : quelle réponse est attendue ? Une phrase ? Un nombre ? Un nom ?"
+          ],
+          "numerotee": true
+        },
+        {
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Le piège le plus fréquent",
+          "texte": "Recopier la phrase de la question au lieu de faire ce que demande le verbe. Par exemple, recopier une phrase quand la consigne dit « réécrivez » ou « calculez »."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s9-e01",
+          "type": "qcm_unique",
+          "question": "Consigne : « Réécrivez la phrase pour qu'elle soit honnête. » La phrase est : « Ce problème vient d'une panne générale de Microsoft. » Quelle réponse respecte la consigne ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "« Ce problème vient d'une panne générale de Microsoft. »"
+            },
+            {
+              "id": "b",
+              "texte": "« Nous cherchons la cause du problème. Nous vous tenons au courant. »"
+            },
+            {
+              "id": "c",
+              "texte": "« Phrase 2. »"
+            },
+            {
+              "id": "d",
+              "texte": "« . »"
+            }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Le verbe est « réécrire » : il faut écrire autre chose. La réponse a recopie la phrase sans la changer : elle ne répond pas à la consigne. La réponse b ne donne plus une cause inventée : elle est honnête.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 25
+        },
+        {
+          "id": "s9-e02",
+          "type": "qcm_unique",
+          "question": "Consigne : « Donnez la dernière adresse du sous-réseau. Écrivez l'adresse complète. » Quelle forme de réponse est attendue ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Une phrase de l'IA, recopiée."
+            },
+            {
+              "id": "b",
+              "texte": "Une adresse seule, par exemple : 192.168.1.63"
+            },
+            {
+              "id": "c",
+              "texte": "Une longue explication sur les réseaux."
+            },
+            {
+              "id": "d",
+              "texte": "« Je ne sais pas. »"
+            }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Le verbe est « donner », et la consigne précise « l'adresse complète ». On attend un élément précis : l'adresse, et rien d'autre.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s9-e03",
+          "type": "qcm_unique",
+          "question": "Consigne : « Expliquez pourquoi cette phrase est fausse. » Quelle réponse respecte la consigne ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "« Elle est fausse. »"
+            },
+            {
+              "id": "b",
+              "texte": "« Le document dit 1 800 €. La phrase dit 2 800 €. »"
+            },
+            {
+              "id": "c",
+              "texte": "La phrase recopiée."
+            },
+            {
+              "id": "d",
+              "texte": "« Je pense que oui. »"
+            }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "« Expliquer », c'est dire pourquoi. La réponse b montre la preuve : elle compare la phrase avec le document. « Elle est fausse » ne dit pas pourquoi.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s9-e04",
+          "type": "texte_libre",
+          "mode": "comparaison",
+          "question": "Consigne : « Calculez 1 240 + 860. Écrivez seulement le résultat. »",
+          "reponsesAcceptees": [
+            "2100",
+            "2 100"
+          ],
+          "fautesAcceptees": 0,
+          "reponseModele": "2100",
+          "explicationCorrection": "1 240 + 860 = 2 100. La consigne dit « seulement le résultat » : on écrit le nombre, sans phrase.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 15
+        }
+      ]
+    },
+    {
+      "id": "s9-etape-3",
+      "titre": "Une méthode pour repérer les erreurs : les 3 étiquettes",
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "En séance 8, deux erreurs revenaient souvent :"
+        },
+        {
+          "type": "liste",
+          "elements": [
+            "laisser passer une phrase fausse ;",
+            "signaler une phrase juste comme si elle était fausse."
+          ]
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Voici une méthode pour éviter les deux."
+        },
+        {
+          "type": "sous_titre",
+          "texte": "À la livraison des courses"
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Vous recevez une livraison. Vous la comparez avec votre bon de commande, article par article."
+        },
+        {
+          "type": "liste",
+          "elements": [
+            "L'article est celui que vous avez commandé : c'est bon.",
+            "L'article n'est pas le bon : ce n'est pas la bonne marque, pas la bonne quantité.",
+            "Il y a un article en plus, que vous n'avez pas commandé."
+          ]
+        },
+        {
+          "type": "sous_titre",
+          "texte": "Avec une réponse d'IA, c'est pareil"
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Vous comparez la réponse de l'IA avec la **source**, phrase par phrase. Chaque phrase reçoit une étiquette."
+        },
+        {
+          "type": "definitions",
+          "elements": [
+            {
+              "terme": "Conforme",
+              "definition": "La source dit la même chose. La phrase est juste : on ne la signale pas."
+            },
+            {
+              "terme": "Contredit",
+              "definition": "La source dit autre chose : un autre chiffre, une autre date, un autre lieu, ou le contraire. La phrase est fausse."
+            },
+            {
+              "terme": "Absent",
+              "definition": "La source n'en parle pas. L'IA l'a ajouté. C'est peut-être vrai, mais ce n'est pas prouvé : on ne l'utilise pas sans vérifier ailleurs."
+            }
+          ]
+        },
+        {
+          "type": "sous_titre",
+          "texte": "Un exemple résolu"
+        },
+        {
+          "type": "tableau",
+          "legende": "La source : l'affiche",
+          "entetes": [
+            "Affiche de l'atelier cuisine"
+          ],
+          "lignes": [
+            [
+              "Atelier cuisine : jeudi à 14 h, salle 3. 8 places. Inscription à l'accueil."
+            ]
+          ]
+        },
+        {
+          "type": "tableau",
+          "legende": "Exemple résolu : la réponse de l'IA, phrase par phrase",
+          "entetes": [
+            "Phrase de l'IA",
+            "Étiquette",
+            "Pourquoi"
+          ],
+          "lignes": [
+            [
+              "« L'atelier cuisine a lieu jeudi à 14 h. »",
+              "Conforme",
+              "L'affiche dit jeudi à 14 h."
+            ],
+            [
+              "« Il se tient en salle 5. »",
+              "Contredit",
+              "L'affiche dit salle 3."
+            ],
+            [
+              "« Il y a 8 places. »",
+              "Conforme",
+              "L'affiche dit 8 places."
+            ],
+            [
+              "« L'atelier est gratuit. »",
+              "Absent",
+              "L'affiche ne parle pas du prix. C'est peut-être vrai, mais ce n'est pas prouvé."
+            ]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "La règle",
+          "texte": "Une phrase n'est pas fausse parce qu'elle « a l'air bizarre ». Elle est fausse si la source dit autre chose. Toujours comparer avec la source."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s9-e05",
+          "type": "qcm_unique",
+          "question": "L'affiche de l'atelier cuisine ne parle pas du prix. L'IA écrit : « L'atelier est gratuit. » Quelle étiquette ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Conforme : la source dit la même chose."
+            },
+            {
+              "id": "b",
+              "texte": "Contredit : la source dit autre chose."
+            },
+            {
+              "id": "c",
+              "texte": "Absent : la source n'en parle pas."
+            }
+          ],
+          "reponseCorrecte": "c",
+          "explicationCorrection": "Absent. L'affiche ne dit rien sur le prix. L'IA a ajouté une information. Elle est peut-être vraie, mais rien ne le prouve.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s9-e06",
+          "type": "qcm_unique",
+          "question": "Une phrase de l'IA dit exactement la même chose que la source. Faut-il la signaler comme une erreur ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Oui, par précaution."
+            },
+            {
+              "id": "b",
+              "texte": "Non : elle est conforme, elle est juste."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Une phrase conforme est juste. La signaler comme une erreur, c'est une fausse alerte. Au travail, trop de fausses alertes font perdre du temps à tout le monde.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 15
+        }
+      ]
+    },
+    {
+      "id": "s9-etape-4",
+      "titre": "Entraînement 1 : le mail de la responsable RH",
+      "rappel": {
+        "titre": "Rappel : le mail et le résumé de l'IA",
+        "blocs": [
+          {
+            "type": "tableau",
+            "legende": "La source : le mail de la responsable RH",
+            "entetes": [
+              "Mail reçu par toute l'équipe"
+            ],
+            "lignes": [
+              [
+                "Bonjour à tous,"
+              ],
+              [
+                "La formation sécurité informatique aura lieu le mardi 24 novembre, de 9 h à 12 h, en salle B."
+              ],
+              [
+                "Elle est obligatoire pour les nouveaux arrivants. Les autres salariés peuvent venir s'il reste de la place."
+              ],
+              [
+                "Merci de vous inscrire auprès de Laura avant le 20 novembre."
+              ],
+              [
+                "Claire, responsable RH"
+              ]
+            ]
+          },
+          {
+            "type": "tableau",
+            "legende": "Le résumé écrit par l'IA, phrase par phrase",
+            "entetes": [
+              "Phrase",
+              "Ce que l'IA a écrit"
+            ],
+            "lignes": [
+              [
+                "1",
+                "« La formation sécurité a lieu le mardi 24 novembre, de 9 h à 12 h. »"
+              ],
+              [
+                "2",
+                "« Elle se passe en salle D. »"
+              ],
+              [
+                "3",
+                "« Elle est obligatoire pour tous les salariés. »"
+              ],
+              [
+                "4",
+                "« Il faut s'inscrire auprès de Laura avant le 20 novembre. »"
+              ],
+              [
+                "5",
+                "« Un repas sera offert à midi. »"
+              ]
+            ]
+          }
+        ]
+      },
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Une collègue a demandé à une IA de résumer un mail. Comparez le résumé avec le mail, phrase par phrase."
+        },
+        {
+          "type": "tableau",
+          "legende": "La source : le mail de la responsable RH",
+          "entetes": [
+            "Mail reçu par toute l'équipe"
+          ],
+          "lignes": [
+            [
+              "Bonjour à tous,"
+            ],
+            [
+              "La formation sécurité informatique aura lieu le mardi 24 novembre, de 9 h à 12 h, en salle B."
+            ],
+            [
+              "Elle est obligatoire pour les nouveaux arrivants. Les autres salariés peuvent venir s'il reste de la place."
+            ],
+            [
+              "Merci de vous inscrire auprès de Laura avant le 20 novembre."
+            ],
+            [
+              "Claire, responsable RH"
+            ]
+          ]
+        },
+        {
+          "type": "tableau",
+          "legende": "Le résumé écrit par l'IA, phrase par phrase",
+          "entetes": [
+            "Phrase",
+            "Ce que l'IA a écrit"
+          ],
+          "lignes": [
+            [
+              "1",
+              "« La formation sécurité a lieu le mardi 24 novembre, de 9 h à 12 h. »"
+            ],
+            [
+              "2",
+              "« Elle se passe en salle D. »"
+            ],
+            [
+              "3",
+              "« Elle est obligatoire pour tous les salariés. »"
+            ],
+            [
+              "4",
+              "« Il faut s'inscrire auprès de Laura avant le 20 novembre. »"
+            ],
+            [
+              "5",
+              "« Un repas sera offert à midi. »"
+            ]
+          ]
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Pour chaque phrase, choisissez une étiquette : conforme, contredit ou absent. Le mail et le résumé restent affichés en haut de chaque écran."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s9-e07",
+          "type": "qcm_unique",
+          "question": "Phrase 1 : « La formation sécurité a lieu le mardi 24 novembre, de 9 h à 12 h. » Quelle étiquette ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Conforme : la source dit la même chose."
+            },
+            {
+              "id": "b",
+              "texte": "Contredit : la source dit autre chose."
+            },
+            {
+              "id": "c",
+              "texte": "Absent : la source n'en parle pas."
+            }
+          ],
+          "reponseCorrecte": "a",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Conforme. Le mail dit : le mardi 24 novembre, de 9 h à 12 h.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s9-e08",
+          "type": "qcm_unique",
+          "question": "Phrase 2 : « Elle se passe en salle D. » Quelle étiquette ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Conforme : la source dit la même chose."
+            },
+            {
+              "id": "b",
+              "texte": "Contredit : la source dit autre chose."
+            },
+            {
+              "id": "c",
+              "texte": "Absent : la source n'en parle pas."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Contredit. Le mail dit « salle B ». Une seule lettre change, et les collègues iraient dans la mauvaise salle.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s9-e09",
+          "type": "qcm_unique",
+          "question": "Phrase 3 : « Elle est obligatoire pour tous les salariés. » Quelle étiquette ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Conforme : la source dit la même chose."
+            },
+            {
+              "id": "b",
+              "texte": "Contredit : la source dit autre chose."
+            },
+            {
+              "id": "c",
+              "texte": "Absent : la source n'en parle pas."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Contredit. Le mail dit qu'elle est obligatoire pour les **nouveaux arrivants** seulement. Les autres peuvent venir s'il reste de la place.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s9-e10",
+          "type": "qcm_unique",
+          "question": "Phrase 4 : « Il faut s'inscrire auprès de Laura avant le 20 novembre. » Quelle étiquette ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Conforme : la source dit la même chose."
+            },
+            {
+              "id": "b",
+              "texte": "Contredit : la source dit autre chose."
+            },
+            {
+              "id": "c",
+              "texte": "Absent : la source n'en parle pas."
+            }
+          ],
+          "reponseCorrecte": "a",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Conforme. Le mail dit la même chose : Laura, avant le 20 novembre.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s9-e11",
+          "type": "qcm_unique",
+          "question": "Phrase 5 : « Un repas sera offert à midi. » Quelle étiquette ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Conforme : la source dit la même chose."
+            },
+            {
+              "id": "b",
+              "texte": "Contredit : la source dit autre chose."
+            },
+            {
+              "id": "c",
+              "texte": "Absent : la source n'en parle pas."
+            }
+          ],
+          "reponseCorrecte": "c",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Absent. Le mail ne parle pas de repas. L'IA l'a ajouté. Si on l'envoie, des collègues vont attendre un repas qui n'existe peut-être pas.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s9-e12",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Écrivez le résumé corrigé, en 3 phrases au plus. Gardez seulement ce que dit le mail.",
+          "reponseModele": "La formation sécurité a lieu le mardi 24 novembre, de 9 h à 12 h, en salle B. Elle est obligatoire pour les nouveaux arrivants ; les autres peuvent venir s'il reste de la place. Inscription auprès de Laura avant le 20 novembre.",
+          "explicationCorrection": "Un bon résumé garde les phrases conformes, corrige les phrases contredites, et supprime les phrases absentes.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 60
+        }
+      ]
+    },
+    {
+      "id": "s9-etape-5",
+      "titre": "Entraînement 2 : une procédure du support",
+      "rappel": {
+        "titre": "Rappel : la procédure et la réponse de l'IA",
+        "blocs": [
+          {
+            "type": "tableau",
+            "legende": "La source : la procédure du service informatique",
+            "entetes": [
+              "Procédure : mot de passe oublié"
+            ],
+            "lignes": [
+              [
+                "1. L'utilisateur ouvre le portail « Mon compte » depuis l'intranet."
+              ],
+              [
+                "2. Il clique sur « Mot de passe oublié ». Il reçoit un code par SMS."
+              ],
+              [
+                "3. Le nouveau mot de passe doit avoir au moins 12 caractères."
+              ],
+              [
+                "4. Si le portail ne marche pas, l'utilisateur appelle le support au poste 4400."
+              ],
+              [
+                "Le support ne demande jamais le mot de passe de l'utilisateur."
+              ]
+            ]
+          },
+          {
+            "type": "tableau",
+            "legende": "La réponse de l'IA à un utilisateur, phrase par phrase",
+            "entetes": [
+              "Phrase",
+              "Ce que l'IA a écrit"
+            ],
+            "lignes": [
+              [
+                "1",
+                "« Ouvrez le portail « Mon compte » depuis l'intranet. »"
+              ],
+              [
+                "2",
+                "« Cliquez sur « Mot de passe oublié » : vous recevrez un code par mail. »"
+              ],
+              [
+                "3",
+                "« Choisissez un mot de passe d'au moins 8 caractères. »"
+              ],
+              [
+                "4",
+                "« Vous pouvez aussi reprendre votre ancien mot de passe. »"
+              ],
+              [
+                "5",
+                "« En cas de problème, appelez le support au poste 4400. »"
+              ]
+            ]
+          }
+        ]
+      },
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Un technicien a demandé à une IA d'écrire une réponse à un utilisateur. Il lui a donné la procédure officielle. Comparez."
+        },
+        {
+          "type": "tableau",
+          "legende": "La source : la procédure du service informatique",
+          "entetes": [
+            "Procédure : mot de passe oublié"
+          ],
+          "lignes": [
+            [
+              "1. L'utilisateur ouvre le portail « Mon compte » depuis l'intranet."
+            ],
+            [
+              "2. Il clique sur « Mot de passe oublié ». Il reçoit un code par SMS."
+            ],
+            [
+              "3. Le nouveau mot de passe doit avoir au moins 12 caractères."
+            ],
+            [
+              "4. Si le portail ne marche pas, l'utilisateur appelle le support au poste 4400."
+            ],
+            [
+              "Le support ne demande jamais le mot de passe de l'utilisateur."
+            ]
+          ]
+        },
+        {
+          "type": "tableau",
+          "legende": "La réponse de l'IA à un utilisateur, phrase par phrase",
+          "entetes": [
+            "Phrase",
+            "Ce que l'IA a écrit"
+          ],
+          "lignes": [
+            [
+              "1",
+              "« Ouvrez le portail « Mon compte » depuis l'intranet. »"
+            ],
+            [
+              "2",
+              "« Cliquez sur « Mot de passe oublié » : vous recevrez un code par mail. »"
+            ],
+            [
+              "3",
+              "« Choisissez un mot de passe d'au moins 8 caractères. »"
+            ],
+            [
+              "4",
+              "« Vous pouvez aussi reprendre votre ancien mot de passe. »"
+            ],
+            [
+              "5",
+              "« En cas de problème, appelez le support au poste 4400. »"
+            ]
+          ]
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Utilisez les 3 étiquettes. Prenez le temps de relire la procédure pour chaque phrase."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s9-e13",
+          "type": "qcm_multiple",
+          "question": "Quelles phrases de l'IA **contredisent** la procédure ? Cochez toutes les bonnes réponses.",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Phrase 1 : ouvrez le portail « Mon compte » depuis l'intranet."
+            },
+            {
+              "id": "b",
+              "texte": "Phrase 2 : vous recevrez un code par mail."
+            },
+            {
+              "id": "c",
+              "texte": "Phrase 3 : au moins 8 caractères."
+            },
+            {
+              "id": "d",
+              "texte": "Phrase 5 : appelez le support au poste 4400."
+            }
+          ],
+          "reponsesCorrectes": [
+            "b",
+            "c"
+          ],
+          "explicationCorrection": "Phrase 2 : la procédure dit « par SMS », pas par mail. Phrase 3 : la procédure dit « au moins 12 caractères », pas 8. Les phrases 1 et 5 sont conformes : ce ne sont pas des erreurs.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        },
+        {
+          "id": "s9-e14",
+          "type": "qcm_unique",
+          "question": "Phrase 4 : « Vous pouvez aussi reprendre votre ancien mot de passe. » Quelle étiquette ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Conforme : la source dit la même chose."
+            },
+            {
+              "id": "b",
+              "texte": "Contredit : la source dit autre chose."
+            },
+            {
+              "id": "c",
+              "texte": "Absent : la source n'en parle pas."
+            }
+          ],
+          "reponseCorrecte": "c",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Absent. La procédure n'en parle pas. Et c'est un mauvais conseil de sécurité : si l'ancien mot de passe a été découvert, le compte reste en danger. Une phrase absente peut donc être dangereuse.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s9-e15",
+          "type": "qcm_multiple",
+          "question": "Quelles phrases de l'IA sont **conformes** à la procédure ? Cochez toutes les bonnes réponses.",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Phrase 1 : ouvrez le portail « Mon compte » depuis l'intranet."
+            },
+            {
+              "id": "b",
+              "texte": "Phrase 2 : vous recevrez un code par mail."
+            },
+            {
+              "id": "c",
+              "texte": "Phrase 4 : vous pouvez reprendre votre ancien mot de passe."
+            },
+            {
+              "id": "d",
+              "texte": "Phrase 5 : appelez le support au poste 4400."
+            }
+          ],
+          "reponsesCorrectes": [
+            "a",
+            "d"
+          ],
+          "explicationCorrection": "Les phrases 1 et 5 disent la même chose que la procédure. Elles sont justes : on les garde telles quelles.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 25
+        }
+      ]
+    },
+    {
+      "id": "s9-etape-6",
+      "titre": "Les données personnelles : les reconnaître et les retirer",
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Bonne reprise après la pause."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "En séance 8, le technicien avait collé dans l'IA le nom et le portable d'une utilisatrice. Ce piège est facile à rater."
+        },
+        {
+          "type": "definitions",
+          "elements": [
+            {
+              "terme": "Une donnée personnelle",
+              "definition": "Une information qui permet de reconnaître une personne. Directement : son nom, son téléphone, son adresse mail. Ou indirectement : une description qui ne correspond qu'à elle."
+            },
+            {
+              "terme": "Une donnée sensible",
+              "definition": "Une donnée personnelle encore plus protégée. Par exemple : la santé, le handicap, la religion, les opinions politiques."
+            }
+          ]
+        },
+        {
+          "type": "tableau",
+          "legende": "Des exemples",
+          "entetes": [
+            "Information",
+            "Donnée personnelle ?"
+          ],
+          "lignes": [
+            [
+              "Karim Haddad",
+              "Oui : un nom."
+            ],
+            [
+              "06 12 34 56 78",
+              "Oui : un numéro de téléphone."
+            ],
+            [
+              "karim.haddad@exemple.fr",
+              "Oui : une adresse mail avec le nom."
+            ],
+            [
+              "« Le seul homme du service paie »",
+              "Oui : on peut le reconnaître sans son nom."
+            ],
+            [
+              "« Le logiciel de paie affiche « Licence expirée » »",
+              "Non : c'est le problème technique."
+            ]
+          ]
+        },
+        {
+          "type": "sous_titre",
+          "texte": "Comment retirer les données personnelles"
+        },
+        {
+          "type": "liste",
+          "elements": [
+            "Je remplace les noms par des étiquettes : [PERSONNE A], [PERSONNE B].",
+            "Je supprime ce qui ne sert pas à résoudre le problème : téléphone, mail, adresse.",
+            "Je vérifie qu'on ne peut pas reconnaître la personne autrement, par une description.",
+            "Je garde ce qui sert : le logiciel, le message d'erreur, depuis quand."
+          ],
+          "numerotee": true
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Pour comparer",
+          "texte": "Vous demandez conseil à un ami sur un problème au travail. Vous racontez le problème. Vous n'avez pas besoin de donner le nom et le numéro de téléphone de votre collègue."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s9-e16",
+          "type": "qcm_multiple",
+          "question": "Quelles informations sont des données personnelles ? Cochez toutes les bonnes réponses.",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Un nom et un prénom."
+            },
+            {
+              "id": "b",
+              "texte": "Un numéro de portable."
+            },
+            {
+              "id": "c",
+              "texte": "« L'imprimante du 2e étage est en panne. »"
+            },
+            {
+              "id": "d",
+              "texte": "Une adresse mail de la forme prenom.nom@entreprise.fr."
+            },
+            {
+              "id": "e",
+              "texte": "« Le logiciel affiche « Licence expirée ». »"
+            }
+          ],
+          "reponsesCorrectes": [
+            "a",
+            "b",
+            "d"
+          ],
+          "explicationCorrection": "Le nom, le portable et l'adresse mail avec le nom permettent de reconnaître une personne. L'imprimante en panne et le message d'erreur parlent d'une machine, pas d'une personne.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 25
+        },
+        {
+          "id": "s9-e17",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Voici un ticket : « Bonjour, je suis Karim Haddad, du service paie, tél. 06 12 34 56 78. Mon collègue Paul Martin et moi n'arrivons plus à ouvrir le logiciel de paie depuis ce matin. Le message affiché est : « Licence expirée ». » Réécrivez-le pour pouvoir le donner à une IA. Retirez les données personnelles. Gardez ce qui sert à résoudre le problème.",
+          "reponseModele": "Bonjour, je suis [PERSONNE A], du service paie. Un collègue et moi n'arrivons plus à ouvrir le logiciel de paie depuis ce matin. Le message affiché est : « Licence expirée ».",
+          "explicationCorrection": "Une bonne réponse ne contient plus ni nom, ni téléphone. Elle garde le logiciel, le message d'erreur et le moment où le problème a commencé. Si le service paie ne compte que deux personnes, on peut aussi écrire « un service » à la place.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 60
+        },
+        {
+          "id": "s9-e18",
+          "type": "qcm_unique",
+          "question": "Un ticket dit : « La stagiaire en fauteuil roulant du 1er étage n'arrive pas à se connecter. » Il n'y a pas de nom. Peut-on le coller tel quel dans une IA ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Oui : il n'y a pas de nom."
+            },
+            {
+              "id": "b",
+              "texte": "Non : on peut reconnaître la personne, et le handicap est une donnée sensible."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "justification": {
+            "libelle": "Pourquoi ? (en une phrase)",
+            "obligatoire": false
+          },
+          "explicationCorrection": "Sans nom, on peut quand même reconnaître la personne : la description ne correspond qu'à elle. Et le fauteuil roulant donne une information sur sa santé. On écrit plutôt : « Une utilisatrice n'arrive pas à se connecter. »",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 25
+        },
+        {
+          "id": "s9-e19",
+          "type": "qcm_unique",
+          "question": "Quelle information est une donnée **sensible** ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Le service où travaille la personne."
+            },
+            {
+              "id": "b",
+              "texte": "Une maladie de la personne."
+            },
+            {
+              "id": "c",
+              "texte": "La marque de son ordinateur."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "La santé est une donnée sensible : elle est encore plus protégée. Elle ne doit jamais être donnée à un outil d'IA non autorisé par la structure.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 15
+        }
+      ]
+    },
+    {
+      "id": "s9-etape-7",
+      "titre": "Qui est responsable ? Encore une fois",
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "En séance 8, une question demandait qui est responsable d'une erreur faite avec une IA. Reprenons."
+        },
+        {
+          "type": "sous_titre",
+          "texte": "Le GPS, encore"
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Le GPS vous dit de tourner dans une rue en sens interdit. Vous voyez le panneau. Si vous tournez quand même, c'est vous qui payez l'amende."
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "À retenir",
+          "elements": [
+            "L'IA est un outil, comme un GPS ou une calculatrice.",
+            "La personne qui utilise la réponse et l'envoie en est responsable.",
+            "Au travail, l'entreprise répond aussi devant le client.",
+            "Quand on s'est trompé : on le dit vite, on explique, on propose une solution."
+          ]
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s9-e20",
+          "type": "qcm_unique",
+          "question": "Un stagiaire rend un rapport écrit avec une IA. Il contient un chiffre faux. Qui doit corriger et assumer l'erreur ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "L'IA."
+            },
+            {
+              "id": "b",
+              "texte": "L'entreprise qui a créé l'IA."
+            },
+            {
+              "id": "c",
+              "texte": "Le stagiaire qui a rendu le rapport."
+            },
+            {
+              "id": "d",
+              "texte": "Personne."
+            }
+          ],
+          "reponseCorrecte": "c",
+          "explicationCorrection": "C'est le stagiaire qui a rendu le rapport. C'est son nom qui est dessus. Il devait vérifier le chiffre avant de le rendre.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s9-e21",
+          "type": "qcm_unique",
+          "question": "Un technicien a lancé une commande proposée par une IA, sans la vérifier. Des fichiers ont été effacés. Que dit-il à son responsable ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "« C'est la faute de l'IA. »"
+            },
+            {
+              "id": "b",
+              "texte": "« J'ai lancé une commande sans la vérifier. Voici ce qui a été effacé, et ce que je propose pour réparer. »"
+            },
+            {
+              "id": "c",
+              "texte": "Rien : on attend que quelqu'un s'en aperçoive."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Il reconnaît son erreur, il informe vite, il propose une solution. Plus on prévient tôt, plus on a de chances de récupérer les fichiers, par exemple depuis une sauvegarde.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 25
+        },
+        {
+          "id": "s9-e22",
+          "type": "qcm_unique",
+          "question": "Devant un client mécontent, « C'est l'IA qui l'a écrit » est-il une bonne explication ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Oui : c'est la vérité."
+            },
+            {
+              "id": "b",
+              "texte": "Non : le client a reçu le message de vous et de votre entreprise."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "Le client ne connaît pas l'IA. Il connaît la personne et l'entreprise qui lui ont écrit. C'est à elles de vérifier avant d'envoyer.",
+          "difficulte": "facile",
+          "tempsMinimumSecondes": 15
+        }
+      ]
+    },
+    {
+      "id": "s9-etape-8",
+      "titre": "Mes mots, pas ceux de l'IA",
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Dans cet atelier, le formateur lit vos réponses pour savoir ce que **vous** avez compris."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Une réponse copiée d'une IA ne lui dit rien sur vous. Elle ne vous aide pas non plus à apprendre."
+        },
+        {
+          "type": "sous_titre",
+          "texte": "À l'auto-école"
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Si le moniteur conduit à votre place pendant toutes les leçons, vous n'apprenez pas à conduire. Le jour de l'examen, vous êtes seul au volant."
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Au travail, c'est pareil : un jour, on vous demandera d'expliquer votre travail, à l'oral, sans écran."
+        },
+        {
+          "type": "tableau",
+          "legende": "Utiliser l'IA pour apprendre",
+          "entetes": [
+            "Oui, ça aide à apprendre",
+            "Non, ça empêche d'apprendre"
+          ],
+          "lignes": [
+            [
+              "Demander d'expliquer un mot que je ne comprends pas.",
+              "Coller la question de l'exercice et recopier la réponse."
+            ],
+            [
+              "Demander un exemple de la vie quotidienne.",
+              "Faire écrire un texte que je ne pourrais pas expliquer."
+            ],
+            [
+              "Demander à l'IA de me poser 3 questions pour m'entraîner.",
+              "Recopier la consigne à la place de la réponse."
+            ]
+          ]
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Un test simple avant de valider",
+          "texte": "Est-ce que je pourrais dire ma réponse à voix haute, sans la lire ? Si non, je la réécris plus simplement, avec mes mots."
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Écrire simplement, c'est bien",
+          "texte": "Une réponse courte, avec vos mots, même avec des fautes, vaut mieux qu'un long texte parfait que vous ne pourriez pas expliquer."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s9-e23",
+          "type": "qcm_unique",
+          "question": "Un exercice de l'atelier demande : « Expliquez avec vos mots. » Vous bloquez. Que faites-vous ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Je copie la réponse d'une IA."
+            },
+            {
+              "id": "b",
+              "texte": "Je demande à l'IA de m'expliquer le sujet, puis j'écris ma réponse moi-même, simplement."
+            },
+            {
+              "id": "c",
+              "texte": "J'écris un point pour passer."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "L'IA peut vous aider à comprendre. Ensuite, c'est vous qui écrivez. Si vous bloquez encore, demandez à votre voisin ou au formateur.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
+        },
+        {
+          "id": "s9-e24",
+          "type": "qcm_multiple",
+          "question": "Lesquels sont de bons usages de l'IA pour apprendre ? Cochez toutes les bonnes réponses.",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Lui demander d'expliquer un mot technique."
+            },
+            {
+              "id": "b",
+              "texte": "Lui demander de me poser 3 questions pour m'entraîner."
+            },
+            {
+              "id": "c",
+              "texte": "Coller la question de l'exercice et recopier sa réponse."
+            },
+            {
+              "id": "d",
+              "texte": "Lui demander un exemple de la vie quotidienne."
+            }
+          ],
+          "reponsesCorrectes": [
+            "a",
+            "b",
+            "d"
+          ],
+          "explicationCorrection": "Expliquer, interroger, donner un exemple : l'IA vous aide à comprendre. Recopier sa réponse ne vous apprend rien, et ne montre pas ce que vous savez.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 25
+        },
+        {
+          "id": "s9-e25",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Sans IA, avec vos mots, en deux phrases : pourquoi une IA peut-elle inventer une information ?",
+          "reponseModele": "L'IA choisit les mots les plus probables, elle ne vérifie pas si c'est vrai. Quand elle ne sait pas, elle complète avec quelque chose qui sonne bien.",
+          "explicationCorrection": "L'idée importante : l'IA produit les mots les plus probables, elle ne vérifie pas si c'est vrai. Si vous avez écrit cette idée avec vos mots, c'est une bonne réponse, même avec des fautes.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 45
+        }
+      ]
+    },
+    {
+      "id": "s9-etape-9",
+      "titre": "Défi à deux : cachez une erreur",
+      "rappel": {
+        "titre": "Rappel : l'annonce",
+        "blocs": [
+          {
+            "type": "tableau",
+            "legende": "La source : l'annonce",
+            "entetes": [
+              "Annonce du centre"
+            ],
+            "lignes": [
+              [
+                "Portes ouvertes du centre : samedi 28 novembre, de 10 h à 16 h."
+              ],
+              [
+                "Visite des ateliers informatique et cuisine."
+              ],
+              [
+                "Entrée libre, sans inscription."
+              ],
+              [
+                "Accès : bus ligne 12, arrêt Mairie."
+              ]
+            ]
+          }
+        ]
+      },
+      "blocs": [
+        {
+          "type": "paragraphe",
+          "texte": "Mettez-vous à deux. Vous allez jouer l'IA, puis le vérificateur."
+        },
+        {
+          "type": "tableau",
+          "legende": "La source : l'annonce",
+          "entetes": [
+            "Annonce du centre"
+          ],
+          "lignes": [
+            [
+              "Portes ouvertes du centre : samedi 28 novembre, de 10 h à 16 h."
+            ],
+            [
+              "Visite des ateliers informatique et cuisine."
+            ],
+            [
+              "Entrée libre, sans inscription."
+            ],
+            [
+              "Accès : bus ligne 12, arrêt Mairie."
+            ]
+          ]
+        },
+        {
+          "type": "sous_titre",
+          "texte": "Les règles"
+        },
+        {
+          "type": "liste",
+          "elements": [
+            "Chacun écrit un résumé de l'annonce, en 3 phrases.",
+            "Dans votre résumé, cachez **une seule** erreur : une phrase qui **contredit** l'annonce, ou une phrase **absente** de l'annonce.",
+            "Échangez : montrez votre écran à votre binôme, ou lisez votre résumé à voix haute.",
+            "Votre binôme cherche l'erreur avec les 3 étiquettes. Il doit dire laquelle, et pourquoi.",
+            "Puis vous inversez."
+          ],
+          "numerotee": true
+        },
+        {
+          "type": "encadre",
+          "style": "astuce",
+          "titre": "Si vous êtes seul",
+          "texte": "Rejoignez un binôme pour faire un trio. Ou demandez au formateur de jouer avec vous."
+        },
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Pourquoi ce jeu",
+          "texte": "Cacher une erreur oblige à bien lire la source. Et chercher l'erreur d'un autre, c'est exactement le travail de vérification."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s9-e26",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Écrivez ici votre résumé de 3 phrases, avec une erreur cachée. Puis, en dessous, écrivez quelle est votre erreur.",
+          "reponseModele": "Les portes ouvertes ont lieu le samedi 28 novembre, de 10 h à 16 h. On peut visiter les ateliers informatique et cuisine. Il faut s'inscrire à l'accueil. Mon erreur : l'inscription (l'annonce dit « sans inscription », donc c'est contredit).",
+          "explicationCorrection": "Un bon résumé reprend l'annonce avec vos mots. L'erreur doit être vérifiable : on doit pouvoir la trouver en comparant avec l'annonce.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 60
+        },
+        {
+          "id": "s9-e27",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Quelle erreur avez-vous trouvée dans le résumé de votre binôme ? Quelle étiquette : contredit ou absent ? Comment l'avez-vous vue ?",
+          "reponseModele": "Mon binôme a écrit : « Un parking gratuit est prévu devant le centre. » C'est absent : l'annonce parle seulement du bus ligne 12. Je l'ai vu en relisant la ligne « Accès ».",
+          "explicationCorrection": "Une bonne réponse cite la phrase fausse, donne l'étiquette, et compare avec l'annonce. Si vous n'avez pas trouvé, écrivez ce que vous avez vérifié.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 45
+        }
+      ]
+    },
+    {
+      "id": "s9-etape-10",
+      "titre": "À garder de cette séance",
+      "blocs": [
+        {
+          "type": "encadre",
+          "style": "info",
+          "titre": "Ma fiche à garder",
+          "elements": [
+            "**Je lis le verbe** de la consigne : recopier, réécrire, calculer, donner, expliquer.",
+            "**Je compare avec la source**, phrase par phrase : conforme, contredit ou absent.",
+            "**Je ne signale pas une phrase juste.** Une phrase conforme n'est pas une erreur.",
+            "**Une phrase absente n'est pas prouvée** : je ne l'utilise pas sans vérifier ailleurs.",
+            "**Je retire les données personnelles** : noms, téléphones, mails, et les descriptions qui permettent de reconnaître quelqu'un.",
+            "**C'est moi qui réponds** de ce que j'envoie, pas l'IA.",
+            "**J'écris avec mes mots** : je dois pouvoir dire ma réponse à voix haute."
+          ],
+          "numerotee": true
+        },
+        {
+          "type": "paragraphe",
+          "texte": "Avant de partir, pensez à cliquer sur « Enregistrer mon travail dans un fichier »."
+        }
+      ],
+      "exercices": [
+        {
+          "id": "s9-e28",
+          "type": "texte_libre",
+          "mode": "modele",
+          "question": "Parmi les 7 réflexes de la fiche, lequel allez-vous le plus travailler ? Pourquoi ? Répondez en une ou deux phrases.",
+          "reponseModele": "Le réflexe 3 : ne pas signaler une phrase juste. En séance 8, j'ai coché des phrases qui étaient correctes, parce qu'elles avaient l'air bizarres.",
+          "explicationCorrection": "Il n'y a pas de mauvaise réponse. Ce qui compte : choisir un réflexe précis, et dire pourquoi il est difficile pour vous.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 30
+        }
+      ]
+    }
+  ]
+}

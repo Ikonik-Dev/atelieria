@@ -70,7 +70,8 @@ IA_prise_en_main/
 │   ├── seance-5.json           Séance 5 : Aller plus loin : du prompt au contexte
 │   ├── seance-6.json           Séance 6 : Aller plus loin : la boucle agentique (parcours A, B, C)
 │   ├── seance-7.json           Séance 7 : Aller plus loin : l'IA sur mon ordinateur (IA locale)
-│   └── seance-8.json           Séance 8 : Esprit critique et usages métier (4 cas métier, travail à deux)
+│   ├── seance-8.json           Séance 8 : Esprit critique et usages métier (4 cas métier, travail à deux)
+│   └── seance-9.json           Séance 9 : Revenir sur les pièges (consignes, 3 étiquettes, données personnelles)
 │
 ├── formateur/
 │   ├── atelier-banc-essai/     Affiche des règles à imprimer pour le banc d'essai (séance 7)
@@ -102,7 +103,8 @@ Les fichiers d'origine placés à la racine du dossier (8 PNG, livret du stagiai
 | Séance 6 | 13 | 21 | 12 (parcours A, B, C) |
 | Séance 7 | 9 | 20 | 8 (banc d'essai) |
 | Séance 8 | 10 | 29 | 3 (l'IA se relit elle-même) |
-| **Total** | **73** | **160** | **44** |
+| Séance 9 | 10 | 28 | 0 |
+| **Total** | **83** | **188** | **44** |
 
 ### Répartition des illustrations
 
@@ -804,6 +806,7 @@ Les contrastes des couleurs ont été **calculés** (formule WCAG) : tous au-des
 - **La Séance 7 « L'IA sur mon ordinateur »** (CLAUDE.md, D-017) : IA locale, choix d'un modèle selon la machine et la tâche. Elle ne vient pas du livret. **Aucune installation n'est nécessaire côté stagiaire** : le formateur fait la démonstration. Les chiffres de matériel (4 Go de mémoire vidéo) sont ceux des postes du centre, relevés le 21 septembre 2026 : à revérifier sur d'autres machines. Procédures d'installation, licences et mesures : `formateur/guide-ia-locale-et-outils.md`.
 - **Le « banc d'essai » de la séance 7** (étape au choix, exercices `s7-e13` à `s7-e20`, CLAUDE.md, D-019) : une activité de 2 heures en binômes, prévue pour occuper un groupe **sans formateur dans la salle**. Elle suppose deux modèles locaux **installés et testés sur chaque poste** : sans cela, elle perd son objet, et il faut passer au plan B décrit dans le guide (section 3.7). Les documents imprimables (`assets/documents/banc-essai-*`) contiennent des textes construits, signalés comme tels, et **aucune valeur de référence** : le fichier est public, un chiffre « attendu » pré-répondrait la première manche.
 - **La Séance 8 « Esprit critique et usages métier »** (CLAUDE.md, D-020) : elle met en pratique les séances 1 à 7 sur 4 cas métier (support, réseau, développement, test) et un travail à deux (l'un demande, l'autre vérifie). Elle ne vient pas du livret. Prévue pour 3 h 20 **en autonomie avec entraide** : le formateur intervient seulement en cas de blocage. Les réponses d'IA des 4 cas sont **construites** (erreurs placées volontairement), et le nom de paquet `verif-mail-express` est inventé pour l'exercice. Déroulé et plan B : `formateur/guide-seance-8.md`.
+- **La Séance 9 « Revenir sur les pièges »** (CLAUDE.md, D-022) : elle reprend les difficultés observées en séance 8 (consignes mal lues, phrases justes signalées comme fausses, données personnelles, responsabilité, réponses copiées). Méthode des 3 étiquettes : conforme, contredit, absent. Même format que la séance 8 : 3 h 20 en autonomie avec entraide. Documents construits, noms et numéros fictifs.
 - Les valeurs de `difficulte` (les parcours A, B et C sont en `facile`, `moyen` et `difficile`) et de `tempsMinimumSecondes`.
 
 ### Adaptations du livret
