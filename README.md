@@ -103,8 +103,8 @@ Les fichiers d'origine placés à la racine du dossier (8 PNG, livret du stagiai
 | Séance 6 | 13 | 21 | 12 (parcours A, B, C) |
 | Séance 7 | 9 | 20 | 8 (banc d'essai) |
 | Séance 8 | 10 | 29 | 3 (l'IA se relit elle-même) |
-| Séance 9 | 10 | 28 | 0 |
-| **Total** | **83** | **188** | **44** |
+| Séance 9 | 10 | 29 | 0 |
+| **Total** | **83** | **189** | **44** |
 
 ### Répartition des illustrations
 

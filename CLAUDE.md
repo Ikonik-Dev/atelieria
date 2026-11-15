@@ -754,18 +754,19 @@ Une entrée par évolution majeure : règle ajoutée, modifiée ou supprimée, n
 - **Demandée ou validée par** : formateur
 - **Contexte** : même groupe et même format que la séance 8 (D-020) : mardi de 13 h 20 à 17 h 00, en présentiel, autonomie et entraide. Le formateur choisit de retravailler les points faibles observés en séance 8 : consignes mal lues (phrase recopiée au lieu d'être réécrite ou calculée), erreurs non repérées **et** phrases justes signalées comme fausses, données personnelles non vues, responsabilité attribuée à « personne », réponses copiées d'une IA ou réduites à « . ».
 - **Décision** :
-  - nouvelle partie `content/seance-9.json`, placée **après la séance 8** : 10 étapes, 28 exercices `s9-e01` à `s9-e28`, aucun au choix ;
+  - nouvelle partie `content/seance-9.json`, placée **après la séance 8** : 10 étapes, 29 exercices `s9-e01` à `s9-e29` (`s9-e29` ajouté à l'étape 3, voir plus bas), aucun au choix ;
   - **lire la consigne** : tableau des verbes (recopier, réécrire, calculer, donner, expliquer, choisir) et 4 exercices sur la forme de réponse attendue ;
   - **méthode des 3 étiquettes** (conforme, contredit, absent), avec l'analogie du bon de commande et un exemple résolu ; deux entraînements avec `rappel` (D-018) : un mail RH (une étiquette par écran, case « Pourquoi ? ») et une procédure du support ;
   - **données personnelles** : directes et indirectes (une description qui ne correspond qu'à une personne), données sensibles (santé, handicap), exercice d'anonymisation d'un ticket ;
   - **responsabilité** reprise avec 3 cas ; **« Mes mots, pas ceux de l'IA »** : usages de l'IA qui aident à apprendre ou qui en empêchent, test « pourrais-je le dire à voix haute ? », ton neutre, sans accusation ;
   - **défi à deux** : chacun cache une erreur dans un résumé, l'autre la trouve avec les étiquettes ;
   - délais minimums plus longs qu'en séance 8 pour les exercices d'analyse (20 à 30 s) et d'écriture (45 à 60 s) ;
+  - **complément du 2026-11-15, après lecture de deux autres retours de la séance 8** : un deuxième export confirme les deux difficultés principales (fausses alertes et erreurs manquées ; consigne « donnez l'adresse » traitée comme « expliquez »), avec des signes de texte copié d'une IA (astérisques de mise en forme, tutoiement) et l'idée que « demander à l'IA de se vérifier » suffit. Un troisième stagiaire a rendu la page enregistrée avec Ctrl + S, qui ne contient aucune réponse. Ajouts : encadré « Pour rendre votre travail » (étape 1), exercice `s9-e29` « l'IA dit qu'elle a vérifié » (étape 3), encadré « Avant de partir » : vérifier le plan de la séance, aucun exercice « (à faire) » (étape 10). La séance compte donc 29 exercices ;
   - aucun nouveau type, aucun nouveau champ, aucune modification du JavaScript.
 - **Raison** : une séance de remédiation ciblée vaut mieux qu'un nouveau thème quand les bases ne sont pas acquises. Les 3 étiquettes donnent une méthode explicite, qui traite à la fois les erreurs manquées et les fausses alertes.
 - **Conséquences et limites acceptées** :
-  - les difficultés ont été observées sur au moins une stagiaire, à partir de son fichier d'export ; elles ne sont pas forcément partagées par tout le groupe ;
+  - les difficultés ont été observées sur deux stagiaires, à partir de leurs fichiers d'export ; un troisième n'a rendu que la page, un quatrième n'a rien rendu ;
   - documents construits (mail, procédure, ticket, annonce), noms et numéros fictifs ; dates de novembre 2026 cohérentes avec le calendrier (mardi 24, samedi 28) ;
   - les délais minimums freinent sans prouver la lecture (règle 2.2) ; l'étape « Mes mots » est une incitation, pas un contrôle ;
-  - tests NVDA et zoom 200 % non refaits ; chargement des 38 écrans vérifié en navigateur automatisé à 360 px de large.
+  - tests NVDA et zoom 200 % non refaits ; chargement des 39 écrans vérifié en navigateur automatisé à 360 px de large.
 - **Sections du CLAUDE.md impactées** : aucune règle ; contenu

@@ -37,6 +37,16 @@
         },
         {
           "type": "encadre",
+          "style": "attention",
+          "titre": "Pour rendre votre travail",
+          "elements": [
+            "Utilisez le bouton « Enregistrer mon travail dans un fichier », en haut de la page.",
+            "N'utilisez pas Ctrl + S ni « Enregistrer la page sous » : cela enregistre la page, mais pas vos réponses.",
+            "Le bon fichier s'appelle « mon-travail-atelier-ia » et finit par .json."
+          ]
+        },
+        {
+          "type": "encadre",
           "style": "astuce",
           "titre": "Je bloque ? Les 4 réflexes, dans l'ordre",
           "elements": [
@@ -417,6 +427,25 @@
           "explicationCorrection": "Une phrase conforme est juste. La signaler comme une erreur, c'est une fausse alerte. Au travail, trop de fausses alertes font perdre du temps à tout le monde.",
           "difficulte": "facile",
           "tempsMinimumSecondes": 15
+        },
+        {
+          "id": "s9-e29",
+          "type": "qcm_unique",
+          "question": "Vous demandez à l'IA : « Vérifie ta réponse. » Elle répond : « J'ai vérifié, tout est juste. » Avez-vous vérifié ?",
+          "options": [
+            {
+              "id": "a",
+              "texte": "Oui : l'IA a vérifié pour moi."
+            },
+            {
+              "id": "b",
+              "texte": "Non : il faut comparer moi-même avec la source."
+            }
+          ],
+          "reponseCorrecte": "b",
+          "explicationCorrection": "L'IA ne regarde pas la source à votre place. Elle produit une nouvelle réponse vraisemblable, qui peut contenir les mêmes erreurs. Vérifier, c'est comparer vous-même avec la source, phrase par phrase.",
+          "difficulte": "moyen",
+          "tempsMinimumSecondes": 20
         }
       ]
     },
@@ -1432,8 +1461,15 @@
           "numerotee": true
         },
         {
-          "type": "paragraphe",
-          "texte": "Avant de partir, pensez à cliquer sur « Enregistrer mon travail dans un fichier »."
+          "type": "encadre",
+          "style": "attention",
+          "titre": "Avant de partir",
+          "elements": [
+            "Ouvrez « Plan de la séance », en bas de la page.",
+            "Vérifiez qu'aucun exercice n'est marqué « (à faire) ». S'il en reste, faites-les.",
+            "Puis cliquez sur « Enregistrer mon travail dans un fichier ». N'utilisez pas Ctrl + S."
+          ],
+          "numerotee": true
         }
       ],
       "exercices": [
